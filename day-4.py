@@ -3,4 +3,4 @@ b=5
 print("a:",a)
 print("b:",b)
 print("Sum:",a+b)
-print("Product:",a*b)
+
