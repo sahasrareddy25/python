@@ -1,4 +1,3 @@
-x = 15
-y = 25
-print("Maximum:", max(x, y))
-print("Minimum:", min(x, y))
+print("True and False:", True and False)
+print("True or False:", True or False)
+print("not True:", not True)
