@@ -15,3 +15,22 @@ print("sum =",a+b+c)
 num_str=input("Enter a number: ")
 num_int=int(num_str)
 print("result=",num_int*2) 
+
+#implicit type casting
+#show how python automatically converts types.add an integer and a float
+a=10
+b=2.5
+c=a+b
+print("result=",c)
+print("type of result:", type(c))
+
+#mutable vs immutable
+#create a list and a string.modify the list and try to modify the string
+my_list=[1,2,3]
+print("before:",my_list)
+my_list.append(4)
+print("after:", my_list)
+my_str="Hello"
+print("original string:",my_str)
+new_str="h" + my_str[1:]
+print("modified string:",new_str)
