@@ -51,3 +51,9 @@ print("c=",c)
 num=5
 square=num**2
 print("the square of", num,"is", square)
+
+#Concatenate two string variables and print the result
+str1="hello"
+str2="gud morning!"
+result=str1+" " +str2
+print(result)
