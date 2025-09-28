@@ -9,3 +9,9 @@ print(f" My name is {name}, I am {20} years old, and I sccored {89.5}% marks.")
 #Assign values 10,20,30 to three variables a ,b,c in a single line.print the sum
 a,b,c=10,20,30
 print("sum =",a+b+c)
+
+#Type casting(str to int)
+#Take input from the user as a string number.convert it into an integer and multiply it by 2
+num_str=input("Enter a number: ")
+num_int=int(num_str)
+print("result=",num_int*2) 
