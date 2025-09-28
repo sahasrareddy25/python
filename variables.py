@@ -34,3 +34,9 @@ my_str="Hello"
 print("original string:",my_str)
 new_str="h" + my_str[1:]
 print("modified string:",new_str)
+
+#declare two integer variables and point their sum 
+a=10
+b=20
+sum_result=a+b 
+print("the sum of", a,"and", b,"is:",sum_result)
