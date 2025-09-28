@@ -46,3 +46,8 @@ a,b,c=10,20,30
 print("a=",a)
 print("b=",b)
 print("c=",c)
+
+#Store a number in a variable and print its square using that variable
+num=5
+square=num**2
+print("the square of", num,"is", square)
