@@ -40,3 +40,9 @@ a=10
 b=20
 sum_result=a+b 
 print("the sum of", a,"and", b,"is:",sum_result)
+
+#Assign multiple values to multiple variables in one line and print them
+a,b,c=10,20,30
+print("a=",a)
+print("b=",b)
+print("c=",c)
