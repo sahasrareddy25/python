@@ -57,3 +57,10 @@ str1="hello"
 str2="gud morning!"
 result=str1+" " +str2
 print(result)
+
+#swapping
+x=5
+y=10
+print("before swapping:", x,y)
+x,y=y,x 
+print("after swapping:", x,y)
