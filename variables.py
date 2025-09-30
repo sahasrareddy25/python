@@ -1,23 +1,27 @@
-"""#variable basics
-#assign name,age,percentage marks to three different variables.print them using f-string
+#variable basics
 name="sahasra"
 age="20"
 marks="89.5"
-print(f" My name is {name}, I am {20} years old, and I sccored {89.5}% marks.")
+print(f"My name is {name},I am {20} years old, and I sccored {89.5}% marks.")
 
 #multiple assignments
-#Assign values 10,20,30 to three variables a ,b,c in a single line.print the sum
 a,b,c=10,20,30
 print("sum =",a+b+c)
 
 #Type casting(str to int)
-#Take input from the user as a string number.convert it into an integer and multiply it by 2
-num_str=input("Enter a number: ")
-num_int=int(num_str)
-print("result=",num_int*2) 
+s="10"  
+n=int(s)  
+cnt=5
+f=float(cnt)  
+age=25
+s2=str(age)  
+
+# Display results
+print(n)  
+print(f)  
+print(s2)
 
 #implicit type casting
-#show how python automatically converts types.add an integer and a float
 a=10
 b=2.5
 c=a+b
@@ -25,7 +29,6 @@ print("result=",c)
 print("type of result:", type(c))
 
 #mutable vs immutable
-#create a list and a string.modify the list and try to modify the string
 my_list=[1,2,3]
 print("before:",my_list)
 my_list.append(4)
@@ -63,7 +66,7 @@ x=5
 y=10
 print("before swapping:", x,y)
 x,y=y,x
-print("after swapping:",x,y)"""
+print("after swapping:",x,y)
 
 #global variable 
 msg="helloo"
@@ -71,3 +74,4 @@ def display():
     print("Inside function:", msg)
 display()
 print("Outside function:", msg)
+
