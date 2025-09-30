@@ -1,4 +1,4 @@
-#variable basics
+"""#variable basics
 #assign name,age,percentage marks to three different variables.print them using f-string
 name="sahasra"
 age="20"
@@ -62,5 +62,12 @@ print(result)
 x=5
 y=10
 print("before swapping:", x,y)
-x,y=y,x 
-print("after swapping:", x,y)
+x,y=y,x
+print("after swapping:",x,y)"""
+
+#global variable 
+msg="helloo"
+def display():
+    print("Inside function:", msg)
+display()
+print("Outside function:", msg)
