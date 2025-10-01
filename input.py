@@ -1,20 +1,20 @@
 """#Svariable
 s="sahasra"
-print(s)"""
+print(s)
 
 #MVariables
 M="sahasra"
 age=20
 city="warangal"
-print(M,age,city)
+print(M,age,city)"""
 
-"""#3inputs
+#3inputs
 x,y,z=input("Enter three values:").split()
 print("Total number of students:",x)
 print("Number of boys is:",y)
 print("Number of girls is:",z)
 
-#CU input
+"""#CU input
 age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible")
