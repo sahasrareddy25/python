@@ -4,6 +4,16 @@ age="20"
 marks="89.5"
 print(f"My name is {name},I am {20} years old, and I sccored {89.5}% marks.")
 
+#mutable vs immutable
+my_list=[1,2,3]
+print("before:",my_list)
+my_list.append(4)
+print("after:", my_list)
+my_str="Hello"
+print("original string:",my_str)
+new_str="h" + my_str[1:]
+print("modified string:",new_str)
+
 #multiple assignments
 a,b,c=10,20,30
 print("sum =",a+b+c)
@@ -16,12 +26,7 @@ f=float(cnt)
 age=25
 s2=str(age)  
 
-# Display results
-print(n)  
-print(f)  
-print(s2)
-
-#implicit type casting
+#implict type casting
 a=10
 b=2.5
 c=a+b
@@ -75,3 +80,11 @@ def display():
 display()
 print("Outside function:", msg)
 
+#Svariable
+s="sahasra"
+print(s)
+#MVariables
+M="sahasra"
+age=20
+city="warangal"
+print(M,age,city)
