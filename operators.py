@@ -21,12 +21,24 @@ price=5000
 quantity=10
 discount=10
 totalprice=price*quantity-discount
-print("totalprice:",totalprice)"""
+print("totalprice:",totalprice)
 
 #L.operators
 age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible to vote")
 else:
- print("Not eligible")
+ print("Not eligible")"""
+
+
+#c.operators
+a=10
+b=20
+print(a>b)
+print(a<b)
+print(a==b)
+print(a!=b)
+print(a>=b)
+print(a<=b)
+
 
