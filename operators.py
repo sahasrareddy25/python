@@ -1,4 +1,4 @@
-#A.operators in python
+"""#A.operators in python
 a=25
 b=30
 print("a+b=",a+b)
@@ -9,7 +9,7 @@ print("a//b",a//b)
 print("a%b",a%b)
 print("a**b",a**b)
 
-"""#calculating intrest   # based on formula
+#calculating intrest   # based on formula
 p=10000
 r=2
 t=5
@@ -28,15 +28,15 @@ age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible to vote")
 else:
- print("Not eligible")
+ print("Not eligible")"""
 
 
 #c.operators
 a=10
-b=20
+b=14
 print(a>b)
 print(a<b)
 print(a==b)
 print(a!=b)
 print(a>=b)
-print(a<=b)"""
+print(a<=b)
