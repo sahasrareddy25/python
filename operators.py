@@ -1,4 +1,4 @@
-"""#A.operators in python
+#A.operators in python
 a=25
 b=30
 print("a+b=",a+b)
@@ -9,7 +9,7 @@ print("a//b",a//b)
 print("a%b",a%b)
 print("a**b",a**b)
 
-#calculating intrest   # based on formula
+"""#calculating intrest   # based on formula
 p=10000
 r=2
 t=5
@@ -21,7 +21,7 @@ price=5000
 quantity=10
 discount=10
 totalprice=price*quantity-discount
-print("totalprice:",totalprice)"""
+print("totalprice:",totalprice)
 
 #L.operators
 age=int(input("Enter your age:"))
@@ -31,7 +31,7 @@ else:
  print("Not eligible")
 
 
-"""#c.operators
+#c.operators
 a=10
 b=20
 print(a>b)
@@ -40,7 +40,3 @@ print(a==b)
 print(a!=b)
 print(a>=b)
 print(a<=b)"""
-
-
-
-
