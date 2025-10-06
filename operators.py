@@ -49,7 +49,7 @@ print(a|b)
 print(~a)
 print(a^b)
 print(a>>2)
-print(a<<2)"""
+print(a<<2)
 
 #A.operator
 a=10
@@ -62,6 +62,14 @@ print(b)
 b*=a
 print(b)
 b<<=a
-print(b)
+print(b)"""
+
+#l.operator
+age=20
+citizen=True
+if age>= 18 and citizen:
+  print("Eligible to vote")
+else:
+  print("Not eligible to vote")
 
 
