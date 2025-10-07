@@ -9,8 +9,16 @@ if x<2:
 
 age=20
 if age>=18:
- print("Eligible to vote")"""
+ print("Eligible to vote")
 
 age=16
 if age<18:
- print("are minors")
+ print("are minors")"""
+
+if 0:
+  print("")
+
+wish="hellooo"
+print("hellooo")
+
+
