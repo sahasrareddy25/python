@@ -13,12 +13,22 @@ if age>=18:
 
 age=16
 if age<18:
- print("are minors")"""
+ print("are minors")
 
+#here 0's can't be used as condition and it is false
 if 0:
   print("")
 
 wish="hellooo"
-print("hellooo")
+print("hellooo")"""
+
+a=5
+b=20
+if a<b:
+ print("a is greater than b")
+
+
+
+
 
 
