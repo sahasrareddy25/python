@@ -20,19 +20,19 @@ if 0:
   print("")
 
 wish="hellooo"
-print("hellooo")
+print("hellooo")"""
 
 a=5
 b=20
 if a<b:
- print("a is greater than b")"""
+ print("a is greater than b")
 
-total_marks=100
+"""total_marks=100
 pass_marks=35
 if total_marks>=pass_marks:
   print("student has passed")
 
-"""total_purchase=1000
+total_purchase=1000
 if total_purchase>700:
   print("customer gets 30% discount")
 
