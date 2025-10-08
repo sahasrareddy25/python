@@ -34,19 +34,23 @@ if total_marks>=pass_marks:
 
   total_purchase=1000
 if total_purchase>700:
-  print("customer gets 30% discount")
+  print("customer gets 30% discount")"""
 
 phone_battery=100
 if phone_battery>20:
-    print("phone battery is below")"""
+    print("phone battery is below")
 
-marks=100
+"""marks=100
 if marks >=90:
  print("grade: A")
 if marks >=70:
  print("grade: c")
 if marks>=50:
- print("grade: e")
+ print("grade: e")"""
+
+
+
+
 
 
 
