@@ -30,11 +30,25 @@ if a<b:
 total_marks=100
 pass_marks=35
 if total_marks>=pass_marks:
-  print("student has passed")"""
+  print("student has passed")
 
-total_purchase=1000
+  total_purchase=1000
 if total_purchase>700:
   print("customer gets 30% discount")
+
+phone_battery=100
+if phone_battery>20:
+    print("phone battery is below")"""
+
+marks=100
+if marks >=90:
+ print("grade: A")
+if marks >=70:
+ print("grade: c")
+if marks>=50:
+ print("grade: e")
+
+
 
 
 
