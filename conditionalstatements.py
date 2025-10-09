@@ -9,20 +9,20 @@ if x<2:
 
 age=20
 if age>=18:
- print("Eligible to vote")"""
+ print("Eligible to vote")
 
 age=16
 if age<18:
- print("are minors")
+ print("are minors")"""
 
-"""#here 0's can't be used as condition and it is false
+#here 0's can't be used as condition and it is false
 if 0:
   print("")
 
-wish="hellooo"
-print("hellooo")
+wish="helloo"
+print("helloo")
 
-a=5
+"""a=5
 b=20
 if a<b:
  print("a is greater than b")
