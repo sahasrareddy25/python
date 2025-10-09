@@ -1,28 +1,28 @@
 """#if condition 
 x=10
 if x>5:
- print("x is greater than 5")"""
+ print("x is greater than 5")
 
 x=20
 if x<2:
   print("x is less than 2")
 
-"""age=20
+age=20
 if age>=18:
- print("Eligible to vote")
+ print("Eligible to vote")"""
 
 age=16
 if age<18:
  print("are minors")
 
-#here 0's can't be used as condition and it is false
+"""#here 0's can't be used as condition and it is false
 if 0:
-  print("")"""
+  print("")
 
 wish="hellooo"
 print("hellooo")
 
-"""a=5
+a=5
 b=20
 if a<b:
  print("a is greater than b")
