@@ -64,7 +64,7 @@ if number % 2==0:
 if number % 7!=0:
  print("number is odd")
 if number % 4==0:
- print("number is divisible by 4")"""
+ print("number is divisible by 4")
 
 
 #voting eligibility
@@ -74,7 +74,17 @@ if age>=18:
 if age<18:
  print("not eligible to vote")
 if age==18:
- print("eiligible for first time voting")
+ print("eiligible for first time voting")"""
+
+#largest of two numbers
+a=10
+b=20
+if a>b:
+  print("a is greater")
+if b>a:
+ print("b is greater")
+if a==b:
+ print("both are equal")
 
 
 
