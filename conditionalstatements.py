@@ -104,6 +104,16 @@ if marks>=60:
 if marks<60:
  print("grade D")
 
+#smallest of three numbers 
+a=10
+b=20
+c=30
+if a<b and a<c:
+ print("a is smallest")
+if b<a and b<c:
+ print("b is smallest")
+if c<a and c<b:
+ print("c is smallest")
 
 
 
