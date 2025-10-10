@@ -49,15 +49,22 @@ if marks>=50:
  print("grade: e")"""
 
 
-#Positive or Negative
+"""#Positive or Negative
 if 5 > 0:
   print("number is positive")
 if -5 < 0:
   print("number is negative")
 if 0 == 0:
- print("number is zero")
+ print("number is zero")"""
 
-
+#Even or odd
+number=5
+if number % 2==0:
+ print("numnber is even")
+if number % 7!=0:
+ print("number is odd")
+if number % 4==0:
+ print("number is divisible by 4") 
 
 
 
