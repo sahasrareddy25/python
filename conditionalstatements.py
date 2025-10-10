@@ -55,7 +55,7 @@ if 5 > 0:
 if -5 < 0:
   print("number is negative")
 if 0 == 0:
- print("number is zero")"""
+ print("number is zero")
 
 #Even or odd
 number=5
@@ -64,8 +64,17 @@ if number % 2==0:
 if number % 7!=0:
  print("number is odd")
 if number % 4==0:
- print("number is divisible by 4") 
+ print("number is divisible by 4")"""
 
+
+#voting eligibility
+age=20
+if age>=18:
+ print("eligible to vote")
+if age<18:
+ print("not eligible to vote")
+if age==18:
+ print("eiligible for first time voting")
 
 
 
