@@ -28,8 +28,8 @@ if a<b:
  print("a is greater than b")"""
 
 total_marks=100
-pass_marks=35
-if total_marks>=pass_marks:
+pass_mark=35
+if total_marks>=pass_mark:
   print("student has passed")
 
 """total_purchase=1000
