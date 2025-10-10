@@ -74,7 +74,7 @@ if age>=18:
 if age<18:
  print("not eligible to vote")
 if age==18:
- print("eiligible for first time voting")"""
+ print("eiligible for first time voting")
 
 #largest of two numbers
 a=10
@@ -84,7 +84,14 @@ if a>b:
 if b>a:
  print("b is greater")
 if a==b:
- print("both are equal")
+ print("both are equal")"""
+
+#multiple of 5
+number=15
+if number % 5==0:
+  print("number is multiple of 5")
+if number % 5!=0:
+ print("number is not multiple of 5")       
 
 
 
