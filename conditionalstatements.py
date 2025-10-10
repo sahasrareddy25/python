@@ -27,12 +27,12 @@ b=20
 if a<b:
  print("a is greater than b")"""
 
-total_marks=100
+"""total_marks=100
 pass_mark=35
 if total_marks>=pass_mark:
   print("student has passed")
 
-"""total_purchase=1000
+total_purchase=1000
 if total_purchase>700:
   print("customer gets 30% discount")
 
@@ -47,6 +47,15 @@ if marks >=70:
  print("grade: c")
 if marks>=50:
  print("grade: e")"""
+
+
+#Positive or Negative
+if 5 > 0:
+  print("number is positive")
+if -5 < 0:
+  print("number is negative")
+if 0 == 0:
+ print("number is zero")
 
 
 
