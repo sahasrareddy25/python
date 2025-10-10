@@ -84,16 +84,25 @@ if a>b:
 if b>a:
  print("b is greater")
 if a==b:
- print("both are equal")"""
+ print("both are equal")
 
 #multiple of 5
 number=15
 if number % 5==0:
   print("number is multiple of 5")
 if number % 5!=0:
- print("number is not multiple of 5")       
+ print("number is not multiple of 5")"""    
 
-
+#grade calculation
+marks=85
+if marks>=90:
+  print("grade A")
+if marks>=75:
+ print("grade B")
+if marks>=60:
+ print("grade c")
+if marks<60:
+ print("grade D")
 
 
 
