@@ -47,7 +47,9 @@ if marks >=70:
  print("grade: c")
 if marks>=50:
  print("grade: e")"""
-
+ 
+ 
+#10.10.2025
 
 """#Positive or Negative
 if 5 > 0:
@@ -91,7 +93,7 @@ number=15
 if number % 5==0:
   print("number is multiple of 5")
 if number % 5!=0:
- print("number is not multiple of 5")"""    
+ print("number is not multiple of 5")  
 
 #grade calculation
 marks=85
@@ -102,19 +104,18 @@ if marks>=75:
 if marks>=60:
  print("grade c")
 if marks<60:
- print("grade D")
+ print("grade D")"""
 
 #smallest of three numbers 
 a=10
 b=20
-c=30
+c=40
 if a<b and a<c:
  print("a is smallest")
 if b<a and b<c:
  print("b is smallest")
 if c<a and c<b:
  print("c is smallest")
-
 
 
 
