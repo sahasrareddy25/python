@@ -1,9 +1,9 @@
-"""#if condition 
+#if condition 
 x=10
 if x>5:
  print("x is greater than 5")
 
-x=20
+"""x=20
 if x<2:
   print("x is less than 2")
 
@@ -104,7 +104,7 @@ if marks>=75:
 if marks>=60:
  print("grade c")
 if marks<60:
- print("grade D")"""
+ print("grade D")
 
 #smallest of three numbers 
 a=10
@@ -115,7 +115,7 @@ if a<b and a<c:
 if b<a and b<c:
  print("b is smallest")
 if c<a and c<b:
- print("c is smallest")
+ print("c is smallest")"""
 
 
 
