@@ -7,9 +7,9 @@ x=22
 if x<2:
   print("x is less than 2")"""
 
-age=20
+"""age=20
 if age>=18:
- print("Eligible to vote")
+ print("Eligible to vote")"""
 
 """age=16
 if age<18:
@@ -116,6 +116,21 @@ if b<a and b<c:
  print("b is smallest")
 if c<a and c<b:
  print("c is smallest")"""
+
+#11.10.2025
+
+#elif statements
+age=25
+if age<=12:
+  print("Child.")
+elif age<=19:
+  print("Teenager.")
+elif age<=35:
+  print("Young adult.")
+else:
+  print("Adult.")
+
+
 
 
 
