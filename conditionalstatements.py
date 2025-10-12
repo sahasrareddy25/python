@@ -170,4 +170,4 @@ elif day == 6:
 elif day == 7:
   print("Sunday")
 else:
-  print("Invalid input!")  # If number is not between 1 and 7
+  print("Invalid input!")  
