@@ -119,7 +119,7 @@ if c<a and c<b:
 
 #11.10.2025
 
-#elif statements
+"""#elif statements
 age=25
 if age<=12:
   print("Child.")
@@ -140,7 +140,17 @@ elif int_marks>=50:
   print("Grade C")
 else:
   int_marks<50
-  print("Garde D")
+  print("Garde D")"""
+
+#voting eligibility
+age=int(input("enter your age:"))
+if age>=18:
+  print("you're eligible to vote")
+elif age<18:
+  print("you're not eligible to vote")
+else:
+  age==18
+  print("you're eligible for first time voting")
 
 
 
