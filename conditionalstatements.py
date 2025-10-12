@@ -130,6 +130,20 @@ elif age<=35:
 else:
   print("Adult.")
 
+#marks & grades
+int_marks=int(input("Enter your marks: "))
+if int_marks>=90:
+  print("Grade A")
+elif int_marks>=75:
+  print("Grade B")
+elif int_marks>=50:
+  print("Grade C")
+else:
+  int_marks<50
+  print("Garde D")
+
+
+
 
 
 
