@@ -183,7 +183,7 @@ elif b>a and b>=c:
 else:
     print(c is largest number)"""
 
-
+#find the largest number
 a=30
 b=10
 c=20
@@ -193,3 +193,16 @@ elif b>c and b>a:
  print("b is the largest number")
 else:
    print("c is the largest number")
+
+#check grade
+marks=int(input("enter marks:"))
+if marks>=90:
+  print("grade A")
+if mark>=75:
+  print("grade B")
+if  marks>=50:
+  print("grade c")
+  if marks<50:
+    print("grade D")
+else:
+    print("fail")
