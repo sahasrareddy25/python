@@ -207,7 +207,7 @@ if  marks>=50:
 else:
     print("fail")"""
 
-#day of week
+"""#day of week
 day=int(input("enter a number"))
 if day==1:
   print("monday")
@@ -222,4 +222,15 @@ elif day==5:
 elif day==6:
   print("saturday")
 elif day==7:
-  print("sunday")
+  print("sunday")"""
+
+#temperature check
+temp=int(input("enter temperature:"))
+if temp>30:
+  print("temperature is hot")
+elif temp>20:
+  print("temperature is warm")
+elif temp>10:
+  print("temperature is cool")
+else:
+  print("temperature is cold")
