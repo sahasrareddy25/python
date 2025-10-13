@@ -152,7 +152,7 @@ else:
   age==18
   print("you're eligible for first time voting")"""
 
-#enter a number from 1 to 7
+"""#enter a number from 1 to 7
 
 day = int(input("Enter a number (1-7): "))
 if day == 1:
@@ -170,4 +170,26 @@ elif day == 6:
 elif day == 7:
   print("Sunday")
 else:
-  print("Invalid input!")  
+  print("Invalid input!")"""
+
+"""#Find the largest number
+a=int(input("Enter first number: "))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number: "))
+if a>=b and a>=c:
+    print(a is largest number)
+elif b>a and b>=c:
+    print(b is largest number)
+else:
+    print(c is largest number)"""
+
+
+a=30
+b=10
+c=20
+if a>b and c<a:
+ print("a is the largest number")
+elif b>c and b>a:
+ print("b is the largest number")
+else:
+   print("c is the largest number")
