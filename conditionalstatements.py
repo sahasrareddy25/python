@@ -183,7 +183,7 @@ elif b>a and b>=c:
 else:
     print(c is largest number)"""
 
-#find the largest number
+"""#find the largest number
 a=30
 b=10
 c=20
@@ -205,4 +205,21 @@ if  marks>=50:
   if marks<50:
     print("grade D")
 else:
-    print("fail")
+    print("fail")"""
+
+#day of week
+day=int(input("enter a number"))
+if day==1:
+  print("monday")
+elif day==2:
+  print("tuesday")
+elif day==3:
+  print("wednesday")
+elif day==4:
+  print("thursday")
+elif day==5:
+  print("friday")
+elif day==6:
+  print("saturday")
+elif day==7:
+  print("sunday")
