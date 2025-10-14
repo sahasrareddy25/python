@@ -222,7 +222,7 @@ elif day==5:
 elif day==6:
   print("saturday")
 elif day==7:
-  print("sunday")"""
+  print("sunday")
 
 #temperature check
 temp=int(input("enter temperature:"))
@@ -233,4 +233,15 @@ elif temp>20:
 elif temp>10:
   print("temperature is cool")
 else:
-  print("temperature is cold")
+  print("temperature is cold")"""
+
+#14.10.2025
+
+#pass or fail
+student_marks=int(input("enter numbers: "))
+if student_marks>=100:
+    print("you passed! congratulations ")
+if student_marks>=70:
+    print("congratulations")
+elif student_marks<=50:
+     print("Unfortunately, you failed!")
