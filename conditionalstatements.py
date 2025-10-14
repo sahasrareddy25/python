@@ -233,7 +233,7 @@ elif temp>20:
 elif temp>10:
   print("temperature is cool")
 else:
-  print("temperature is cold")"""
+  print("temperature is cold")
 
 #14.10.2025
 
@@ -244,4 +244,9 @@ if student_marks>=100:
 if student_marks>=70:
     print("congratulations")
 elif student_marks<=50:
-     print("Unfortunately, you failed!")
+     print("Unfortunately, you failed!")"""
+
+#odd or even
+number=int(input("enter a number: "))
+if number % 2==0:
+    print("the number is even")
