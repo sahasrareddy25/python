@@ -236,7 +236,7 @@ else:
   print("temperature is cold")
 
 #14.10.2025
-
+#if-else
 #pass or fail
 student_marks=int(input("enter numbers: "))
 if student_marks>=100:
@@ -249,7 +249,7 @@ elif student_marks<=50:
 #odd or even
 number=int(input("enter a number: "))
 if number % 2==0:
-    print("the number is even")"""
+    print("the number is even")
 
 #positive or negative
 num=int(input("enter the number: "))
@@ -258,4 +258,19 @@ if num>2:
 elif num<0:
     print("the number is negative")
 else:
-    print("zero")
+    print("zero")"""
+
+#multichoice if-else
+#grading system
+student_score=int(input("enter the number: "))
+if student_score>90:
+    print("grade A")
+elif student_score>80:
+    print("grade B")
+elif student_score>70:
+    print("grade c")
+elif student_score>60:
+    print("grade D")
+
+elif student_score<60:
+    print("fail")
