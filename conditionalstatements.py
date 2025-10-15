@@ -249,18 +249,18 @@ elif student_marks<=50:
 #odd or even
 number=int(input("enter a number: "))
 if number % 2==0:
-    print("the number is even")
+    print("the number is even")"""
 
 #positive or negative
 num=int(input("enter the number: "))
 if num>2:
-    print("the number is positive")
+    print("the number positive")
 elif num<0:
-    print("the number is negative")
+    print("the number negative")
 else:
-    print("zero")"""
+    print("zero")
 
-#multichoice if-else
+"""#multichoice if-else
 #grading system
 student_score=int(input("enter the number: "))
 if student_score>90:
@@ -275,7 +275,7 @@ elif student_score>60:
 elif student_score<60:
     print("fail")
 
-"""#ticket price calculator
+#ticket price calculator
 age=int(input("enter the number: "))
 if age<5:
     print("ticket price is $0")
