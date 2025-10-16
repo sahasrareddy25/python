@@ -273,18 +273,18 @@ elif student_score>60:
     print("grade D")
 
 elif student_score<60:
-    print("fail")
+    print("fail")"""
 
 #ticket price calculator
 age=int(input("enter the number: "))
-if age<5:
+if age<6:
     print("ticket price is $0")
 elif age<=13:
     print("ticket price for child is $20 ")
 elif age<=64:
     print("ticket price for adult is $20")
 elif age<100:
-    print("ticket price is $15")"""
+    print("ticket price is $15")
 
 
 
