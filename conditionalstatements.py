@@ -263,7 +263,7 @@ else:
 #multichoice if-else
 #grading system
 student_score=int(input("enter number: "))
-if student_score>90:
+if student_score>95:
     print("grade A")
 elif student_score>85:
     print("grade B")
