@@ -258,11 +258,11 @@ if num>2:
 elif num<0:
     print("the number negative")
 else:
-    print("zero")
+    print("zero")"""
 
 #multichoice if-else
 #grading system
-student_score=int(input("enter the number: "))
+student_score=int(input("enter number: "))
 if student_score>90:
     print("grade A")
 elif student_score>85:
@@ -273,9 +273,9 @@ elif student_score>60:
     print("grade D")
 
 elif student_score<60:
-    print("fail")"""
+    print("fail")
 
-#ticket price calculator
+"""#ticket price calculator
 age=int(input("enter the number: "))
 if age<6:
     print("ticket price is $0")
@@ -284,7 +284,7 @@ elif age<=13:
 elif age<=64:
     print("ticket price for adult is $20")
 elif age<100:
-    print("ticket price is $15")
+    print("ticket price is $15")"""
 
 
 
