@@ -1,9 +1,9 @@
 """for i in range(5, 6):
-    print(i)
+    print(i)"""
 
 for i in range(1, 5):
-    print("Hello")"""
+    print("Hello")
 
-#counting apples
+"""#counting apples
 for apple in range(1, 6):
-    print("This is apple no.s ", apple)
+    print("This is apple no.s ", apple)"""
