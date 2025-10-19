@@ -13,3 +13,8 @@ for apple in range(1, 6):
 for i in range(3):
     print("Sahasra")
 
+#counting before before
+for i in range(5, 0, -1):                  #here start at 5 and stop before 0
+    print("Starting of", i)
+
+
