@@ -20,13 +20,13 @@ for i in range(5, 0, -1):                  #here start at 5 and stop before 0
 
 #Print numbers from 1 to 10 using a for loop.
 for numbers in range(1,11):
-    print(numbers)
+    print(numbers)"""
 
 #Print your name 5 times using a loop.
 for i in range(5):
-    print("sahasra")"""
+    print("sahasraa")
 
-#Print numbers in reverse order from 10 to 1.
+"""#Print numbers in reverse order from 10 to 1.
 for i in range(10,0,-1):
-    print(i)
+    print(i)"""
 
