@@ -24,7 +24,7 @@ for numbers in range(1,11):
 
 #Print your name 5 times using a loop.
 for i in range(5):
-    print("sahasraa")
+    print("sahasra")
 
 """#Print numbers in reverse order from 10 to 1.
 for i in range(10,0,-1):
