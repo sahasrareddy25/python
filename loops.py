@@ -46,7 +46,7 @@ class Solution(object):
         if n <= 1:
             return 1
         
-        dp = [-1]*(n + 1)
+        dp = [-1] * (n + 1)
         return self.climbStairsHelper(n, dp)
     
     def climbStairsHelper(self, n, dp):
