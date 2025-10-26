@@ -60,7 +60,7 @@ class Solution(object):
 
 #leetcode-symmetric tree
 class Solution(object):
-    def isMirror(self, left,right):
+    def isMirror(self, left, right):
         if not left and not right:
             return True
         if not left or not right:
