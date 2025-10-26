@@ -70,7 +70,7 @@ class Solution(object):
     def isSymmetric(self, root):
         if not root:
             return True
-        return self.isMirror(root.left, root.right)
+        return self.isMirror(root.left,root.right)
             
 
 
