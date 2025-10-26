@@ -40,7 +40,7 @@ class Solution(object):
                 j +=1 """
 
 
-#leetcode-climbing stairs
+"""#leetcode-climbing stairs
 class Solution(object):
     def climbStairs(self, n):
         if n <= 1:
@@ -56,7 +56,21 @@ class Solution(object):
             return dp[n]
         
         dp[n] = self.climbStairsHelper(n - 1, dp) + self.climbStairsHelper(n - 2, dp)
-        return dp[n]
+        return dp[n]"""
+
+#leetcode-symmetric tree
+class Solution(object):
+    def isMirror(self, left, right):
+        if not left and not right:
+            return True
+        if not left or not right:
+            return False
+        return left.val == right.val and self.isMirror(left.left, right.right) and self.isMirror(left.right, right.left)
+    
+    def isSymmetric(self, root):
+        if not root:
+            return True
+        return self.isMirror(root.left, root.right)
             
 
 
