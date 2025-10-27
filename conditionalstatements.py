@@ -301,7 +301,7 @@ class Solution(object):
             elif squared < num:
                 left = mid + 1
             else:
-                right = mid - 1
+                right=mid - 1
 
         return False
         
