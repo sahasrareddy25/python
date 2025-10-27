@@ -289,7 +289,7 @@ elif age<100:
 #leetcode
 class Solution(object):
     def isPerfectSquare(self, num):
-        if num < 2:
+        if num<2:
             return True
 
         left, right = 2, num // 2
