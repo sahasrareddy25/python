@@ -292,9 +292,9 @@ class Solution(object):
         if num<2:
             return True
 
-        left, right = 2, num // 2
+        left, right = 2, num 
         while left <= right:
-            mid = (left + right) // 2
+            mid = (left + right) 
             squared = mid * mid
             if squared == num:
                 return True
