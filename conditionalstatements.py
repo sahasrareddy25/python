@@ -275,7 +275,7 @@ elif student_score>60:
 elif student_score<60:
     print("fail")"""
 
-#ticket price calculator
+"""#ticket price calculator
 age=int(input("enter the number: "))
 if age<6:
     print("ticket price is $0")
@@ -303,7 +303,19 @@ class Solution(object):
             else:
                 right=mid - 1
 
-        return False
+        return False"""
+    
+#leetcode-palindrome
+class Solution(object):
+    def isPalindrome(self, x):
+        s = str(x)
+        rev = ""
+        for i in s:
+            rev = i + rev
+        if (rev==s):
+            return True
+        else:
+            return False
         
 
 
