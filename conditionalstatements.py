@@ -307,7 +307,7 @@ class Solution(object):
     
 #leetcode-palindrome
 class Solution(object):
-    def isPalindrome(self, x):
+    def isPalindrome(self,x):
         s = str(x)
         rev = ""
         for i in s:
