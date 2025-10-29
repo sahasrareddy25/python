@@ -311,7 +311,7 @@ class Solution(object):
         s = str(x)
         rev = ""
         for i in s:
-            rev = i + rev
+            rev = i+rev
         if (rev==s):
             return True
         else:
