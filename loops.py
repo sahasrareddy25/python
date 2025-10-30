@@ -43,7 +43,7 @@ class Solution(object):
 """#leetcode-climbing stairs
 class Solution(object):
     def climbStairs(self, n):
-        if n <= 1:
+        if n<= 1:
             return 1
         
         dp = [-1] * (n + 1)
