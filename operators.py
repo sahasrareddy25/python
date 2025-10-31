@@ -64,12 +64,12 @@ print(b)
 b<<=a
 print(b)"""
 
-"""#l.operator
+#l.operator
 age=23
 citizen=True
 if age>= 20 and citizen:
-  print("Eligible to vote")
+  print("Eligible to voting")
 else:
-  print("Not eligible to vote")"""
+  print("Not eligible to vote")
 
 
