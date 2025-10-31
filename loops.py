@@ -58,7 +58,7 @@ class Solution(object):
         dp[n] = self.climbStairsHelper(n - 1, dp) + self.climbStairsHelper(n - 2, dp)
         return dp[n]"""
 
-#leetcode-symmetric tree
+"""#leetcode-symmetric tree
 class Solution(object):
     def isMirror(self, left,right):
         if not left and not right:
@@ -70,7 +70,17 @@ class Solution(object):
     def isSymmetric(self,root):
         if not root:
             return True
-        return self.isMirror(root.left,root.right)
+        return self.isMirror(root.left,root.right)"""
+
+word = "banana"
+count = 0
+
+for letter in word:
+    if letter == 'a':
+        count += 1
+
+print(count)
+
             
 
 
