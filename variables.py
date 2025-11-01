@@ -101,7 +101,7 @@ age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible")
 else:
- print("Not Eligible")"""
+ print("Not Eligible")
 
 # converting integer to string
 x=10          
@@ -113,7 +113,13 @@ print(y,type(y))
 a="50"        
 b=int(a)      
 print(a,type(a))
-print(b,type(b))
+print(b,type(b))"""
+
+x=8
+y=float(x)
+print(x, type(x))
+print(y, type(y))
+
 
 
 
