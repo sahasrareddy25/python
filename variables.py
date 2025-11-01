@@ -109,4 +109,11 @@ y=str(x)
 print(x,type(x))
 print(y,type(y))
 
+#converting to integer
+a="50"        
+b=int(a)      
+print(a,type(a))
+print(b,type(b))
+
+
 
