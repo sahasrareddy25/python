@@ -1,4 +1,4 @@
-#variable basics
+"""#variable basics
 name="sahasra"
 age="20"
 marks="89.5"
@@ -101,4 +101,12 @@ age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible")
 else:
- print("Not Eligible")
+ print("Not Eligible")"""
+
+# converting integer to string
+x=10          
+y=str(x)      
+print(x,type(x))
+print(y,type(y))
+
+
