@@ -2,6 +2,6 @@
 import keyword
 print(keyword.kwlist)
 
-#2-11-2025
-if x>10:
-    print("greater")
+import keyword
+print("The list of keywords is : ")
+print(keyword.kwlist)
