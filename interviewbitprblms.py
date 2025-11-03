@@ -8,7 +8,7 @@ if __name__ =='__main__':
 
 #variables and types
 def main():
-    my_string1 = "InterviewBit"
+    my_string1 ="InterviewBit"
     my_string2 ="Don't change the variable name"
     my_intstring3 = "11"
     my_float4 = "20.000000"
