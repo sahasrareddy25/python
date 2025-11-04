@@ -72,11 +72,11 @@ class Solution(object):
             return True
         return self.isMirror(root.left,root.right)"""
 
-word = "banana"
-count = 0
+word = "companies"
+count = 1
 for letter in word:
     if letter == 'a':
-        count += 1
+        count += 2
 print(count)
 
             
