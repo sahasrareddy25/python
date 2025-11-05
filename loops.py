@@ -19,7 +19,7 @@ for i in range(5, 0, -1):                  #here start at 5 and stop before 0
 
 
 #Print numbers from 1 to 10 using a for loop.
-for numbers in range(1,11):
+for numbers in range(1, 11):
     print(numbers)
 
 """#Print your name 5 times using a loop.
