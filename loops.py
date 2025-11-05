@@ -75,7 +75,7 @@ class Solution(object):
 word = "companies"
 count = 1
 for letter in word:
-    if letter == 'i':
+    if letter =='i':
         count += 2
 print(count)
 
