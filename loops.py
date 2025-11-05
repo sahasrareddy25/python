@@ -15,12 +15,12 @@ for i in range(3):
 
 """#counting before before
 for i in range(5, 0, -1):                  #here start at 5 and stop before 0
-    print("Starting in", i)
+    print("Starting in", i)"""
 
 
 #Print numbers from 1 to 10 using a for loop.
 for numbers in range(1,11):
-    print(numbers)"""
+    print(numbers)
 
 """#Print your name 5 times using a loop.
 for i in range(5):
@@ -72,12 +72,12 @@ class Solution(object):
             return True
         return self.isMirror(root.left,root.right)"""
 
-word = "companies"
+"""word = "companies"
 count = 1
 for letter in word:
     if letter =='i':
         count += 2
-print(count)
+print(count)"""
 
             
 
