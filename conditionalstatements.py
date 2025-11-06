@@ -260,7 +260,7 @@ elif num<0:
 else:
     print("zero")"""
 
-#multichoice if-else
+"""#multichoice if-else
 #grading system
 student_score=int(input("enter number: "))
 if student_score>99:
@@ -273,7 +273,7 @@ elif student_score>60:
     print("grade D")
 
 elif student_score<60:
-    print("fail")
+    print("fail")"""
 
 """#ticket price calculator
 age=int(input("enter the number: "))
@@ -305,7 +305,7 @@ class Solution(object):
 
         return False"""
     
-"""#leetcode-palindrome
+#leetcode-palindrome
 class Solution(object):
     def isPalindrome(self,x):
         s = str(x)
@@ -315,7 +315,7 @@ class Solution(object):
         if (rev==s):
             return True
         else:
-            return False"""
+            return False
         
 
 
