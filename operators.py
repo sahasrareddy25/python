@@ -70,6 +70,6 @@ citizen=True
 if age>= 20 and citizen:
   print("Eligible to voting")
 else:
-  print("Not eligible to vote")
+  print("Not eligible for voting")
 
 
