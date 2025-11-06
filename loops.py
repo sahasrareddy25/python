@@ -11,36 +11,36 @@ for apple in range(1, 6):
 
 #printing names
 for i in range(3):
-    print("Sahasra")"""
+    print("Sahasra")
 
-"""#counting before before
+#counting before before
 for i in range(5, 0, -1):                  #here start at 5 and stop before 0
-    print("Starting in", i)"""
+    print("Starting in", i)
 
 
 #Print numbers from 1 to 10 using a for loop.
-for numbers in range(1,11):"""
- print(numbers)"""
+for numbers in range(1,11):
+ print(numbers)
 
 #Print your name 5 times using a loop.
 for i in range(5):
     print("sahasra ")
 
-"""#Print numbers in reverse order from 10 to 1.
+#Print numbers in reverse order from 10 to 1.
 for i in range(10,0,-1):
-    print(i)"""
+    print(i)
 
-"""#leet code prblm- move zeroes
+#leet code prblm- move zeroes
 class Solution(object):
     def moveZeroes(self, nums):
         j = 0 
         for i in range(len(nums)):
             if nums[i] != 0: 
                 nums[i], nums[j] = nums[j], nums[i]
-                j +=1 """
+                j +=1 
 
 
-"""#leetcode-climbing stairs
+#leetcode-climbing stairs
 class Solution(object):
     def climbStairs(self, n):
         if n<= 1:
@@ -56,9 +56,9 @@ class Solution(object):
             return dp[n]
         
         dp[n] = self.climbStairsHelper(n - 1, dp) + self.climbStairsHelper(n - 2, dp)
-        return dp[n]"""
+        return dp[n]
 
-"""#leetcode-symmetric tree
+#leetcode-symmetric tree
 class Solution(object):
     def isMirror(self, left,right):
         if not left and not right:
@@ -72,12 +72,14 @@ class Solution(object):
             return True
         return self.isMirror(root.left,root.right)"""
 
-"""word = "companies"
+word = "companies"
 count = 1
 for letter in word:
     if letter =='i':
         count += 2
-print(count)"""
+print(count)
+
+
 
             
 
