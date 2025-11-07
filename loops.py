@@ -7,18 +7,18 @@ for i in range(1, 5):
 #counting apples
 
 for apple in range(1, 6):
-    print("This is apple no.s ", apple)
+    print("This is apple no.s ", apple)"""
 
 #printing names
 for i in range(3):
-    print("Sahasra")"""
+    print("Sahasra")
 
-#counting before before
+"""#counting before before
 for i in range(5, 0, -1):                  #here start at 5 and stop before 0
     print("Starting in", i)
 
 
-"""#Print numbers from 1 to 10 using a for loop.
+#Print numbers from 1 to 10 using a for loop.
 for numbers in range(1,11):
  print(numbers)
 
