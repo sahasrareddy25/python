@@ -309,7 +309,7 @@ class Solution(object):
 class Solution(object):
     def isPalindrome(self,x):
         s = str(x)
-        rev = ""
+        rev =""
         for i in s:
             rev = i +rev
         if (rev==s):
