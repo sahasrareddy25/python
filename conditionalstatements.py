@@ -1,9 +1,9 @@
-"""#if condition 
+#if condition 
 x=10
 if x>5:
  print("x is greater than 5")
 
-x=22
+"""x=22
 if x<2:
   print("x is less than 2")"""
 
