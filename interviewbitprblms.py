@@ -13,7 +13,7 @@ def main():
     my_intstring3 ="11"
     my_float4 ="20.000000"
 
-    print("my_string1 =", my_string1)
+    print("my_string1 =",  my_string1)
     print("my_string2 =", my_string2)
     print("my_string3 =", my_string3)
 
