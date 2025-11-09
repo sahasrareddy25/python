@@ -116,7 +116,7 @@ else:
 
 # Program to print alphabets from A to Z
 for ch in range(ord('A'), ord('Z') + 1):
-    print(chr(ch), end=" ")
+ print(chr(ch), end=" ")
 
 
 
