@@ -90,14 +90,30 @@ while num > 0:
     digit = num % 10
     rev = rev * 10 + digit
     num //= 10
-print("Reversed Number:", rev)"""
+print("Reversed Number:", rev)
 
 # Program to print Fibonacci series up to N terms
 n = int(input("Enter number of terms: "))
 a, b = 0, 1
 for i in range(n):
     print(a, end=" ")
-    a, b = b, a + b
+    a, b = b, a + b"""
+
+# Program to check whether a number is prime or not
+num = int(input("Enter a number: "))
+is_prime = True
+if num <= 1:
+    is_prime = False
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+if is_prime:
+    print(num, "is a Prime Number")
+else:
+    print(num, "is not a Prime Number")
+
 
 
 
