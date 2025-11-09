@@ -83,14 +83,24 @@ print(count)"""
     if i % 2 == 0:
         print(i)"""
 
-# Program to reverse a number
+"""# Program to reverse a number
 num = int(input("Enter a number: "))
 rev = 0
 while num > 0:
     digit = num % 10
     rev = rev * 10 + digit
     num //= 10
-print("Reversed Number:", rev)
+print("Reversed Number:", rev)"""
+
+# Program to print Fibonacci series up to N terms
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+
+
 
 
 
