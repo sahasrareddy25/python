@@ -97,7 +97,7 @@ n = int(input("Enter number of terms: "))
 a, b = 0, 1
 for i in range(n):
     print(a, end=" ")
-    a, b = b, a + b"""
+    a, b = b, a + b
 
 # Program to check whether a number is prime or not
 num = int(input("Enter a number: "))
@@ -112,7 +112,12 @@ else:
 if is_prime:
     print(num, "is a Prime Number")
 else:
-    print(num, "is not a Prime Number")
+    print(num, "is not a Prime Number")"""
+
+# Program to print alphabets from A to Z
+for ch in range(ord('A'), ord('Z') + 1):
+    print(chr(ch), end=" ")
+
 
 
 
