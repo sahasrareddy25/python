@@ -1,12 +1,12 @@
 """for i in range(5, 6):
-    print(i)"""
+    print(i)
 
 for i in range(1,5):
     print("Hello")
 
 #counting apples
 
-"""for apple in range(1, 6):
+for apple in range(1, 6):
     print("This is apple no.s ", apple)
 
 #printing names
@@ -82,6 +82,16 @@ print(count)"""
 """for i in range(0,11):
     if i % 2 == 0:
         print(i)"""
+
+# Program to reverse a number
+num = int(input("Enter a number: "))
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+print("Reversed Number:", rev)
+
 
 
 
