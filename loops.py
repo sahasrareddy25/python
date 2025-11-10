@@ -116,7 +116,7 @@ else:
 
 # Program to print alphabets from A to Z
 for ch in range(ord('A'), ord('Z') + 1):
- print(chr(ch), end=" ")"""
+ print(chr(ch), end=" ")
 
 #reverse number
 num = 1234
@@ -127,7 +127,18 @@ while num > 0:
     rev = rev * 10 + digit
     num //= 10
 
-print(rev)
+print(rev)"""
+
+#count vowels in string
+s = "education"
+vowels = 0
+
+for ch in s:
+    if ch in "aeiouAEIOU":
+        vowels += 1
+
+print("Vowels:", vowels)
+
 
 
 
