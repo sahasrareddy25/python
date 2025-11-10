@@ -147,7 +147,7 @@ for i in range(1, 60):
 print(sum_even)"""
 
 #print all characters in string\
-s = "hello"
+s = "sahasra"
 for ch in s:
     print(ch)
 
