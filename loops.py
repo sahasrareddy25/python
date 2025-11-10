@@ -137,14 +137,20 @@ for ch in s:
     if ch in "aeiouAEIOU":
         vowels += 1
 
-print("Vowels:", vowels)"""
+print("Vowels:", vowels)
 
 #sum of all even numbers from 1 to 50
 sum_even = 0
 for i in range(1, 60):
   if i % 2 == 0:
         sum_even += i
-print(sum_even)
+print(sum_even)"""
+
+#print all characters in string\
+s = "hello"
+for ch in s:
+    print(ch)
+
 
 
 
