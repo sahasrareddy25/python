@@ -127,7 +127,7 @@ while num > 0:
     rev = rev * 10 + digit
     num //= 10
 
-print(rev)"""
+print(rev)
 
 #count vowels in string
 s = "education"
@@ -137,7 +137,15 @@ for ch in s:
     if ch in "aeiouAEIOU":
         vowels += 1
 
-print("Vowels:", vowels)
+print("Vowels:", vowels)"""
+
+#sum of all even numbers from 1 to 50
+sum_even = 0
+for i in range(1, 51):
+    if i % 2 == 0:
+        sum_even += i
+print(sum_even)
+
 
 
 
