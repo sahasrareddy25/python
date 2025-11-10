@@ -112,11 +112,23 @@ else:
 if is_prime:
     print(num, "is a Prime Number")
 else:
-    print(num, "is not a Prime Number")"""
+    print(num, "is not a Prime Number")
 
 # Program to print alphabets from A to Z
 for ch in range(ord('A'), ord('Z') + 1):
- print(chr(ch), end=" ")
+ print(chr(ch), end=" ")"""
+
+#reverse number
+num = 1234
+rev = 0
+
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+
+print(rev)
+
 
 
 
