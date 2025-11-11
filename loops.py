@@ -162,7 +162,7 @@ while num > 0:
     num //= 10
 
 if temp == rev:
-    print("Palindrome Number")
+    print("Palindrome number")
 else:
     print("Not Palindrome")
 
