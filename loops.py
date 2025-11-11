@@ -146,10 +146,10 @@ for i in range(1, 60):
         sum_even += i
 print(sum_even)"""
 
-#print all characters in string\
-s = "sahasra"
-for ch in s:
-    print(ch)
+#print all characters in string
+s = "Sree Sahasra Reddy"
+for characters in s:
+    print(characters)
 
 
 
