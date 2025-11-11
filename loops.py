@@ -164,7 +164,7 @@ while num > 0:
 if temp == rev:
     print("Palindrome number")
 else:
-    print("Not Palindrome")"""
+    print("Not Palindrome")
 
 #fibonacci seires
 n = int(input("Enter number of terms: "))
@@ -172,7 +172,14 @@ a, b = 0, 1
 
 for i in range(n):
     print(a, end=" ")
-    a, b = b, a + b
+    a, b = b, a + b"""
+
+#multiplication numer of a table
+n = int(input("Enter number: "))
+
+for i in range(1, 11):
+    print(n, "x", i, "=", n*i)
+
 
 
 
