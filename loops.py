@@ -146,10 +146,28 @@ for i in range(1, 60):
         sum_even += i
 print(sum_even)"""
 
-#print all characters in string
+"""#print all characters in string
 s = "Sree Sahasra Reddy"
 for characters in s:
-    print(characters)
+    print(characters)"""
+
+#check whether it is a palindrome or not 
+num = int(input("Enter number: "))
+temp = num
+rev = 0
+
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+
+if temp == rev:
+    print("Palindrome Number")
+else:
+    print("Not Palindrome")
+
+
+
 
 
 
