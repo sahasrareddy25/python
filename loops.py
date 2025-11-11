@@ -149,7 +149,7 @@ print(sum_even)"""
 """#print all characters in string
 s = "Sree Sahasra Reddy"
 for characters in s:
-    print(characters)"""
+    print(characters)
 
 #check whether it is a palindrome or not 
 num = int(input("Enter number: "))
@@ -164,7 +164,18 @@ while num > 0:
 if temp == rev:
     print("Palindrome number")
 else:
-    print("Not Palindrome")
+    print("Not Palindrome")"""
+
+#fibonacci seires
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+
+
 
 
 
