@@ -344,7 +344,7 @@ else:
 #grade calculations
 marks = int(input("Enter marks: "))
 
-if marks >= 90:
+if marks >= 100:
     print("Grade: A+")
 elif marks >= 80:
     print("Grade: A")
