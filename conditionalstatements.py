@@ -322,7 +322,7 @@ num = int(input("Enter the number: "))
 if num % 2 == 0:
     print("Even")
 else:
-    print("Odd")"""
+    print("Odd")
 
 #find the largest of two numbers
 a = int(input("Enter first number: "))
@@ -332,7 +332,15 @@ if a > b:
 elif b > a:
     print("B is greater")
 else:
-    print("Both are equal")
+    print("Both are equal")"""
+
+#check leap year
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
 
 
 
