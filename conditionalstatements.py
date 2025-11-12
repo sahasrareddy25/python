@@ -332,14 +332,29 @@ if a > b:
 elif b > a:
     print("B is greater")
 else:
-    print("Both are equal")"""
+    print("Both are equal")
 
 #check leap year
 year = int(input("Enter a year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap Year")
 else:
-    print("Not a Leap Year")
+    print("Not a Leap Year")"""
+
+#grade calculations
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("Grade: A+")
+elif marks >= 80:
+    print("Grade: A")
+elif marks >= 70:
+    print("Grade: B")
+elif marks >= 60:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
+
 
 
 
