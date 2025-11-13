@@ -361,7 +361,7 @@ num = int(input("Enter a number: "))
 if num % 2 == 0:
     print("The number is Even.")
 else:
-    print("The number is Odd.")"""
+    print("The number is Odd.")
 
 #Check Positive, Negative or Zero
 num = float(input("Enter a number: "))
@@ -371,7 +371,19 @@ if num > 0:
 elif num < 0:
     print("Negative number")
 else:
-    print("Zero")
+    print("Zero")"""
+
+# Find Largest of Two Numbers
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if a > b:
+    print(a, "is greater than", b)
+elif a < b:
+    print(b, "is greater than", a)
+else:
+    print("Both are equal")
+
 
 
 
