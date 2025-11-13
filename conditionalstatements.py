@@ -371,7 +371,7 @@ if num > 0:
 elif num < 0:
     print("Negative number")
 else:
-    print("Zero")"""
+    print("Zero")
 
 # Find Largest of Two Numbers
 a = float(input("Enter first number: "))
@@ -382,7 +382,16 @@ if a > b:
 elif a < b:
     print(b, "is greater than", a)
 else:
-    print("Both are equal")
+    print("Both are equal")"""
+
+# Check Vowel or Consonant
+ch = input("Enter a letter: ")
+
+if ch.lower() in ['a', 'e', 'i', 'o', 'u']:
+    print(ch, "is a vowel")
+else:
+    print(ch, "is a consonant")
+
 
 
 
