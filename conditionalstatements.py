@@ -339,8 +339,7 @@ year = int(input("Enter a year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap Year")
 else:
-    print("Not a Leap Year")"""
-
+    print("Not a Leap Year")
 #grade calculations
 marks = int(input("Enter marks: "))
 
@@ -353,7 +352,16 @@ elif marks >= 70:
 elif marks >= 60:
     print("Grade: C")
 else:
-    print("Grade: Fail")
+    print("Grade: Fail")"""
+
+
+#check even or odd
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("The number is Even.")
+else:
+    print("The number is Odd.")
 
 
 
