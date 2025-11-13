@@ -352,7 +352,7 @@ elif marks >= 70:
 elif marks >= 60:
     print("Grade: C")
 else:
-    print("Grade: Fail")"""
+    print("Grade: Fail")
 
 
 #check even or odd
@@ -361,7 +361,18 @@ num = int(input("Enter a number: "))
 if num % 2 == 0:
     print("The number is Even.")
 else:
-    print("The number is Odd.")
+    print("The number is Odd.")"""
+
+#Check Positive, Negative or Zero
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
+
 
 
 
