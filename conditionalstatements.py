@@ -355,14 +355,6 @@ else:
     print("Grade: Fail")
 
 
-#check even or odd
-num = int(input("Enter a number: "))
-
-if num % 2 == 0:
-    print("The number is Even.")
-else:
-    print("The number is Odd.")
-
 #Check Positive, Negative or Zero
 num = float(input("Enter a number: "))
 
@@ -408,11 +400,19 @@ year = int(input("Enter the year: "))
 if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
     print(year, "is a leap year")
 else:
-    print(year, "is not a leap year")"""
+    print(year, "is not a leap year")
 
 # Find Largest of Two Numbers
 a = float(input("Enter the first number: "))
-b = float(input("Enter second number: "))
+b = float(input("Enter second number: "))"""
+
+#check even or odd
+num = int(input("Enter the number: "))
+
+if num % 2 == 0:
+    print("The number is Even.")
+else:
+    print("The number is Odd.")
 
 
 
