@@ -373,9 +373,6 @@ elif num < 0:
 else:
     print("Zero")
 
-# Find Largest of Two Numbers
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
 
 if a > b:
     print(a, "is greater than", b)
@@ -402,7 +399,7 @@ else:
 
 #Find Largest of Two Numbers
 a = float(input("Enter the first number: "))
-b = float(input("Enter second number: "))"""
+b = float(input("Enter second number: "))
 
 
 # Check Leap Year
@@ -411,7 +408,12 @@ year = int(input("Enter the year: "))
 if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
     print(year, "is a leap year")
 else:
-    print(year, "is not a leap year")
+    print(year, "is not a leap year")"""
+
+# Find Largest of Two Numbers
+a = float(input("Enter the first number: "))
+b = float(input("Enter second number: "))
+
 
 
 
