@@ -180,7 +180,7 @@ for i in range(1, 11):
     print(n, "x", i, "=", n*i)"""
 
 #printing names
-for i in range(10):
+for i in range(1):
     print("mru")
 
 
