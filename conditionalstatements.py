@@ -399,18 +399,18 @@ year = int(input("Enter a year: "))
 if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
     print(year, "is a leap year")
 else:
-    print(year, "is not a leap year")"""
-
-# Find Largest of Two Numbers
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+    print(year, "is not a leap year")
 
 if a > b:
     print(a, "is greater than", b)
 elif a < b:
     print(b, "is greater than", a)
 else:
-    print("Both equal")
+    print("Both equal")"""
+
+#Find Largest of Two Numbers
+a = float(input("Enter the first number: "))
+b = float(input("Enter second number: "))
 
 
 
