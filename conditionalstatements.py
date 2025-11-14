@@ -410,7 +410,7 @@ if a > b:
 elif a < b:
     print(b, "is greater than", a)
 else:
-    print("Both are equal")
+    print("Both equal")
 
 
 
