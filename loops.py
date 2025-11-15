@@ -172,12 +172,17 @@ a, b = 0, 1
 
 for i in range(n):
     print(a, end=" ")
-    a, b = b, a + b"""
+    a, b = b, a + b
 
 #multiplication numer of a table
 n =int(input("Enter number: "))
 for i in range(1, 11):
-    print(n, "x", i, "=", n*i)
+    print(n, "x", i, "=", n*i)"""
+
+#printing names
+for i in range(10):
+    print("Sreesahasra")
+
 
 
 
