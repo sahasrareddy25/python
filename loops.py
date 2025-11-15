@@ -176,7 +176,6 @@ for i in range(n):
 
 #multiplication numer of a table
 n = int(input("Enter the number: "))
-
 for i in range(1, 11):
     print(n, "x", i, "=", n*i)
 
