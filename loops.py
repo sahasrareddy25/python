@@ -181,7 +181,7 @@ for i in range(1, 11):
 
 #printing names
 for i in range(10):
-    print("Sreesahasra")
+    print("mallareddy")
 
 
 
