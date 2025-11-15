@@ -408,11 +408,10 @@ b = float(input("Enter second number: "))"""
 
 #check even or odd
 num = int(input("Enter the number: "))
-
 if num % 2 == 0:
-    print("The number is Even.")
+    print("number is Even.")
 else:
-    print("The number is Odd.")
+    print("number is Odd.")
 
 
 
