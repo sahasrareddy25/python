@@ -175,7 +175,7 @@ for i in range(n):
     a, b = b, a + b"""
 
 #multiplication numer of a table
-n = int(input("Enter the number: "))
+n =int(input("Enter number: "))
 for i in range(1, 11):
     print(n, "x", i, "=", n*i)
 
