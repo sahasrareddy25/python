@@ -177,11 +177,23 @@ for i in range(n):
 #multiplication numer of a table
 n =int(input("Enter number: "))
 for i in range(1, 11):
-    print(n, "x", i, "=", n*i)"""
+    print(n, "x", i, "=", n*i)
 
 #printing names
-for i in range(2):
-    print("sreesaasra")
+for i in range(10):
+    print("Sreesahasra")"""
+
+# Count vowels using loop
+string = "hello world"
+vowels = "aeiouAEIOU"
+count = 0
+
+for ch in string:
+    if ch in vowels:
+        count += 1
+
+print("Vowel Count:", count)
+
 
 
 

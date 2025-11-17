@@ -62,7 +62,7 @@ print(b)
 b*=a
 print(b)
 b<<=a
-print(b)"""
+print(b)
 
 #l.operator
 age=23
@@ -70,6 +70,18 @@ citizen=True
 if age>= 20 and citizen:
   print("Eligible voting")
 else:
-  print("Not eligible for voting")
+  print("Not eligible for voting")"""
+
+# comparison_operators.py
+
+# Program to demonstrate comparison operators
+a = 10
+b = 20
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
 
 
