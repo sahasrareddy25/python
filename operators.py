@@ -76,7 +76,7 @@ else:
 
 # Program to demonstrate comparison operators
 a = 10
-b = 20
+b = 45
 print("a == b:", a == b)
 print("a != b:", a != b)
 print("a > b:", a > b)
