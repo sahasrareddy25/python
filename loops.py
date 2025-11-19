@@ -127,72 +127,13 @@ while num > 0:
     rev = rev * 10 + digit
     num //= 10
 
-print(rev)
+print(rev)"""
 
 #count vowels in string
 s = "education"
 vowels = 0
 
-for ch in s:
-    if ch in "aeiouAEIOU":
-        vowels += 1
 
-print("Vowels:", vowels)
-
-#sum of all even numbers from 1 to 50
-sum_even = 0
-for i in range(1, 60):
-  if i % 2 == 0:
-        sum_even += i
-print(sum_even)"""
-
-"""#print all characters in string
-s = "Sree Sahasra Reddy"
-for characters in s:
-    print(characters)
-
-#check whether it is a palindrome or not 
-num = int(input("Enter number: "))
-temp = num
-rev = 0
-
-while num > 0:
-    digit = num % 10
-    rev = rev * 10 + digit
-    num //= 10
-
-if temp == rev:
-    print("Palindrome number")
-else:
-    print("Not Palindrome")
-
-#fibonacci seires
-n = int(input("Enter number of terms: "))
-a, b = 0, 1
-
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
-
-#multiplication numer of a table
-n =int(input("Enter number: "))
-for i in range(1, 11):
-    print(n, "x", i, "=", n*i)
-
-#printing names
-for i in range(10):
-    print("Sreesahasra")"""
-
-# Count vowels using loop
-string = "hello world"
-vowels = "aeiouAEIOU"
-count = 0
-
-for ch in string:
-    if ch in vowels:
-        count += 1
-
-print("Vowel Count:", count)
 
 
 
