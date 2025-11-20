@@ -19,7 +19,7 @@ age=int(input("Enter your age:"))
 if age>=18:
  print("Eligible")
 else:
- print("Not Eligible")"""
+ print("Not Eligible")
 
 marks= int(input("Enter your marks:"))
 if marks>=100:
@@ -29,5 +29,25 @@ elif marks>= 75:
 elif marks>= 60:
  print("Grade C")
 else:
- print("Grade D")
+ print("Grade D")"""
+
+#leetcode
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        res = 0
+        for i in range(n):
+            seen = set()
+            for j in range(i, n):
+                if s[j] in seen:
+                    break
+                else:
+                    seen.add(s[j])
+                    res = max(res, j - i + 1)
+        return res
+        
  
