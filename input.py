@@ -47,7 +47,7 @@ class Solution(object):
                     break
                 else:
                     seen.add(s[j])
-                    res = max(res, j - i + 1)
+                    res=max(res, j - i + 1)
         return res
         
  
