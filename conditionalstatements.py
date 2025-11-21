@@ -410,6 +410,8 @@ b = float(input("Enter second number: "))"""
 num=int(input("Enter the number: "))
 if num % 45 == 0:
     print("The number is odd")
+else:
+  print("The number is even")
 
 
 
