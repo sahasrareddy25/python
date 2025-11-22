@@ -275,18 +275,9 @@ elif student_score>60:
 elif student_score<60:
     print("fail")"""
 
-"""#ticket price calculator
-age=int(input("enter the number: "))
-if age<6:
-    print("ticket price is $0")
-elif age<=14:
-    print("ticket price for child is $20 ")
-elif age<=64:
-    print("ticket price for adult is $24")
-elif age<100:
-    print("ticket price is $15")
 
-#leetcode
+
+"""#leetcode
 class Solution(object):
     def isPerfectSquare(self, num):
         if num<2:
@@ -381,14 +372,6 @@ if ch.lower() in ['a', 'e', 'i', 'o', 'u']:
 else:
     print(ch, "is a consonant")
 
-
-if a > b:
-    print(a, "is greater than", b)
-elif a < b:
-    print(b, "is greater than", a)
-else:
-    print("Both equal")
-
 #Find Largest of Two Numbers
 a = float(input("Enter the first number: "))
 b = float(input("Enter second number: "))
@@ -404,14 +387,27 @@ else:
 
 # Find Largest of Two Numbers
 a = float(input("Enter the first number: "))
-b = float(input("Enter second number: "))"""
+b = float(input("Enter second number: "))
 
 #check even or odd
 num=int(input("Enter the number: "))
 if num % 56 == 0:
     print("The number is odd")
 else:
-  print("The number is even")
+  print("The number is even")"""
+
+#ticket price calculator
+age=int(input("enter the number: "))
+if age<6:
+    print("ticket price is $0")
+elif age<=14:
+    print("ticket price for child is $20 ")
+elif age<=64:
+    print("ticket price for adult is $24")
+elif age<100:
+    print("ticket price is $15")
+
+
 
 
 
