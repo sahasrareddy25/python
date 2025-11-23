@@ -403,7 +403,7 @@ if age<6:
 elif age<=14:
     print("ticket price for child is $20 ")
 elif age<=80:
-    print("ticket price for adult is $24")
+    print("ticket price for adults is $24")
 elif age<100:
     print("ticket price is $15")
 
