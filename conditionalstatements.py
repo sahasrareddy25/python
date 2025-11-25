@@ -260,17 +260,7 @@ elif num<0:
 else:
     print("zero")"""
 
-"""#multichoice if-else
-#grading system
-student_score=int(input("enter number: "))
-if student_score>99:
-    print("grade A")
-elif student_score>85:
-    print("grade B")
-elif student_score>70:
-    print("grade c")
-elif student_score>60:
-    print("grade D")
+"""
 
 elif student_score<60:
     print("fail")"""
@@ -394,7 +384,7 @@ num=int(input("Enter the number: "))
 if num % 56 == 0:
     print("The number is odd")
 else:
-  print("The number is even")"""
+  print("The number is even")
 
 #ticket price calculator
 age=int(input("enter the number: "))
@@ -405,7 +395,19 @@ elif age<=14:
 elif age<=80:
     print("ticket price for adults is $24")
 elif age<100:
-    print("ticket price is $15")
+    print("ticket price is $15")"""
+
+#multichoice if-else
+#grading system
+student_score=int(input("enter number: "))
+if student_score>99:
+    print("grade A")
+elif student_score>85:
+    print("grade B")
+elif student_score>70:
+    print("grade c")
+elif student_score>60:
+    print("grade D")
 
 
 
