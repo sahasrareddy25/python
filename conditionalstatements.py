@@ -406,7 +406,7 @@ elif student_score>85:
     print("grade B")
 elif student_score>75:
     print("grade c")
-elif student_score>60:
+elif student_score>65:
     print("grade D")
 elif student_score>40:
     print("fail")
