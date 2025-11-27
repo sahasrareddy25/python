@@ -142,15 +142,7 @@ else:
   int_marks<50
   print("Garde D")
 
-#voting eligibility
-age=int(input("enter your age:"))
-if age>=18:
-  print("you're eligible to vote")
-elif age<18:
-  print("you're not eligible to vote")
-else:
-  age==18
-  print("you're eligible for first time voting")"""
+"""
 
 """#enter a number from 1 to 7
 
@@ -244,14 +236,14 @@ if student_marks>=100:
 if student_marks>=70:
     print("congratulations")
 elif student_marks<=50:
-     print("Unfortunately, you failed!")"""
+     print("Unfortunately, you failed!")
 
 #odd or even
 number=int(input("enter the number: "))
 if number % 2==0:
     print("the number is even")
 
-"""#positive or negative
+#positive or negative
 num=int(input("enter the number: "))
 if num>2:
     print("the number positive")
@@ -395,7 +387,7 @@ elif age<=14:
 elif age<=80:
     print("ticket price for adults is $24")
 elif age<100:
-    print("ticket price is $15")"""
+    print("ticket price is $15")
 
 #multichoice if-else
 #grading system
@@ -409,7 +401,17 @@ elif student_score>75:
 elif student_score>65:
     print("grade D")
 elif student_score>45:
-    print("fail")
+    print("fail")"""
+
+#voting eligibility
+age=int(input("enter your age:"))
+if age>=18:
+  print("you're eligible to vote")
+elif age<18:
+  print("you're not eligible to vote")
+else:
+  age==18
+  print("you're eligible for first time voting")
 
 
 
