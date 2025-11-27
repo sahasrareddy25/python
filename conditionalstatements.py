@@ -411,7 +411,7 @@ elif age<18:
   print("you're not eligible to vote")
 else:
   age==18
-  print("you're eligible for first time voting")
+  print("you're eligible for voting")
 
 
 
