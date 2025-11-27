@@ -403,7 +403,7 @@ elif student_score>65:
 elif student_score>45:
     print("fail")"""
 
-#voting eligibility
+#voting eligibility 
 age=int(input("enter your age:"))
 if age>=18:
   print("you're eligible to vote")
