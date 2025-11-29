@@ -18,9 +18,7 @@ for i in range(5, 0, -1):                  #here start at 5 and stop before 0
     print("Starting in", i)
 
 
-#Print numbers from 1 to 10 using a for loop.
-for numbers in range(1,11):
- print(numbers)
+
 
 #Print your name 5 times using a loop.
 for i in range(5):
@@ -128,10 +126,12 @@ while num > 0:
     num //= 10
 
 print(rev)"""
+  
 
-#count vowels in string
-s = "education"
-vowels = 0
+#Print numbers from 1 to 10 using a for loop.
+for numbers in range(1,11):
+ print(numbers)
+
 
 
 
