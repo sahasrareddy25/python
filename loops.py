@@ -129,7 +129,7 @@ print(rev)"""
   
 
 #Print numbers from 1 to 10 using a for loop.
-for numbers in range(1,11):
+for numbers in range(5,7):
  print(numbers)
 
 
