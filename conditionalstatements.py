@@ -406,7 +406,7 @@ else:
 student_score=int(input("enter the number: "))
 if student_score>100:
     print("grade A")
-elif student_score>80:
+elif student_score>90:
     print("grade B")
 elif student_score>75:
     print("grade c")
