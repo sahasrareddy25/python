@@ -389,7 +389,18 @@ elif age<=80:
 elif age<100:
     print("ticket price is $15")
 
-#multichoice if-else
+
+
+#voting eligibility 
+age=int(input("enter the age:"))
+if age>=18:
+  print("you are eligible to vote")
+elif age<18:
+  print("you're not eligible to vote")
+else:
+  age==18
+  print("you're eligible to vote")"""
+
 #grading system
 student_score=int(input("enter number: "))
 if student_score>100:
@@ -401,17 +412,7 @@ elif student_score>75:
 elif student_score>65:
     print("grade D")
 elif student_score>45:
-    print("fail")"""
-
-#voting eligibility 
-age=int(input("enter the age:"))
-if age>=18:
-  print("you are eligible to vote")
-elif age<18:
-  print("you're not eligible to vote")
-else:
-  age==18
-  print("you're eligible to vote")
+    print("fail")
 
 
 
