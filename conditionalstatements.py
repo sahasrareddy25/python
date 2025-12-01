@@ -402,7 +402,7 @@ else:
   print("you're eligible to vote")"""
 
 #grading system
-student_score=int(input("enter number: "))
+student_score=int(input("enter the number: "))
 if student_score>100:
     print("grade A")
 elif student_score>85:
