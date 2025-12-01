@@ -401,6 +401,7 @@ else:
   age==18
   print("you're eligible to vote")"""
 
+#multiple
 #grading system
 student_score=int(input("enter the number: "))
 if student_score>100:
