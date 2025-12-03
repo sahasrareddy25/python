@@ -404,7 +404,7 @@ else:
 #multiple
 #grading system
 student_score=int(input("enter the number: "))
-if student_score>100:
+if student_score>90:
     print("grade A")
 elif student_score>90:
     print("grade B")
