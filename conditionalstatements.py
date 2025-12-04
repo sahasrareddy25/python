@@ -413,7 +413,7 @@ elif student_score>75:
 elif student_score>55:
     print("grade D")
 elif student_score>20:
-    print("failed")
+    print("fail")
 
 
 
