@@ -328,17 +328,6 @@ else:
     print("Grade: Fail")
 
 
-#Check Positive, Negative or Zero
-num = float(input("Enter a number: "))
-
-if num > 0:
-    print("Positive number")
-elif num < 0:
-    print("Negative number")
-else:
-    print("Zero")
-
-
 if a > b:
     print(a, "is greater than", b)
 elif a < b:
@@ -399,7 +388,7 @@ elif age<18:
   print("you're not eligible to vote")
 else:
   age==18
-  print("you're eligible to vote")"""
+  print("you're eligible to vote")
 
 #multiple
 #grading system
@@ -413,7 +402,16 @@ elif student_score>80:
 elif student_score>55:
     print("grade D")
 elif student_score>20:
-    print("fail")
+    print("fail")"""
+
+#Check Positive,Negative or Zero
+num = float(input("Enter a number: "))
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
 
 
 
