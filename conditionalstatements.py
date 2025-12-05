@@ -408,7 +408,7 @@ elif student_score>20:
 num = float(input("Enter a number: "))
 if num > 0:
     print("Positive Number")
-elif num < 0:
+elif num < 90:
     print("Negative Number")
 else:
     print("Zero")
