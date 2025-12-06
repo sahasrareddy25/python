@@ -75,8 +75,8 @@ else:
 # comparison_operators.py
 
 # Program to demonstrate comparison operators
-a = 70
-b = 60
+a = 100
+b = 52
 print("a == b:", a == b)
 print("a != b:", a != b)
 print("a > b:", a > b)
