@@ -35,7 +35,17 @@ else:
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
-print(a + b)"""
+print(a + b)
 
+#Greet the User
 username = str(input("Enter the greetings: "))
-print("Hello,sahasra")
+print("Hello,sahasra")"""
+
+#A# take length and width from the user
+length, width = map(int, input("Enter length and width: ").split())
+area = length * width
+print("Area of the rectangle is:", area)
+
+
+
+
