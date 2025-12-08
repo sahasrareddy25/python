@@ -31,8 +31,11 @@ elif marks>= 60:
 else:
  print("Grade D")"""
 
-# Add Two Numbers
+"""# Add Two Numbers
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
-print(a + b)
+print(a + b)"""
+
+username = str(input("Enter the greetings: "))
+print("Hello,sahasra")
