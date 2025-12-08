@@ -39,13 +39,17 @@ print(a + b)
 
 #Greet the User
 username = str(input("Enter the greetings: "))
-print("Hello,sahasra")"""
+print("Hello,sahasra")
 
 #A# take length and width from the user
 length, width = map(int, input("Enter length and width: ").split())
 area = length * width
-print("Area of the rectangle is:", area)
+print("Area of the rectangle is:", area)"""
 
+#Convert to Integer
+num_str = input("Enter a number: ")
+num = int(num_str)
+print("Double of the number is:", num * 2)
 
 
 
