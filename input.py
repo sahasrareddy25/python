@@ -47,7 +47,7 @@ area = length * width
 print("Area of the rectangle is:", area)"""
 
 #Convert to Integer
-num_str = input("Enter a number: ")
+num_str = input("Enter the number: ")
 num = int(num_str)
 print("Double of the number is:", num * 2)
 
