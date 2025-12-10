@@ -228,16 +228,6 @@ else:
   print("temperature is cold")
 
 #14.10.2025
-#if-else
-#pass or fail
-student_marks=int(input("enter numbers: "))
-if student_marks>=100:
-    print("you passed! congratulations ")
-if student_marks>=70:
-    print("congratulations")
-elif student_marks<=50:
-     print("Unfortunately, you failed!")
-
 #odd or even
 number=int(input("enter the number: "))
 if number % 2==0:
@@ -403,8 +393,17 @@ elif age<=14:
 elif age<=80:
     print("ticket price for adults is $24")
 elif age<100:
-    print("ticket price is $15")"""
+    print("ticket price is $15")
 
+
+#check leap year
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+#grade calculations
+marks = int(input("Enter marks: "))"""
 
 #check leap year
 year = int(input("Enter a year: "))
