@@ -367,18 +367,6 @@ if num % 56 == 0:
 else:
   print("The number is even")
 
-#ticket price calculator
-age=int(input("enter the number: "))
-if age<6:
-    print("ticket price is $0")
-elif age<=14:
-    print("ticket price for child is $20 ")
-elif age<=80:
-    print("ticket price for adults is $24")
-elif age<100:
-    print("ticket price is $15")
-
-
 
 #voting eligibility 
 age=int(input("enter the age:"))
@@ -402,7 +390,7 @@ elif student_score>80:
 elif student_score>55:
     print("grade D")
 elif student_score>20:
-    print("fail")"""
+    print("fail")
 
 #Check Positive,Negative or Zero
 num = float(input("Enter a number: "))
@@ -411,7 +399,19 @@ if num > 0:
 elif num < 0:
     print("Number is negative")
 else:
-    print("The Number is Zero")
+    print("The Number is Zero")"""
+
+
+#ticket price calculator
+age=int(input("enter the number: "))
+if age<6:
+    print("ticket price is $0")
+elif age<=14:
+    print("ticket price for child is $20 ")
+elif age<=80:
+    print("ticket price for adults is $24")
+elif age<100:
+    print("ticket price is $15")
 
 
 
