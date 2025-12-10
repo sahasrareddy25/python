@@ -405,7 +405,7 @@ elif student_score>20:
     print("fail")"""
 
 #Check Positive,Negative or Zero
-num = float(input("Enter the number: "))
+num = float(input("Enter a number: "))
 if num > 0:
     print("Number is positive")
 elif num < 0:
