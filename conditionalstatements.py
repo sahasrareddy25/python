@@ -307,14 +307,6 @@ elif b > a:
 else:
     print("Both are equal")
 
-#check leap year
-year = int(input("Enter a year: "))
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print("Leap Year")
-else:
-    print("Not a Leap Year")
-#grade calculations
-marks = int(input("Enter marks: "))
 
 if marks >= 100:
     print("Grade: A+")
@@ -399,7 +391,7 @@ if num > 0:
 elif num < 0:
     print("Number is negative")
 else:
-    print("The Number is Zero")"""
+    print("The Number is Zero")
 
 
 #ticket price calculator
@@ -411,7 +403,17 @@ elif age<=14:
 elif age<=80:
     print("ticket price for adults is $24")
 elif age<100:
-    print("ticket price is $15")
+    print("ticket price is $15")"""
+
+
+#check leap year
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+#grade calculations
+marks = int(input("Enter marks: "))
 
 
 
