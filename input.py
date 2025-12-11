@@ -60,12 +60,18 @@ print("Number of girls: ", y)
 x, y, z = input("Enter three values: ").split()
 print("Total number of students: ", x)
 print("Number of boys is : ", y)
-print("Number of girls is : ", z)"""
+print("Number of girls is : ", z)
 
 #printing variables
 #single v
 s = "sahasra"
-print(s)
+print(s)"""
+
+#multiple v
+s = "saasraa"
+age = 20
+city = "Warangal"
+print(s, age, city)
 
 
  
