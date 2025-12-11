@@ -73,12 +73,16 @@ print(s)
 s = "saasraa"
 age = 20
 city = "Warangal"
-print(s, age, city)"""
+print(s, age, city)
 
 #Take input and print sum
 a = 10
 b = 20
-print("Sum =", a + b)
+print("Sum =", a + b)"""
+
+#Take 3 numbers as input & print the largest
+a, b, c = map(int, input("Enter three numbers: ").split())
+print("Largest number is:", max(a, b, c))
 
 
 
