@@ -62,16 +62,28 @@ print("Total number of students: ", x)
 print("Number of boys is : ", y)
 print("Number of girls is : ", z)
 
+
+
 #printing variables
 #single v
 s = "sahasra"
-print(s)"""
+print(s)
 
 #multiple v
 s = "saasraa"
 age = 20
 city = "Warangal"
-print(s, age, city)
+print(s, age, city)"""
+
+#Take input and print sum
+a = 10
+b = 20
+print("Sum =", a + b)
+
+
+
+
+
 
 
  
