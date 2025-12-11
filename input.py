@@ -44,12 +44,23 @@ print("Hello,sahasra")
 #A# take length and width from the user
 length, width = map(int, input("Enter length and width: ").split())
 area = length * width
-print("Area of the rectangle is:", area)"""
+print("Area of the rectangle is:", area)
 
 #Convert to Integer
 num_str = input("Enter the number: ")
 num = int(num_str)
 print("Double of the number is:", num * 2)
 
+#Taking Multiple Input in Python
+x, y = input("Enter two values: ").split()
+print("Number of boys: ", x)
+print("Number of girls: ", y)"""
+
+
+x, y, z = input("Enter three values: ").split()
+print("Total number of students: ", x)
+print("Number of boys is : ", y)
+print("Number of girls is : ", z)
+ 
 
 
