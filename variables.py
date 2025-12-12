@@ -113,12 +113,135 @@ print(y,type(y))
 a="50"        
 b=int(a)      
 print(a,type(a))
-print(b,type(b))"""
+print(b,type(b))
 
+
+#Store your name in a variable and print it
+name= "sahasra"
+print("the name is ", name)
+
+#Store two numbers in variables and print their sum
+a=10
+b=20
+print("the sum of ", a+b)
+
+#Store length and width, print area of rectangle
+length=10
+width=5
+area=length*width
+print("area of the rectangle", area)
+
+#Store a number and print its square
+num=5
+square=num*num
+print("square: ", square)
+
+#Store three subject marks and print total & average
+math=100
+phy=99
+chem=90
+total=math+phy+chem
+average=math+phy+chem/3
+print("total:" , total)
+print("average: " ,average)
+
+#Convert Celsius to Fahrenheit
+c=10
+f=(c*9/5)+32
+print("fahrenheit:", f)
+
+#Swap two variables
+a=5
+b=25
+a,b =b,a
+print("a=", a)
+print("b=",b)
+
+#Store a sentence and print number of characters
+sentence="mental health"
+print("number of characters: ", len(sentence))
+
+#Store price & quantity and print total cost
+price=1000
+quantity=5
+total=price*quantity
+print("total cost:", total)
+
+#Store two numbers and print the larger one
 x=10
-y=float(x)
-print(x, type(x))
-print(y, type(y))
+y=15
+if x>y:
+    print("larger number: ", x)
+else:
+    print("larger number:", y)
+
+#Store a number and check if it is even or odd
+num=9
+if num%2 == 0:
+    print("even")
+else:
+    print("odd")
+
+#Store three numbers and print the maximum
+a=10
+b=20
+c=30
+maximum=max(a,b,c)
+print("maximum number is: ", maximum)
+
+#Store year and check if it is a leap year
+year=2025
+if(year%400==0) or (year%4==0 and year%100!=0):
+   print("leap year")
+else:
+   print("not a leap")
+
+#Store principal, time, rate → calculate simple interest
+p=100
+T=2
+R=5
+SI=(p*T*R)/100
+print("simple intrest:", SI)
+
+# Counting Characters in a String
+word="Dhurandhar"
+length=len(word)
+print("length of the word:", length)
+
+num = 25
+print(num > 10 and num < 50)
+
+ch="e"
+print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")
+
+age=20
+if age>=18:
+    print("eligible to vote")
+else:
+    print("not eligible to vote")
+  
+num=16
+if num & 1==0:
+    print("even")
+else:
+    print("odd")
+  
+marks=100
+if marks>=90:
+    print("grade A")
+elif marks>=75:
+    print("grade b")
+else:
+    print("fail")"""
+
+#counting vowels
+text="education"
+vowels="aeiou"
+count=0
+for char in text:
+    if char in vowels:
+        count+=1
+print("count:", count)
 
 
 

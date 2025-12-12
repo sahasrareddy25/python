@@ -78,11 +78,83 @@ print(s, age, city)
 #Take input and print sum
 a = 10
 b = 20
-print("Sum =", a + b)"""
+print("Sum =", a + b)
 
 #Take 3 numbers as input & print the largest
 a, b, c = map(int, input("Enter three numbers: ").split())
 print("Largest number is:", max(a, b, c))
+
+a, b, c = map(int, input("Enter three numbers: ").split())
+if a >= b and a >= c:
+    print("Largest number is:", a)
+elif b >= a and b >= c:
+    print("Largest number is:", b)
+else:
+    print("Largest number is:", c)
+
+#Take two numbers as input and print their difference (a − b).
+a=10
+b=20
+print("sum", a-b)
+
+#Take two numbers as input and print their product.
+x=5
+y=13
+print("product", x*y)
+
+#Take two numbers as input and print the larger number.
+x=50
+y=60
+if x>=y:
+    print("larger numer is", x)
+else:
+    print("Larger number is ", y)
+
+#Take a number as input and print whether it is positive or negative.
+num=int(input("Enter the number: "))
+if num>0:
+    print("the num is positive ")
+else:
+    print("the num is negative ")
+
+#Take a string as input and print its length.
+text=input("enter the word: ")
+count = 0
+for char in text:
+    count += 1
+print("the length of the given word: ", count)
+
+#. Take your name as input and print a welcome message
+name=input("Enter the name: ")
+print("welcome", name)
+
+
+#Take a number as input and print its square.
+#Take a number as input and print its cube.
+
+#Take three numbers as input and print the average. code
+a=float(input("Enter the number: "))
+b=float(input("Enter the number: "))
+c=float(input("Enter the number: "))
+average=a+b+c/3
+print("The average is", average)
+
+#Take a number as input and print its square.
+a=float(input("enter the number: "))
+square = a*a
+print("square root", a*a)"""
+
+b=float(input("enter the number: "))
+cube = b**3
+print("The cube is ", cube)
+
+
+
+
+
+
+
+
 
 
 
