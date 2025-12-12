@@ -203,10 +203,6 @@ R=5
 SI=(p*T*R)/100
 print("simple intrest:", SI)
 
-# Counting Characters in a String
-word="Dhurandhar"
-length=len(word)
-print("length of the word:", length)
 
 
 
@@ -238,13 +234,19 @@ count=0
 for char in text:
     if char in vowels:
         count+=1
-print("count:", count)"""
+print("count:", count)
 
 num = 25
 print(num > 10 and num < 50)
 
 ch="e"
-print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")
+print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")"""
+
+
+# Counting Characters in a String
+word="Dhurandhar"
+length=len(word)
+print("length of the word:", length)
   
 
 
