@@ -225,14 +225,6 @@ if num & 1==0:
     print("even")
 else:
     print("odd")
-  
-marks=100
-if marks>=90:
-    print("grade A")
-elif marks>=75:
-    print("grade b")
-else:
-    print("fail")"""
 
 #counting vowels
 text="education"
@@ -241,7 +233,17 @@ count=0
 for char in text:
     if char in vowels:
         count+=1
-print("count:", count)
+print("count:", count)"""
+  
+marks=100
+if marks>=90:
+    print("grade A")
+elif marks>=75:
+    print("grade b")
+else:
+    print("fail")
+
+
 
 
 
