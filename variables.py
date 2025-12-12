@@ -208,11 +208,7 @@ word="Dhurandhar"
 length=len(word)
 print("length of the word:", length)
 
-num = 25
-print(num > 10 and num < 50)
 
-ch="e"
-print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")
 
 age=20
 if age>=18:
@@ -233,15 +229,23 @@ count=0
 for char in text:
     if char in vowels:
         count+=1
+print("count:", count)
+
+#counting vowels
+text="education"
+vowels="aeiou"
+count=0
+for char in text:
+    if char in vowels:
+        count+=1
 print("count:", count)"""
+
+num = 25
+print(num > 10 and num < 50)
+
+ch="e"
+print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")
   
-marks=100
-if marks>=90:
-    print("grade A")
-elif marks>=75:
-    print("grade b")
-else:
-    print("fail")
 
 
 
