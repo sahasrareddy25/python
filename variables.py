@@ -240,14 +240,130 @@ num = 25
 print(num > 10 and num < 50)
 
 ch="e"
-print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")"""
+print(ch== "a" or ch=="e" or ch=="i" or ch=="o" or  ch=="u")
 
 
 # Counting Characters in a String
 word="Dhurandhar"
 length=len(word)
 print("length of the word:", length)
-  
+
+
+#Create a variable and print its value.
+x=10
+print(x)
+
+#Store your name in a variable and print
+x="sahasra"
+print(x) 
+
+#Create two variables and print their sum.
+x=10
+y=15
+z=x+y
+print(z)
+
+#Store a number in a variable and print its square.
+x=10 
+square=x*x
+print("square:",square)
+
+#Create a variable price and print
+price=250
+print("price: ", price)
+
+#Assign the same value 100 to three variables in one line
+a = b = c = 100
+print(a, b, c)
+
+#Swap two variables using a temporary variable.
+a=10
+b=15
+a,b=b,a
+print(a,b)
+
+#Swap two variables without using a temporary variable
+a=10
+b=15
+a,b=b,a
+print("a: ", a)
+print("b: ", b)
+
+#Store your age and print whether it is greater than 18.
+age=20
+if age>=18:
+    print("is greater than 18")
+
+#Create a variable and check its data type.
+x=10
+print(type(x))
+
+x="sahasra"
+print(type(x))
+
+x=0.5
+print(type(x))
+
+#Take a number as input and store it in a variable. Print it
+num=int(input("enter the number: "))
+print("num: ", num)
+
+#Take two numbers as input and print their sum.
+x=int(input("enter the first number: "))
+y=int(input("enter the second number: "))
+print(x+y)
+
+x=10
+y=20
+print(x+y)
+
+#Take a name as input and print
+name="sahasra"
+print("name: ",name)
+
+#Take length and breadth as variables and calculate area of rectangle
+length=4
+breadth=6
+print(1/2*breadth)
+
+#take radius as input and calculate area of circle
+r=float(input("enter the radius: "))
+print(3.14 * r * r)
+
+radius=9.0
+print(3.14*radius*radius)
+
+#Take marks of a student and print them in a sentence.
+student_marks=int(input("enter the student's marks: "))
+print("student_marks: ",student_marks)
+
+#Take salary and bonus, then calculate total salary.
+salary=1000
+bonus=500
+total_Salary=salary+bonus
+print("total_Salary: ", total_Salary)
+
+#Take two numbers and print difference, product, and division
+x=10
+y=15
+print(x*y)
+print(x-y)
+print(x%y)
+
+#Take a number and print its double and triple
+x=10
+print("x double:", x double)
+print("x triple: ", x triple)"""
+
+#Create a variable a and assign value 10. Print it
+a=10
+print("a: ", a)
+
+#
+
+
+
+
 
 
 
