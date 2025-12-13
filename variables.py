@@ -321,11 +321,6 @@ print(x+y)
 name="sahasra"
 print("name: ",name)
 
-#Take length and breadth as variables and calculate area of rectangle
-length=4
-breadth=6
-print(1/2*breadth)
-
 #take radius as input and calculate area of circle
 r=float(input("enter the radius: "))
 print(3.14 * r * r)
@@ -352,14 +347,18 @@ print("x triple: ", x triple)
 
 #Create a variable a and assign value 10. Print it
 a=10
-print("a: ", a)"""
+print("a: ", a)
 
 #Take salary and bonus, then calculate total salary.
 salary=1000
 bonus=500
 total_Salary=salary+bonus
-print("total_Salary: ", total_Salary)
+print("total_Salary: ", total_Salary)"""
 
+#Take length and breadth as variables and calculate area of rectangle
+length=4
+breadth=6
+print(1/2*breadth)
 
 #
 
