@@ -337,11 +337,6 @@ print(3.14*radius*radius)
 student_marks=int(input("enter the student's marks: "))
 print("student_marks: ",student_marks)
 
-#Take salary and bonus, then calculate total salary.
-salary=1000
-bonus=500
-total_Salary=salary+bonus
-print("total_Salary: ", total_Salary)
 
 #Take two numbers and print difference, product, and division
 x=10
@@ -353,12 +348,17 @@ print(x%y)
 #Take a number and print its double and triple
 x=10
 print("x double:", x double)
-print("x triple: ", x triple)"""
+print("x triple: ", x triple)
 
 #Create a variable a and assign value 10. Print it
 a=10
-print("a: ", a)
+print("a: ", a)"""
 
+#Take salary and bonus, then calculate total salary.
+salary=1000
+bonus=500
+total_Salary=salary+bonus
+print("total_Salary: ", total_Salary)
 #
 
 
