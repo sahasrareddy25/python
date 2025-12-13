@@ -340,11 +340,6 @@ print(x*y)
 print(x-y)
 print(x%y)
 
-#Take a number and print its double and triple
-x=10
-print("x double:", x double)
-print("x triple: ", x triple)
-
 #Create a variable a and assign value 10. Print it
 a=10
 print("a: ", a)
@@ -353,12 +348,20 @@ print("a: ", a)
 salary=1000
 bonus=500
 total_Salary=salary+bonus
-print("total_Salary: ", total_Salary)"""
+print("total_Salary: ", total_Salary)
 
 #Take length and breadth as variables and calculate area of rectangle
 length=4
 breadth=6
-print(1/2*breadth)
+print(1/2*breadth)"""
+
+
+#Take a number and print its double and triple
+x=10
+print(x*2, x*3)
+
+
+
 
 #
 
