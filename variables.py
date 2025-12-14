@@ -321,13 +321,6 @@ print(x+y)
 name="sahasra"
 print("name: ",name)
 
-#take radius as input and calculate area of circle
-r=float(input("enter the radius: "))
-print(3.14 * r * r)
-
-radius=9.0
-print(3.14*radius*radius)
-
 #Take marks of a student and print them in a sentence.
 student_marks=int(input("enter the student's marks: "))
 print("student_marks: ",student_marks)
@@ -353,12 +346,19 @@ print("total_Salary: ", total_Salary)
 #Take length and breadth as variables and calculate area of rectangle
 length=4
 breadth=6
-print(1/2*breadth)"""
+print(1/2*breadth)
 
 
 #Take a number and print its double and triple
 a=35
-print(a*2, a*3)
+print(a*2, a*3)"""
+
+
+#take radius as input and calculate area of circle
+r=float(input("enter the radius: "))
+print(3.14 * r * r)
+
+
 
 
 
