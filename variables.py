@@ -357,8 +357,8 @@ print(1/2*breadth)"""
 
 
 #Take a number and print its double and triple
-x=10
-print(x*2, x*3)
+a=35
+print(a*2, a*3)
 
 
 
