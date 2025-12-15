@@ -16,13 +16,6 @@ t=5
 intrest=(p*r*t)/100
 print("intrest:",intrest)
 
-#shopping price
-price=5000
-quantity=10
-discount=10
-totalprice=price*quantity-discount
-print("totalprice:",totalprice)
-
 #L.operators
 age=int(input("Enter your age:"))
 if age>=18:
@@ -74,7 +67,7 @@ print("a != b:", a != b)
 print("a > b:", a > b)
 print("a < b:", a < b)
 print("a >= b:", a >= b)
-print("a <= b:", a <= b)"""
+print("a <= b:", a <= b)
 
 #l.operator
 age=23
@@ -82,6 +75,14 @@ citizen=True
 if age>= 20 and citizen:
   print("Eligible voting")
 else:
-  print("Not eligible for Voting")
+  print("Not eligible for Voting")"""
+
+
+#shopping price
+price=5000
+quantity=10
+discount=10
+totalprice=price*quantity-discount
+print("totalprice:",totalprice)
 
 
