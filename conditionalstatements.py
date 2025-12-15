@@ -279,16 +279,21 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("Not a Leap Year")
 #grade calculations
-marks = int(input("Enter marks: "))"""
+marks = int(input("Enter marks: "))
 
 #take a number as input and check whether it is positive or negative.
 num=int(input("enter the number: "))
 if num>0:
     print("the number is positive ")
 else:
-    print('the number is negative')
+    print("the number is negative")"""
 
-
+#Take a number and check whether it is even or odd.
+num=int(input("enter the number: "))
+if num%2:
+    print("the number is odd")
+else:
+    print("the number is even")
 
 
 
