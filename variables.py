@@ -337,12 +337,6 @@ print(x%y)
 a=10
 print("a: ", a)
 
-#Take salary and bonus, then calculate total salary.
-salary=1000
-bonus=500
-total_Salary=salary+bonus
-print("total_Salary: ", total_Salary)
-
 #Take length and breadth as variables and calculate area of rectangle
 length=4
 breadth=6
@@ -351,12 +345,20 @@ print(1/2*breadth)
 
 #Take a number and print its double and triple
 a=35
-print(a*2, a*3)"""
+print(a*2, a*3)
 
 
 #take radius as input and calculate area of circle
 r=float(input("enter the radius: "))
-print(3.14 * r * r)
+print(3.14 * r * r)"""
+
+
+#Take salary and bonus, then calculate total salary.
+salary=1000
+bonus=500
+total_Salary=salary+bonus
+print("total_Salary: ", total_Salary)
+
 
 
 
