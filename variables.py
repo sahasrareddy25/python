@@ -321,10 +321,6 @@ print(x+y)
 name="sahasra"
 print("name: ",name)
 
-#Take marks of a student and print them in a sentence.
-student_marks=int(input("enter the student's marks: "))
-print("student_marks: ",student_marks)
-
 
 #Take two numbers and print difference, product, and division
 x=10
@@ -350,14 +346,20 @@ print(a*2, a*3)
 
 #take radius as input and calculate area of circle
 r=float(input("enter the radius: "))
-print(3.14 * r * r)"""
+print(3.14 * r * r)
 
 
 #Take salary and bonus, then calculate total salary.
 salary=1000
 bonus=500
 total_Salary=salary+bonus
-print("total_Salary: ", total_Salary)
+print("total_Salary: ", total_Salary)"""
+
+#Take marks of a student and print them in a sentence.
+student_marks=int(input("enter the student's marks: "))
+print("student_marks: ",student_marks)
+
+
 
 
 
