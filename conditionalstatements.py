@@ -288,6 +288,21 @@ if num>0:
 else:
     print("the number is negative")
 
+#Take two numbers and print the greater number.
+a=10
+b=20
+if a>b:
+    print("a is greater number")
+else:
+    print("b is greater number")
+
+#Take a person’s age and check whether they are eligible to vote.
+age=int(input("enter the number: "))
+if age>=18:
+    print("the person is eligible to vote")
+else:
+    print("the person is nto eligible to vote")"""
+
 #Take a number and check whether it is even or odd.
 num=int(input("enter the number: "))
 if num%2:
@@ -295,20 +310,7 @@ if num%2:
 else:
     print("the number is even")
 
-#Take two numbers and print the greater number.
-a=10
-b=20
-if a>b:
-    print("a is greater number")
-else:
-    print("b is greater number")"""
 
-#Take a person’s age and check whether they are eligible to vote.
-age=int(input("enter the number: "))
-if age>=18:
-    print("the person is eligible to vote")
-else:
-    print("the person is nto eligible to vote")
 
 
 
