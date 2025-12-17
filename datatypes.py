@@ -40,9 +40,13 @@ print(c,type(c))
 #6.Convert a string "100" into an integer and print its *square*.
 num="100"
 num=int(num)
-print(num*num)"""
+print(num*num)
 
 #7.Store a decimal number and convert it to an integer.
 num=9.0
-print(int(num))
+print(int(num))"""
+
+#8.Check whether the input is of type str.
+num="Sahasra"
+print(type(num))
 
