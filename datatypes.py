@@ -44,9 +44,15 @@ print(num*num)
 
 #7.Store a decimal number and convert it to an integer.
 num=9.0
-print(int(num))"""
+print(int(num))
 
 #8.Check whether the input is of type str.
 num="Sahasra"
-print(type(num))
+print(type(num))"""
+
+#9.Print the type of 5, 5.0, "5", and True.
+print(type(5))
+print(type(5.0))
+print(type("5"))
+print(type(True))
 
