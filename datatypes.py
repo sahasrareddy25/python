@@ -8,19 +8,19 @@ print(type(a))
 print(type(b))
 print(type(c))
 print(type(d))
-print(type(e))"""
+print(type(e))
 
 #2.Take a float input and print its *double value*.
 a=3.0
-print(a * 2)
+print(a * 2)"""
 
-"""num=float(input("enter the value: "))
+num=float(input("enter the value: "))
 print(num * 2)
 
-#3.Store your *name* in a variable and print its *data type*.
+"""#3.Store your *name* in a variable and print its *data type*.
 x="SHASRA REDDY PERATI"
 print(type(x))
 
 x=str(input("enter the name: "))
-print(type(x))"""
-
+print(type(x))
+"""
