@@ -23,9 +23,17 @@ print(type(x))
 
 x=str(input("enter the name: "))
 print(type(x))
-"""
+
 
 #4.Store True in a variable and check its *data type*.
 a=True
-print(type(a))
+print(type(a))"""
+
+#5.Convert an integer to float and print the result.
+a=4
+b=float(a)
+c=str(a)
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
 
