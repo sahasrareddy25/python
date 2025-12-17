@@ -1,4 +1,4 @@
-#1.Take an integer input and print its *type*.
+"""#1.Take an integer input and print its *type*.
 a=45
 b=4.0
 c="sahasra"
@@ -8,13 +8,13 @@ print(type(a))
 print(type(b))
 print(type(c))
 print(type(d))
-print(type(e))
+print(type(e))"""
 
-"""#2.Take a float input and print its *double value*.
+#2.Take a float input and print its *double value*.
 a=3.0
 print(a * 2)
 
-num=float(input("enter the value: "))
+"""num=float(input("enter the value: "))
 print(num * 2)
 
 #3.Store your *name* in a variable and print its *data type*.
