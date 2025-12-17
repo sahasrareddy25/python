@@ -15,12 +15,12 @@ a=3.0
 print(a * 2)
 
 num=float(input("enter the value: "))
-print(num * 2)"""
+print(num * 2)
 
 #3.Store your *name* in a variable and print its *data type*.
 x="SHASRA REDDY PERATI"
+print(type(x))"""
+
+x=str(input("enter the name: "))
 print(type(x))
 
-"""x=str(input("enter the name: "))
-print(type(x))
-"""
