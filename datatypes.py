@@ -19,8 +19,13 @@ print(num * 2)
 
 #3.Store your *name* in a variable and print its *data type*.
 x="SHASRA REDDY PERATI"
-print(type(x))"""
+print(type(x))
 
 x=str(input("enter the name: "))
 print(type(x))
+"""
+
+#4.Store True in a variable and check its *data type*.
+a=True
+print(type(a))
 
