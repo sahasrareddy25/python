@@ -35,10 +35,14 @@ b=float(a)
 c=str(a)
 print(a,type(a))
 print(b,type(b))
-print(c,type(c))"""
+print(c,type(c))
 
 #6.Convert a string "100" into an integer and print its *square*.
 num="100"
 num=int(num)
-print(num*num)
+print(num*num)"""
+
+#7.Store a decimal number and convert it to an integer.
+num=9.0
+print(int(num))
 
