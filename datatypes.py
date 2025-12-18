@@ -116,12 +116,16 @@ text=str(input("enter the string: "))
 if text==" ":
     print("string is empty")
 else:
-    print("string is not empty")"""
+    print("string is not empty")
 
 #17.Concatenate two strings and print the result.
 a="hello"
 b="sahasra"
-print(a+ " "+b)
+print(a+ " " +b)"""
+
+text1="silence"
+text2="please"
+print(text1+" " +text2)
 
 
 
