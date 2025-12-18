@@ -86,7 +86,7 @@ text="SAHASRA"
 print(text.lower())
 
 text=str(input("enter the string: "))
-print(text.lower())"""
+print(text.lower())
 
 #14.Count vowels
 Text=str(input("enter the string: "))
@@ -102,7 +102,11 @@ vowels="aeiou"
 for ch in text:
     if ch in vowels:
         count+=1
-        print(count)
+        print(count)"""
+
+#15. Reverse a string
+text="Sahasra"
+print(text[::-1])
 
 
 
