@@ -64,9 +64,14 @@ print(type(a+b))
 
 #11.Print length of string
 a="Sahasra"
-print(len(a))"""
+print(len(a))
 
 s=str(input("enter the string: "))
-print(len(s))
+print(len(s))"""
+
+#12. First and last character
+a="sahasra"
+print(a[0])
+print(a[-1])
 
 

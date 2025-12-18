@@ -142,11 +142,14 @@ print("The average is", average)
 #Take a number as input and print its square.
 a=float(input("enter the number: "))
 square = a*a
-print("square root", a*a)"""
+print("square root", a*a)
 
 b=float(input("enter the number: "))
 cube = b**3
-print("The cube is ", cube)
+print("The cube is ", cube)"""
+
+
+
 
 
 
