@@ -54,13 +54,19 @@ print(type(num))
 print(type(5))
 print(type(5.0))
 print(type("5"))
-print(type(True))"""
+print(type(True))
 
 #10.Take two numbers as input and print their *sum* and *type of the result*.
 a=10
 b=11
 print(a+b)
-print(type(a+b))
+print(type(a+b))"""
 
+#11.Print length of string
+a="Sahasra"
+print(len(a))
+
+s=str(input("enter the string: "))
+print(len(s))
 
 
