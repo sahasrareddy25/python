@@ -67,7 +67,7 @@ a="Sahasra"
 print(len(a))
 
 s=str(input("enter the string: "))
-print(len(s))"""
+print(len(s))
 
 #12. First and last character
 a="sahasra"
@@ -76,6 +76,10 @@ print(a[-1])
 
 text=str(input("enter the string: "))
 print(text[4])
-print(text[-1])
+print(text[-1])"""
+
+#13. Convert to uppercase
+text="Sahasra"
+print(text.upper())
 
 
