@@ -82,4 +82,7 @@ print(text[-1])"""
 text="Sahasra"
 print(text.upper())
 
+text="SAHASRA"
+print(text.lower())
+
 
