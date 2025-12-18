@@ -60,11 +60,11 @@ print(type(True))
 a=10
 b=11
 print(a+b)
-print(type(a+b))"""
+print(type(a+b))
 
 #11.Print length of string
 a="Sahasra"
-print(len(a))
+print(len(a))"""
 
 s=str(input("enter the string: "))
 print(len(s))
