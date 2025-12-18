@@ -74,4 +74,8 @@ a="sahasra"
 print(a[0])
 print(a[-1])
 
+text=str(input("enter the string: "))
+print(text[4])
+print(text[-1])
+
 
