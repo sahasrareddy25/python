@@ -109,15 +109,19 @@ text="Sahasra"
 print(text[::-1])
 
 text=str(input("enter the string: "))
-print(text[::-1])"""
+print(text[::-1])
 
 #16.Check empty string
 text=str(input("enter the string: "))
 if text==" ":
     print("string is empty")
 else:
-    print("string is not empty")
+    print("string is not empty")"""
 
+#17.Concatenate two strings and print the result.
+a="hello"
+b="sahasra"
+print(a+ " "+b)
 
 
 
