@@ -121,11 +121,21 @@ else:
 #17.Concatenate two strings and print the result.
 a="hello"
 b="sahasra"
-print(a+ " " +b)"""
+print(a+ " " +b)
 
 text1="silence"
 text2="please"
-print(text1+" " +text2)
+print(text1+" " +text2)"""
+
+#18.Check if a word is a *palindrome*.
+word="waaaaw"
+print(word[::-1])
+
+text=str(input("enter the string: "))
+if word[::-1]:
+    print("palindrome")
+else:
+    print(" not palindrome")
 
 
 
