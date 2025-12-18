@@ -76,13 +76,17 @@ print(a[-1])
 
 text=str(input("enter the string: "))
 print(text[4])
-print(text[-1])"""
+print(text[-1])
 
 #13. Convert to uppercase
 text="Sahasra"
 print(text.upper())
 
 text="SAHASRA"
+print(text.lower())"""
+
+text=str(input("enter the string: "))
 print(text.lower())
+
 
 
