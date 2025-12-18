@@ -48,11 +48,19 @@ print(int(num))
 
 #8.Check whether the input is of type str.
 num="Sahasra"
-print(type(num))"""
+print(type(num))
 
 #9.Print the type of 5, 5.0, "5", and True.
 print(type(5))
 print(type(5.0))
 print(type("5"))
-print(type(True))
+print(type(True))"""
+
+#10.Take two numbers as input and print their *sum* and *type of the result*.
+a=10
+b=11
+print(a+b)
+print(type(a+b))
+
+
 
