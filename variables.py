@@ -356,7 +356,7 @@ total_Salary=salary+bonus
 print("total_Salary: ", total_Salary)"""
 
 #Take marks of a student and print them in a sentence.
-student_marks=int(input("enter the student's marks: "))
+student_marks= int(input("enter the student's marks: "))
 print("student_marks: ",student_marks)
 
 
