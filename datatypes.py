@@ -125,11 +125,11 @@ print(a+ " " +b)
 
 text1="silence"
 text2="please"
-print(text1+" " +text2)
+print(text1+" " +text2)"""
 
 #18.Check if a word is a *palindrome*.
 word="waaaaw"
-print(word[::-1])"""
+print(word[::-1])
 
 text = input("Enter the string: ")
 
