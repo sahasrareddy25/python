@@ -79,7 +79,7 @@ else:
 
 
 #shopping price
-price=200000
+price=20202
 quantity=10
 discount=10
 totalprice=price*quantity-discount
