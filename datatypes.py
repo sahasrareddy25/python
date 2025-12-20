@@ -104,13 +104,6 @@ for ch in text:
         count+=1
         print(count)
 
-#15. Reverse a string
-text="Sahasra"
-print(text[::-1])
-
-text=str(input("enter the string: "))
-print(text[::-1])
-
 #16.Check empty string
 text=str(input("enter the string: "))
 if text==" ":
@@ -125,7 +118,7 @@ print(a+ " " +b)
 
 text1="silence"
 text2="please"
-print(text1+" " +text2)"""
+print(text1+" " +text2)
 
 #18.Check if a word is a *palindrome*.
 word="waaaaw"
@@ -137,6 +130,14 @@ if text == text[::-1]:
     print("Palindrome")
 else:
     print("Not Palindrome")
+
+
+#15. Reverse a string
+text="Sahasra"
+print(text[::-1])"""
+
+text=str(input("enter the string: "))
+print(text[::-1])
 
 
 
