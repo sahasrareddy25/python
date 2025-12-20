@@ -133,11 +133,12 @@ else:
 
 
 #15. Reverse a string
-text="Sahasra"
+text=str(input("enter the string: "))
 print(text[::-1])"""
 
-text=str(input("enter the string: "))
+text="Sahasra"
 print(text[::-1])
+
 
 
 
