@@ -45,9 +45,17 @@ vowels="aeiou"
 for ch in chars:
     if ch in vowels:
         count+=1
-print("vowels count:", count)"""
+print("vowels count:", count)
 
 #6.Convert numbers string into list of characters
 string="123456"
 chars=list(string)
-print(chars)
+print(chars)"""
+
+#7.Check whether a character exists
+string="saashra"
+if 'a' in string:
+    print("character 'a' exists")
+else:
+    print("doesn't existed")
+
