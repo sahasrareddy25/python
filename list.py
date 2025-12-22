@@ -18,13 +18,12 @@ print(thislist)
 a=["ujwala","arvind","ashritha"]
 b=["sam","jatayu","Ai"]
 c=[1,3.4,'wars', True]
-print(a,b,c)"""
+print(a,b,c)
 
-#Convert a string into a list
+#1.Convert a string into a list
 text="sahasra"
-print(list(text))
+print(list(text))"""
 
-thislist="arvind"
-print(list(thislist))
-
-
+#2.Convert a tuple into a list
+t=(1,2,3,4,5)
+print(list(t))
