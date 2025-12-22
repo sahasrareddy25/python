@@ -17,7 +17,7 @@ print(thislist)"""
 #use square brackets [] to create a list directly.
 a={"ujwala","arvind","ashritha"}
 b=["sam","jatayu","Ai"]
-c=[1,2,3]
+c=[1,3.4,'wars', True]
 print(a,b,c)
 
 
