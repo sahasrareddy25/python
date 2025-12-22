@@ -76,15 +76,21 @@ string="asd2345df"
 chars=list(string)
 for ch in chars:
     if ch.isdigit():
-        print(ch)"""
+        print(ch)
 
 #10.Convert the string "computer" into a list and print it.
 string="computer"
-print(list(string))
+print(list(string))"""
 
 #11.Convert the tuple (5, 15, 25, 35) into a list.
 t=(5,15,25,35)
-print(list(t))
+char_list=list(t)
+print(char_list)
+
+#12.Take a string input from the user and convert it into a list.
+string_input="saashra"
+char_list=list(string_input)
+print(char_list)
 
 
 
