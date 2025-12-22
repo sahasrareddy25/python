@@ -50,12 +50,22 @@ print("vowels count:", count)
 #6.Convert numbers string into list of characters
 string="123456"
 chars=list(string)
-print(chars)"""
+print(chars)
 
 #7.Check whether a character exists
 string="saashra"
 if 'a' in string:
     print("character 'a' exists")
 else:
-    print("doesn't existed")
+    print("doesn't existed")"""
+
+#8.Copy a list and modify it
+old_list=[1,2,3,4]
+new_list=list(old_list)
+new_list.append(20)
+print("old_list:", old_list)
+print("new_list:",new_list)
+
+
+
 
