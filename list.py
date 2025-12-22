@@ -22,8 +22,12 @@ print(a,b,c)
 
 #1.Convert a string into a list
 text="sahasra"
-print(list(text))"""
+print(list(text))
 
 #2.Convert a tuple into a list
 t=(1,2,3,4,5)
-print(list(t))
+print(list(t))"""
+
+#3.Convert a list into another list
+thislist=["saas","siri","sonu"]
+print(list(thislist))
