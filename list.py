@@ -30,9 +30,19 @@ print(list(t))
 
 #3.Convert a list into another list
 thislist=["saas","siri","sonu"]
-print(list(thislist))"""
+print(list(thislist))
 
 #4.Find the length of a list created from a string
 string="education"
 print(list(string))
-print(len(string))
+print(len(string))"""
+
+#5.Count vowels using list()
+text="saashra"
+chars=list(text)
+count=0
+vowels="aeiou"
+for ch in chars:
+    if ch in vowels:
+        count+=1
+print("vowels count:", count)
