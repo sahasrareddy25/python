@@ -35,7 +35,7 @@ print(list(thislist))
 #4.Find the length of a list created from a string
 string="education"
 print(list(string))
-print(len(string))"""
+print(len(string))
 
 #5.Count vowels using list()
 text="saashra"
@@ -45,4 +45,9 @@ vowels="aeiou"
 for ch in chars:
     if ch in vowels:
         count+=1
-print("vowels count:", count)
+print("vowels count:", count)"""
+
+#6.Convert numbers string into list of characters
+string="123456"
+chars=list(string)
+print(chars)
