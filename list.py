@@ -1,0 +1,2 @@
+thislist=["mallareddy"]
+print(thislist)
