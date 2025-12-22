@@ -67,5 +67,12 @@ print("old_list:", old_list)
 print("new_list:",new_list)
 
 
+original_list=[1,2,34,5,6]
+new_list=list(original_list)
+new_list.append(2)
+print("original_list:",original_list)
+print("new_list:",new_list)
+
+
 
 
