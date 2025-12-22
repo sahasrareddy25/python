@@ -26,8 +26,13 @@ print(list(text))
 
 #2.Convert a tuple into a list
 t=(1,2,3,4,5)
-print(list(t))"""
+print(list(t))
 
 #3.Convert a list into another list
 thislist=["saas","siri","sonu"]
-print(list(thislist))
+print(list(thislist))"""
+
+#4.Find the length of a list created from a string
+string="education"
+print(list(string))
+print(len(string))
