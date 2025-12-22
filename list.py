@@ -69,15 +69,22 @@ print("new_list:",new_list)
 #9.Reverse using list
 string="saashra"
 print(list(string))
-print(string[::-1])"""
+print(string[::-1])
 
 #10.Separate characters and digits
 string="asd2345df"
 chars=list(string)
 for ch in chars:
     if ch.isdigit():
-        print(ch)
+        print(ch)"""
 
+#10.Convert the string "computer" into a list and print it.
+string="computer"
+print(list(string))
+
+#11.Convert the tuple (5, 15, 25, 35) into a list.
+t=(5,15,25,35)
+print(list(t))
 
 
 
