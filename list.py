@@ -57,21 +57,19 @@ string="saashra"
 if 'a' in string:
     print("character 'a' exists")
 else:
-    print("doesn't existed")"""
+    print("doesn't existed")
 
 #8.Copy a list and modify it
 old_list=[1,2,3,4]
 new_list=list(old_list)
 new_list.append(20)
 print("old_list:", old_list)
-print("new_list:",new_list)
+print("new_list:",new_list)"""
 
-
-original_list=[1,2,34,5,6]
-new_list=list(original_list)
-new_list.append(2)
-print("original_list:",original_list)
-print("new_list:",new_list)
+#9.Reverse using list
+string="saashra"
+print(list(string))
+print(string[::-1])
 
 
 
