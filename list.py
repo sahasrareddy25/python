@@ -64,12 +64,20 @@ old_list=[1,2,3,4]
 new_list=list(old_list)
 new_list.append(20)
 print("old_list:", old_list)
-print("new_list:",new_list)"""
+print("new_list:",new_list)
 
 #9.Reverse using list
 string="saashra"
 print(list(string))
-print(string[::-1])
+print(string[::-1])"""
+
+#10.Separate characters and digits
+string="asd2345df"
+chars=list(string)
+for ch in chars:
+    if ch.isdigit():
+        print(ch)
+
 
 
 
