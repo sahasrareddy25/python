@@ -362,12 +362,17 @@ print("student_marks: ",student_marks)
 #1.Store a number and display it
 x=10
 y=20
-print(x*y)"""
+print(x*y)
 
 #2. Store two numbers and find their sum
 a=256
 b=678
-print(a+b)
+print(a+b)"""
+
+#3. Store two numbers and find the difference
+x=10
+y=20
+print(x-y)
 
 
 
@@ -383,7 +388,7 @@ print(a+b)
 
 
 
-#
+
 
 
 
