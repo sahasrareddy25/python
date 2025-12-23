@@ -388,13 +388,18 @@ print(x%y)
 name="sahasra"
 age=20
 print("name:", name)
-print("age:", age)"""
+print("age:", age)
 
 #7.Swap two variables
 x=20
 y=30
 x,y=y,x
-print(x,y)
+print(x,y)"""
+
+#8. Store length and breadth of a rectangle and find area
+length=500
+breadth=550
+print(length*breadth)
 
 
 
