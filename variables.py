@@ -409,13 +409,16 @@ print(3.14*45*45)
 math=100
 fam=99
 chem=90
-print("math,fam,chem:", math,fam,chem)"""
+print("math,fam,chem:", math,fam,chem)
  
 #11.Store price and quantity and find total cost
 price=345678
 quality=890
 cost=price*quality
-print("cost:", cost)
+print("cost:", cost)"""
+
+#12. Store two numbers and find the greater number
+
 
 
 

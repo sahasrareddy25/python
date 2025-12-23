@@ -312,17 +312,16 @@ else:
 
 #build a grade calculator
 marks=int(input("enter the marks: "))
-if 95>=marks:
+if marks>=90:
     print("Grade A")
-elif 85>=marks:
-    print("Garde B")
-elif 75>=marks:
+elif marks<85:
+    print("Grade B")
+elif marks<75:
     print("Grade C")
-elif 65>=marks:
-    print("Grade D")
-else:
+elif marks<65:
+    print("Grade E ")
+elif marks<50:
     print("Grade F")
-
 
 
 
