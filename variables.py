@@ -399,11 +399,17 @@ print(x,y)
 #8. Store length and breadth of a rectangle and find area
 length=500
 breadth=550
-print(length*breadth)"""
+print(length*breadth)
 
 #9. Store radius of a circle and find area
 radius=45
-print(3.14*45*45)
+print(3.14*45*45)"""
+
+#10.Store marks of three subjects and find average
+math=100
+fam=99
+chem=90
+print("math,fam,chem:", math,fam,chem)
 
 
 
