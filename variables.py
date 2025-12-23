@@ -394,12 +394,16 @@ print("age:", age)
 x=20
 y=30
 x,y=y,x
-print(x,y)"""
+print(x,y)
 
 #8. Store length and breadth of a rectangle and find area
 length=500
 breadth=550
-print(length*breadth)
+print(length*breadth)"""
+
+#9. Store radius of a circle and find area
+radius=45
+print(3.14*45*45)
 
 
 
