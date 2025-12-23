@@ -403,14 +403,19 @@ print(length*breadth)
 
 #9. Store radius of a circle and find area
 radius=45
-print(3.14*45*45)"""
+print(3.14*45*45)
 
 #10.Store marks of three subjects and find average
 math=100
 fam=99
 chem=90
-print("math,fam,chem:", math,fam,chem)
-
+print("math,fam,chem:", math,fam,chem)"""
+ 
+#11.Store price and quantity and find total cost
+price=345678
+quality=890
+cost=price*quality
+print("cost:", cost)
 
 
 
