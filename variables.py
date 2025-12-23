@@ -357,12 +357,17 @@ print("total_Salary: ", total_Salary)
 
 #Take marks of a student and print them in a sentence.
 student_marks= int(input("enter the student's marks: "))
-print("student_marks: ",student_marks)"""
+print("student_marks: ",student_marks)
 
 #1.Store a number and display it
 x=10
 y=20
-print(x*y)
+print(x*y)"""
+
+#2. Store two numbers and find their sum
+a=256
+b=678
+print(a+b)
 
 
 
