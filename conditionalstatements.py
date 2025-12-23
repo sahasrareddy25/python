@@ -301,14 +301,28 @@ age=int(input("enter the number: "))
 if age>=18:
     print("the person is eligible to vote")
 else:
-    print("the person is nto eligible to vote")"""
+    print("the person is nto eligible to vote")
 
 #Take a number and check whether it is even or odd.
 num=int(input("enter the number: "))
 if num%2:
     print("the number is odd")
 else:
-    print("the number is even")
+    print("the number is even")"""
+
+#build a grade calculator
+marks=int(input("enter the marks: "))
+if 95>=marks:
+    print("Grade A")
+elif 85>=marks:
+    print("Garde B")
+elif 75>=marks:
+    print("Grade C")
+elif 65>=marks:
+    print("Grade D")
+else:
+    print("Grade F")
+
 
 
 

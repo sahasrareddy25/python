@@ -90,13 +90,22 @@ print(char_list)
 #12.Take a string input from the user and convert it into a list.
 string_input="saashra"
 char_list=list(string_input)
-print(char_list)"""
+print(char_list)
 
 #13.Convert a list [2, 4, 6] into another list using list() and print both.
 text=[1,23,4,45,4]
 char_list=list(text)
 print(text)
-print(char_list)
+print(char_list)"""
+
+#14.Convert the string "hello world" into a list and count how many spaces are present.
+text="helloworld"
+char_list=list(text)
+space_count=0
+if char_list in char_list:
+    if char_list=" ":
+      space_count+=1
+      print("number of spaces:", space_count)
 
 
 
