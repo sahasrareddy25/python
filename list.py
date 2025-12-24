@@ -84,11 +84,6 @@ if char_list in char_list:
       space_count+=1
       print("number of spaces:", space_count)
 
-#13.Convert a list [2, 4, 6] into another list using list() and print both.
-text=[1,23,4,45,4]
-char_list=list(text)
-print(text)
-print(char_list)
 
 #12.Take a string input from the user and convert it into a list.
 string_input="saashra"
@@ -98,7 +93,7 @@ print(char_list)
 #11.Convert the tuple (5, 15, 25, 35) into a list.
 t=(5,15,25,35)
 char_list=list(t)
-print(char_list)"""
+print(char_list)
 
 
 #10.Separate characters and digits
@@ -106,6 +101,12 @@ string="asd2345df"
 chars=list(string)
 for ch in chars:
     if ch.isdigit():
-        print(ch)
+        print(ch)"""
+
+#13.Convert a list [2, 4, 6] into another list using list() and print both.
+text=[1,23,4,45,4]
+char_list=list(text)
+print(text)
+print(char_list)
 
 
