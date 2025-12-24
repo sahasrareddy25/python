@@ -82,15 +82,6 @@ for ch in chars:
 string="computer"
 print(list(string))
 
-#11.Convert the tuple (5, 15, 25, 35) into a list.
-t=(5,15,25,35)
-char_list=list(t)
-print(char_list)
-
-#
-
-
-
 #14.Convert the string "hello world" into a list and count how many spaces are present.
 text="helloooo"
 char_list=list(text)
@@ -105,10 +96,15 @@ text=[1,23,4,45,4]
 char_list=list(text)
 print(text)
 print(char_list)
-"""
+
 #12.Take a string input from the user and convert it into a list.
 string_input="saashra"
 char_list=list(string_input)
+print(char_list)"""
+
+#11.Convert the tuple (5, 15, 25, 35) into a list.
+t=(5,15,25,35)
+char_list=list(t)
 print(char_list)
 
 
