@@ -429,12 +429,17 @@ print(x)
 #3.Store two numbers in two variables and print their sum.
 x=10
 y=20
-print(x+y)"""
+print(x+y)
 
 #4.Store two numbers and print their difference.
 x=20
 y=30
-print(x-y)
+print(x-y)"""
+
+#5.Store two numbers and print their product.
+x=10
+y=20
+print(x*y)
 
 
 
