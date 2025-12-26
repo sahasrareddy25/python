@@ -417,9 +417,20 @@ quality=890
 cost=price*quality
 print("cost:", cost)"""
 
+"""#26/12-just solving problems given by chatgpt
 #1.Store your name in a variable and print it.
 x="saashra"
 print(x)
+
+#2.Store your age in a variable and print it.
+x=20
+print(x)"""
+
+#3.Store two numbers in two variables and print their sum.
+x=10
+y=20
+print(x+y)
+
 
 
 
