@@ -463,14 +463,18 @@ print(gst)
 length=1000
 breadth=23456
 area=length*breadth
-print(area)"""
+print(area)
 
 #11.Store base and height of a triangle and find the area.
 base=9876
 height=2345
 triangle_area=base*height
-print(triangle_area)
+print(triangle_area)"""
 
+#12.Store radius of a circle and find the area.
+radius=23456
+area=3.14*radius
+print(area)
 
 
 
