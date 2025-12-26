@@ -457,13 +457,19 @@ print(x*3)
 #9.Store a price and print the price after adding GST (18%).
 price=90009876
 gst=price*18/100
-print(gst)"""
+print(gst)
 
 #10Store length and breadth of a rectangle and find the area.
 length=1000
 breadth=23456
 area=length*breadth
-print(area)
+print(area)"""
+
+#11.Store base and height of a triangle and find the area.
+base=9876
+height=2345
+triangle_area=base*height
+print(triangle_area)
 
 
 
