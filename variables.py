@@ -444,11 +444,15 @@ print(x*y)
 #6.Store two numbers and print their quotient.
 x=20
 y=30
-print(x%y)"""
+print(x%y)
 
 #7.Store a number and print its square.
 x=50
-print(x*x)
+print(x*x)"""
+
+#8.Store a number and print its cube.
+x=20
+print(x*3)
 
 
 
