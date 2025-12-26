@@ -448,11 +448,16 @@ print(x%y)
 
 #7.Store a number and print its square.
 x=50
-print(x*x)"""
+print(x*x)
 
 #8.Store a number and print its cube.
 x=20
-print(x*3)
+print(x*3)"""
+
+#9.Store a price and print the price after adding GST (18%).
+price=90009876
+gst=price*18/100
+print(gst)
 
 
 
