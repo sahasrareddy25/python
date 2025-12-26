@@ -417,8 +417,9 @@ quality=890
 cost=price*quality
 print("cost:", cost)"""
 
-#12. Store two numbers and find the greater number
-
+#1.Store your name in a variable and print it.
+x="saashra"
+print(x)
 
 
 
