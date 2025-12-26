@@ -469,12 +469,19 @@ print(area)
 base=9876
 height=2345
 triangle_area=base*height
-print(triangle_area)"""
+print(triangle_area)
 
 #12.Store radius of a circle and find the area.
 radius=23456
 area=3.14*radius
-print(area)
+print(area)"""
+
+#13.Store principal, rate, time and calculate simple interest.
+principal=9876
+rate=987654
+time=24
+simple_interest=(principal*rate*time)/100
+print(simple_interest)
 
 
 
