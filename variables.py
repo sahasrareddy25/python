@@ -439,12 +439,16 @@ print(x-y)
 #5.Store two numbers and print their product.
 x=10
 y=20
-print(x*y)"""
+print(x*y)
 
 #6.Store two numbers and print their quotient.
 x=20
 y=30
-print(x%y)
+print(x%y)"""
+
+#7.Store a number and print its square.
+x=50
+print(x*x)
 
 
 
