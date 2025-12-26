@@ -481,14 +481,20 @@ principal=9876
 rate=987654
 time=24
 simple_interest=(principal*rate*time)/100
-print(simple_interest)"""
+print(simple_interest)
 
 #14.Store total marks and number of subjects, find the average.
 math=100
 chem=98
 bio=100
 total_marks=(math*chem*bio)/100
-print(total_marks)
+print(total_marks)"""
+
+#15.Store salary and bonus, find total salary.
+salary=12000
+bonus=2000
+total_Salary=salary+bonus
+print(total_Salary)
 
 
 
