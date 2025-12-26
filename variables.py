@@ -474,16 +474,21 @@ print(triangle_area)
 #12.Store radius of a circle and find the area.
 radius=23456
 area=3.14*radius
-print(area)"""
+print(area)
 
 #13.Store principal, rate, time and calculate simple interest.
 principal=9876
 rate=987654
 time=24
 simple_interest=(principal*rate*time)/100
-print(simple_interest)
+print(simple_interest)"""
 
-
+#14.Store total marks and number of subjects, find the average.
+math=100
+chem=98
+bio=100
+total_marks=(math*chem*bio)/100
+print(total_marks)
 
 
 
