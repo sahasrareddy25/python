@@ -452,13 +452,18 @@ print(x*x)
 
 #8.Store a number and print its cube.
 x=20
-print(x*3)"""
+print(x*3)
 
 #9.Store a price and print the price after adding GST (18%).
 price=90009876
 gst=price*18/100
-print(gst)
+print(gst)"""
 
+#10Store length and breadth of a rectangle and find the area.
+length=1000
+breadth=23456
+area=length*breadth
+print(area)
 
 
 
