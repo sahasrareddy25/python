@@ -138,13 +138,18 @@ if text == text[::-1]:
 else:
     print("Not Palindrome")"""
 
-#27/12
+"""#27/12
 #1.Identify the data type of each
 x=10
 y=10.0
 z="sasra"
 a=True
-print(x,y,z,a)
+print(x,y,z,a)"""
+
+#2.Integer Data Type
+a=10
+b=20
+print(a+b)
 
 
 
