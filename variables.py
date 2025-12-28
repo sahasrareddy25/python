@@ -497,7 +497,7 @@ total_Salary=salary+bonus
 print(total_Salary)"""
 
 #16.Store cost price and selling price, find profit or loss amount (just calculation).
-cost_price=200
+cost_price=20
 selling_price=500
 if selling_price>cost_price:
     profit=selling_price-cost_price
