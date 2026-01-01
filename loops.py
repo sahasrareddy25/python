@@ -134,12 +134,18 @@ for numbers in range(5,7):
 
 """#with loop
 for i in range(3):
-    print("Helloooo")"""
+    print("Helloooo")
 
 #Condition checking happen inside loops most of the time.
 for i in range(1, 11):
     if i % 2 == 0:
-        print(i)
+        print(i)"""
+
+#Loops are required to access each element.
+marks = [60, 70, 80]
+for m in marks:
+    print(m)
+
 
 
 
