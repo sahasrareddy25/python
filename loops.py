@@ -132,9 +132,18 @@ print(rev)"""
 for numbers in range(5,7):
  print(numbers)"""
 
-#with loop
+"""#with loop
 for i in range(3):
-    print("Helloooo")
+    print("Helloooo")"""
+
+#Condition checking happen inside loops most of the time.
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+
+
+
+
 
 
 
