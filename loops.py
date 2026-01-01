@@ -128,9 +128,13 @@ while num > 0:
 print(rev)"""
   
 
-#Print numbers from 5 to 7 using a for loop.
+"""#Print numbers from 5 to 7 using a for loop.
 for numbers in range(5,7):
- print(numbers)
+ print(numbers)"""
+
+#with loop
+for i in range(3):
+    print("Helloooo")
 
 
 
