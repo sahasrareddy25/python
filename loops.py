@@ -139,12 +139,18 @@ for i in range(3):
 #Condition checking happen inside loops most of the time.
 for i in range(1, 11):
     if i % 2 == 0:
-        print(i)"""
+        print(i)
 
 #Loops are required to access each element.
 marks = [60, 70, 80]
 for m in marks:
-    print(m)
+    print(m)"""
+
+#Print numbers from 10 to 1
+for i in range(10,0,-1):
+    print(i)
+
+
 
 
 
