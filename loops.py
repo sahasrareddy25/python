@@ -136,24 +136,28 @@ for numbers in range(5,7):
 for i in range(3):
     print("Helloooo")
 
-#Condition checking happen inside loops most of the time.
+#1.Condition checking happen inside loops most of the time.
 for i in range(1, 11):
     if i % 2 == 0:
         print(i)
 
-#Loops are required to access each element.
+#2.Loops are required to access each element.
 marks = [60, 70, 80]
 for m in marks:
     print(m)"""
 
-"""#Print numbers from 10 to 1
+"""#3.Print numbers from 10 to 1
 for i in range(10,0,-1):
-    print(i)"""
+    print(i)
 
-#Print even numbers from 1 to 20
+#4.rint even numbers from 1 to 20
 for i in range(1,21):
     if i%2==0:
-        print(i)
+        print(i)"""
+
+#5.Print multiples of 5 up to 50
+for i in range(5,51,5):
+    print(i)
 
 
 
