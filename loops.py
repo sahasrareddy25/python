@@ -153,11 +153,19 @@ for i in range(10,0,-1):
 #4.rint even numbers from 1 to 20
 for i in range(1,21):
     if i%2==0:
-        print(i)"""
+        print(i)
 
 #5.Print multiples of 5 up to 50
 for i in range(5,51,5):
-    print(i)
+    print(i)"""
+
+#6.sum of numbers from 1 to 10
+sum = 0
+for i in range(1, 11):
+    sum = sum + i
+
+print("Sum:", sum)
+
 
 
 
