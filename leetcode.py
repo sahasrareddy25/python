@@ -49,9 +49,17 @@ class Solution(object):
         for i in range(len(nums)):
             if nums[i] != 0: 
                 nums[i], nums[j] = nums[j], nums[i]
-                j +=1 """
+                j +=1 
 
 #length of last word
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        return len(s.split()[-1])
+        return len(s.split()[-1])"""
+
+#shortest palindrome
+class Solution:
+    def shortestPalindrome(self, s):
+        for i in range(len(s), -1, -1):
+            if s[:i] == s[:i][::-1]:
+                return s[i:][::-1] + s
+
