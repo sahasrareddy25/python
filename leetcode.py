@@ -54,12 +54,28 @@ class Solution(object):
 #length of last word
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        return len(s.split()[-1])"""
+        return len(s.split()[-1])
 
 #shortest palindrome
 class Solution:
     def shortestPalindrome(self, s):
         for i in range(len(s), -1, -1):
             if s[:i] == s[:i][::-1]:
-                return s[i:][::-1] + s
+                return s[i:][::-1] + s """
+
+#happy num
+class Solution(object):
+    def isHappy(self, n):
+        seen = set()
+        while n != 1:
+            if n in seen:  
+                return False
+            seen.add(n)
+            res = 0
+            while n > 0:
+                rem = n % 10
+                res += rem * rem
+                n //= 10
+            n = res
+        return True
 
