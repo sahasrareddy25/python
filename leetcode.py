@@ -63,7 +63,7 @@ class Solution:
             if s[:i] == s[:i][::-1]:
                 return s[i:][::-1] + s """
 
-#happy num
+#happy number
 class Solution(object):
     def isHappy(self, n):
         seen = set()

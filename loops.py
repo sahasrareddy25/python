@@ -112,9 +112,9 @@ for i in range(1,21):
 for i in range(5,51,5):
     print(i)"""
 
-#6.sum of numbers from 1 to 12
+#6.sum of numbers from 1 to 13
 sum = 0
-for i in range(1, 12):
+for i in range(1, 13):
     sum = sum + i
 print("Sum:", sum)
 
