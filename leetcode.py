@@ -61,7 +61,7 @@ class Solution:
     def shortestPalindrome(self, s):
         for i in range(len(s), -1, -1):
             if s[:i] == s[:i][::-1]:
-                return s[i:][::-1] + s """
+                return s[i:][::-1] + s 
 
 #happy number
 class Solution(object):
@@ -77,5 +77,26 @@ class Solution(object):
                 res += rem * rem
                 n //= 10
             n = res
-        return True
+        return True"""
+
+#length of the longest substring
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        res = 0
+        for i in range(n):
+            seen = set()
+            for j in range(i, n):
+                if s[j] in seen:
+                    break
+                else:
+                    seen.add(s[j])
+                    res = max(res, j - i + 1)
+        return res
+        
+
 
