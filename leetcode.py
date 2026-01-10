@@ -77,7 +77,7 @@ class Solution(object):
                 res += rem * rem
                 n //= 10
             n = res
-        return True"""
+        return True"
 
 #length of the longest substring
 class Solution(object):
@@ -96,7 +96,25 @@ class Solution(object):
                 else:
                     seen.add(s[j])
                     res = max(res, j - i + 1)
-        return res
+        return res"""
+
+#valid parenthesis
+class isValid(s):
+    stack = []
+    pairs = {')':'(', ']':'[', '}':'{'}
+    
+    for ch in s:
+        if ch in pairs.values():       
+            stack.append(ch)
+        else:                          
+            if not stack or stack[-1] != pairs[ch]:
+                return False
+            stack.pop()
+    
+    return len(stack) == 0
+
+
+
         
 
 

@@ -110,32 +110,14 @@ for i in range(1,21):
 
 #5.Print multiples of 5 up to 50
 for i in range(5,51,5):
-    print(i)
+    print(i)"""
 
 #6.sum of numbers from 1 to 13
-sum = 0
+sum =0
 for i in range(1, 13):
     sum = sum + i
-print("Sum:", sum)"""
+print("Sum:", sum)
 
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        n = len(s)
-        res = 0
-        for i in range(n):
-            seen = set()
-            for j in range(i, n):
-                if s[j] in seen:
-                    break
-                else:
-                    seen.add(s[j])
-                    res = max(res, j - i + 1)
-        return res
-        
 
 
 
