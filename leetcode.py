@@ -77,7 +77,7 @@ class Solution(object):
                 res += rem * rem
                 n //= 10
             n = res
-        return True"
+        return True
 
 #length of the longest substring
 class Solution(object):
@@ -98,23 +98,24 @@ class Solution(object):
                     res = max(res, j - i + 1)
         return res"""
 
-#valid parenthesis
-class isValid(s):
-    stack = []
-    pairs = {')':'(', ']':'[', '}':'{'}
-    
-    for ch in s:
-        if ch in pairs.values():       
-            stack.append(ch)
-        else:                          
-            if not stack or stack[-1] != pairs[ch]:
-                return False
-            stack.pop()
-    
-    return len(stack) == 0
+#count and say
+class Solution:
+    def countAndSay(self, n):
+        s = "1"
+        for _ in range(n - 1):
+            result = ""
+            i = 0
+            while i < len(s):
+                count = 1
+                while i + 1 < len(s) and s[i] == s[i + 1]:
+                    i += 1
+                    count += 1
+                result += str(count) + s[i]
+                i += 1
+            s = result
+        return s
 
-
-
+        
         
 
 
