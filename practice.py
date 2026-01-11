@@ -1,15 +1,21 @@
-"""#reverse string
+"""#1.reverse string
 word="Hello Iam Sahasra"
 words=word.split()
 print(" ".join(words[::-1]))
 
-#Count frequency of words
+#2.Count frequency of words
 sentence="hello Sashra, currentlu working on the most trending ascept of the technology to gain knowledge"
-print(len(sentence.split()))"""
+print(len(sentence.split()))
  
 #if counting characters
 sentence="hello Sashra, currentlu working on the most trending ascept of the technology to gain knowledge"
-print(len(sentence))
+print(len(sentence))"""
+
+#3.Remove Duplicates for list
+arr=[1,3,5,3,1,4,5,5,7,8,9]
+result=list(set(arr))
+print(result)
+
 
 
 
