@@ -116,7 +116,7 @@ class Solution:
         return s"""
 
 #two sum
-class Solution(object):
+class solution(object):
     def twoSum(self, nums, target):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
