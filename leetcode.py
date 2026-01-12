@@ -82,10 +82,10 @@ class Solution(object):
 #length of the longest substring
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        """
+        
         :type s: str
         :rtype: int
-        """
+        
         n = len(s)
         res = 0
         for i in range(n):
@@ -96,7 +96,7 @@ class Solution(object):
                 else:
                     seen.add(s[j])
                     res = max(res, j - i + 1)
-        return res"""
+        return res
 
 #count and say
 class Solution:
@@ -113,7 +113,17 @@ class Solution:
                 result += str(count) + s[i]
                 i += 1
             s = result
-        return s
+        return s"""
+
+#two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return[i,j]
+
+
 
         
         
