@@ -121,9 +121,9 @@ class solution(object):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
-                    return[i,j]"""
+                    return[i,j]
 
-#Number of islands
+#Number of island
 class Solution:
     def numIslands(self, grid):
         if not grid:
@@ -147,8 +147,22 @@ class Solution:
                 if grid[r][c] == "1":
                     count += 1
                     dfs(r, c)
-        
-        return count
+        return count"""
+
+#grey code
+class Solution(object):
+    def grayCode(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        result = []
+        total_numbers = 1 << n
+
+        for i in range(total_numbers):
+            result.append(i ^ (i >> 1))
+
+        return result
 
 
 
