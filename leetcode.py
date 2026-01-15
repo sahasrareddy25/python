@@ -147,7 +147,7 @@ class Solution:
                 if grid[r][c] == "1":
                     count += 1
                     dfs(r, c)
-        return count"""
+        return count
 
 #grey code
 class Solution(object):
@@ -162,7 +162,25 @@ class Solution(object):
         for i in range(total_numbers):
             result.append(i ^ (i >> 1))
 
-        return result
+        return result"""
+
+#countAndsay
+class Solution:
+    def countAndSay(self, n):
+        s = "1"
+        for _ in range(n - 1):
+            result = ""
+            i = 0
+            while i < len(s):
+                count = 1
+                while i + 1 < len(s) and s[i] == s[i + 1]:
+                    i += 1
+                    count += 1
+                result += str(count) + s[i]
+                i += 1
+            s = result
+        return s
+
 
 
 
