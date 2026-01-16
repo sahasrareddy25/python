@@ -162,7 +162,7 @@ class Solution(object):
         for i in range(total_numbers):
             result.append(i ^ (i >> 1))
 
-        return result"""
+        return result
 
 #countAndsay
 class Solution:
@@ -179,7 +179,15 @@ class Solution:
                 result += str(count) + s[i]
                 i += 1
             s = result
-        return s
+        return s"""
+
+#two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return[i,j]
 
 
 
