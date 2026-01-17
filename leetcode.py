@@ -179,7 +179,7 @@ class Solution:
                 result += str(count) + s[i]
                 i += 1
             s = result
-        return s"""
+        return s
 
 #two sum
 class Solution(object):
@@ -187,7 +187,25 @@ class Solution(object):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
-                    return[i,j]
+                    return[i,j]"""
+
+#Gas station problem
+class Solution:
+    def canCompleteCircuit(self, gas, cost):
+        if sum(gas) < sum(cost):
+            return -1
+        
+        start = 0
+        current_tank = 0
+        
+        for i in range(len(gas)):
+            current_tank += gas[i] - cost[i]
+            
+            if current_tank < 0:
+                start = i + 1
+                current_tank = 0
+        
+        return start
 
 
 
