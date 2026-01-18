@@ -187,7 +187,7 @@ class Solution(object):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
-                    return[i,j]"""
+                    return[i,j]
 
 #Gas station problem
 class Solution:
@@ -205,7 +205,22 @@ class Solution:
                 start = i + 1
                 current_tank = 0
         
-        return start
+        return start"""
+
+
+#house robber
+class Solution:
+    def rob(self, nums):
+        rob, skip = 0, 0
+        
+        for money in nums:
+            new_rob = skip + money   # rob current house
+            new_skip = max(skip, rob)  # skip current house
+            
+            rob, skip = new_rob, new_skip
+        
+        return max(rob, skip)
+
 
 
 
