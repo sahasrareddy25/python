@@ -219,7 +219,7 @@ class Solution:
             
             rob, skip = new_rob, new_skip
         
-        return max(rob, skip)"""
+        return max(rob, skip)
 
 #palindrome 
 class Solution(object):
@@ -231,7 +231,22 @@ class Solution(object):
         if (rev==s):
             return True
         else:
-            return False
+            return False"""
+
+#grey code
+class Solution(object):
+    def grayCode(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        result = []
+        total_numbers = 1 << n
+
+        for i in range(total_numbers):
+            result.append(i ^ (i >> 1))
+
+        return result
 
 
 
