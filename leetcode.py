@@ -236,10 +236,6 @@ class Solution(object):
 #grey code
 class Solution(object):
     def grayCode(self, n):
-        """
-        :type n: int
-        :rtype: List[int]
-        """
         result = []
         total_numbers = 1 << n
 
