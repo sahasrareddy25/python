@@ -237,7 +237,7 @@ class Solution(object):
 class Solution(object):
     def grayCode(self, n):
         result = []
-        total_numbers = 1 << n
+        total_numbers = 1<< n
 
         for i in range(total_numbers):
             result.append(i ^ (i >> 1))
