@@ -231,7 +231,7 @@ class Solution(object):
         if (rev==s):
             return True
         else:
-            return False"""
+            return False
 
 #grey code
 class Solution(object):
@@ -242,7 +242,18 @@ class Solution(object):
         for i in range(total_numbers):
             result.append(i ^ (i >> 1))
 
-        return result
+        return result"""
+
+#contains duplicate
+class Solution(object):
+    def containsDuplicate(self, nums):
+        seen = set()
+        for n in nums:
+            if n in seen:
+                return True
+            seen.add(n)
+        return False
+
 
 
 
