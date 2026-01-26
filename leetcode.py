@@ -245,7 +245,7 @@ class Solution(object):
         return result"""
 
 #contains duplicate
-class Solution(object):
+class solution(object):
     def containsDuplicate(self, nums):
         seen = set()
         for n in nums:
