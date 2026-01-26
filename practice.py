@@ -12,7 +12,7 @@ sentence="hello Sashra, currentlu working on the most trending ascept of the tec
 print(len(sentence))"""
 
 #3.Remove Duplicates for list
-arr=[1,3,5,3,1,4,5,5,7,8,9]
+arr=[1,3,5,3,1,4,5,5,7,9]
 result=list(set(arr))
 print(result)
 
