@@ -26,9 +26,17 @@ num=int(input("enter the number: "))
 if num%2:
     print("The number is even")
 else:
-    print("the number is odd")"""
+    print("the number is odd")
 
 #6.Take a string and print its length
 str="Sahasra"
-print(len(str))
+print(len(str))"""
+
+#7.Take a string and print its length without using len() keyword
+str=input("enter the string: ")
+count=0
+for ch in str:
+    count+=1
+    print("length", count)
+
 
