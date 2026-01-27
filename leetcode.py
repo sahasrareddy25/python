@@ -242,7 +242,7 @@ class Solution(object):
         for i in range(total_numbers):
             result.append(i ^ (i >> 1))
 
-        return result"""
+        return result
 
 #contains duplicate
 class solution(object):
@@ -252,7 +252,18 @@ class solution(object):
             if n in seen:
                 return True
             seen.add(n)
-        return False
+        return False"""
+
+#anagram
+class Solution:
+    def groupAnagrams(self, strs):
+        anagram_map = defaultdict(list)
+        
+        for word in strs:
+            sorted_word = ''.join(sorted(word))
+            anagram_map[sorted_word].append(word)
+        
+        return list(anagram_map.values())
 
 
 
