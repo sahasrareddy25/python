@@ -30,13 +30,18 @@ else:
 
 #6.Take a string and print its length
 str="Sahasra"
-print(len(str))"""
+print(len(str))
 
 #7.Take a string and print its length without using len() keyword
 str=input("enter the string: ")
 count=0
 for ch in str:
     count+=1
-    print("length", count)
+    print("length", count)"""
+
+#8.Print Numbers from 1 to N
+num=int(input("enter num: "))
+for i in range(1, num+1):
+    print(i)
 
 
