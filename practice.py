@@ -14,12 +14,18 @@ print(len(sentence))
 #3.Remove Duplicates for list
 arr=[1,3,5,3,1,4,5,5,7,9]
 result=list(set(arr))
-print(result)"""
+print(result)
 
 #4.Take two numbers as input and print their sum
 a=int(input("enter the first number: "))
 b=int(input("enter the second number: "))
-print("sum", a+b)
+print("sum", a+b)"""
 
+#5.Take a number as input and print if it is even or odd
+num=int(input("enter the number: "))
+if num%2:
+    print("The number is even")
+else:
+    print("the number is odd")
 
 
