@@ -42,7 +42,7 @@ for ch in str:
 #8.Print Numbers from 1 to N
 num=int(input("enter num: "))
 for i in range(1, num+1):
-    print(i)"""
+    print(i)
 
 #9.Given a string, return the character with the highest frequency.
 #Freqquency count
@@ -53,6 +53,18 @@ for ch in str:
         freq[ch]=1
     else:
         freq[ch]+=1
-print(freq)
+print(freq)"""
+
+#10.Unique elements
+#Given a list of integers, remove duplicates while maintaining order.
+num=[1,1,1,2,4,5,6,6,7,7]
+result=[]
+for x in num:
+    if x not in result:
+        result.append(x)
+print("after removing duplicates: ", result)
+
+
+
 
 
