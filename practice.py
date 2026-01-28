@@ -37,11 +37,22 @@ str=input("enter the string: ")
 count=0
 for ch in str:
     count+=1
-    print("length", count)"""
+    print("length", count)
 
 #8.Print Numbers from 1 to N
 num=int(input("enter num: "))
 for i in range(1, num+1):
-    print(i)
+    print(i)"""
+
+#9.Given a string, return the character with the highest frequency.
+#Freqquency count
+str="sahasra"
+freq={}
+for ch in str:
+    if ch not in freq:
+        freq[ch]=1
+    else:
+        freq[ch]+=1
+print(freq)
 
 
