@@ -53,7 +53,7 @@ for ch in str:
         freq[ch]=1
     else:
         freq[ch]+=1
-print(freq)"""
+print(freq)
 
 #10.Unique elements
 #Given a list of integers, remove duplicates while maintaining order.
@@ -62,16 +62,16 @@ result=[]
 for x in Array:
     if x not in result:
         result.append(x)
-print("after removing duplicates: ", result)
+print("after removing duplicates: ", result)"""
 
-Array=[1,1,2,3,4,5,6,7,7,8,8,9,]
-result=[]
-for ch in Array:
-    if x not in result:
-        result.append(x)
-print("after removing of duplicates:", result)
-
-
+#11.Check positive / negative / zero
+num=int(input("Enter a number: "))
+if num>0:
+    print("positive numbers")
+elif num<0:
+    print("negative number")
+else:
+    print("zero")
 
 
 
