@@ -57,12 +57,20 @@ print(freq)"""
 
 #10.Unique elements
 #Given a list of integers, remove duplicates while maintaining order.
-num=[1,1,1,2,4,5,6,6,7,7]
+Array=[1,1,1,2,4,5,6,6,7,7]
 result=[]
-for x in num:
+for x in Array:
     if x not in result:
         result.append(x)
 print("after removing duplicates: ", result)
+
+Array=[1,1,2,3,4,5,6,7,7,8,8,9,]
+result=[]
+for ch in Array:
+    if x not in result:
+        result.append(x)
+print("after removing of duplicates:", result)
+
 
 
 
