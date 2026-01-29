@@ -62,7 +62,7 @@ result=[]
 for x in Array:
     if x not in result:
         result.append(x)
-print("after removing duplicates: ", result)"""
+print("after removing duplicates: ", result)
 
 #11.Check positive / negative / zero
 num=int(input("Enter a number: "))
@@ -71,7 +71,17 @@ if num>0:
 elif num<0:
     print("negative number")
 else:
-    print("zero")
+    print("zero")"""
+
+#12.login checking using conditional statements
+Username="sahasra05"
+Password="1304"
+x=input("Username: ")
+y=input("Password: ")
+if x == username and y == password:
+    print("login successful")
+else:
+     print("login failed")
 
 
 
