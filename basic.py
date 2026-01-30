@@ -50,7 +50,7 @@ else:
 
 #6.Take a string and print its length
 str="Sahasra"
-print(len(str))"""
+print(len(str))
 
 #7.Take a string and print its length without using len() keyword
 str=input("enter the string: ")
@@ -59,10 +59,10 @@ for ch in str:
     count+=1
     print("length", count)
 
-"""#8.Print Numbers from 1 to N
+#8.Print Numbers from 1 to N
 num=int(input("enter num: "))
 for i in range(1, num+1):
-    print(i)
+    print(i)"""
 
 #9.Given a string, return the character with the highest frequency.
 #Freqquency count
@@ -75,7 +75,7 @@ for ch in str:
         freq[ch]+=1
 print(freq)
 
-#10.Unique elements
+""""#10.Unique elements
 #Given a list of integers, remove duplicates while maintaining order.
 Array=[1,1,1,2,4,5,6,6,7,7]
 result=[]
