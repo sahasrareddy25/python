@@ -74,7 +74,7 @@ else:
     print("zero")"""
 
 #12.login checking using conditional statements
-Username="sahasra05"
+Username="sahasra"
 Password="1304"
 x=input("Username: ")
 y=input("Password: ")
