@@ -29,14 +29,14 @@ print(len(sentence.split()))
  
 #if counting characters
 sentence="hello Sashra, currentlu working on the most trending ascept of the technology to gain knowledge"
-print(len(sentence))"""
+print(len(sentence))
 
 #3.Remove Duplicates for list
 arr=[1,3,5,3,1,4,5,5,7,9]
 result=list(set(arr))
 print(result)
 
-"""#4.Take two numbers as input and print their sum
+#4.Take two numbers as input and print their sum
 a=int(input("enter the first number: "))
 b=int(input("enter the second number: "))
 print("sum", a+b)
@@ -50,7 +50,7 @@ else:
 
 #6.Take a string and print its length
 str="Sahasra"
-print(len(str))
+print(len(str))"""
 
 #7.Take a string and print its length without using len() keyword
 str=input("enter the string: ")
@@ -59,7 +59,7 @@ for ch in str:
     count+=1
     print("length", count)
 
-#8.Print Numbers from 1 to N
+"""#8.Print Numbers from 1 to N
 num=int(input("enter num: "))
 for i in range(1, num+1):
     print(i)
