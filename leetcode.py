@@ -252,7 +252,7 @@ class solution(object):
             if n in seen:
                 return True
             seen.add(n)
-        return False"""
+        return False
 
 #anagram
 class Solution:
@@ -263,7 +263,19 @@ class Solution:
             sorted_word = ''.join(sorted(word))
             anagram_map[sorted_word].append(word)
         
-        return list(anagram_map.values())
+        return list(anagram_map.values())"""
+
+#house robber
+class Solution:
+    def rob(self, nums):
+        rob, skip = 0, 0
+        for money in nums:
+            new_rob = skip + money   # rob current house
+            new_skip = max(skip, rob)  # skip current house
+            
+            rob, skip = new_rob, new_skip
+        
+        return max(rob, skip)
 
 
 
