@@ -263,7 +263,7 @@ class Solution:
             sorted_word = ''.join(sorted(word))
             anagram_map[sorted_word].append(word)
         
-        return list(anagram_map.values())"""
+        return list(anagram_map.values())
 
 #house robber
 class Solution:
@@ -275,7 +275,15 @@ class Solution:
             
             rob, skip = new_rob, new_skip
         
-        return max(rob, skip)
+        return max(rob, skip)"""
+
+#Two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return[i,j]
 
 
 
