@@ -275,7 +275,7 @@ class Solution:
             
             rob, skip = new_rob, new_skip
         
-        return max(rob, skip)"""
+        return max(rob, skip)
 
 #Two sum
 class Solution(object):
@@ -283,7 +283,25 @@ class Solution(object):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
-                    return[i,j]
+                    return[i,j]"""
+
+#count and say
+class Solution:
+    def countAndSay(self, n):
+        s = "1"
+        for _ in range(n - 1):
+            result = ""
+            i = 0
+            while i < len(s):
+                count = 1
+                while i + 1 < len(s) and s[i] == s[i + 1]:
+                    i += 1
+                    count += 1
+                result += str(count) + s[i]
+                i += 1
+            s = result
+        return s
+
 
 
 

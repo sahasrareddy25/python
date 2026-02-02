@@ -73,15 +73,7 @@ elif num<0:
 else:
     print("zero")"""
 
-#12.login checking using conditional statements
-Username="sahasra"
-Password="1304"
-x=input("Username: ")
-y=input("Password: ")
-if x == username and y == password:
-    print("login successful")
-else:
-     print("login failed")
+
 
 
 
