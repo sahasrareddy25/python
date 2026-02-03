@@ -67,11 +67,21 @@ if 0>num:
 elif 0<num:
     print("positive")
 else:
-    print("zero")"""
+    print("zero")
 
 #Vowel or Consonant
 ch=input("enter the character: ")
 if ch in('a','e','i','o','u','A','E','I','O','U'):
     print("It's a vowel")
 else:
-    print("its a consonant")
+    print("its a consonant")"""
+
+#Largest of Two Numbers
+x=int(input("enter the value: "))
+y=int(input("enter the value: "))
+if x>y:
+    print("Largest number is: ", x)
+elif y>x:
+    print("largest numner is:", y)
+else:
+    print("Both are equal numbers")
