@@ -58,7 +58,7 @@ num=int(input("enter the value: "))
 if num%2 == 0:
     print("the num is even")
 else:
-    print("the num is odd")"""
+    print("the num is odd")
 
 #Positive, Negative, or Zero
 num=int(input("enter the num: "))
@@ -67,6 +67,11 @@ if 0>num:
 elif 0<num:
     print("positive")
 else:
-    print("zero")
+    print("zero")"""
 
-
+#Vowel or Consonant
+ch=input("enter the character: ")
+if ch in('a','e','i','o','u','A','E','I','O','U'):
+    print("It's a vowel")
+else:
+    print("its a consonant")
