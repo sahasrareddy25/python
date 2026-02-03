@@ -40,17 +40,24 @@ print(num*num)
 college_name=input("enter collge_name: ")
 branch_name=input("enter branch_name: ")
 print("I study", branch_name, "at", college_name)
-"""
+
 #Take two numbers and print:
-"""sum
+sum
 difference
 product
-division"""
+division
 a=10
 b=20
 print(a+b)
 print(a*b)
 print(a%b)
-print(a-b)
+print(a-b)"""
+
+#Take a number and check whether it is even or odd.
+num=int(input("enter the value: "))
+if num%2 == 0:
+    print("the num is even")
+else:
+    print("the num is odd")
 
 
