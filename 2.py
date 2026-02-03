@@ -26,8 +26,8 @@ branch="computer science engineering
 user=input("enter the name: ")
 print("welcome: ",user )"""
 
-#city input
-city_name=input("enter the city_name: ")
-print("city_name: ",City_name )
-
+#Take your name and age as input and print them in one line.
+name=input("enter the name: ")
+age=input("enter the age: ")
+print("Name:, name")
 
