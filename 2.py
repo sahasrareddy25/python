@@ -24,10 +24,14 @@ branch="computer science engineering
 
 #user input
 user=input("enter the name: ")
-print("welcome: ",user )"""
+print("welcome: ",user )
 
 #Take your name and age as input and print them in one line.
 name=input("enter the name: ")
 age=input("enter the age: ")
-print("Name:, name")
+print("Name:, name")"""
+
+#Take a number and print its square.
+num=5
+print(num*num)
 
