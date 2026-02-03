@@ -33,12 +33,24 @@ print("Name:, name")
 
 #Take a number and print its square.
 num=5
-print(num*num)"""
+print(num*num)
 
 #Take your college name and branch, print like:
 #I study Computer Science at MRU
 college_name=input("enter collge_name: ")
 branch_name=input("enter branch_name: ")
 print("I study", branch_name, "at", college_name)
+"""
+#Take two numbers and print:
+"""sum
+difference
+product
+division"""
+a=10
+b=20
+print(a+b)
+print(a*b)
+print(a%b)
+print(a-b)
 
 
