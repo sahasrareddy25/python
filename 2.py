@@ -29,9 +29,16 @@ print("welcome: ",user )
 #Take your name and age as input and print them in one line.
 name=input("enter the name: ")
 age=input("enter the age: ")
-print("Name:, name")"""
+print("Name:, name")
 
 #Take a number and print its square.
 num=5
-print(num*num)
+print(num*num)"""
+
+#Take your college name and branch, print like:
+#I study Computer Science at MRU
+college_name=input("enter collge_name: ")
+branch_name=input("enter branch_name: ")
+print("I study", branch_name, "at", college_name)
+
 
