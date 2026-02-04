@@ -28,8 +28,16 @@ str=input("enter the string: ")
 if str== "":
    print("the string is empty")
 else:
-   print("the string is not empty")"""
+   print("the string is not empty")
 
 #4.Take a name and print "Hello, <name>!
 name="arvind"
-print("Hello:",name)
+print("Hello:",name)"""
+
+#5.Check if a string contains the word "python"
+str=input("enter the string value: ")
+if "python" in str:
+    print("yes! the string contains python")
+else:
+    print("nope, the string doesn' t contain python")
+
