@@ -62,11 +62,15 @@ str2=input("enter the string value: ")
 if str1==str2:
     print("both are equal")
 else:
-    print("not equal")"""
+    print("not equal")
 
 #9.Convert a string to uppercase.
 str="arvind"
 print(str.upper())
 
 str="ARVIND"
-print(str.lower())
+print(str.lower())"""
+
+#10.Take a string and print it reversed
+str=input("enter the string value: ")
+print(str[::-1])
