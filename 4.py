@@ -54,7 +54,7 @@ count=0
 for ch in str:
     if ch in 'aeiouAEIOU':
         count=count+1
-print("no of vowels: ", count)"""
+print("no of vowels: ", count)
 
 #8.Take two strings and check if they are equal.
 str1=input("enter the string value: ")
@@ -62,4 +62,8 @@ str2=input("enter the string value: ")
 if str1==str2:
     print("both are equal")
 else:
-    print("not equal")
+    print("not equal")"""
+
+#9.Convert a string to uppercase.
+str="arvind"
+print(str.upper())
