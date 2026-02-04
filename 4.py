@@ -39,11 +39,28 @@ str=input("enter the string value: ")
 if "python" in str:
     print("yes! the string contains python")
 else:
-    print("nope, the string doesn' t contain python")"""
+    print("nope, the string doesn' t contain python")
 
 #6.Take a string and check if it is a palindrome.
 str=input("enter the string value: ")
 if str==str[::-1]:
     print("It' s a palindrome")
 else:
-    print("not a palindrome")
+    print("not a palindrome")"""
+
+#7.Count the number of vowels in a string.
+str=input("enter the string value: ")
+count=0
+for ch in str:
+    if ch in 'aeiouAEIOU':
+        count=count+1
+print("no of vowels: ", count)
+
+
+
+text=input("enter the string value: ")
+count=0
+for ch in text:
+    if ch in 'aeiousAEIOU':
+        count=count+1
+print("the vowel count: ", count)
