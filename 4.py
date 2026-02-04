@@ -46,7 +46,7 @@ str=input("enter the string value: ")
 if str==str[::-1]:
     print("It' s a palindrome")
 else:
-    print("not a palindrome")"""
+    print("not a palindrome")
 
 #7.Count the number of vowels in a string.
 str=input("enter the string value: ")
@@ -54,13 +54,12 @@ count=0
 for ch in str:
     if ch in 'aeiouAEIOU':
         count=count+1
-print("no of vowels: ", count)
+print("no of vowels: ", count)"""
 
-
-
-text=input("enter the string value: ")
-count=0
-for ch in text:
-    if ch in 'aeiousAEIOU':
-        count=count+1
-print("the vowel count: ", count)
+#8.Take two strings and check if they are equal.
+str1=input("enter the string value: ")
+str2=input("enter the string value: ")
+if str1==str2:
+    print("both are equal")
+else:
+    print("not equal")
