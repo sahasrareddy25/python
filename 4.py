@@ -21,12 +21,15 @@ print("last character:", str[-1])
 
 str=input("enter the character: ")
 print("first character:", str[0])
-print("last character:", str[-1])"""
+print("last character:", str[-1])
 
-#Take a string and check if it is empty or not.
+#3.Take a string and check if it is empty or not.
 str=input("enter the string: ")
 if str== "":
    print("the string is empty")
 else:
-   print("the string is not empty")
+   print("the string is not empty")"""
 
+#4.Take a name and print "Hello, <name>!
+name="arvind"
+print("Hello:",name)
