@@ -67,3 +67,6 @@ else:
 #9.Convert a string to uppercase.
 str="arvind"
 print(str.upper())
+
+str="ARVIND"
+print(str.lower())
