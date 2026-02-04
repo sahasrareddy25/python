@@ -32,12 +32,18 @@ else:
 
 #4.Take a name and print "Hello, <name>!
 name="arvind"
-print("Hello:",name)"""
+print("Hello:",name)
 
 #5.Check if a string contains the word "python"
 str=input("enter the string value: ")
 if "python" in str:
     print("yes! the string contains python")
 else:
-    print("nope, the string doesn' t contain python")
+    print("nope, the string doesn' t contain python")"""
 
+#6.Take a string and check if it is a palindrome.
+str=input("enter the string value: ")
+if str==str[::-1]:
+    print("It' s a palindrome")
+else:
+    print("not a palindrome")
