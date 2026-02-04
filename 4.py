@@ -11,7 +11,7 @@ Take a string and print it reversed."""
 
 """#1.Take a string and print its length.
 str="sahasra"
-print(len(str))"""
+print(len(str))
 
 #2.Take a string and print the first and last character.
 str="supercalifragilisticexpialidocious"
@@ -21,5 +21,12 @@ print("last character:", str[-1])
 
 str=input("enter the character: ")
 print("first character:", str[0])
-print("last character:", str[-1])
+print("last character:", str[-1])"""
+
+#Take a string and check if it is empty or not.
+str=input("enter the string: ")
+if str== "":
+   print("the string is empty")
+else:
+   print("the string is not empty")
 
