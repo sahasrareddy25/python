@@ -69,8 +69,26 @@ str="arvind"
 print(str.upper())
 
 str="ARVIND"
-print(str.lower())"""
+print(str.lower())
 
 #10.Take a string and print it reversed
 str=input("enter the string value: ")
-print(str[::-1])
+print(str[::-1])"""
+
+"""#11.Check Positive, Negative, or Zero
+num=int(input("enetr the value: "))
+if num>0:
+    print("The number is positive ")
+elif num<0:
+    print("the number is negative ")
+else:
+    print("zero")"""
+
+#12.Find the Largest of Two Numbers 
+num1=int(input("enter the value: "))
+num2=int(input("enter the value: "))
+if num1>num2:
+    print("the largest number is num1")
+elif num2>num1:
+    print("the largest number is num2")
+
