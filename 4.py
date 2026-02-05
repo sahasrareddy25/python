@@ -90,13 +90,20 @@ num2=int(input("enter the value: "))
 if num1>num2:
     print("the largest number is num1")
 elif num2>num1:
-    print("the largest number is num2")"""
+    print("the largest number is num2")
 
 #13.Check Even or Odd
 num=int(input("enter the number: "))
 if num%2==0:
     print("the number is even")
 else:
-    print("the number is odd")
+    print("the number is odd")"""
 
+#14.Count Vowels in a String
+str=input("enter the characters: ")
+count=0
+for ch in str:
+    if ch in "aeiouAEIOU":
+        count=count+1
+    print("no.of vowels: ", count)
 
