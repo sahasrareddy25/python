@@ -97,7 +97,7 @@ num=int(input("enter the number: "))
 if num%2==0:
     print("the number is even")
 else:
-    print("the number is odd")"""
+    print("the number is odd")
 
 #14.Count Vowels in a String
 str=input("enter the characters: ")
@@ -106,4 +106,17 @@ for ch in str:
     if ch in "aeiouAEIOU":
         count=count+1
     print("no.of vowels: ", count)
+
+#15.Reverse a String
+str="Mallareddyuniversity"
+print(len(str))
+print(str[::-1])"""
+
+#16.Check Palindrome
+word=input("Enter the word: ")
+if word==word[::-1]:
+    print("its a palindrome")
+else:
+    print("its a not a palindrome")
+
 
