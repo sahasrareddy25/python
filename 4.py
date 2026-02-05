@@ -82,7 +82,7 @@ if num>0:
 elif num<0:
     print("the number is negative ")
 else:
-    print("zero")"""
+    print("zero")
 
 #12.Find the Largest of Two Numbers 
 num1=int(input("enter the value: "))
@@ -90,5 +90,13 @@ num2=int(input("enter the value: "))
 if num1>num2:
     print("the largest number is num1")
 elif num2>num1:
-    print("the largest number is num2")
+    print("the largest number is num2")"""
+
+#13.Check Even or Odd
+num=int(input("enter the number: "))
+if num%2==0:
+    print("the number is even")
+else:
+    print("the number is odd")
+
 
