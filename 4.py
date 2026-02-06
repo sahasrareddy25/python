@@ -121,14 +121,22 @@ else:
 
 #Convert String to Uppercase
 str="nandini"
-print(str.upper())"""
+print(str.upper())
 
 #Find the second largest number in a list
 nums=[10,20,4,45,99]
 largest_num=max(nums)
 nums.remove (largest_num)
 second_largest=max(nums)
-print("second largest number:", second_largest)
+print("second largest number:", second_largest)"""
+
+#Remove duplicate characters from a string
+text = "Programming"
+result = ""
+for ch in text:
+    if ch not in result:
+        result = result + ch
+print(result)
 
 
 
