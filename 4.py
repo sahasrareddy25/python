@@ -110,7 +110,7 @@ for ch in str:
 #15.Reverse a String
 str="Mallareddyuniversity"
 print(len(str))
-print(str[::-1])"""
+print(str[::-1])
 
 #16.Check Palindrome
 word=input("Enter the word: ")
@@ -118,5 +118,19 @@ if word==word[::-1]:
     print("its a palindrome")
 else:
     print("its a not a palindrome")
+
+#Convert String to Uppercase
+str="nandini"
+print(str.upper())"""
+
+#Find the second largest number in a list
+nums=[10,20,4,45,99]
+largest_num=max(nums)
+nums.remove (largest_num)
+second_largest=max(nums)
+print("second largest number:", second_largest)
+
+
+
 
 
