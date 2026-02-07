@@ -62,16 +62,16 @@ result=[]
 for x in Array:
     if x not in result:
         result.append(x)
-print("after removing duplicates: ", result)
+print("after removing duplicates: ", result)"""
 
 #11.Check positive / negative / zero
-num=int(input("Enter a number: "))
+num=int(input("Enter the number: "))
 if num>0:
     print("positive numbers")
 elif num<0:
     print("negative number")
 else:
-    print("zero")"""
+    print("zero")
 
 
 

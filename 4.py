@@ -131,11 +131,11 @@ second_largest=max(nums)
 print("second largest number:", second_largest)"""
 
 #Remove duplicate characters from a string
-text = "Programming"
-result = ""
+text="sahasrareddy"
+result=" "
 for ch in text:
     if ch not in result:
-        result = result + ch
+        result=result+ch
 print(result)
 
 
