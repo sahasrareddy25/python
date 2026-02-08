@@ -62,7 +62,7 @@ result=[]
 for x in Array:
     if x not in result:
         result.append(x)
-print("after removing duplicates: ", result)"""
+print("after removing duplicates: ", result)
 
 #11.Check positive / negative / zero
 num=int(input("Enter the number: "))
@@ -71,8 +71,12 @@ if num>0:
 elif num<0:
     print("negative number")
 else:
-    print("zero")
+    print("zero")"""
 
+#12.
+total = sum(marks)
+average = total / len(marks)
+grade = calculate_grade(average)
 
 
 

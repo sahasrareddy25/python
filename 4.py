@@ -128,7 +128,7 @@ nums=[10,20,4,45,99]
 largest_num=max(nums)
 nums.remove (largest_num)
 second_largest=max(nums)
-print("second largest number:", second_largest)"""
+print("second largest number:", second_largest)
 
 #Remove duplicate characters from a string
 text="sahasrareddy"
@@ -136,7 +136,13 @@ result=" "
 for ch in text:
     if ch not in result:
         result=result+ch
-print(result)
+print(result)"""
+
+#sum of numbers from 1 to 13
+sum =0
+for i in range(1, 13):
+    sum = sum + i
+print("Sum:", sum)
 
 
 
