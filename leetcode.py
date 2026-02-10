@@ -300,7 +300,7 @@ class Solution:
                 result += str(count) + s[i]
                 i += 1
             s = result
-        return s"""
+        return s
 
 #contains duplicates
 class Solution(object):
@@ -310,8 +310,15 @@ class Solution(object):
             if n in seen:
                 return True
             seen.add(n)
-        return False
-
+        return False"""
+        
+#two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return[i,j]
 
 
 
