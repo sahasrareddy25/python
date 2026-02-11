@@ -136,13 +136,19 @@ result=" "
 for ch in text:
     if ch not in result:
         result=result+ch
-print(result)"""
+print(result)
 
 #sum of numbers from 1 to 13
 sum =0
 for i in range(1, 13):
     sum = sum + i
-print("Sum:", sum)
+print("Sum:", sum)"""
+
+#reverse string
+s = input("Enter a string: ")
+reversed_string = s[::-1]
+print("Reversed string:", reversed_string)
+
 
 
 
