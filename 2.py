@@ -74,7 +74,7 @@ ch=input("enter the character: ")
 if ch in('a','e','i','o','u','A','E','I','O','U'):
     print("It's a vowel")
 else:
-    print("its a consonant")"""
+    print("its a consonant")
 
 #Largest of Two Numbers
 x=int(input("enter the value: "))
@@ -85,3 +85,8 @@ elif y>x:
     print("largest numner is:", y)
 else:
     print("Both are equal numbers")
+"""
+#reverse string
+s = input("Enter a string: ")
+revers_string = s[::-1]
+print("Reversed string:", revers_string)
