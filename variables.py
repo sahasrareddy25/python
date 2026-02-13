@@ -489,19 +489,12 @@ chem=98
 bio=100
 total_marks=(math*chem*bio)/100
 print(total_marks)
-
+"""
 #15.Store salary and bonus, find total salary.
 salary=12000
 bonus=2000
 total_Salary=salary+bonus
-print(total_Salary)"""
-
-#16.Store cost price and selling price, find profit or loss amount (just calculation).
-cost_price=1200
-selling_price=1000
-if selling_price>cost_price:
-    profit=selling_price-cost_price
-    print("profit amount:", profit)
+print(total_Salary)
 
 
 
