@@ -1,4 +1,4 @@
-"""#The Painter's Partition Problem-II
+""" #The Painter's Partition Problem-II
 #Difficulty: HardAccuracy: 27.52%Submissions: 172K+Points: 8
 #Given an array arr[] where each element denotes the length of a board, and an integer k representing the number of painters available. Each painter takes 1 unit of time to paint 1 unit length of a board.
 #Determine the minimum amount of time required to paint all the boards, under the constraint that each painter can paint only a contiguous sequence of boards (no skipping or splitting allowed).
@@ -27,7 +27,7 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
-        return answer"""
+        return answer
 
 #Chocolate Distribution Problem
 #Given an array arr[] of positive integers, where each value represents the number of chocolates in a packet. Each packet can have a variable number of chocolates. There are m students, the task is to distribute chocolate packets among m students such that -
@@ -42,4 +42,15 @@ class Solution:
         min_diff = float('inf')
         for i in range(n - m + 1):
             min_diff = min(min_diff, arr[i + m - 1] - arr[i])
-            return min_diff
+            return min_diff"""
+
+#Meeting Rooms
+#Difficulty: EasyAccuracy: 65.12%Submissions: 38K+Points: 2
+#Given a 2D array arr[][], where arr[i][0] is the starting time of ith meeting and arr[i][1] is the ending time of ith meeting, the task is to check if it is possible for a person to attend all the meetings such that he can attend only one meeting at a particular time.
+class Solution:
+    def canAttend(self, arr):
+        arr.sort(key=lambda x: x[0])
+        for i in range(1, len(arr)):
+            if arr[i][0] < arr[i-1][1]:
+                return False
+        return True
