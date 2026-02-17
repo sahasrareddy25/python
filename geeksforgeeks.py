@@ -42,7 +42,7 @@ class Solution:
         min_diff = float('inf')
         for i in range(n - m + 1):
             min_diff = min(min_diff, arr[i + m - 1] - arr[i])
-            return min_diff"""
+            return min_diff
 
 #Meeting Rooms
 #Difficulty: EasyAccuracy: 65.12%Submissions: 38K+Points: 2
@@ -53,4 +53,31 @@ class Solution:
         for i in range(1, len(arr)):
             if arr[i][0] < arr[i-1][1]:
                 return False
-        return True
+        return True"""
+
+
+#Maximum number of overlapping Intervals
+#You are given an array of intervals arr[][], where each interval is represented by two integers [start, end] (inclusive). Return the maximum number of intervals that overlap at any point in time.
+class Solution:
+    def overlapInt(self, arr):
+        n = len(arr)
+        start = []
+        end = []
+        for s, e in arr:
+            start.append(s)
+            end.append(e)
+        start.sort()
+        end.sort()
+        i = j = 0
+        curr = 0
+        maxi = 0
+        while i < n and j < n:
+            if start[i] <= end[j]:   # inclusive
+                curr += 1
+                maxi = max(maxi, curr)
+                i += 1
+            else:
+                curr -= 1
+                j += 1
+        return maxi
+
