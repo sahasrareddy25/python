@@ -79,7 +79,7 @@ class Solution:
             else:
                 curr -= 1
                 j += 1
-        return maxi """
+        return maxi 
 
 
 #Count Inversions
@@ -131,5 +131,17 @@ class Solution:
             return inv_count
 
         temp = [0] * len(arr)
-        return merge_sort(arr, temp, 0, len(arr) - 1)
+        return merge_sort(arr, temp, 0, len(arr) - 1)"""
+
+#Missing Element in Range Difficulty: MediumAccuracy: 55.45%Submissions: 15K+Points: 4Average Time: 20m Given an array arr[] of integers and a range [low, high], find all the numbers within the range that are not present in the array. return the missing numbers in sorted order.
+class Solution:
+    def missingRange(self, arr, low, high):
+        s = set(arr)
+        ans = []
+
+        for i in range(low, high + 1):
+            if i not in s:
+                ans.append(i)
+
+        return ans
 
