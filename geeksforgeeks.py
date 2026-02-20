@@ -131,7 +131,7 @@ class Solution:
             return inv_count
 
         temp = [0] * len(arr)
-        return merge_sort(arr, temp, 0, len(arr) - 1)"""
+        return merge_sort(arr, temp, 0, len(arr) - 1)
 
 #Missing Element in Range Difficulty: MediumAccuracy: 55.45%Submissions: 15K+Points: 4Average Time: 20m Given an array arr[] of integers and a range [low, high], find all the numbers within the range that are not present in the array. return the missing numbers in sorted order.
 class Solution:
@@ -143,5 +143,27 @@ class Solution:
             if i not in s:
                 ans.append(i)
 
-        return ans
+        return ans"""
 
+#Form the Largest Number.Given an array of integers arr[] representing non-negative integers, arrange them so that after concatenating all of them in order, it results in the largest possible number. Since the result may be very large, return it as a string.
+from functools import cmp_to_key
+
+class Solution:
+    def findLargest(self, arr):   # ✅ changed name
+        
+        arr = [str(x) for x in arr]
+
+        def cmp(a, b):
+            if a + b > b + a:
+                return -1
+            elif a + b < b + a:
+                return 1
+            else:
+                return 0
+
+        arr.sort(key=cmp_to_key(cmp))
+
+        if arr[0] == '0':
+            return '0'
+
+        return ''.join(arr)
