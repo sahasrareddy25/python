@@ -143,7 +143,7 @@ class Solution:
             if i not in s:
                 ans.append(i)
 
-        return ans"""
+        return ans
 
 #Form the Largest Number.Given an array of integers arr[] representing non-negative integers, arrange them so that after concatenating all of them in order, it results in the largest possible number. Since the result may be very large, return it as a string.
 from functools import cmp_to_key
@@ -166,4 +166,23 @@ class Solution:
         if arr[0] == '0':
             return '0'
 
-        return ''.join(arr)
+        return ''.join(arr)"""
+
+#Find H-Index
+#You are given an array citations[], where each element citations[i] represents the number of citations received by the ith paper of a researcher. You have to calculate the researcher’s H-index.
+#The H-index is defined as the maximum value H, such that the researcher has published at least H papers, and all those papers have citation value greater than or equal to H.
+class Solution:
+    def hIndex(self, citations):
+        n = len(citations)
+        count = [0] * (n + 1)
+        for c in citations:
+            if c >= n:
+                count[n] += 1
+            else:
+                count[c] += 1
+        total = 0
+        for h in range(n, -1, -1):
+            total += count[h]
+            if total >= h:
+                return h
+        return 0
