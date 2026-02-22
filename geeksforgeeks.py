@@ -166,7 +166,7 @@ class Solution:
         if arr[0] == '0':
             return '0'
 
-        return ''.join(arr)"""
+        return ''.join(arr)
 
 #Find H-Index
 #You are given an array citations[], where each element citations[i] represents the number of citations received by the ith paper of a researcher. You have to calculate the researcher’s H-index.
@@ -185,4 +185,20 @@ class Solution:
             total += count[h]
             if total >= h:
                 return h
-        return 0
+        return 0"""
+
+#Count Subarrays with given XOR
+#Given an array of integers arr[] and a number k, count the number of subarrays having XOR of their elements as k.
+class Solution:
+    def subarrayXor(self, arr, k):
+        count = 0
+        xr = 0
+        freq = {0: 1}
+
+        for num in arr:
+            xr ^= num
+            if xr ^ k in freq:
+                count += freq[xr ^ k]
+            freq[xr] = freq.get(xr, 0) + 1
+
+        return count
