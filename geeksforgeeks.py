@@ -185,7 +185,7 @@ class Solution:
             total += count[h]
             if total >= h:
                 return h
-        return 0"""
+        return 0
 
 #Count Subarrays with given XOR
 #Given an array of integers arr[] and a number k, count the number of subarrays having XOR of their elements as k.
@@ -201,4 +201,19 @@ class Solution:
                 count += freq[xr ^ k]
             freq[xr] = freq.get(xr, 0) + 1
 
-        return count
+        return count"""
+
+#Union of Arrays with Duplicates
+#You are given two arrays a[] and b[], return the Union of both the arrays in any order.
+#The Union of two arrays is a collection of all distinct elements present in either of the arrays. If an element appears more than once in one or both arrays, it should be included only once in the result.
+class Solution:
+    def findUnion(self, a, b):
+        union_set = set()
+        
+        for num in a:
+            union_set.add(num)
+            
+        for num in b:
+            union_set.add(num)
+            
+        return list(union_set)
