@@ -201,7 +201,7 @@ class Solution:
                 count += freq[xr ^ k]
             freq[xr] = freq.get(xr, 0) + 1
 
-        return count"""
+        return count
 
 #Union of Arrays with Duplicates
 #You are given two arrays a[] and b[], return the Union of both the arrays in any order.
@@ -216,4 +216,22 @@ class Solution:
         for num in b:
             union_set.add(num)
             
-        return list(union_set)
+        return list(union_set)"""
+
+#Longest Span in two Binary Arrays
+#Given two binary arrays, a1[] and a2[] of equal length. Find the length of longest common span (i, j), where i<= j such that a1[i] + a1[i+1] + .... + a1[j] =  a2[i] + a2[i+1] + ... + a2[j].
+class Solution:
+    def equalSumSpan(self, a1, a2):
+        n = len(a1)
+        prefix_sum = 0
+        first_index = {}
+        max_len = 0
+        for i in range(n):
+            prefix_sum += a1[i] - a2[i]
+            if prefix_sum == 0:
+                max_len = i + 1
+            if prefix_sum in first_index:
+                max_len = max(max_len, i - first_index[prefix_sum])
+            else:
+                first_index[prefix_sum] = i
+        return max_len
