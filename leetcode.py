@@ -310,7 +310,7 @@ class Solution(object):
             if n in seen:
                 return True
             seen.add(n)
-        return False"""
+        return False
         
 #two sum
 class Solution(object):
@@ -319,7 +319,16 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return[i,j]
+"""
 
+#contains dulicates
+class solution:
+    def containsDuplicates(Self,num):
+        nums.sort()
+        for i in range(1,len(nums)):
+            if nums[i]==num[i-1]:
+               return True
+        return False
 
 
 
