@@ -110,13 +110,21 @@ for i in range(1,21):
 
 #5.Print multiples of 5 up to 50
 for i in range(5,51,5):
-    print(i)"""
+    print(i)
 
 #6.sum of numbers from 1 to 13
 sum =0
 for i in range(1, 13):
     sum = sum + i
-print("Sum:", sum)
+print("Sum:", sum)"""
+
+#WHILE LOOP
+#counting the candies
+candies=10
+while candies>0:
+    print("Candies distributed")
+    candies -= 1 
+print("candies")
 
 
 
