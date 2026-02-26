@@ -216,7 +216,7 @@ class Solution:
         for num in b:
             union_set.add(num)
             
-        return list(union_set)"""
+        return list(union_set)
 
 #Longest Span in two Binary Arrays
 #Given two binary arrays, a1[] and a2[] of equal length. Find the length of longest common span (i, j), where i<= j such that a1[i] + a1[i+1] + .... + a1[j] =  a2[i] + a2[i+1] + ... + a2[j].
@@ -234,4 +234,30 @@ class Solution:
                 max_len = max(max_len, i - first_index[prefix_sum])
             else:
                 first_index[prefix_sum] = i
-        return max_len
+        return max_len"""
+
+#Isomorphic Strings
+#Given two strings s1 and s2 consisting of only lowercase English letters and of equal length, check if these two strings are isomorphic to each other.
+#If the characters in s1 can be changed to get s2, then two strings, s1 and s2 are isomorphic. A character must be completely swapped out for another character while maintaining the order of the characters. A character may map to itself, but no two characters may map to the same character.
+class Solution:
+    def areIsomorphic(self, s1, s2):
+        
+        map1 = {}
+        map2 = {}
+        
+        for i in range(len(s1)):
+            c1 = s1[i]
+            c2 = s2[i]
+            if c1 in map1:
+                if map1[c1] != c2:
+                    return False
+            else:
+                map1[c1] = c2
+            
+            if c2 in map2:
+                if map2[c2] != c1:
+                    return False
+            else:
+                map2[c2] = c1
+        
+        return True
