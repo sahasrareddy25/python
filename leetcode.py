@@ -319,7 +319,7 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return[i,j]
-"""
+
 
 #contains dulicates
 class solution:
@@ -328,7 +328,13 @@ class solution:
         for i in range(1,len(nums)):
             if nums[i]==num[i-1]:
                return True
-        return False
+        return False"""
+
+#Number of 1 bits
+class Solution(object):
+    def hammingWeight(self, n):
+        bits = bin(n)[2:]
+        return bits.count("1")  
 
 
 
