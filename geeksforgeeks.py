@@ -234,7 +234,7 @@ class Solution:
                 max_len = max(max_len, i - first_index[prefix_sum])
             else:
                 first_index[prefix_sum] = i
-        return max_len"""
+        return max_len
 
 #Isomorphic Strings
 #Given two strings s1 and s2 consisting of only lowercase English letters and of equal length, check if these two strings are isomorphic to each other.
@@ -260,4 +260,46 @@ class Solution:
             else:
                 map2[c2] = c1
         
-        return True
+        return True"""
+
+#Number of submatrix have sum X
+class Solution:
+    def countSquare(self, mat, x):
+        n = len(mat)
+        m = len(mat[0])
+        
+        prefix = [[0]*m for _ in range(n)]
+        
+        for i in range(n):
+            for j in range(m):
+                prefix[i][j] = mat[i][j]
+                if i > 0:
+                    prefix[i][j] += prefix[i-1][j]
+                if j > 0:
+                    prefix[i][j] += prefix[i][j-1]
+                if i > 0 and j > 0:
+                    prefix[i][j] -= prefix[i-1][j-1]
+        
+        count = 0
+        
+        for i in range(n):
+            for j in range(m):
+                max_len = min(n-i, m-j)
+                
+                for size in range(1, max_len+1):
+                    r2 = i + size - 1
+                    c2 = j + size - 1
+                    
+                    total = prefix[r2][c2]
+                    
+                    if i > 0:
+                        total -= prefix[i-1][c2]
+                    if j > 0:
+                        total -= prefix[r2][j-1]
+                    if i > 0 and j > 0:
+                        total += prefix[i-1][j-1]
+                    
+                    if total == x:
+                        count += 1
+        
+        return count
