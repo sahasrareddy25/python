@@ -144,7 +144,7 @@ for char in range(candies):
     print("distribution of candies")
     if candies-char==5:
         print("only 5candies left")
-        break"""
+        break
 
 #continue usage
 candies=10
@@ -153,6 +153,38 @@ for char in range(candies):
         print("only 5 left")
         continue
     print("again distibuting 5 candies")
+
+#using while #sum 1 to N 
+num=int(input("enter the num value: "))
+i=1
+while i<= num:
+    print(i)
+    i+=1
+
+#using for
+num=int(input("enter the num value: "))
+for i in range(1, num+1):
+    print(i)
+
+#calculate sum of N natural numbers
+num=int(input("enter the num values: "))
+i=1
+sum=0
+while i<=num:
+    sum=i+sum
+    i+=1
+    print(sum)"""
+
+#even numbers 1 to N
+num=int(input("enter the num values: "))
+i=1
+while i<=num:
+    if i%2==0:
+     print(i)
+    i+=1
+
+
+
 
 
 
