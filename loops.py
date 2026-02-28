@@ -129,11 +129,21 @@ print("candies")
 #FOR LOOP
 message= "Hello world"
 for char in message:
-    print(char)"""
+    print(char)
 
+#finding length
 message="hello world"
 for char in message:
-    print(message, len(message))
+    print(message, len(message))"""
+
+#NESTED LOOPS
+#for loops inside a for loop same to while also
+candies=10
+for char in range(candies):
+    print("distribution of candies")
+    if candies-char==5:
+        print("only 5candies left")
+        break
 
 
 
