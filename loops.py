@@ -118,13 +118,18 @@ for i in range(1, 13):
     sum = sum + i
 print("Sum:", sum)"""
 
-#WHILE LOOP
+"""#WHILE LOOP
 #counting the candies
 candies=10
 while candies>0:
     print("Candies distributed")
     candies -= 1 
-print("candies")
+print("candies")"""
+
+#FOR LOOP
+message= "Hello world"
+for char in message:
+    print(char)
 
 
 
