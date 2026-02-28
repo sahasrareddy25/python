@@ -260,7 +260,7 @@ class Solution:
             else:
                 map2[c2] = c1
         
-        return True"""
+        return True
 
 #Number of submatrix have sum X
 class Solution:
@@ -302,4 +302,37 @@ class Solution:
                     if total == x:
                         count += 1
         
-        return count
+        return count"""
+
+#Find the closest pair from two arrays
+def closestPair(arr1, arr2, x):
+    n = len(arr1)
+    m = len(arr2)
+    
+    i = 0
+    j = m - 1
+    
+    min_diff = float('inf')
+    result = [0, 0]
+    
+    while i < n and j >= 0:
+        current_sum = arr1[i] + arr2[j]
+        diff = abs(current_sum - x)
+        
+        if diff < min_diff:
+            min_diff = diff
+            result = [arr1[i], arr2[j]]
+        
+        if current_sum > x:
+            j -= 1
+        else:
+            i += 1
+    
+    return result
+
+
+arr1 = [1, 4, 5, 7]
+arr2 = [10, 20, 30, 40]
+x = 32
+
+print(closestPair(arr1, arr2, x))

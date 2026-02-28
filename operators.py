@@ -75,7 +75,7 @@ citizen=True
 if age>= 20 and citizen:
   print("Eligible voting")
 else:
-  print("Not eligible for Voting")"""
+  print("Not eligible for Voting")
 
 
 #shopping price
@@ -84,5 +84,12 @@ quantity=10
 discount=10
 totalprice=price*quantity-discount
 print("totalprice:",totalprice)
-
+"""
+def containsDuplicate(nums):
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False
 
