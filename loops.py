@@ -124,12 +124,17 @@ candies=10
 while candies>0:
     print("Candies distributed")
     candies -= 1 
-print("candies")"""
+print("candies")
 
 #FOR LOOP
 message= "Hello world"
 for char in message:
-    print(char)
+    print(char)"""
+
+message="hello world"
+for char in message:
+    print(message, len(message))
+
 
 
 
