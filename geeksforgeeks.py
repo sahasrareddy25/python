@@ -338,7 +338,13 @@ x = 32
 print(closestPair(arr1, arr2, x))
 """
 
-#rotate string
-class Solution(object):
-    def rotateString(self, s, goal):
-        return len(s) == len(goal) and goal in s + s
+#Move All Zeroes to End
+class Solution:
+    def pushZerosToEnd(self, arr):
+        n = len(arr)
+        j = 0   
+        
+        for i in range(n):
+            if arr[i] != 0:
+                arr[j], arr[i] = arr[i], arr[j]
+                j += 1
