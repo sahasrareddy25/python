@@ -181,21 +181,15 @@ i=1
 while i<=num:
     if i%2==0:
      print(i)
-    i+=1"""
+    i+=1
 
 #multiplicatiiiion table
 num=int(input("enter the num value: "))
 i=1
 while i <=10:
     print(f"{num} * {i}= {num*i}")
-    i+=1
+    i+=1"""
 
-
-num=int(input("eneter the num values: "))
-i=1
-while i<=10:
-    print(f"{n} * {i}= {n*i}")
-    i+=1
 
 
 

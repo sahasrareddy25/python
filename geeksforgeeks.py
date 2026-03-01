@@ -302,7 +302,7 @@ class Solution:
                     if total == x:
                         count += 1
         
-        return count"""
+        return count
 
 #Find the closest pair from two arrays
 def closestPair(arr1, arr2, x):
@@ -336,3 +336,9 @@ arr2 = [10, 20, 30, 40]
 x = 32
 
 print(closestPair(arr1, arr2, x))
+"""
+
+#rotate string
+class Solution(object):
+    def rotateString(self, s, goal):
+        return len(s) == len(goal) and goal in s + s

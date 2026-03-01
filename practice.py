@@ -74,9 +74,6 @@ else:
     print("zero")"""
 
 #12.
-total = sum(marks)
-average = total / len(marks)
-grade = calculate_grade(average)
 
 
 
