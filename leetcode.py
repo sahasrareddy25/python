@@ -335,12 +335,17 @@ class Solution(object):
     def hammingWeight(self, n):
         bits = bin(n)[2:]
         return bits.count("1")  
-"""
+
 
 #rotate string
 class Solution(object):
     def rotateString(self, s, goal):
-        return len(s) == len(goal) and goal in s + s
+        return len(s) == len(goal) and goal in s + s"""
+
+#Partitioning Into Minimum Number Of Deci-Binary Numbers
+class Solution(object):
+    def minPartitions(self, n):
+        return int(max(n)) 
 
 
 
