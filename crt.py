@@ -1,5 +1,5 @@
 #printing the even and odd numbers in separate array
-arr=[1,2,3,4,5,6,7]
+arr=[1,2,3,4]
 even=[]
 odd=[]
 for i in arr:
