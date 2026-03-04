@@ -347,7 +347,7 @@ class Solution:
         for i in range(n):
             if arr[i] != 0:
                 arr[j], arr[i] = arr[i], arr[j]
-                j += 1"""
+                j += 1
 
 #Trapping Rain Water
 #Given an array arr[] with non-negative integers representing the height of blocks. If the width of each block is 1, compute how much water can be trapped between the blocks during the rainy season.
@@ -372,5 +372,24 @@ class Solution:
                 else:
                     water += right_max - arr[right]
                 right -= 1
-        return water
+        return water"""
+
+#max xor subarray of size k
+class Solution:
+    def maxSubarrayXOR(self, arr, k):
+        n = len(arr)
+        
+        current_xor = 0
+        for i in range(k):
+            current_xor ^= arr[i]
+        
+        max_xor = current_xor
+        
+        for i in range(k, n):
+            current_xor ^= arr[i - k]
+            current_xor ^= arr[i]
+            if current_xor > max_xor:
+                max_xor = current_xor
+        
+        return max_xor
         
