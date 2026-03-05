@@ -1,4 +1,4 @@
-#printing the even and odd numbers in separate array
+"""#printing the even and odd numbers in separate array
 arr=[1,2,3,4]
 even=[]
 odd=[]
@@ -16,6 +16,14 @@ total = 0
 for num in numbers:
     total = total + num
 print(total)
+
+#check whether the given string is palindrome """
+
+#reverse string
+str="Hellooo"
+print(str[::-1])
+
+  
 
 
 

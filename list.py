@@ -99,13 +99,3 @@ char_list=list(text)
 print(text)
 print(char_list)"""
 
-#14.Convert the string "hello world" into a list and count how many spaces are present.
-text="hello"
-char_list=list(text)
-space_count=0
-if char_list in char_list:
-    if char_list=" ":
-      space_count+=1
-      print("number of spaces:", space_count)
-
-
