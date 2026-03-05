@@ -91,11 +91,11 @@ string="asd2345df"
 chars=list(string)
 for ch in chars:
     if ch.isdigit():
-        print(ch)
+        print(ch)"""
 
 #13.Convert a list [2, 4, 6] into another list using list() and print both.
 text=[1,23,4,45,4]
 char_list=list(text)
 print(text)
-print(char_list)"""
+print(char_list)
 
