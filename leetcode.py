@@ -340,18 +340,24 @@ class Solution(object):
 #rotate string
 class Solution(object):
     def rotateString(self, s, goal):
-        return len(s) == len(goal) and goal in s + s"""
+        return len(s) == len(goal) and goal in s + s
 
 #Partitioning Into Minimum Number Of Deci-Binary nums
 class Solution(object):
     def minPartitions(self, n):
         return int(max(n)) 
+"""
 
-
-
-
-
-
+#Check if Binary String Has at Most One Segment of Ones
+class Solution(object):
+    def checkOnesSegment(self, s):
+        idex=0
+        for i in range(len(s)):
+            if s[i] =="1":
+                if i-idex>1:
+                    return False
+                idex=i
+        return True
 
         
         
