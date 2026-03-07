@@ -372,7 +372,7 @@ class Solution:
                 else:
                     water += right_max - arr[right]
                 right -= 1
-        return water"""
+        return water
 
 #max xor subarray of size k
 class Solution:
@@ -391,5 +391,17 @@ class Solution:
             if current_xor > max_xor:
                 max_xor = current_xor
         
-        return max_xor
+        return max_xor"""
+
+#Dice Throw
+class Solution:
+    def noOfWays(self, m, n, x):
+        dp = [[0]*(x+1) for _ in range(n+1)]
+        dp[0][0] = 1
+        for i in range(1, n+1):
+            for j in range(1, x+1):
+                for k in range(1, m+1):
+                    if j-k >= 0:
+                        dp[i][j] += dp[i-1][j-k]
+        return dp[n][x]
         
