@@ -20,8 +20,9 @@ text="SAHASRA"
 print(text.lower())"""
 
 #5️⃣ Find the length of a string without using len()
-str="sahasra"
-print(str(len))
-
-
+str="arvindh"
+reversed=" "
+for i in range(len(str)-1,-1,-1):
+    reversed=reversed+str[i]
+print(reversed)
 
