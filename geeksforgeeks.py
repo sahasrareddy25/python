@@ -391,7 +391,7 @@ class Solution:
             if current_xor > max_xor:
                 max_xor = current_xor
         
-        return max_xor"""
+        return max_xor
 
 #Dice Throw
 class Solution:
@@ -403,5 +403,20 @@ class Solution:
                 for k in range(1, m+1):
                     if j-k >= 0:
                         dp[i][j] += dp[i-1][j-k]
-        return dp[n][x]
+        return dp[n][x]"""
+
+#pythagoreanTriplet
+class Solution:
+    def pythagoreanTriplet(self, arr):
+        n = len(arr)
+
+        arr = [x*x for x in arr]
+        s = set(arr)
+
+        for i in range(n):
+            for j in range(i+1, n):
+                if arr[i] + arr[j] in s:
+                    return True
+
+        return False
         
