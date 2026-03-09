@@ -403,7 +403,7 @@ class Solution:
                 for k in range(1, m+1):
                     if j-k >= 0:
                         dp[i][j] += dp[i-1][j-k]
-        return dp[n][x]"""
+        return dp[n][x]
 
 #pythagoreanTriplet
 class Solution:
@@ -418,5 +418,23 @@ class Solution:
                 if arr[i] + arr[j] in s:
                     return True
 
-        return False
+        return False"""
+
+#167. Two Sum II - Input Array Is Sorted
+class Solution(object):
+    def twoSum(self, numbers, target): 
+        left=0
+        target_value=9
+        right=len(numbers)-1
+        while left<right:
+            sum=numbers[left]+numbers[right]
+            if sum==target:
+                return [left+1,right+1]
+            elif sum<target:
+               left+=1
+            else:
+               right-=1
+
+
+        
         

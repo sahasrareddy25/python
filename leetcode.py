@@ -346,7 +346,7 @@ class Solution(object):
 class Solution(object):
     def minPartitions(self, n):
         return int(max(n)) 
-"""
+
 
 #Check if Binary String Has at Most One Segment of Ones
 class Solution(object):
@@ -357,7 +357,23 @@ class Solution(object):
                 if i-idex>1:
                     return False
                 idex=i
-        return True
+        return True"""
+
+#167. Two Sum II - Input Array Is Sorted
+class Solution(object):
+    def twoSum(self, numbers, target): 
+        left=0
+        target_value=9
+        right=len(numbers)-1
+        while left<right:
+            sum=numbers[left]+numbers[right]
+            if sum==target:
+                return [left+1,right+1]
+            elif sum<target:
+               left+=1
+            else:
+               right-=1
+
 
         
         
