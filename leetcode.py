@@ -357,7 +357,7 @@ class Solution(object):
                 if i-idex>1:
                     return False
                 idex=i
-        return True"""
+        return True
 
 #167. Two Sum II - Input Array Is Sorted
 class Solution(object):
@@ -372,7 +372,16 @@ class Solution(object):
             elif sum<target:
                left+=1
             else:
-               right-=1
+               right-=1"""
+
+#Moves zeroes
+class Solution(object):
+    def moveZeroes(self, nums):
+        j=0
+        for i in range(len(nums)):
+           if nums[i]!=0:
+            nums[i], nums[j]=nums[j], nums[i]
+            j+=1
 
 
         
