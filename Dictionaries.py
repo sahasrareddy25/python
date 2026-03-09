@@ -6,4 +6,6 @@ student={
     "age": "20",
     "branch": "cse"
 }
-print(student['name'])
+print(student["name"])
+
+#2.

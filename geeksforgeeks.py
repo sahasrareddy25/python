@@ -420,21 +420,22 @@ class Solution:
 
         return False"""
 
-#167. Two Sum II - Input Array Is Sorted
-class Solution(object):
-    def twoSum(self, numbers, target): 
-        left=0
-        target_value=9
-        right=len(numbers)-1
-        while left<right:
-            sum=numbers[left]+numbers[right]
-            if sum==target:
-                return [left+1,right+1]
-            elif sum<target:
-               left+=1
-            else:
-               right-=1
 
-
+#Largest numnber in one swap
+class Solution:
+    def largestSwap(self, s):
+        s = list(s)
+        n = len(s)
+        for i in range(n):
+            max_digit = s[i]
+            index = i
+            for j in range(i+1, n):
+                if s[j] >= max_digit:
+                    max_digit = s[j]
+                    index = j
+            if max_digit > s[i]:
+                s[i], s[index] = s[index], s[i]
+                break
+        return "".join(s)
         
         
