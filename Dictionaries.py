@@ -6,6 +6,14 @@ student={
     "age": "20",
     "branch": "cse"
 }
-print(student["name"])
+print(student['name'])
 
-#2.
+#2.counting the frequenccy
+nums=[1,2,3,3,4,4,5,6,6,6]
+freq={}
+for i in nums:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
