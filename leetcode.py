@@ -372,7 +372,7 @@ class Solution(object):
             elif sum<target:
                left+=1
             else:
-               right-=1"""
+               right-=1
 
 #Moves zeroes
 class Solution(object):
@@ -381,7 +381,18 @@ class Solution(object):
         for i in range(len(nums)):
            if nums[i]!=0:
             nums[i], nums[j]=nums[j], nums[i]
-            j+=1
+            j+=1"""
+
+#find unique Binary Strings
+class Solution(object):
+    def findDifferentBinaryString(self, nums):
+       res=""
+       for i in range(len(nums)):
+           if nums[i][i]=='0':
+              res+='1'
+           else:
+                res+='0'
+       return res
 
 
         
