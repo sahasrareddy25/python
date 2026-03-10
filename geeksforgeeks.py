@@ -418,7 +418,7 @@ class Solution:
                 if arr[i] + arr[j] in s:
                     return True
 
-        return False"""
+        return False
 
 
 #Largest numnber in one swap
@@ -436,6 +436,26 @@ class Solution:
             if max_digit > s[i]:
                 s[i], s[index] = s[index], s[i]
                 break
-        return "".join(s)
+        return "".join(s)"""
+
+#subarray with first smallest elements
+class Solution:
+    def countSubarrays(self, arr):
+        n = len(arr)
+        stack = []
+        count = [0] * n
+
+        for i in range(n - 1, -1, -1):
+            while stack and arr[i] <= arr[stack[-1]]:
+                stack.pop()
+
+            if not stack:
+                count[i] = n - i
+            else:
+                count[i] = stack[-1] - i
+
+            stack.append(i)
+
+        return sum(count)
         
         
