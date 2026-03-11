@@ -105,11 +105,15 @@ print(list)
 
 #finding length of the list
 list=["saashra","arvind","arvind"]          
-print(len(list))"""
+print(len(list))
 
 #list stores any kind of data types
 list1=["saashra","arvind","arvind"] 
 list2=[2,3,4,5,6,6]
 list3=[True,False,True]
-print(list1,list2,list3)
+print(list1,list2,list3)"""
+#one list can contain any kind of data types 
+list=["saashra",20,True]
+print(list)
+
 
