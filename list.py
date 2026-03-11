@@ -99,6 +99,17 @@ char_list=list(text)
 print(text)
 print(char_list)
 """
-#creating a list and stroing multiple values in it 
-list=["saashra","arvind"]
+"""#creating a list and stroing multiple values in it 
+list=["saashra","arvind","arvind"]          #lists ca strore duplicate values
 print(list)
+
+#finding length of the list
+list=["saashra","arvind","arvind"]          
+print(len(list))"""
+
+#list stores any kind of data types
+list1=["saashra","arvind","arvind"] 
+list2=[2,3,4,5,6,6]
+list3=[True,False,True]
+print(list1,list2,list3)
+
