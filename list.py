@@ -111,9 +111,28 @@ print(len(list))
 list1=["saashra","arvind","arvind"] 
 list2=[2,3,4,5,6,6]
 list3=[True,False,True]
-print(list1,list2,list3)"""
+print(list1,list2,list3)
 #one list can contain any kind of data types 
 list=["saashra",20,True]
 print(list)
 
+#data types
+mylist = ["apple", "banana", "cherry"]
+print(type(mylist))
+
+#printing the list according to the index values given in the print statemment
+list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(list[0:-1])
+
+#his example returns the items from the beginning to, but NOT including, "kiwi":
+list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(list[:4])
+
+#This example returns the items from "cherry" to the end:
+list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(list[2:])"""
+
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
 
