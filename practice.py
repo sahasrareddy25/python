@@ -73,10 +73,17 @@ elif num<0:
 else:
     print("zero")"""
 
-#1.Reverse a String
+"""#1.Reverse a String
 s="saashra"
-print(s[::-1])
+print(s[::-1])"""
 #2.Check Palindrome
+str="aassfssaa"
+if str==str[::-1]:
+    print(True)
+else:
+    print(False)
+    
+
 #3.Find Largest Number in a List
 #4.Count Vowels in a String
 #5.Find Factorial of a Number
