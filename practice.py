@@ -101,16 +101,19 @@ num=5
 factorial=1
 for i in range(1, num+1):
     factorial*=i
-print(factorial)"""
+print(factorial)
 #6.Two Sum Problem
 nums=[1,2,3,4,5]
 target=6
 for i in range(len(nums)):
     for j in range(i+1, len(nums)):
         if nums[i]+nums[j]==target:
-            print([i,j])
-#7.Find Duplicate Elements in a List
+            print([i,j])"""
+
 #8.Second Largest Number in List
+nums=[1,2,3,4,5]
+nums.sort()
+print(nums[-2])
 #9.Count Frequency of Characters
 
 
