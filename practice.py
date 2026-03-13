@@ -86,7 +86,7 @@ else:
 #3.Find Largest Number in a List
 nums=[1,2,3,4,5]
 largest_number=max(nums)
-print(largest_number)"""
+print(largest_number)
 
 #4.Count Vowels in a String
 str=input("enter the string: ")
@@ -95,8 +95,13 @@ count=0
 for char in str:
     if char in vowels:
         count+=1
-print(count)
+print(count)"""
 #5.Find Factorial of a Number
+num=5
+factorial=1
+for i in range(1, num+1):
+    factorial*=i
+print(factorial)
 #6.Two Sum Problem
 #7.Find Duplicate Elements in a List
 #8.Second Largest Number in List
