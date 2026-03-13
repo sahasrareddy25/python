@@ -75,16 +75,19 @@ else:
 
 """#1.Reverse a String
 s="saashra"
-print(s[::-1])"""
+print(s[::-1])
 #2.Check Palindrome
 str="aassfssaa"
 if str==str[::-1]:
     print(True)
 else:
-    print(False)
+    print(False)"""
     
-
 #3.Find Largest Number in a List
+nums=[1,2,3,4,5]
+largest_number=max(nums)
+print(largest_number)
+
 #4.Count Vowels in a String
 #5.Find Factorial of a Number
 #6.Two Sum Problem
