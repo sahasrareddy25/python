@@ -73,7 +73,18 @@ elif num<0:
 else:
     print("zero")"""
 
-#12.
+#1.Reverse a String
+s="saashra"
+print(s[::-1])
+#2.Check Palindrome
+#3.Find Largest Number in a List
+#4.Count Vowels in a String
+#5.Find Factorial of a Number
+#6.Two Sum Problem
+#7.Find Duplicate Elements in a List
+#8.Second Largest Number in List
+#9.Count Frequency of Characters
+
 
 
 
