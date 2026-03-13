@@ -81,14 +81,21 @@ str="aassfssaa"
 if str==str[::-1]:
     print(True)
 else:
-    print(False)"""
+    print(False)
     
 #3.Find Largest Number in a List
 nums=[1,2,3,4,5]
 largest_number=max(nums)
-print(largest_number)
+print(largest_number)"""
 
 #4.Count Vowels in a String
+str=input("enter the string: ")
+vowels='aeiou'
+count=0
+for char in str:
+    if char in vowels:
+        count+=1
+print(count)
 #5.Find Factorial of a Number
 #6.Two Sum Problem
 #7.Find Duplicate Elements in a List
