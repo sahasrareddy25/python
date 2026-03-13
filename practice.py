@@ -108,13 +108,22 @@ target=6
 for i in range(len(nums)):
     for j in range(i+1, len(nums)):
         if nums[i]+nums[j]==target:
-            print([i,j])"""
+            print([i,j])
 
 #8.Second Largest Number in List
 nums=[1,2,3,4,5]
 nums.sort()
-print(nums[-2])
+print(nums[-2])"""
+
 #9.Count Frequency of Characters
+str="saashra"
+freq={}
+for char in str:
+    if char in freq:
+        freq[char]+=1
+    else:
+        freq[char]=1
+print(freq)
 
 
 
