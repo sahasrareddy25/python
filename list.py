@@ -147,14 +147,19 @@ print(largest_number)
 #2.reverse list
 num=[1,2,3,4,5]
 rev_list=num[::-1]
-print(rev_list)"""
+print(rev_list)
 
 #3.Sum of elements in list
 nums=[1,2,3,4,5,6]
 total_sum=0
 for i in nums:
     total_sum=total_sum+i
-print(total_sum)
+print(total_sum)"""
+
+#4.remove duplicates from list
+nums=[1,2,3,3,3,4,5,5,6,6]
+unique_num=list(set(nums))
+print(unique_num)
 
 
 
