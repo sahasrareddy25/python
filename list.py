@@ -136,11 +136,25 @@ thislist = ["apple", "banana", "cherry"]
 if "apple" in thislist:
   print("Yes, 'apple' is in the fruits list")"""
 
-#finding the largest elemetn in the list
+"""#1.finding the largest elemetn in the list
 nums=[4,3,5,6,7,8]
 largest_number=nums[0]
 for num in nums:
     if num>largest_number:
         largest_number=num
 print(largest_number)
+
+#2.reverse list
+num=[1,2,3,4,5]
+rev_list=num[::-1]
+print(rev_list)"""
+
+#3.Sum of elements in list
+nums=[1,2,3,4,5,6]
+total_sum=0
+for i in nums:
+    total_sum=total_sum+i
+print(total_sum)
+
+
 
