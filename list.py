@@ -130,9 +130,17 @@ print(list[:4])
 
 #This example returns the items from "cherry" to the end:
 list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(list[2:])"""
+print(list[2:])
 
 thislist = ["apple", "banana", "cherry"]
 if "apple" in thislist:
-  print("Yes, 'apple' is in the fruits list")
+  print("Yes, 'apple' is in the fruits list")"""
+
+#finding the largest elemetn in the list
+nums=[4,3,5,6,7,8]
+largest_number=nums[0]
+for num in nums:
+    if num>largest_number:
+        largest_number=num
+print(largest_number)
 
