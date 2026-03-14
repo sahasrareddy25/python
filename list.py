@@ -154,12 +154,17 @@ nums=[1,2,3,4,5,6]
 total_sum=0
 for i in nums:
     total_sum=total_sum+i
-print(total_sum)"""
+print(total_sum)
 
 #4.remove duplicates from list
 nums=[1,2,3,3,3,4,5,5,6,6]
 unique_num=list(set(nums))
-print(unique_num)
+print(unique_num)"""
+
+#5.reverse string
+str="saashra"
+rev_str=str[::-1]
+print(rev_str)
 
 
 
