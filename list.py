@@ -164,13 +164,21 @@ print(unique_num)
 #5.reverse string
 str="saashra"
 rev_str=str[::-1]
-print(rev_str)"""
+print(rev_str)
 
 #6.checck palindrome
 str="madam"
 if str == str[::-1]:
     print(True)
 else:
-    print(False)
-    
+    print(False)"""
+
+#7.Count vowels
+str="cat"
+count=0
+for char in str:
+    if char in "aeiou":
+        count+=1
+print(count)
+
 
