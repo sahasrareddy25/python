@@ -159,12 +159,18 @@ print(total_sum)
 #4.remove duplicates from list
 nums=[1,2,3,3,3,4,5,5,6,6]
 unique_num=list(set(nums))
-print(unique_num)"""
+print(unique_num)
 
 #5.reverse string
 str="saashra"
 rev_str=str[::-1]
-print(rev_str)
+print(rev_str)"""
 
-
+#6.checck palindrome
+str="madam"
+if str == str[::-1]:
+    print(True)
+else:
+    print(False)
+    
 
