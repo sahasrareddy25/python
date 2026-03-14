@@ -171,7 +171,7 @@ str="madam"
 if str == str[::-1]:
     print(True)
 else:
-    print(False)"""
+    print(False)
 
 #7.Count vowels
 str="cat"
@@ -179,6 +179,10 @@ count=0
 for char in str:
     if char in "aeiou":
         count+=1
-print(count)
+print(count)"""
 
+#8.count words in sentences
+sen="rxdrcfvgbhjkmbuvyctrtcvgybhnjvctcyvgh"
+words=sen.split()
+print(len(words))
 
