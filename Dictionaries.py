@@ -1,6 +1,6 @@
 #In data structures stroing the data in key value pair 
 
-#1.store the student details and print name of the student
+"""#1.store the student details and print name of the student
 student={
     "name": "Saashra",
     "age": "20",
@@ -16,4 +16,11 @@ for i in nums:
         freq[i]+=1
     else:
         freq[i]=1
-print(freq)
+print(freq)"""
+
+#3.creating and accessing the dictionary
+student={"name":"arvind",
+         "Age":20,
+         "city":"Wgl",
+         }
+print(student["Age"])
