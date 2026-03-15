@@ -16,11 +16,17 @@ for i in nums:
         freq[i]+=1
     else:
         freq[i]=1
-print(freq)"""
+print(freq)
 
 #3.creating and accessing the dictionary
 student={"name":"arvind",
          "Age":20,
          "city":"Wgl",
          }
-print(student["Age"])
+print(student["Age"])"""
+
+#4.Adding new keys to the dictionary
+student={"name":"arvind",
+         "Age":20}
+student["college"]="MRU"
+print(student)
