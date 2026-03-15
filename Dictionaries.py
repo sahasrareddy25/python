@@ -36,7 +36,7 @@ student={"name":"Arvind",
          "Age":20,
 }
 student["Age"]=21
-print(student)"""
+print(student)
 
 #6.counting the frequency of the character we take
 str="gudmrng"
@@ -46,4 +46,14 @@ for char in str:
         freq[char]+=1
     else:
         freq[char]=1
-print(freq)
+print(freq)"""
+
+
+#7.finding the max value in the dictionary
+age={"arvind":20,
+     "saasshra":21,
+     "aashritha":21,
+     "rishhtha":20,
+     }
+max_age=max(age.values())
+print(max_age)
