@@ -29,11 +29,21 @@ print(student["Age"])
 student={"name":"arvind",
          "Age":20}
 student["college"]="MRU"
-print(student)"""
+print(student)
 
 #5.Updating the previously given values
 student={"name":"Arvind",
          "Age":20,
 }
 student["Age"]=21
-print(student)
+print(student)"""
+
+#6.counting the frequency of the character we take
+str="gudmrng"
+freq={}
+for char in str:
+    if char in freq:
+        freq[char]+=1
+    else:
+        freq[char]=1
+print(freq)
