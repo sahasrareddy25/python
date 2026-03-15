@@ -23,10 +23,17 @@ student={"name":"arvind",
          "Age":20,
          "city":"Wgl",
          }
-print(student["Age"])"""
+print(student["Age"])
 
 #4.Adding new keys to the dictionary
 student={"name":"arvind",
          "Age":20}
 student["college"]="MRU"
+print(student)"""
+
+#5.Updating the previously given values
+student={"name":"Arvind",
+         "Age":20,
+}
+student["Age"]=21
 print(student)
