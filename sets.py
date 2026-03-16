@@ -22,10 +22,22 @@ print(res)
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.intersection(b)
-print(res)"""
+print(res)
 
 #6.differnce
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.difference(b)
-print(res)
+print(res)"""
+
+#convert a list into set
+nums=[1,2,3,4,5,6]
+print(set(nums))
+
+#find a commmon digits between 2 lists
+a=[1,2,3,4]
+b=[1,2,5,7]
+set1=set(a)
+set2=set(b)
+common=set1&set2
+print(common)
