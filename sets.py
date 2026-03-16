@@ -16,10 +16,16 @@ print(nums)
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.union(b)
-print(res)"""
+print(res)
 
 #5.intersection
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.intersection(b)
+print(res)"""
+
+#6.differnce
+a={1,2,3,4}
+b={5,6,7,8,9}
+res=a.difference(b)
 print(res)

@@ -46,7 +46,7 @@ for char in str:
         freq[char]+=1
     else:
         freq[char]=1
-print(freq)"""
+print(freq)
 
 
 #7.finding the max value in the dictionary
@@ -56,4 +56,12 @@ age={"arvind":20,
      "rishhtha":20,
      }
 max_age=max(age.values())
-print(max_age)
+print(max_age)"""
+
+#1. Create and Access Dictionary (Basic)
+#Create a dictionary of student marks.
+dic={"Alice":85,
+     "Bob":90,
+     "charlie":78,
+}
+print(dic["Bob"])
