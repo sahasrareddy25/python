@@ -64,7 +64,7 @@ dic={"Alice":85,
      "Bob":50,
      "swarna":20,
 }
-print(dic["swarna"])"""
+print(dic["swarna"])
 
 #2.Add Item to Dictionary
 #Add a new key "course" to the dictionary.
@@ -73,4 +73,13 @@ dic={"name":"swarna",
      "college":"mru",
      }
 dic["course"]="cse"
+print(dic)"""
+
+#3. Update Dictionary Value
+#Change banana price to 25.
+dic={"apple":67,
+     "banana":25,
+     "kiwi":100
+     }
+dic["banana"]=88
 print(dic)
