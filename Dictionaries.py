@@ -58,10 +58,19 @@ age={"arvind":20,
 max_age=max(age.values())
 print(max_age)"""
 
-#1. Create and Access Dictionary (Basic)
+"""#1. Create and Access Dictionary (Basic)
 #Create a dictionary of student marks.
 dic={"Alice":85,
-     "Bob":90,
-     "charlie":78,
+     "Bob":50,
+     "swarna":20,
 }
-print(dic["Bob"])
+print(dic["swarna"])"""
+
+#2.Add Item to Dictionary
+#Add a new key "course" to the dictionary.
+dic={"name":"swarna",
+     "age":20,
+     "college":"mru",
+     }
+dic["course"]="cse"
+print(dic)
