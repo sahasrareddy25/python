@@ -82,7 +82,7 @@ dic={"apple":67,
      "kiwi":100
      }
 dic["banana"]=88
-print(dic)"""
+print(dic)
 
 #4.Remove Element from Dictionary
 #Remove "model" key.
@@ -92,4 +92,16 @@ dic={"name":"swarna",
      "model":"swarnapop",
 }
 dic.pop("model")
-print(dic)
+print(dic) """
+
+#5.5. Count Frequency of Numbers
+#Count frequency of numbers in list.
+nums=[1,2,3,4,5,6,7]
+freq={}
+for i in nums:
+    if i in freq:
+        freq[1]+=1
+    else:
+        freq[i]=1
+print(freq)
+    
