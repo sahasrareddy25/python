@@ -73,7 +73,7 @@ dic={"name":"swarna",
      "college":"mru",
      }
 dic["course"]="cse"
-print(dic)"""
+print(dic)
 
 #3. Update Dictionary Value
 #Change banana price to 25.
@@ -82,4 +82,14 @@ dic={"apple":67,
      "kiwi":100
      }
 dic["banana"]=88
+print(dic)"""
+
+#4.Remove Element from Dictionary
+#Remove "model" key.
+dic={"name":"swarna",
+     "age":20,
+     "college":"mru",
+     "model":"swarnapop",
+}
+dic.pop("model")
 print(dic)
