@@ -24,7 +24,7 @@ str="arvindh"
 reversed=" "
 for i in range(len(str)-1,-1,-1):
     reversed=reversed+str[i]
-print(reversed)"""
+print(reversed)
       
 #6.counting characters
 s="asadfg"
@@ -34,4 +34,12 @@ for ch in s:
         freq[ch]+=1
     else:
         freq[ch]=1
-print(freq)
+print(freq)"""
+
+#7.checking the anagram
+s1="listen"
+s2="silent"
+if sorted(s1)==sorted(s2):
+    print("it is anagram")
+else:
+    print("not an anagram")
