@@ -12,7 +12,20 @@ nums={1,2,3,4,5,6}
 nums.remove(6)
 print(nums)
 
-#4.union of two sets
+#4.union 
+#convert a list into set
+nums=[1,2,3,4,5,6]
+print(set(nums))
+
+#find a commmon digits between 2 lists
+a=[1,2,3,4]
+b=[1,2,5,7]
+set1=set(a)
+set2=set(b)
+common=set1&set2
+print(common)
+
+of two sets
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.union(b)
@@ -30,14 +43,10 @@ b={5,6,7,8,9}
 res=a.difference(b)
 print(res)"""
 
-#convert a list into set
-nums=[1,2,3,4,5,6]
-print(set(nums))
-
-#find a commmon digits between 2 lists
-a=[1,2,3,4]
-b=[1,2,5,7]
-set1=set(a)
-set2=set(b)
-common=set1&set2
-print(common)
+#7.finding the unique element
+nums=[1,2,3,4,5]
+unique=[]
+for i in nums:
+    if nums.count(i)==1:
+        unique.append(i)
+print(unique)
