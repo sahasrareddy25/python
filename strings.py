@@ -34,7 +34,7 @@ for ch in s:
         freq[ch]+=1
     else:
         freq[ch]=1
-print(freq)"""
+print(freq)
 
 #7.checking the anagram
 s1="listen"
@@ -42,4 +42,12 @@ s2="silent"
 if sorted(s1)==sorted(s2):
     print("it is anagram")
 else:
-    print("not an anagram")
+    print("not an anagram")"""
+
+#8.removing duplicates from  string
+s="asdgfhgjghf"
+result=""
+for ch in s:
+    if ch not in result:
+        result+=ch
+print(result)
