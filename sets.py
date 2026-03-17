@@ -41,7 +41,7 @@ print(res)
 a={1,2,3,4}
 b={5,6,7,8,9}
 res=a.difference(b)
-print(res)"""
+print(res)
 
 #7.finding the unique element
 nums=[1,2,3,4,5]
@@ -50,3 +50,9 @@ for i in nums:
     if nums.count(i)==1:
         unique.append(i)
 print(unique)
+
+"""
+#8.couting the distinct elements
+nums=[1,2,3,4,4,5,5,6,6]
+distinct_count=len(set(nums))
+print(distinct_count)
