@@ -394,7 +394,7 @@ class Solution(object):
                 res+='0'
        return res"""
 
-#minimum string length
+#minimum String Length
 class Solution(object):
     def minimizedStringLength(self, str):
         list={}
