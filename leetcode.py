@@ -381,7 +381,7 @@ class Solution(object):
         for i in range(len(nums)):
            if nums[i]!=0:
             nums[i], nums[j]=nums[j], nums[i]
-            j+=1"""
+            j+=1
 
 #find unique Binary Strings
 class Solution(object):
@@ -392,7 +392,15 @@ class Solution(object):
               res+='1'
            else:
                 res+='0'
-       return res
+       return res"""
+
+#minimum string length
+class Solution(object):
+    def minimizedStringLength(self, str):
+        list={}
+        for i in str:
+            list[i]=0
+        return len(list)
 
 
         
