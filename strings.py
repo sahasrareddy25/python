@@ -42,7 +42,7 @@ s2="silent"
 if sorted(s1)==sorted(s2):
     print("it is anagram")
 else:
-    print("not an anagram")"""
+    print("not an anagram")
 
 #8.removing duplicates from  string
 s="asdgfhgjghf"
@@ -50,4 +50,8 @@ result=""
 for ch in s:
     if ch not in result:
         result+=ch
-print(result)
+print(result)"""
+
+#slicing string method in the characters
+str="am i loking awkward?"
+print(str[3:6])          #using the index values for slicing 
