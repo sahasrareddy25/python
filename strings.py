@@ -66,7 +66,7 @@ print(str[1:])        """
 
 #by using negative indexing
 str="brooo this sucks hard but still yeah thats fine"
-print(str[7:10])
+print(str[-7:-1])
 
 
 
