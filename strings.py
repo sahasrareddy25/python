@@ -52,6 +52,20 @@ for ch in s:
         result+=ch
 print(result)"""
 
-#slicing string method in the characters
+"""#slicing string method in the characters
 str="am i loking awkward?"
-print(str[3:6])          #using the index values for slicing 
+print(str[3:6])          #using the index values for slicing """
+
+
+#slicing at the starting and alsoo at the end
+str="situations went wrong it seems"
+print(str[:7])        
+
+str="situations went wrong it seems"
+print(str[1:])        
+
+
+
+
+
+
