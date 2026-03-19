@@ -392,7 +392,7 @@ class Solution(object):
               res+='1'
            else:
                 res+='0'
-       return res"""
+       return res
 
 #minimum String Length
 class Solution(object):
@@ -400,10 +400,15 @@ class Solution(object):
         list={}
         for i in str:
             list[i]=0
-        return len(list)
+        return len(list)"""
 
+#palindrome Number
+class Solution:
+    def isPalindrome(self, x):
+        if x<0:
+            return False        
+        s=str(x)
+        return s==s[::-1]
 
-        
-        
 
 
