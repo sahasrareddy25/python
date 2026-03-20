@@ -150,7 +150,7 @@ reversed_string = s[::-1]
 print("Reversed string:", reversed_string)"""
 
 #.couting the distinct elements
-nums=[1,2,3,4,4,5,5,6,6]
+nums=[1,2,3,4,4,5,5]
 distinct_count=len(set(nums))
 print(distinct_count)
 
