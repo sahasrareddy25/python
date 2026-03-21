@@ -456,7 +456,7 @@ class Solution:
 
             stack.append(i)
 
-        return sum(count)"""
+        return sum(count)
 
 #Minimum K consecutive bit flips
 class Solution:
@@ -478,5 +478,32 @@ class Solution:
                 flip[i] = 1
 
         return ans
+        """
+
+#number of BST from array
+class Solution:
+    def countBSTs(self, arr):   
         
+        def count(nums):
+            if len(nums) <= 1:
+                return 1
+            
+            total = 0
+            for i in range(len(nums)):
+                root = nums[i]
+                left = [x for x in nums if x < root]
+                right = [x for x in nums if x > root]
+                total += count(left) * count(right)
+            
+            return total
+        
+        result = []
+        
+        for i in range(len(arr)):
+            root = arr[i]
+            left = [x for x in arr if x < root]
+            right = [x for x in arr if x > root]
+            result.append(count(left) * count(right))
+        
+        return result
         
