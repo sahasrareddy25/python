@@ -506,7 +506,7 @@ class Solution:
             result.append(count(left) * count(right))
         
         return result
-        """
+        
 
 #rotten oranges 
 from collections import deque
@@ -543,6 +543,7 @@ class Solution:
         return time if fresh == 0 else -1
 
 
+
 #
 class Solution(object):
     def minSubArrayLen(self, target, nums):
@@ -558,4 +559,34 @@ class Solution(object):
                 current_sum -= nums[left]
                 left += 1
         
-        return 0 if min_len == float('inf') else min_len
+        return 0 if min_len == float('inf') else min_len"""
+
+#length of the longest cycle in a graph
+class Solution:
+    def longestCycle(self, V, edges):
+        graph = [-1] * V
+        for u, v in edges:
+            graph[u] = v
+        
+        visited = [False] * V
+        max_cycle = -1
+        
+        for i in range(V):
+            if visited[i]:
+                continue
+            
+            node = i
+            step_map = {}
+            step = 0
+            
+            while node != -1 and not visited[node]:
+                visited[node] = True
+                step_map[node] = step
+                step += 1
+                node = graph[node]
+            
+            if node != -1 and node in step_map:
+                cycle_length = step - step_map[node]
+                max_cycle = max(max_cycle, cycle_length)
+        
+        return max_cycle
