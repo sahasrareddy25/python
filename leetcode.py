@@ -408,7 +408,7 @@ class Solution:
         if x<0:
             return False        
         s=str(x)
-        return s==s[::-1]"""
+        return s==s[::-1]
 
 #container with most waster
 class Solution(object):
@@ -425,7 +425,18 @@ class Solution(object):
                 left += 1
             else:
                 right -= 1
-        return max_area
+        return max_area"""
+
+#to lower case
+class Solution:
+    def toLowerCase(self, s):
+        res = ""
+        for i in s:
+            if i.isupper():
+                res += chr(ord(i) + 32)
+            else:
+                res += i
+        return res
 
 
 
