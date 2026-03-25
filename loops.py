@@ -190,6 +190,17 @@ while i <=10:
     print(f"{num} * {i}= {num*i}")
     i+=1"""
 
+#to lower case
+class Solution:
+    def toLowerCase(self, s):
+        res = ""
+        for i in s:
+            if i.isupper():
+                res += chr(ord(i) + 32)
+            else:
+                res += i
+        return res
+
 
 
 
