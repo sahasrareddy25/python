@@ -425,7 +425,7 @@ class Solution(object):
                 left += 1
             else:
                 right -= 1
-        return max_area"""
+        return max_area
 
 #to lower case
 class Solution:
@@ -436,7 +436,15 @@ class Solution:
                 res += chr(ord(i) + 32)
             else:
                 res += i
-        return res
+        return res"""
+
+#count odd numbers in an interval range
+class Solution(object):
+    def countOdds(self, low, high):
+        odd=(high-low)//2
+        if low%2==1 or high%2==1:
+            odd+=1
+        return odd
 
 
 
