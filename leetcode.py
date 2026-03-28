@@ -436,7 +436,7 @@ class Solution:
                 res += chr(ord(i) + 32)
             else:
                 res += i
-        return res"""
+        return res
 
 #count odd numbers in an interval range
 class Solution(object):
@@ -445,6 +445,15 @@ class Solution(object):
         if low%2==1 or high%2==1:
             odd+=1
         return odd
+"""
 
+#find the greates element of array
+class Solution(object):
+    def findGCD(self, nums):
+        x=min(nums)
+        y=max(nums)
+        while y:
+            x,y==y, x%y
+        return x
 
 
