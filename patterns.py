@@ -26,3 +26,15 @@ for i in range(1, n+1):
 for i in range(1,n+1):
     print(str(i)*i)
 
+"""
+A
+BB
+CCC
+DDDD
+"""
+n=4
+for i in range(1,n+1):
+    char=chr(64+i)
+    print(char*i)
+
+
