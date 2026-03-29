@@ -190,22 +190,28 @@ while i <=10:
     print(f"{num} * {i}= {num*i}")
     i+=1"""
 
-#to lower case
-class Solution:
-    def toLowerCase(self, s):
-        res = ""
-        for i in s:
-            if i.isupper():
-                res += chr(ord(i) + 32)
-            else:
-                res += i
-        return res
 
+#range,continue,break,looping through strings,
+#by using the built func of python we can reduce the code size and for eliminating loops 
+#func: sum(),fliter(),map(),str methods,list comprehs
 
+"""#1.find sum of n numbers
+num=10
+for i in range(1, num+1):
+    print(i)
 
-
-
-
+#2. Using "break" stop the loop when number is 5
+for i in range(1,10):
+    if i==5:
+        break
+    print(i)
+   """
+#3.find a element in list using loop
+nums=[1,2,23,5]
+for n in nums:
+    if n==2:
+        print("number found")
+        break
 
 
 

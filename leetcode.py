@@ -445,15 +445,16 @@ class Solution(object):
         if low%2==1 or high%2==1:
             odd+=1
         return odd
-"""
 
+"""
 #find the greates element of array
 class Solution(object):
     def findGCD(self, nums):
         x=min(nums)
         y=max(nums)
         while y:
-            x,y==y, x%y
+            x,y=y, x%y
         return x
+
 
 
