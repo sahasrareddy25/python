@@ -198,20 +198,20 @@ while i <=10:
 """#1.find sum of n numbers
 num=10
 for i in range(1, num+1):
-    print(i)
+    print(i)"""
 
 #2. Using "break" stop the loop when number is 5
 for i in range(1,10):
     if i==5:
         break
     print(i)
-   """
-#3.find a element in list using loop
+   
+"""#3.find a element in list using loop
 nums=[1,2,23,5]
 for n in nums:
     if n==2:
         print("number found")
-        break
+        break"""
 
 
 
