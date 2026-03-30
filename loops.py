@@ -218,18 +218,20 @@ lst=[1,2,3,4,5,6,7,8,9]
 for i in lst:
     if i<0:
         break
-    print(i)"""
+    print(i)
 
 #5.Print numbers from 1 to 30, but skip numbers divisible by 3.
 for i in range(1,31):
     if i%3==0:
        continue
-    print(i)
-       
+    print(i)"""
 
-
-
-
+#6.3. Find First Even Number
+lst=[1,2,3,4,5,5,6]
+for i in lst:
+    if i%2==0:
+       print(i)
+       break
 
 
 
