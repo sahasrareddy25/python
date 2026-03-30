@@ -211,14 +211,21 @@ nums=[1,2,23,5]
 for n in nums:
     if n==2:
         print("number found")
-        break"""
+        break
 
 #4.take list of integers and stop printing when you encounter neagtive nums
 lst=[1,2,3,4,5,6,7,8,9]
 for i in lst:
     if i<0:
         break
+    print(i)"""
+
+#5.Print numbers from 1 to 30, but skip numbers divisible by 3.
+for i in range(1,31):
+    if i%3==0:
+       continue
     print(i)
+       
 
 
 
