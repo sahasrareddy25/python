@@ -224,15 +224,19 @@ for i in lst:
 for i in range(1,31):
     if i%3==0:
        continue
-    print(i)"""
+    print(i)
 
-#6.3. Find First Even Number
+#6.Find First Even Number
 lst=[1,2,3,4,5,5,6]
 for i in lst:
     if i%2==0:
        print(i)
-       break
+       break"""
 
+#7.Login System (3 Attempts)
+crct_pass="sah13"
+for i in range(3):
+    
 
 
 

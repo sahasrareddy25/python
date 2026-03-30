@@ -446,7 +446,7 @@ class Solution(object):
             odd+=1
         return odd
 
-"""
+
 #find the greates element of array
 class Solution(object):
     def findGCD(self, nums):
@@ -455,6 +455,15 @@ class Solution(object):
         while y:
             x,y=y, x%y
         return x
+"""
+
+#shortest palindrome
+class Solution(object):
+    def shortestPalindrome(self, s):
+       rev=s[::-1]
+       for i in range(len(s)+1):
+        if s.startswith(rev[i:]):
+                 return rev[:i] + s
 
 
 
