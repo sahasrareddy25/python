@@ -213,6 +213,7 @@ for n in nums:
         print("number found")
         break"""
 
+#4.take list of integers and stop printing when you encounter neagtive nums
 lst=[1,2,3,4,5,6,7,8,9]
 for i in lst:
     if i<0:
