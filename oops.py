@@ -8,7 +8,7 @@ class Developer(Employee):
         print("Developer class method")
 d=Developer()
 d.show_developer()
-d.show_employee()"""
+d.show_employee()
 
 
 #parent method in child.
@@ -21,3 +21,19 @@ class dog(animal):
         print("dog barks")
 d=dog()
 d.sound()
+"""
+
+#multilevel inheritance
+class a:
+    def showa(self):
+        print("Class a")
+class b(a):
+    def showb(self):
+        print("Class b")
+class c(b):
+    def showc(self):
+        print("Class c")
+obj = c()
+obj.showa()
+obj.showb()
+obj.showc()
