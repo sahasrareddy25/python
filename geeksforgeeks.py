@@ -559,7 +559,7 @@ class Solution(object):
                 current_sum -= nums[left]
                 left += 1
         
-        return 0 if min_len == float('inf') else min_len"""
+        return 0 if min_len == float('inf') else min_len
 
 #length of the longest cycle in a graph
 class Solution:
@@ -589,4 +589,17 @@ class Solution:
                 cycle_length = step - step_map[node]
                 max_cycle = max(max_cycle, cycle_length)
         
-        return max_cycle
+        return max_cycle"""
+
+
+#Buy Stock with Transaction Fee
+class Solution:
+    def maxProfit(self, arr, k):
+        n = len(arr)
+        hold = -arr[0]  
+        cash = 0        
+        for i in range(1, n):
+            hold = max(hold, cash - arr[i])
+            cash = max(cash, hold + arr[i] - k)
+        
+        return cash
