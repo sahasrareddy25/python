@@ -455,7 +455,7 @@ class Solution(object):
         while y:
             x,y=y, x%y
         return x
-"""
+
 
 #shortest palindrome
 class Solution(object):
@@ -464,6 +464,20 @@ class Solution(object):
        for i in range(len(s)+1):
         if s.startswith(rev[i:]):
                  return rev[:i] + s
+"""
 
+#generate valid parathesis
+class Solution:
+    def generateParenthesis(self, n):
+        res = []
+        def bt(s,o,c):
+            if len(s)==2*n:
+                res.append(s)
+                return
+            if o<n: bt(s+"(",o+1,c)
+            if c<o: bt(s+")",o,c+1)
+        
+        bt("",0,0)
+        return res
 
 
