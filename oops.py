@@ -36,7 +36,7 @@ class c(b):
 obj = c()
 obj.showa()
 obj.showb()
-obj.showc()"""
+obj.showc()
 
 #multiple inheritance
 class father:
@@ -50,4 +50,19 @@ class Child(father, mother):
         super().skills()
         print("Coding")
 c=Child()
-c.skills()
+c.skills()"""
+
+#hierarchical inheritance
+class Vehicle:
+    def start(self):
+        print("Vehicle")
+class Car(Vehicle):
+    def drive(self):
+        print("drives")
+class Bike(Vehicle):
+    def ride(self):
+        print("rides")
+c=Car()
+b=Bike()
+c.start()
+b.start()
