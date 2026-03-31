@@ -21,7 +21,7 @@ class dog(animal):
         print("dog barks")
 d=dog()
 d.sound()
-"""
+
 
 #multilevel inheritance
 class a:
@@ -36,4 +36,18 @@ class c(b):
 obj = c()
 obj.showa()
 obj.showb()
-obj.showc()
+obj.showc()"""
+
+#multiple inheritance
+class father:
+    def skills(self):
+        print("Gardening")
+class mother:
+    def skills(self):
+        print("Cooking")
+class Child(father, mother):
+    def skills(self):
+        super().skills()
+        print("Coding")
+c=Child()
+c.skills()
