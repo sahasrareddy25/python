@@ -464,7 +464,7 @@ class Solution(object):
        for i in range(len(s)+1):
         if s.startswith(rev[i:]):
                  return rev[:i] + s
-"""
+
 
 #generate valid parathesis
 class Solution:
@@ -478,6 +478,14 @@ class Solution:
             if c<o: bt(s+")",o,c+1)
         
         bt("",0,0)
-        return res
+        return res"""
+
+class Solution(object):
+    def isMonotonic(self, nums):
+        a=sorted(nums)
+        b=sorted(nums,rev=True)
+        if nums==a or nums==b:
+            return True
+        return False
 
 
