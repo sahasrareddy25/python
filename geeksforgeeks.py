@@ -589,7 +589,7 @@ class Solution:
                 cycle_length = step - step_map[node]
                 max_cycle = max(max_cycle, cycle_length)
         
-        return max_cycle"""
+        return max_cycle
 
 
 #Buy Stock with Transaction Fee
@@ -602,4 +602,18 @@ class Solution:
             hold = max(hold, cash - arr[i])
             cash = max(cash, hold + arr[i] - k)
         
-        return cash
+        return cash"""
+
+#painting the fence 
+class Solution:
+    def countWays(self, n, k):
+        if n == 1:
+            return k
+        same = k        
+        diff = k * (k - 1)
+        for i in range(3, n + 1):
+            new_same = diff
+            new_diff = (same + diff) * (k - 1)
+            same = new_same
+            diff = new_diff
+        return same + diff
