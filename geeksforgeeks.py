@@ -602,7 +602,7 @@ class Solution:
             hold = max(hold, cash - arr[i])
             cash = max(cash, hold + arr[i] - k)
         
-        return cash"""
+        return cash
 
 #painting the fence 
 class Solution:
@@ -616,4 +616,28 @@ class Solution:
             new_diff = (same + diff) * (k - 1)
             same = new_same
             diff = new_diff
-        return same + diff
+        return same + diff"""
+
+#print diagonally
+class Solution:
+    def diagView(self, mat):
+        n = len(mat)
+        result = []
+        for d in range(n):
+            i = 0
+            j = d
+            
+            while j >= 0:
+                result.append(mat[i][j])
+                i += 1
+                j -= 1
+        for d in range(1, n):
+            i = d
+            j = n - 1
+            
+            while i < n:
+                result.append(mat[i][j])
+                i += 1
+                j -= 1
+        
+        return result
