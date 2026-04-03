@@ -478,7 +478,7 @@ class Solution:
             if c<o: bt(s+")",o,c+1)
         
         bt("",0,0)
-        return res"""
+        return res
 
 class Solution(object):
     def isMonotonic(self, nums):
@@ -486,6 +486,15 @@ class Solution(object):
         b=sorted(nums,rev=True)
         if nums==a or nums==b:
             return True
-        return False
+        return False"""
+
+#find the difference of two arrays
+class Solution(object):
+    def findDifference(self, nums1, nums2):
+        set1=set(nums1)
+        set2=set(nums2)
+        res1=list(set1-set2)
+        res2=list(set2-set1)
+        return res1,res2
 
 
