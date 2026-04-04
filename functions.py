@@ -36,10 +36,15 @@ wish("sahasra")
 def add(a,b):
     return a+b
 res=add(3,5)
-print(res)"""
+print(res)
 
 #even or odd
 def even(n):
     return n%2==0
-print(even(4))
+print(even(4))"""
+
+#square of number
+def square(n):
+    return n*n
+print(square(5))
     
