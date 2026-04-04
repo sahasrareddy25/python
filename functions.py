@@ -21,16 +21,13 @@ print(fahrenheit_to_celsius(77))
 print(fahrenheit_to_celsius(95))
 print(fahrenheit_to_celsius(50))
 
-
-"""
 #calling a func
 def my_func():
   print("hey there")
 my_func()
-
-"""#using func with parameters
+"""
+#using func with parameters
 def wish(name):
   print("happy birthday",name)
 wish("sahasra")
 
-"""
