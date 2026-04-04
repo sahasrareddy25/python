@@ -480,13 +480,7 @@ class Solution:
         bt("",0,0)
         return res
 
-class Solution(object):
-    def isMonotonic(self, nums):
-        a=sorted(nums)
-        b=sorted(nums,rev=True)
-        if nums==a or nums==b:
-            return True
-        return False"""
+
 
 #find the difference of two arrays
 class Solution(object):
@@ -495,6 +489,16 @@ class Solution(object):
         set2=set(nums2)
         res1=list(set1-set2)
         res2=list(set2-set1)
-        return res1,res2
+        return res1,res2"""
+
+#monotonic array
+class Solution(object):
+    def isMonotonic(self, nums):
+        a=sorted(nums)
+        b=sorted(nums,reverse=True)
+        if nums==a or nums==b:
+            return True
+        return False
+        
 
 

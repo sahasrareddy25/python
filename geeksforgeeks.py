@@ -616,7 +616,7 @@ class Solution:
             new_diff = (same + diff) * (k - 1)
             same = new_same
             diff = new_diff
-        return same + diff"""
+        return same + diff
 
 #print diagonally
 class Solution:
@@ -640,4 +640,13 @@ class Solution:
                 i += 1
                 j -= 1
         
-        return result
+        return result"""
+
+#grey code
+class Solution:
+    def graycode(self, n):
+        res = []
+        for i in range(1 << n):
+            g = i ^ (i >> 1)
+            res.append(format(g, '0{}b'.format(n)))
+        return res

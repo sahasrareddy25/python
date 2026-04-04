@@ -19,15 +19,20 @@ def fahrenheit_to_celsius(fahrenheit):
   return (fahrenheit-32)*5/9
 print(fahrenheit_to_celsius(77))
 print(fahrenheit_to_celsius(95))
-print(fahrenheit_to_celsius(50))"""
-
-#evenodd 
-def evenOdd(x):
-    if (x%2==0):
-        return "Even"
-    else:
-        return "Odd"
-print(evenOdd(16))
-print(evenOdd(7))
+print(fahrenheit_to_celsius(50))
 
 
+
+#calling a func
+def my_func():
+  print("hey there")
+my_func()
+
+#using func with parameters
+def wish(name):
+  print("happy birthday",name)
+wish("sahasra")
+
+"""
+def myfunc(n):
+  print(n)
