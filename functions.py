@@ -41,10 +41,19 @@ print(res)
 #even or odd
 def even(n):
     return n%2==0
-print(even(4))"""
+print(even(4))
 
 #square of number
 def square(n):
     return n*n
 print(square(5))
     
+"""
+
+#max of 2 nummbers
+def max_num(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+print(max_num(10,20))
