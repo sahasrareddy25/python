@@ -30,10 +30,16 @@ my_func()
 def wish(name):
   print("happy birthday",name)
 wish("sahasra")
-"""
+
 
 #return sum
 def add(a,b):
     return a+b
 res=add(3,5)
-print(res)
+print(res)"""
+
+#even or odd
+def even(n):
+    return n%2==0
+print(even(4))
+    
