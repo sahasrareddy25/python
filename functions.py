@@ -25,9 +25,15 @@ print(fahrenheit_to_celsius(50))
 def my_func():
   print("hey there")
 my_func()
-"""
+
 #using func with parameters
 def wish(name):
   print("happy birthday",name)
 wish("sahasra")
+"""
 
+#return sum
+def add(a,b):
+    return a+b
+res=add(3,5)
+print(res)
