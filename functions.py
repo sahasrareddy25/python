@@ -48,7 +48,6 @@ def square(n):
     return n*n
 print(square(5))
     
-"""
 
 #max of 2 nummbers
 def max_num(a,b):
@@ -57,3 +56,14 @@ def max_num(a,b):
     else:
         return b
 print(max_num(10,20))
+"""
+
+#counting vowels
+def count_vowels(s):
+    count=0
+    vowels="aeiouAEIOU"
+    for ch in s:
+        if ch in vowels:
+            count+= 1
+    return count
+print(count_vowels("hello"))
