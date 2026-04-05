@@ -56,7 +56,7 @@ def max_num(a,b):
     else:
         return b
 print(max_num(10,20))
-"""
+
 
 #counting vowels
 def count_vowels(s):
@@ -66,4 +66,18 @@ def count_vowels(s):
         if ch in vowels:
             count+= 1
     return count
-print(count_vowels("hello"))
+print(count_vowels("hello"))"""
+
+#consecutive 1's not allowed
+class Solution:
+    def countStrings(self, n):
+        if n == 1:
+            return 2
+        end_with_0 = 1
+        end_with_1 = 1
+        for _ in range(2, n + 1):
+            new_0 = end_with_0 + end_with_1
+            new_1 = end_with_0
+            end_with_0 = new_0
+            end_with_1 = new_1
+        return end_with_0 + end_with_1
