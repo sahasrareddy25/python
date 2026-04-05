@@ -489,7 +489,7 @@ class Solution(object):
         set2=set(nums2)
         res1=list(set1-set2)
         res2=list(set2-set1)
-        return res1,res2"""
+        return res1,res2
 
 #monotonic array
 class Solution(object):
@@ -498,7 +498,19 @@ class Solution(object):
         b=sorted(nums,reverse=True)
         if nums==a or nums==b:
             return True
-        return False
+        return False"""
+
+#check balanced string
+class Solution(object):
+    def isBalanced(self, n):
+        a = 0
+        b = 0
+        for i in range(len(n)):
+            if i % 2 == 0:
+                a += int(n[i])
+            else:
+                b += int(n[i])
+        return a == b
         
 
 
