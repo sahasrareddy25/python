@@ -510,7 +510,7 @@ class Solution(object):
                 a += int(n[i])
             else:
                 b += int(n[i])
-        return a == b"""
+        return a == b
 
 #smallest even multiple
 class Solution(object):
@@ -518,7 +518,15 @@ class Solution(object):
         if num%2 == 0:
             return num
         else:
-            return num*2
+            return num*2"""
+
+#reverse words in a string
+class Solution:
+    def reverseWords(self, s):
+        s=s.split()
+        s.reverse()
+        return " ".join(s)
+        
         
         
 
