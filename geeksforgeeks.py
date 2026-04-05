@@ -640,7 +640,7 @@ class Solution:
                 i += 1
                 j -= 1
         
-        return result"""
+        return result
 
 #grey code
 class Solution:
@@ -649,4 +649,18 @@ class Solution:
         for i in range(1 << n):
             g = i ^ (i >> 1)
             res.append(format(g, '0{}b'.format(n)))
-        return res
+        return res"""
+
+#target sum
+class Solution:
+    def totalWays(self, arr, target):
+        total_sum = sum(arr)
+        if (target + total_sum) % 2 != 0 or abs(target) > total_sum:
+            return 0
+        subset_sum = (target + total_sum) // 2
+        dp = [0] * (subset_sum + 1)
+        dp[0] = 1
+        for num in arr:
+            for j in range(subset_sum, num - 1, -1):
+                dp[j] += dp[j - num]
+        return dp[subset_sum]
