@@ -498,7 +498,7 @@ class Solution(object):
         b=sorted(nums,reverse=True)
         if nums==a or nums==b:
             return True
-        return False"""
+        return False
 
 #check balanced string
 class Solution(object):
@@ -510,7 +510,16 @@ class Solution(object):
                 a += int(n[i])
             else:
                 b += int(n[i])
-        return a == b
+        return a == b"""
+
+#smallest even multiple
+class Solution(object):
+    def smallestEvenMultiple(self, num):
+        if num%2 == 0:
+            return num
+        else:
+            return num*2
+        
         
 
 
