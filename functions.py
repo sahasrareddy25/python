@@ -58,16 +58,6 @@ def max_num(a,b):
 print(max_num(10,20))
 
 
-#counting vowels
-def count_vowels(s):
-    count=0
-    vowels="aeiouAEIOU"
-    for ch in s:
-        if ch in vowels:
-            count+= 1
-    return count
-print(count_vowels("hello"))
-
 #consecutive 1's not allowed
 class Solution:
     def countStrings(self, n):
@@ -95,11 +85,21 @@ def is_prime(num):
     else:
         return False
 print(is_prime(7))
-"""
+
 
 #second largest number
 def second_largest(lst):
     lst=list(set(lst))
     lst.sort()
     return lst[-2]
-print(second_largest([1,2,3,4,5,6,8]))
+print(second_largest([1,2,3,4,5,6,8]))"""
+
+#vowel count
+def count_vowels(s):
+    count=0
+    vowels="aeiouAEIOU"
+    for ch in s:
+        if ch in vowels:
+            count+= 1
+    return count
+print(count_vowels("hello"))
