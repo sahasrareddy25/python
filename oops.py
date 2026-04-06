@@ -50,7 +50,7 @@ class Child(father, mother):
         super().skills()
         print("Coding")
 c=Child()
-c.skills()"""
+c.skills()
 
 #hierarchical inheritance
 class Vehicle:
@@ -65,4 +65,4 @@ class Bike(Vehicle):
 c=Car()
 b=Bike()
 c.start()
-b.start()
+b.start()"""

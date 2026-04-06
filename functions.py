@@ -66,7 +66,7 @@ def count_vowels(s):
         if ch in vowels:
             count+= 1
     return count
-print(count_vowels("hello"))"""
+print(count_vowels("hello"))
 
 #consecutive 1's not allowed
 class Solution:
@@ -80,4 +80,10 @@ class Solution:
             new_1 = end_with_0
             end_with_0 = new_0
             end_with_1 = new_1
-        return end_with_0 + end_with_1
+        return end_with_0 + end_with_1  """
+
+
+#palindrome check
+def is_palindrome(str):
+    return str==str[::-1]
+print(is_palindrome("mmaaddaamm"))

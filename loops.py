@@ -183,7 +183,7 @@ while i<=num:
      print(i)
     i+=1
 
-#multiplicatiiiion table
+#multiplication table
 num=int(input("enter the num value: "))
 i=1
 while i <=10:
@@ -233,9 +233,6 @@ for i in lst:
        print(i)
        break"""
 
-#7.Login System (3 Attempts)
-crct_pass="sah13"
-for i in range(3):
     
 
 

@@ -52,7 +52,3 @@ for i in nums:
 print(unique)
 
 """
-#8.couting the distinct elements
-nums=[1,2,3,4,4,5,5,6,6]
-distinct_count=len(set(nums))
-print(distinct_count)

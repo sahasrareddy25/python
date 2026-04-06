@@ -1,4 +1,4 @@
-#find out the largest of 3Numbers
+"""#find out the largest of 3Numbers
 a=int(input("enter the first number: "))
 b=int(input("enter the first number: "))
 c=int(input("enter the first number: "))
@@ -8,5 +8,6 @@ if b>largest:
 elif c>largest:
     print(c is largest)
 else:
-    print(a is largest)
-    
+    print(a is largest)"""
+
+#
