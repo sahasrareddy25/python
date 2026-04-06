@@ -80,10 +80,18 @@ class Solution:
             new_1 = end_with_0
             end_with_0 = new_0
             end_with_1 = new_1
-        return end_with_0 + end_with_1  """
+        return end_with_0 + end_with_1  
 
 
 #palindrome check
 def is_palindrome(str):
     return str==str[::-1]
-print(is_palindrome("mmaaddaamm"))
+print(is_palindrome("mmaaddaamm"))"""
+
+#prime number or not
+def is_prime(num):
+    if num>1:
+        return True
+    else:
+        return False
+print(is_prime(7))
