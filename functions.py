@@ -86,7 +86,7 @@ class Solution:
 #palindrome check
 def is_palindrome(str):
     return str==str[::-1]
-print(is_palindrome("mmaaddaamm"))"""
+print(is_palindrome("mmaaddaamm"))
 
 #prime number or not
 def is_prime(num):
@@ -95,3 +95,11 @@ def is_prime(num):
     else:
         return False
 print(is_prime(7))
+"""
+
+#second largest number
+def second_largest(lst):
+    lst=list(set(lst))
+    lst.sort()
+    return lst[-2]
+print(second_largest([1,2,3,4,5,6,8]))
