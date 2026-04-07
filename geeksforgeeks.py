@@ -649,7 +649,7 @@ class Solution:
         for i in range(1 << n):
             g = i ^ (i >> 1)
             res.append(format(g, '0{}b'.format(n)))
-        return res"""
+        return res
 
 #target sum
 class Solution:
@@ -663,4 +663,34 @@ class Solution:
         for num in arr:
             for j in range(subset_sum, num - 1, -1):
                 dp[j] += dp[j - num]
-        return dp[subset_sum]
+        return dp[subset_sum] """
+
+#stable marriage problem
+class Solution:
+    def stableMarriage(self, men, women):
+        n = len(men)
+        rank = [[0]*n for _ in range(n)]
+        for w in range(n):
+            for i in range(n):
+                rank[w][women[w][i]] = i
+        free_men = list(range(n))
+        next_proposal = [0]*n
+        woman_partner = [-1]*n
+        man_partner = [-1]*n
+        while free_men:
+            m = free_men.pop(0)
+            w = men[m][next_proposal[m]]
+            next_proposal[m] += 1
+            if woman_partner[w] == -1:
+                woman_partner[w] = m
+                man_partner[m] = w
+            else:
+                current = woman_partner[w]
+                if rank[w][m] < rank[w][current]:
+                    woman_partner[w] = m
+                    man_partner[m] = w
+                    man_partner[current] = -1
+                    free_men.append(current)
+                else:
+                    free_men.append(m)
+        return man_partner
