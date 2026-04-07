@@ -33,7 +33,7 @@ class Developer(Employee):
 
 d = Developer("saam","jain")
 print(d.name)
-print(d.fullname)"""
+print(d.fullname)
 
 #multiple inheritance
 class Father:
@@ -49,4 +49,18 @@ class Child(Father, Mother):
 
 c = Child()
 c.skills_father()
-c.skills_mother()
+c.skills_mother()"""
+
+
+#single  inheritance
+class Person:
+    def display(self):
+        print("I am a person")
+
+class Student(Person):
+    def study(self):
+        print("I am studying")
+
+s = Student()
+s.display()
+s.study()
