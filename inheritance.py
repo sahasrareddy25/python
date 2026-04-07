@@ -1,4 +1,29 @@
-#initialise a parent class as Employee-constructor with parameter name, child class as Developer - constructor with parameter prog_lang, user super()
+#multiple level inheritance
+class Animal:
+    def shout(self):
+        print("animal is shouting")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("bow")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("meow")
+
+dog = Dog()
+cat = Cat()
+
+dog.shout()        
+dog.make_sound()  
+
+cat.shout()        
+cat.make_sound()   
+
+
+
+
+#itialise a parent class as Employee-constructor with parameter name, child class as Developer - constructor with parameter prog_lang, user super()
 class Employee:
     def __init__(self,name):
         self.name = name
