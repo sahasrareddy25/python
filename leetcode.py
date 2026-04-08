@@ -525,14 +525,24 @@ class Solution:
     def reverseWords(self, s):
         s=s.split()
         s.reverse()
-        return " ".join(s)"""
+        return " ".join(s)
 
 #missing number
 class Solution:
     def missingNumber(self, nums):
         n=len(nums)
         e_sum=n*(n+1)//2
-        return e_sum-sum(nums)
+        return e_sum-sum(nums)"""
+
+
+#smallest even multiple
+class Solution(object):
+    def smallestEvenMultiple(self, num):
+        if num%2 == 0:
+            return num
+        else:
+            return num*2
+        
         
         
         
