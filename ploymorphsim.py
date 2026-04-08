@@ -18,7 +18,7 @@ c = Cat()
 
 a.sound()
 d.sound()
-c.sound()"""
+c.sound()
 
 
 #using loopS
@@ -33,4 +33,24 @@ class Cat:
 animals = [Dog(), Cat()]
 
 for animal in animals:
-    animal.sound()
+    animal.sound()"""
+
+#payment system
+class Payment:
+    def pay(self, amount):
+        pass
+
+class CreditCard(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using Credit Card")
+
+class UPI(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using UPI")
+
+class NetBanking(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using Net Banking")
+payments = [CreditCard(), UPI(), NetBanking()]
+for p in payments:
+    p.pay(1000)
