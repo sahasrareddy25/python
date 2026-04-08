@@ -33,7 +33,7 @@ class Cat:
 animals = [Dog(), Cat()]
 
 for animal in animals:
-    animal.sound()"""
+    animal.sound()
 
 #payment system
 class Payment:
@@ -53,4 +53,19 @@ class NetBanking(Payment):
         print("Paid", amount, "using Net Banking")
 payments = [CreditCard(), UPI(), NetBanking()]
 for p in payments:
-    p.pay(1000)
+    p.pay(1000)"""
+
+
+#example problem
+class Student:
+    def role(self):
+        print("I am a student")
+
+class Teacher:
+    def role(self):
+        print("I am a teacher")
+
+people = [Student(), Teacher()]
+
+for p in people:
+    p.role()
