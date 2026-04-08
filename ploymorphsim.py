@@ -1,4 +1,4 @@
-#method overidding
+"""#method overidding
 class Animal:
     def sound(self):
         print("Animal makes sound")
@@ -18,4 +18,19 @@ c = Cat()
 
 a.sound()
 d.sound()
-c.sound()
+c.sound()"""
+
+
+#using loopS
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.sound()
