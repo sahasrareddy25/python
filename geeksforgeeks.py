@@ -663,7 +663,7 @@ class Solution:
         for num in arr:
             for j in range(subset_sum, num - 1, -1):
                 dp[j] += dp[j - num]
-        return dp[subset_sum] """
+        return dp[subset_sum] 
 
 #stable marriage problem
 class Solution:
@@ -693,4 +693,23 @@ class Solution:
                     free_men.append(current)
                 else:
                     free_men.append(m)
-        return man_partner
+        return man_partner"""
+
+#intersection of two arrays
+class Solution:
+    def intersection(self, a, b):
+        i, j = 0, 0
+        result = []
+
+        while i < len(a) and j < len(b):
+            if a[i] == b[j]:
+                if len(result) == 0 or result[-1] != a[i]:
+                    result.append(a[i])
+                i += 1
+                j += 1
+            elif a[i] < b[j]:
+                i += 1
+            else:
+                j += 1
+
+        return result
