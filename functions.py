@@ -126,7 +126,7 @@ def max(a,b,c):
         return b
     else:
         return c
-print(max(10,25,15))"""
+print(max(10,25,15))
 
 #factorial number
 def factorial(n):
@@ -135,3 +135,16 @@ def factorial(n):
         result*=i
     return result
 print(factorial(5))
+
+#reverse a string
+def rev_str(S):     #using slicing
+    return S[::-1]
+print(rev_str("saashra"))"""
+
+#using loop reverse a string
+def rev_str(s):
+    rev=""
+    for ch in s:
+        rev=ch+rev
+    return rev
+print(rev_str("saasshra"))
