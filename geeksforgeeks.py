@@ -693,7 +693,7 @@ class Solution:
                     free_men.append(current)
                 else:
                     free_men.append(m)
-        return man_partner"""
+        return man_partner
 
 #intersection of two arrays
 class Solution:
@@ -712,4 +712,29 @@ class Solution:
             else:
                 j += 1
 
-        return result
+        return result"""
+
+#sorted subsequence of size 3
+class Solution:
+    def find3Numbers(self, arr):
+        n = len(arr)
+        left = [-1] * n
+        right = [-1] * n
+        min_idx = 0
+        for i in range(1, n):
+            if arr[i] <= arr[min_idx]:
+                min_idx = i
+                left[i] = -1
+            else:
+                left[i] = min_idx
+        max_idx = n - 1
+        for i in range(n - 2, -1, -1):
+            if arr[i] >= arr[max_idx]:
+                max_idx = i
+                right[i] = -1
+            else:
+                right[i] = max_idx
+        for i in range(n):
+            if left[i] != -1 and right[i] != -1:
+                return [arr[left[i]], arr[i], arr[right[i]]]
+        return []
