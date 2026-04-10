@@ -108,7 +108,7 @@ print(count_vowels("hello"))
 def add(a,b):
     result=a+b
     print(result)
-add(5,3)"""
+add(5,3)
 
 #checking even or odd
 def even(n):
@@ -116,4 +116,14 @@ def even(n):
         return "Even"
     else:
         return "Odd"
-print(even(7))
+print(even(7))"""
+
+#maximum number of 3 numbers
+def max(a,b,c):
+    if a>=b & a>=c:
+        return a
+    elif b>=a & b>=c:
+        return b
+    else:
+        return c
+print(max(10,25,15))
