@@ -92,7 +92,7 @@ def second_largest(lst):
     lst=list(set(lst))
     lst.sort()
     return lst[-2]
-print(second_largest([1,2,3,4,5,6,8]))"""
+print(second_largest([1,2,3,4,5,6,8]))
 
 #vowel count
 def count_vowels(s):
@@ -103,3 +103,17 @@ def count_vowels(s):
             count+= 1
     return count
 print(count_vowels("hello"))
+
+#combing everything
+def add(a,b):
+    result=a+b
+    print(result)
+add(5,3)"""
+
+#checking even or odd
+def even(n):
+    if n%2==0:
+        return "Even"
+    else:
+        return "Odd"
+print(even(7))
