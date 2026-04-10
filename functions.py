@@ -116,7 +116,7 @@ def even(n):
         return "Even"
     else:
         return "Odd"
-print(even(7))"""
+print(even(7))
 
 #maximum number of 3 numbers
 def max(a,b,c):
@@ -126,4 +126,12 @@ def max(a,b,c):
         return b
     else:
         return c
-print(max(10,25,15))
+print(max(10,25,15))"""
+
+#factorial number
+def factorial(n):
+    result=1
+    for i in range(1,n+1):
+        result*=i
+    return result
+print(factorial(5))
