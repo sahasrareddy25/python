@@ -532,7 +532,7 @@ class Solution:
     def missingNumber(self, nums):
         n=len(nums)
         e_sum=n*(n+1)//2
-        return e_sum-sum(nums)"""
+        return e_sum-sum(nums)
 
 
 #smallest even multiple
@@ -543,7 +543,17 @@ class Solution(object):
         else:
             return num*2
         
-        
+        """
+
+# Count Subarrays of Length Three With a Condition
+class Solution(object):
+    def countSubarrays(self, nums):
+        count=0
+        n=len(nums)
+        for i in range(n-2):
+            if 2*(nums[i]+nums[i+2])==nums[i+1]:
+                count += 1
+        return count
         
         
 
