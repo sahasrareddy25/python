@@ -712,7 +712,7 @@ class Solution:
             else:
                 j += 1
 
-        return result"""
+        return result
 
 #sorted subsequence of size 3
 class Solution:
@@ -737,4 +737,24 @@ class Solution:
         for i in range(n):
             if left[i] != -1 and right[i] != -1:
                 return [arr[left[i]], arr[i], arr[right[i]]]
-        return []
+        return []"""
+
+
+#count incresing subarrays 
+class Solution:
+    def countIncreasing(self, arr):
+        n = len(arr)
+        count = 0
+        length = 1
+
+        for i in range(1, n):
+            if arr[i] > arr[i - 1]:
+                length += 1
+            else:
+                count += (length * (length - 1)) // 2
+                length = 1
+
+        # last sequence
+        count += (length * (length - 1)) // 2
+
+        return count
