@@ -581,7 +581,7 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
-"""
+
 
 #happy number
 class Solution(object):
@@ -595,4 +595,10 @@ class Solution(object):
             for d in str(n):
                 total+=int(d)*int(d)
             n=total
+"""
 
+#contains duplicate
+class Solution(object):
+    def containsDuplicate(self, nums):
+        return len(nums)!=len(set(nums))
+        
