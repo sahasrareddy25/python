@@ -572,7 +572,7 @@ class Solution(object):
             if i.isalnum():
                 new+=i.lower()
         return new==new[::-1]
-        """
+        
 
 #find the index of the first occurence in a string
 class Solution(object):
@@ -581,5 +581,18 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
+"""
 
+#happy number
+class Solution(object):
+    def isHappy(self, n):
+        seen=set()
+        while n!=1:
+            if n in seen:
+                return False
+            seen.add(n)
+            total=0
+            for d in str(n):
+                total+=int(d)*int(d)
+            n=total
 
