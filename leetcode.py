@@ -542,8 +542,6 @@ class Solution(object):
             return num
         else:
             return num*2
-        
-        """
 
 # Count Subarrays of Length Three With a Condition
 class Solution(object):
@@ -555,6 +553,17 @@ class Solution(object):
                 count += 1
         return count
         
+        """
+
+#remove duplicates from sorted array
+class Solution:
+    def removeDuplicates(self, nums):
+        k=0
+        for n in nums:
+            if k==0 or n!=nums[k-1]:
+                nums[k]=n
+                k+=1
+        return k
         
 
 
