@@ -562,7 +562,7 @@ class Solution:
                 nums[k]=n
                 k+=1
         return k
-        """
+        
 
 #valid palindrome
 class Solution(object):
@@ -572,6 +572,14 @@ class Solution(object):
             if i.isalnum():
                 new+=i.lower()
         return new==new[::-1]
-        
+        """
+
+#find the index of the first occurence in a string
+class Solution(object):
+    def strStr(self,haystack,needle):
+        for i in range(len(haystack)):
+            if haystack[i:i+len(needle)]==needle:
+                return i
+        return -1
 
 
