@@ -552,8 +552,6 @@ class Solution(object):
             if 2*(nums[i]+nums[i+2])==nums[i+1]:
                 count += 1
         return count
-        
-        """
 
 #remove duplicates from sorted array
 class Solution:
@@ -564,6 +562,16 @@ class Solution:
                 nums[k]=n
                 k+=1
         return k
+        """
+
+#valid palindrome
+class Solution(object):
+    def isPalindrome(self, s):
+        new=""
+        for i in s:
+            if i.isalnum():
+                new+=i.lower()
+        return new==new[::-1]
         
 
 
