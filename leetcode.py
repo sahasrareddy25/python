@@ -520,13 +520,6 @@ class Solution(object):
         else:
             return num*2
 
-#reverse words in a string
-class Solution:
-    def reverseWords(self, s):
-        s=s.split()
-        s.reverse()
-        return " ".join(s)
-
 #missing number
 class Solution:
     def missingNumber(self, nums):
@@ -595,10 +588,17 @@ class Solution(object):
             for d in str(n):
                 total+=int(d)*int(d)
             n=total
-"""
+
 
 #contains duplicate
 class Solution(object):
     def containsDuplicate(self, nums):
         return len(nums)!=len(set(nums))
-        
+        """
+
+#reverse words in string
+class Solution:
+    def reverseWords(self, s):
+        s=s.split()
+        s.reverse()
+        return " ".join(s)
