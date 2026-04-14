@@ -594,7 +594,7 @@ class Solution(object):
 class Solution(object):
     def containsDuplicate(self, nums):
         return len(nums)!=len(set(nums))
-        """
+        
 
 #reverse words in string
 class Solution:
@@ -602,3 +602,13 @@ class Solution:
         s=s.split()
         s.reverse()
         return " ".join(s)
+"""
+
+#find the index occurence in a first string
+class Solution(object):
+    def strStr(self,haystack,needle):
+        for i in range(len(haystack)):
+            if haystack[i:i+len(needle)]==needle:
+                return i
+        return -1
+        
