@@ -113,7 +113,7 @@ for i in range(len(nums)):
 #8.Second Largest Number in List
 nums=[1,2,3,4,5]
 nums.sort()
-print(nums[-2])"""
+print(nums[-2])
 
 #9.Count Frequency of Characters
 str="saashra"
@@ -125,7 +125,17 @@ for char in str:
         freq[char]=1
 print(freq)
 
+"""
 
+
+#sort the people
+class Solution(object):
+    def sortPeople(self, names, heights):
+        x=sorted(heights)[::-1]
+        a=[]
+        for i in x:
+            a.append(names[heights.index(i)])
+        return a
 
 
 
