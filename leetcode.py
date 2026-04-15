@@ -567,15 +567,6 @@ class Solution(object):
         return new==new[::-1]
         
 
-#find the index of the first occurence in a string
-class Solution(object):
-    def strStr(self,haystack,needle):
-        for i in range(len(haystack)):
-            if haystack[i:i+len(needle)]==needle:
-                return i
-        return -1
-
-
 #happy number
 class Solution(object):
     def isHappy(self, n):
@@ -602,7 +593,6 @@ class Solution:
         s=s.split()
         s.reverse()
         return " ".join(s)
-"""
 
 #find the index occurence in a first string
 class Solution(object):
@@ -611,4 +601,13 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
-        
+        """
+
+#sort the people
+class Solution(object):
+    def sortPeople(self, names, heights):
+        x=sorted(heights)[::-1]
+        a=[]
+        for i in x:
+            a.append(names[heights.index(i)])
+        return a
