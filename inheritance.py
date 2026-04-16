@@ -63,7 +63,7 @@ class Student(Person):
 
 s = Student()
 s.display()
-s.study()"""
+s.study()
 
 
 #create a cls of animal and add sounds 
@@ -74,4 +74,20 @@ class Dog(Animal):
     def sound(self):
         print("Bark")
 d = Dog()
-d.sound()
+d.sound()"""
+
+
+#create a multi level inheritance usinf grandparent clss
+class Grandparent:
+    def show_grandparent(self):
+        print("I am Grandparent")
+class Parent(Grandparent):
+    def show_parent(self):
+        print("I am Parent")
+class Child(Parent):
+    def show_child(self):
+        print("I am Child")
+c = Child()
+c.show_grandparent()
+c.show_parent()
+c.show_child()
