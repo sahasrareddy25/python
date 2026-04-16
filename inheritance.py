@@ -89,7 +89,7 @@ class Child(Parent):
 c = Child()
 c.show_grandparent()
 c.show_parent()
-c.show_child()"""
+c.show_child()
 
 #create a multi level inheritance using father as a method 
 class Father:
@@ -102,4 +102,15 @@ class Child(Father, Mother):
     pass
 c = Child()
 c.skills()
-c.talent()
+c.talent()"""
+
+
+#use a costructor keey word and that child class automatically calls parent constructor.
+class A:
+    def __init__(self):
+        print("Constructor A")
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print("Constructor B")
+b = B()
