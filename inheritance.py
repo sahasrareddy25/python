@@ -74,8 +74,7 @@ class Dog(Animal):
     def sound(self):
         print("Bark")
 d = Dog()
-d.sound()"""
-
+d.sound()
 
 #create a multi level inheritance usinf grandparent clss
 class Grandparent:
@@ -90,4 +89,17 @@ class Child(Parent):
 c = Child()
 c.show_grandparent()
 c.show_parent()
-c.show_child()
+c.show_child()"""
+
+#create a multi level inheritance using father as a method 
+class Father:
+    def skills(self):
+        print("confidence")
+class Mother:
+    def talent(self):
+        print("politician")
+class Child(Father, Mother):
+    pass
+c = Child()
+c.skills()
+c.talent()
