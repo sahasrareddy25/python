@@ -102,8 +102,7 @@ class Child(Father, Mother):
     pass
 c = Child()
 c.skills()
-c.talent()"""
-
+c.talent()
 
 #use a costructor keey word and that child class automatically calls parent constructor.
 class A:
@@ -113,4 +112,16 @@ class B(A):
     def __init__(self):
         super().__init__()
         print("Constructor B")
-b = B()
+b = B()"""
+
+
+#calling a parent method
+class Employee:
+    def work(self):
+        print("Employee works")
+class Developer(Employee):
+    def work(self):
+        super().work()
+        print("Developer codes")
+d = Developer()
+d.work()
