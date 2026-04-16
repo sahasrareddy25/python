@@ -49,11 +49,11 @@ class Child(Father, Mother):
 
 c = Child()
 c.skills_father()
-c.skills_mother()"""
+c.skills_mother()
 
 
 #single  inheritance
-class Person:
+class Person:                   
     def display(self):
         print("I am a person")
 
@@ -63,4 +63,15 @@ class Student(Person):
 
 s = Student()
 s.display()
-s.study()
+s.study()"""
+
+
+#create a cls of animal and add sounds 
+class Animal:
+    def sound(self):
+        print("Animal makes sound")
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+d = Dog()
+d.sound()

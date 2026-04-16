@@ -603,11 +603,22 @@ class Solution(object):
         return -1
         """
 
-#sort the people
-class Solution(object):
-    def sortPeople(self, names, heights):
-        x=sorted(heights)[::-1]
-        a=[]
-        for i in x:
-            a.append(names[heights.index(i)])
-        return a
+#payment system
+class Payment:
+    def pay(self, amount):
+        pass
+
+class CreditCard(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using Credit Card")
+
+class UPI(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using UPI")
+
+class NetBanking(Payment):
+    def pay(self, amount):
+        print("Paid", amount, "using Net Banking")
+payments = [CreditCard(), UPI(), NetBanking()]
+for p in payments:
+    p.pay(1000)
