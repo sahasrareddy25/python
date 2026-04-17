@@ -638,7 +638,7 @@ class Solution:
             if w1==w1[::-1]:   
                 return w1
         return ""
-        """
+        
 #Build Array from Permutation
 class Solution:
     def buildArray(self, nums):
@@ -646,3 +646,14 @@ class Solution:
         for i in range(len(nums)):
             result.append(nums[nums[i]])
         return result
+"""
+#remove stars from a string
+class Solution:
+    def removeStars(self, s):
+        stack = []
+        for ch in s:
+            if ch == '*':
+                stack.pop()
+            else:
+                stack.append(ch)  
+        return ''.join(stack)
