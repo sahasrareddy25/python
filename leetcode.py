@@ -667,7 +667,6 @@ class Solution:
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
         return total
-        """
 
 #valid perfect squares
 class Solution:
@@ -677,4 +676,13 @@ class Solution:
             if i * i == num:
                 return True
             i += 1
-        return False
+        return False"""
+
+#find the winning player in coin game
+class Solution:
+ def winningPlayer(self, x, y):
+        moves = min(x, y // 4)
+        if moves % 2 == 1:
+            return "Alice"
+        else:
+            return "Bob"
