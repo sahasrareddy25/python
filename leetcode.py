@@ -646,7 +646,7 @@ class Solution:
         for i in range(len(nums)):
             result.append(nums[nums[i]])
         return result
-"""
+
 #remove stars from a string
 class Solution:
     def removeStars(self, s):
@@ -656,4 +656,15 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)
+        return ''.join(stack)"""
+
+#sum of Squares of Special Elements
+class Solution:
+    def sumOfSquares(self, nums):
+        n = len(nums)
+        total = 0
+        for i in range(n):
+            if n % (i + 1) == 0:
+                total += nums[i] * nums[i]    
+        return total
+        
