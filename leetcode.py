@@ -629,7 +629,7 @@ class Solution(object):
         val = (sum(aliceSizes) - sum(bobSizes)) // 2
         for i in bobSizes:
             if i + val in aliceSizes:
-                return [i + val, i]"""
+                return [i + val, i]
 
 #find the first palindromic string in the array
 class Solution:
@@ -638,4 +638,11 @@ class Solution:
             if w1==w1[::-1]:   
                 return w1
         return ""
-        
+        """
+#Build Array from Permutation
+class Solution:
+    def buildArray(self, nums):
+        result = [] 
+        for i in range(len(nums)):
+            result.append(nums[nums[i]])
+        return result
