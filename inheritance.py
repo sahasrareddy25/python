@@ -112,8 +112,7 @@ class B(A):
     def __init__(self):
         super().__init__()
         print("Constructor B")
-b = B()"""
-
+b = B()
 
 #calling a parent method
 class Employee:
@@ -124,4 +123,20 @@ class Developer(Employee):
         super().work()
         print("Developer codes")
 d = Developer()
-d.work()
+d.work()"""
+
+
+#understanding the method which has been called 
+class A:
+    def show(self):
+        print("A")
+class B(A):
+    def show(self):
+        print("B")
+class C(A):
+    def show(self):
+        print("C")
+class D(B, C):
+    pass
+d = D()
+d.show()

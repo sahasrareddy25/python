@@ -601,7 +601,7 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
-        """
+        
 
 #payment system
 class Payment:
@@ -622,3 +622,20 @@ class NetBanking(Payment):
 payments = [CreditCard(), UPI(), NetBanking()]
 for p in payments:
     p.pay(1000)
+
+#fair candy swap
+class Solution(object):
+    def fairCandySwap(self, aliceSizes, bobSizes):
+        val = (sum(aliceSizes) - sum(bobSizes)) // 2
+        for i in bobSizes:
+            if i + val in aliceSizes:
+                return [i + val, i]"""
+
+#find the first palindromic string in the array
+class Solution:
+    def firstPalindrome(self, w):
+        for w1 in w:
+            if w1==w1[::-1]:   
+                return w1
+        return ""
+        
