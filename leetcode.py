@@ -656,7 +656,7 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)"""
+        return ''.join(stack)
 
 #sum of Squares of Special Elements
 class Solution:
@@ -667,4 +667,14 @@ class Solution:
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
         return total
-        
+        """
+
+#valid perfect squares
+class Solution:
+    def isPerfectSquare(self, num):
+        i = 1
+        while i * i <= num:
+            if i * i == num:
+                return True
+            i += 1
+        return False
