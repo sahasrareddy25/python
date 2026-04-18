@@ -579,12 +579,6 @@ class Solution(object):
             for d in str(n):
                 total+=int(d)*int(d)
             n=total
-
-
-#contains duplicate
-class Solution(object):
-    def containsDuplicate(self, nums):
-        return len(nums)!=len(set(nums))
         
 
 #reverse words in string
@@ -693,7 +687,7 @@ class Solution:
         ans = []
         for i in range(len(nums)):
             ans.append(nums[nums[i]])
-        return ans"""
+        return ans
 
 #find the index occurence in the first string
 class Solution(object):
@@ -702,4 +696,9 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
-        
+"""
+
+#contains duplicate
+class Solution(object):
+    def containsDuplicate(self, nums):
+        return len(nums)!=len(set(nums))
