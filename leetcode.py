@@ -685,7 +685,7 @@ class Solution:
         if moves % 2 == 1:
             return "Alice"
         else:
-            return "Bob"""
+            return "Bob
 
 #determine if strings  halves are alike
 class Solution:
@@ -694,4 +694,12 @@ class Solution:
         
         mid = len(s) // 2
         
-        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])
+        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])"""
+
+#build array from permutations
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        ans = []
+        for i in range(len(nums)):
+            ans.append(nums[nums[i]])
+        return ans
