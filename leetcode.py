@@ -594,15 +594,6 @@ class Solution:
         s.reverse()
         return " ".join(s)
 
-#find the index occurence in a first string
-class Solution(object):
-    def strStr(self,haystack,needle):
-        for i in range(len(haystack)):
-            if haystack[i:i+len(needle)]==needle:
-                return i
-        return -1
-        
-
 #payment system
 class Payment:
     def pay(self, amount):
@@ -694,7 +685,7 @@ class Solution:
         
         mid = len(s) // 2
         
-        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])"""
+        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])
 
 #build array from permutations
 class Solution:
@@ -702,4 +693,13 @@ class Solution:
         ans = []
         for i in range(len(nums)):
             ans.append(nums[nums[i]])
-        return ans
+        return ans"""
+
+#find the index occurence in the first string
+class Solution(object):
+    def strStr(self,haystack,needle):
+        for i in range(len(haystack)):
+            if haystack[i:i+len(needle)]==needle:
+                return i
+        return -1
+        
