@@ -676,7 +676,7 @@ class Solution:
             if i * i == num:
                 return True
             i += 1
-        return False"""
+        return False
 
 #find the winning player in coin game
 class Solution:
@@ -685,4 +685,13 @@ class Solution:
         if moves % 2 == 1:
             return "Alice"
         else:
-            return "Bob"
+            return "Bob"""
+
+#determine if strings  halves are alike
+class Solution:
+    def halvesAreAlike(self, s):
+        vowels = "aeiouAEIOU"
+        
+        mid = len(s) // 2
+        
+        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])
