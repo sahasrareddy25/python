@@ -696,9 +696,13 @@ class Solution(object):
             if haystack[i:i+len(needle)]==needle:
                 return i
         return -1
-"""
 
 #contains duplicate
 class Solution(object):
     def containsDuplicate(self, nums):
-        return len(nums)!=len(set(nums))
+        return len(nums)!=len(set(nums))"""
+
+#check if all A's Appears Before all B's
+class Solution:
+    def checkString(self, s):
+        return "ba" not in s
