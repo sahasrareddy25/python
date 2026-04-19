@@ -705,7 +705,23 @@ class Solution(object):
 #check if all A's Appears Before all B's
 class Solution:
     def checkString(self, s):
-        return "ba" not in s"""
+        return "ba" not in s
+
+#number of different integers in a string
+class Solution:
+    def numDifferentIntegers(self, word):
+        num = ""
+        s = set()
+        for ch in word:
+            if ch.isdigit():
+                num += ch
+            else:
+                if num:
+                    s.add(int(num))
+                    num = ""
+        if num:
+            s.add(int(num))
+        return len(s)"""
 
 #number of different integers in a string
 class Solution:
