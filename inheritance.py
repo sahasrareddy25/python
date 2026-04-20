@@ -138,7 +138,7 @@ class C(A):
 class D(B, C):
     pass
 d = D()
-d.show()"""
+d.show()
 
 #create a class student and object
 class Student:
@@ -154,4 +154,17 @@ s1 = Student("sahasra",90)
 s2 = Student("sita",80)
 
 s1.display()
-s2.display()
+s2.display()"""
+
+#using constructor create a employee detail adding name ,salary
+class Employee:
+    def __init__(self, name, salary):
+        self.name=name
+        self.salary=salary
+
+    def show_details(self):
+        print("Name:",self.name)
+        print("Salary:",self.salary)
+
+e= Employee("sahasra", 50000)
+e.show_details()
