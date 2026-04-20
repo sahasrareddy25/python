@@ -123,8 +123,7 @@ class Developer(Employee):
         super().work()
         print("Developer codes")
 d = Developer()
-d.work()"""
-
+d.work()
 
 #understanding the method which has been called 
 class A:
@@ -139,4 +138,20 @@ class C(A):
 class D(B, C):
     pass
 d = D()
-d.show()
+d.show()"""
+
+#create a class student and object
+class Student:
+    def __init__(self, name, marks):
+        self.name=name
+        self.marks=marks
+
+    def display(self):
+        print("Name:",self.name)
+        print("Marks:",self.marks)
+
+s1 = Student("sahasra",90)
+s2 = Student("sita",80)
+
+s1.display()
+s2.display()
