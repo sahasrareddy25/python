@@ -154,7 +154,7 @@ s1 = Student("sahasra",90)
 s2 = Student("sita",80)
 
 s1.display()
-s2.display()"""
+s2.display()
 
 #using constructor create a employee detail adding name ,salary
 class Employee:
@@ -167,4 +167,17 @@ class Employee:
         print("Salary:",self.salary)
 
 e= Employee("sahasra", 50000)
-e.show_details()
+e.show_details()"""
+
+#using inheritance add self constructor and take vehicle as example and add object
+class Vehicle:
+    def start(self):
+        print("Vehicle started")
+
+class Car(Vehicle):
+    def drive(self):
+        print("Car is driving")
+
+c=Car()
+c.start()
+c.drive()
