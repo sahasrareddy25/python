@@ -167,7 +167,7 @@ class Employee:
         print("Salary:",self.salary)
 
 e= Employee("sahasra", 50000)
-e.show_details()"""
+e.show_details()
 
 #using inheritance add self constructor and take vehicle as example and add object
 class Vehicle:
@@ -180,4 +180,23 @@ class Car(Vehicle):
 
 c=Car()
 c.start()
-c.drive()
+c.drive()"""
+
+#polymorphism
+class Animal:
+    def sound(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
+
+d=Dog()
+c=Cat()
+
+d.sound()
+c.sound()
