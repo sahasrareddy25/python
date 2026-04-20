@@ -180,7 +180,7 @@ class Car(Vehicle):
 
 c=Car()
 c.start()
-c.drive()"""
+c.drive()
 
 #polymorphism
 class Animal:
@@ -199,4 +199,23 @@ d=Dog()
 c=Cat()
 
 d.sound()
-c.sound()
+c.sound()"""
+
+#add employee system using innheritance
+class Employee:
+    def work(self):
+        print("Employee works")
+
+class Developer(Employee):
+    def work(self):
+        print("Developer writes code")
+
+class Manager(Employee):
+    def work(self):
+        print("Manager manages team")
+
+d=Developer()
+m=Manager()
+
+d.work()
+m.work()
