@@ -199,7 +199,7 @@ d=Dog()
 c=Cat()
 
 d.sound()
-c.sound()"""
+c.sound()
 
 #add employee system using innheritance
 class Employee:
@@ -218,4 +218,22 @@ d=Developer()
 m=Manager()
 
 d.work()
-m.work()
+m.work()"""
+
+#shopping cart
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def display(self):
+        print("Name:", self.name)
+        print("Price:", self.price)
+
+
+p1 = Product("car", 5000000)
+p2 = Product("phone", 40000)
+
+p1.display()
+p2.display()
+
