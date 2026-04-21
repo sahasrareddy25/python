@@ -721,7 +721,7 @@ class Solution:
                     num = ""
         if num:
             s.add(int(num))
-        return len(s)"""
+        return len(s)
 
 #Climbing stairs -leetcode
 class Solution:
@@ -731,4 +731,13 @@ class Solution:
         a,b = 1,2
         for i in range(3, n+1):
             a,b=b,a+b
-        return b
+        return b"""
+
+#power of three
+class Solution:
+    def isPowerOfThree(self, n):
+        if n<1:
+            return False
+        while n%3==0:
+            n//=3
+        return n==1
