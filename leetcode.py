@@ -723,7 +723,7 @@ class Solution:
             s.add(int(num))
         return len(s)"""
 
-#Climbing stairs
+#Climbing stairs -leetcode
 class Solution:
     def climbStairs(self, n):
         if n<=2:
