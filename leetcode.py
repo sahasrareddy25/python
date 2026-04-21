@@ -723,18 +723,12 @@ class Solution:
             s.add(int(num))
         return len(s)"""
 
-#number of different integers in a string
+#Climbing stairs
 class Solution:
-    def numDifferentIntegers(self, word):
-        num = ""
-        s = set()
-        for ch in word:
-            if ch.isdigit():
-                num += ch
-            else:
-                if num:
-                    s.add(int(num))
-                    num = ""
-        if num:
-            s.add(int(num))
-        return len(s)
+    def climbStairs(self, n):
+        if n<=2:
+            return n
+        a,b = 1,2
+        for i in range(3, n+1):
+            a,b=b,a+b
+        return b
