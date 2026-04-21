@@ -218,7 +218,7 @@ d=Developer()
 m=Manager()
 
 d.work()
-m.work()"""
+m.work()
 
 #shopping cart
 class Product:
@@ -235,5 +235,24 @@ p1 = Product("car", 5000000)
 p2 = Product("phone", 40000)
 
 p1.display()
-p2.display()
+p2.display()"""
+
+#employee system
+class Employee:
+    def work(self):
+        print("Employee is working")
+
+class Developer(Employee):
+    def work(self):
+        print("Build code from scratch")
+
+class Manager(Employee):
+    def work(self):
+        print("Manager looks after the team")
+
+s1 = Developer()
+s2 = Manager()
+
+s1.work()
+s2.work()
 
