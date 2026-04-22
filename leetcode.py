@@ -731,7 +731,7 @@ class Solution:
         a,b = 1,2
         for i in range(3, n+1):
             a,b=b,a+b
-        return b"""
+        return b
 
 #power of three
 class Solution:
@@ -740,4 +740,10 @@ class Solution:
             return False
         while n%3==0:
             n//=3
-        return n==1
+        return n==1"""
+
+#number os segments in a string
+class Solution(object):
+    def countSegments(self, s):
+        words = s.split()
+        return len(words)

@@ -15,9 +15,40 @@ student1=student("sahasra",20,100)
 student2=student("arvind",19,100)
 
 student1.display()
-student2.display()"""
+student2.display()
 
-#creating a class employee 
+#
+
+
+#creating a parent class 
+# Parent class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+# Child class (inherits from Person)
+class Student(Person):
+    def __init__(self, name, age, marks):
+        super().__init__(name, age)   
+        self.marks = marks
+
+    def display(self):
+        super().display()            
+        print("Marks:", self.marks)
+    
+# Create object
+student1=Student("Sahasra", 20, 95)
+
+#printing details
+s1.display()
+"""
+#creating a class employee
 class employee:
     def __init__(self,name,department,salary):
         self.name=name
@@ -35,5 +66,3 @@ emp2=employee("ujwala", "HR", 400000)
 
 emp1.show_details()
 emp2.show_details()
-        
-
