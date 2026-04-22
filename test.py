@@ -47,7 +47,7 @@ student1=Student("Sahasra", 20, 95)
 
 #printing details
 s1.display()
-"""
+
 #creating a class employee
 class employee:
     def __init__(self,name,department,salary):
@@ -65,4 +65,25 @@ emp1=employee("sahasra", "IT", 50000)
 emp2=employee("ujwala", "HR", 400000)
 
 emp1.show_details()
-emp2.show_details()
+emp2.show_details()"""
+
+
+#creating a vehicle as a class name 
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with a key")
+
+class Bike(Vehicle):
+    def start(self):
+        print("Bike starts with a kick")
+
+c = Car()
+b = Bike()
+
+c.start()
+b.start()
