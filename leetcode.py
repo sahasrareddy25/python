@@ -740,10 +740,15 @@ class Solution:
             return False
         while n%3==0:
             n//=3
-        return n==1"""
+        return n==1
 
 #number os segments in a string
 class Solution(object):
     def countSegments(self, s):
         words = s.split()
-        return len(words)
+        return len(words)"""
+
+#valid anagram
+class Solution:
+    def isAnagram(self, s, t):
+        return sorted(s) == sorted(t)
