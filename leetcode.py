@@ -752,7 +752,7 @@ class Solution(object):
 class Solution:
     def isAnagram(self, s, t):
         return sorted(s) == sorted(t)
-        """
+        
 #Is subsequence
 class Solution:
     def isSubsequence(self, s, t):
@@ -760,4 +760,16 @@ class Solution:
         for c in t:
             if i < len(s) and s[i] == c:
                 i += 1
-        return i == len(s)
+        return i == len(s)"""
+
+#consecutive codes
+class Solution:
+    def maxPower(self, s):
+        max_len = count = 1
+        for i in range(1, len(s)):
+            if s[i] == s[i-1]:
+                count += 1
+                max_len = max(max_len, count)
+            else:
+                count = 1 
+        return max_len
