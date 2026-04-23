@@ -746,9 +746,18 @@ class Solution:
 class Solution(object):
     def countSegments(self, s):
         words = s.split()
-        return len(words)"""
+        return len(words)
 
 #valid anagram
 class Solution:
     def isAnagram(self, s, t):
         return sorted(s) == sorted(t)
+        """
+#Is subsequence
+class Solution:
+    def isSubsequence(self, s, t):
+        i = 0
+        for c in t:
+            if i < len(s) and s[i] == c:
+                i += 1
+        return i == len(s)
