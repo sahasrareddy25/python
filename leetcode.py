@@ -760,7 +760,7 @@ class Solution:
         for c in t:
             if i < len(s) and s[i] == c:
                 i += 1
-        return i == len(s)"""
+        return i == len(s)
 
 #consecutive codes
 class Solution:
@@ -772,4 +772,14 @@ class Solution:
                 max_len = max(max_len, count)
             else:
                 count = 1 
-        return max_len
+        return max_len"""
+
+#media of two sorted arrays
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+        nums=nums1+nums2
+        nums.sort()
+        k=len(nums)
+        if k%2==1:
+            return nums[k//2]
+        return (nums[k//2] + nums[k//2 - 1])/2.0
