@@ -772,7 +772,7 @@ class Solution:
                 max_len = max(max_len, count)
             else:
                 count = 1 
-        return max_len"""
+        return max_len
 
 #media of two sorted arrays
 class Solution(object):
@@ -782,4 +782,13 @@ class Solution(object):
         k=len(nums)
         if k%2==1:
             return nums[k//2]
-        return (nums[k//2] + nums[k//2 - 1])/2.0
+        return (nums[k//2] + nums[k//2 - 1])/2.0"""
+
+#valid parenthesis
+class Solution(object):
+    def isValid(self, s):
+       map={')':'(','}':'{',']',:'['}
+       stack=[]
+       for char in s:
+        if char in map:
+           
