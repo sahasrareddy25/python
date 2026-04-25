@@ -828,7 +828,7 @@ class Solution:
             return False
         while n%4==0:
             n//=4
-        return n==1"""
+        return n==1
 
 #harshad number
 class Solution:
@@ -836,4 +836,12 @@ class Solution:
         s = 0
         for d in str(x): s += int(d)
         if x % s == 0: return s
-        return -1
+        return -1"""
+
+#find the difference 
+class Solution:
+    def findTheDifference(self, s, t):
+        res = 0
+        for c in s + t:
+            res ^= ord(c)
+        return chr(res)
