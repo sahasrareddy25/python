@@ -806,7 +806,7 @@ class Solution:
             else:
                 nums[mid], nums[high] = nums[high], nums[mid]
                 high -= 1
-           """
+           
 
 #check if the grids satisfies conditions
 class Solution:
@@ -819,4 +819,13 @@ class Solution:
                 if j < n - 1 and grid[i][j] == grid[i][j+1]:
                     return False
         
-        return True
+        return True"""
+
+#power of four
+class Solution:
+    def isPowerOfFour(self, n):
+        if n<=0:
+            return False
+        while n%4==0:
+            n//=4
+        return n==1
