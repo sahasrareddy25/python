@@ -782,7 +782,7 @@ class Solution(object):
         k=len(nums)
         if k%2==1:
             return nums[k//2]
-        return (nums[k//2] + nums[k//2 - 1])/2.0"""
+        return (nums[k//2] + nums[k//2 - 1])/2.0
 
 #valid parenthesis
 class Solution(object):
@@ -790,5 +790,20 @@ class Solution(object):
        map={')':'(','}':'{',']',:'['}
        stack=[]
        for char in s:
-        if char in map:
+        if char in map:"""
+
+#sort colors
+class Solution:
+    def sortColors(self, nums):
+        low = mid = 0
+        high = len(nums) - 1
+        while mid <= high:
+            if nums[mid] == 0:
+                nums[low], nums[mid] = nums[mid], nums[low]
+                low += 1; mid += 1
+            elif nums[mid] == 1:
+                mid += 1
+            else:
+                nums[mid], nums[high] = nums[high], nums[mid]
+                high -= 1
            
