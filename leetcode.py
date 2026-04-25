@@ -819,7 +819,7 @@ class Solution:
                 if j < n - 1 and grid[i][j] == grid[i][j+1]:
                     return False
         
-        return True"""
+        return True
 
 #power of four
 class Solution:
@@ -828,4 +828,12 @@ class Solution:
             return False
         while n%4==0:
             n//=4
-        return n==1
+        return n==1"""
+
+#harshad number
+class Solution:
+    def sumOfTheDigitsOfHarshadNumber(self, x):
+        s = 0
+        for d in str(x): s += int(d)
+        if x % s == 0: return s
+        return -1
