@@ -844,7 +844,7 @@ class Solution:
         res = 0
         for c in s + t:
             res ^= ord(c)
-        return chr(res)"""
+        return chr(res)
 
 #find the distinct difference array
 class Solution:
@@ -852,4 +852,16 @@ class Solution:
         return [
             len(set(nums[:i+1])) - len(set(nums[i+1:]))
             for i in range(len(nums))
-        ]
+        ]"""
+
+#clear digits
+class Solution:
+    def clearDigits(self, s):
+        stack = []
+        for ch in s:
+            if ch.isdigit() and stack:
+                stack.pop()
+            else:
+                if not ch.isdigit():
+                    stack.append(ch)
+        return "".join(stack)
