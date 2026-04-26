@@ -836,7 +836,7 @@ class Solution:
         s = 0
         for d in str(x): s += int(d)
         if x % s == 0: return s
-        return -1"""
+        return -1
 
 #find the difference 
 class Solution:
@@ -844,4 +844,12 @@ class Solution:
         res = 0
         for c in s + t:
             res ^= ord(c)
-        return chr(res)
+        return chr(res)"""
+
+#find the distinct difference array
+class Solution:
+    def distinctDifferenceArray(self, nums):
+        return [
+            len(set(nums[:i+1])) - len(set(nums[i+1:]))
+            for i in range(len(nums))
+        ]
