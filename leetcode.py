@@ -852,7 +852,7 @@ class Solution:
         return [
             len(set(nums[:i+1])) - len(set(nums[i+1:]))
             for i in range(len(nums))
-        ]"""
+        ]
 
 #clear digits
 class Solution:
@@ -864,4 +864,9 @@ class Solution:
             else:
                 if not ch.isdigit():
                     stack.append(ch)
-        return "".join(stack)
+        return "".join(stack)"""
+
+#nin game
+class Solution:
+    def canWinNim(self, n: int) -> bool:
+        return n % 4 != 0
