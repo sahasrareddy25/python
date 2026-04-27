@@ -850,16 +850,6 @@ class Solution:
                     stack.append(ch)
         return "".join(stack)
 
-#third maximum number
-class Solution:
-    def thirdMax(self, nums):
-        nums = list(set(nums))
-        nums.sort()
-        if len(nums) >= 3:
-            return nums[-3]
-        else:
-            return nums[-1]
-
 #harshad number
 class Solution:
     def sumOfTheDigitsOfHarshadNumber(self, x):
@@ -876,9 +866,19 @@ class Solution:
         for c in s + t:
             res ^= ord(c)
         return chr(res)
-"""
+
 
 #nin game
 class Solution:
     def canWinNim(self, n: int) -> bool:
-        return n % 4 != 0
+        return n % 4 != 0"""
+
+#third maximum number
+class Solution:
+    def thirdMax(self, nums):
+        nums = list(set(nums))
+        nums.sort()
+        if len(nums) >= 3:
+            return nums[-3]
+        else:
+            return nums[-1]
