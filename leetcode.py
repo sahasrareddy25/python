@@ -830,13 +830,6 @@ class Solution:
             n//=4
         return n==1
 
-#harshad number
-class Solution:
-    def sumOfTheDigitsOfHarshadNumber(self, x):
-        s = 0
-        for d in str(x): s += int(d)
-        if x % s == 0: return s
-        return -1
 
 #find the difference 
 class Solution:
@@ -869,7 +862,7 @@ class Solution:
 #nin game
 class Solution:
     def canWinNim(self, n: int) -> bool:
-        return n % 4 != 0"""
+        return n % 4 != 0
 
 #third maximum number
 class Solution:
@@ -879,4 +872,13 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]
+            return nums[-1]"""
+
+#harshad number
+#harshad number
+class Solution:
+    def sumOfTheDigitsOfHarshadNumber(self, x):
+        s = 0
+        for d in str(x): s += int(d)
+        if x % s == 0: return s
+        return -1
