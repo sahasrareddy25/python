@@ -830,15 +830,6 @@ class Solution:
             n//=4
         return n==1
 
-
-#find the difference 
-class Solution:
-    def findTheDifference(self, s, t):
-        res = 0
-        for c in s + t:
-            res ^= ord(c)
-        return chr(res)
-
 #find the distinct difference array
 class Solution:
     def distinctDifferenceArray(self, nums):
@@ -872,9 +863,8 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]"""
+            return nums[-1]
 
-#harshad number
 #harshad number
 class Solution:
     def sumOfTheDigitsOfHarshadNumber(self, x):
@@ -882,3 +872,12 @@ class Solution:
         for d in str(x): s += int(d)
         if x % s == 0: return s
         return -1
+"""
+
+#find the difference 
+class Solution:
+    def findTheDifference(self, s, t):
+        res = 0
+        for c in s + t:
+            res ^= ord(c)
+        return chr(res)
