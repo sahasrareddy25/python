@@ -850,11 +850,6 @@ class Solution:
                     stack.append(ch)
         return "".join(stack)
 
-#nin game
-class Solution:
-    def canWinNim(self, n: int) -> bool:
-        return n % 4 != 0
-
 #third maximum number
 class Solution:
     def thirdMax(self, nums):
@@ -872,7 +867,7 @@ class Solution:
         for d in str(x): s += int(d)
         if x % s == 0: return s
         return -1
-"""
+
 
 #find the difference 
 class Solution:
@@ -881,3 +876,9 @@ class Solution:
         for c in s + t:
             res ^= ord(c)
         return chr(res)
+"""
+
+#nin game
+class Solution:
+    def canWinNim(self, n: int) -> bool:
+        return n % 4 != 0
