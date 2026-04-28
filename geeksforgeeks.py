@@ -642,14 +642,6 @@ class Solution:
         
         return result
 
-#grey code
-class Solution:
-    def graycode(self, n):
-        res = []
-        for i in range(1 << n):
-            g = i ^ (i >> 1)
-            res.append(format(g, '0{}b'.format(n)))
-        return res
 
 #target sum
 class Solution:
@@ -737,7 +729,7 @@ class Solution:
         for i in range(n):
             if left[i] != -1 and right[i] != -1:
                 return [arr[left[i]], arr[i], arr[right[i]]]
-        return []"""
+        return []
 
 
 #count incresing subarrays 
@@ -757,4 +749,14 @@ class Solution:
         # last sequence
         count += (length * (length - 1)) // 2
 
-        return count
+        return count"""
+
+
+#grey code
+class Solution:
+    def graycode(self, n):
+        res = []
+        for i in range(1 << n):
+            g = i ^ (i >> 1)
+            res.append(format(g, '0{}b'.format(n)))
+        return res
