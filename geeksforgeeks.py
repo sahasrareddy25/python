@@ -749,7 +749,7 @@ class Solution:
         # last sequence
         count += (length * (length - 1)) // 2
 
-        return count"""
+        return count
 
 
 #grey code
@@ -759,4 +759,20 @@ class Solution:
         for i in range(1 << n):
             g = i ^ (i >> 1)
             res.append(format(g, '0{}b'.format(n)))
-        return res
+        return res"""
+
+#pythagoreanTriplet
+class Solution:
+    def pythagoreanTriplet(self, arr):
+        n = len(arr)
+
+        arr = [x*x for x in arr]
+        s = set(arr)
+
+        for i in range(n):
+            for j in range(i+1, n):
+                if arr[i] + arr[j] in s:
+                    return True
+
+        return False
+
