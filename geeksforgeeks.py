@@ -337,18 +337,6 @@ x = 32
 
 print(closestPair(arr1, arr2, x))
 
-
-#Move All Zeroes to End
-class Solution:
-    def pushZerosToEnd(self, arr):
-        n = len(arr)
-        j = 0   
-        
-        for i in range(n):
-            if arr[i] != 0:
-                arr[j], arr[i] = arr[i], arr[j]
-                j += 1
-
 #Trapping Rain Water
 #Given an array arr[] with non-negative integers representing the height of blocks. If the width of each block is 1, compute how much water can be trapped between the blocks during the rainy season.
 class Solution:
@@ -759,7 +747,7 @@ class Solution:
         for i in range(1 << n):
             g = i ^ (i >> 1)
             res.append(format(g, '0{}b'.format(n)))
-        return res"""
+        return res
 
 #pythagoreanTriplet
 class Solution:
@@ -775,4 +763,14 @@ class Solution:
                     return True
 
         return False
-
+"""
+#Move All Zeroes to End
+class Solution:
+    def pushZerosToEnd(self, arr):
+        n = len(arr)
+        j = 0   
+        
+        for i in range(n):
+            if arr[i] != 0:
+                arr[j], arr[i] = arr[i], arr[j]
+                j += 1
