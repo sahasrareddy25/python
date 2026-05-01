@@ -277,14 +277,6 @@ class Solution:
         
         return max(rob, skip)
 
-#Two sum
-class Solution(object):
-    def twoSum(self, nums, target):
-        for i in range(len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[i]+nums[j]==target:
-                    return[i,j]
-
 #count and say
 class Solution:
     def countAndSay(self, n):
@@ -881,7 +873,7 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]"""
+            return nums[-1]
 
 #power of 4 
 class Solution:
@@ -890,4 +882,12 @@ class Solution:
             return False
         while n%4==0:
             n//=4
-        return n==1
+        return n==1"""
+
+#Two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return[i,j]
