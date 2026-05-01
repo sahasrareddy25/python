@@ -871,7 +871,7 @@ class Solution:
 #nin game
 class Solution:
     def canWinNim(self, n: int) -> bool:
-        return n % 4 != 0"""
+        return n % 4 != 0
 
 #third maximum number
 class Solution:
@@ -881,4 +881,13 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]
+            return nums[-1]"""
+
+#power of 4 
+class Solution:
+    def isPowerOfFour(self, n):
+        if n<=0:
+            return False
+        while n%4==0:
+            n//=4
+        return n==1
