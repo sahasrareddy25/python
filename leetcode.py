@@ -879,14 +879,13 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return[i,j]
-"""
+
 #rotate string
 class Solution(object):
     def rotateString(self, s, goal):
         return len(s) == len(goal) and goal in s + s
-
-"""#Partitioning Into Minimum Number Of Deci-Binary nums
+"""
+#Partitioning Into Minimum Number Of Deci-Binary nums
 class Solution(object):
     def minPartitions(self, n):
         return int(max(n)) 
-"""
