@@ -328,18 +328,6 @@ class Solution(object):
         bits = bin(n)[2:]
         return bits.count("1")  
 
-
-#rotate string
-class Solution(object):
-    def rotateString(self, s, goal):
-        return len(s) == len(goal) and goal in s + s
-
-#Partitioning Into Minimum Number Of Deci-Binary nums
-class Solution(object):
-    def minPartitions(self, n):
-        return int(max(n)) 
-
-
 #Check if Binary String Has at Most One Segment of Ones
 class Solution(object):
     def checkOnesSegment(self, s):
@@ -882,7 +870,7 @@ class Solution:
             return False
         while n%4==0:
             n//=4
-        return n==1"""
+        return n==1
 
 #Two sum
 class Solution(object):
@@ -891,3 +879,14 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return[i,j]
+"""
+#rotate string
+class Solution(object):
+    def rotateString(self, s, goal):
+        return len(s) == len(goal) and goal in s + s
+
+"""#Partitioning Into Minimum Number Of Deci-Binary nums
+class Solution(object):
+    def minPartitions(self, n):
+        return int(max(n)) 
+"""
