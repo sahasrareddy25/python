@@ -885,7 +885,7 @@ class Solution(object):
     def rotateString(self, s, goal):
         return len(s) == len(goal) and goal in s + s
 """
-#Partitioning Into Minimum Number Of Deci-Binary nums
+#Partitioning Into Minimum Number Of Deci-Binary num
 class Solution(object):
     def minPartitions(self, n):
         return int(max(n)) 
