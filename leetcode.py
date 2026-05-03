@@ -884,8 +884,23 @@ class Solution(object):
 class Solution(object):
     def rotateString(self, s, goal):
         return len(s) == len(goal) and goal in s + s
-"""
+
 #Partitioning Into Minimum Number Of Deci-Binary num
 class Solution(object):
     def minPartitions(self, n):
-        return int(max(n)) 
+        return int(max(n)) """
+
+#sort colors
+class Solution:
+    def sortColors(self, nums):
+        low = mid = 0
+        high = len(nums) - 1
+        while mid <= high:
+            if nums[mid] == 0:
+                nums[low], nums[mid] = nums[mid], nums[low]
+                low += 1; mid += 1
+            elif nums[mid] == 1:
+                mid += 1
+            else:
+                nums[mid], nums[high] = nums[high], nums[mid]
+                high -= 1
