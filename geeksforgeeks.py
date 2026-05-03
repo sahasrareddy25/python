@@ -721,7 +721,7 @@ class Solution:
             if arr[i] != 0:
                 arr[j], arr[i] = arr[i], arr[j]
                 j += 1
-"""
+
 #Missing Element in Range Difficulty: MediumAccuracy: 55.45%Submissions: 15K+Points: 4Average Time: 20m Given an array arr[] of integers and a range [low, high], find all the numbers within the range that are not present in the array. return the missing numbers in sorted order.
 class Solution:
     def missingRange(self, arr, low, high):
@@ -732,9 +732,9 @@ class Solution:
             if i not in s:
                 ans.append(i)
 
-        return ans
+        return ans"""
 
-"""#Form the Largest Number.Given an array of integers arr[] representing non-negative integers, arrange them so that after concatenating all of them in order, it results in the largest possible number. Since the result may be very large, return it as a string.
+#Form the Largest Number.Given an array of integers arr[] representing non-negative integers, arrange them so that after concatenating all of them in order, it results in the largest possible number. Since the result may be very large, return it as a string.
 from functools import cmp_to_key
 
 class Solution:
@@ -757,7 +757,7 @@ class Solution:
 
         return ''.join(arr)
 
-#Find H-Index
+"""#Find H-Index
 #You are given an array citations[], where each element citations[i] represents the number of citations received by the ith paper of a researcher. You have to calculate the researcher’s H-index.
 #The H-index is defined as the maximum value H, such that the researcher has published at least H papers, and all those papers have citation value greater than or equal to H.
 class Solution:
