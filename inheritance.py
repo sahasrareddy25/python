@@ -238,15 +238,15 @@ p1.display()
 p2.display()"""
 
 #employee system
-class Employee:
+class Emp:
     def work(self):
         print("Employee is working")
 
-class Developer(Employee):
+class Developer(Emp):
     def work(self):
         print("Build code from scratch")
 
-class Manager(Employee):
+class Manager(Emp):
     def work(self):
         print("Manager looks after the team")
 
