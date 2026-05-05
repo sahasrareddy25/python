@@ -96,7 +96,7 @@ print(dic) """
 
 #5.5. Count Frequency of Numbers
 #Count frequency of numbers in list.
-nums=[1,2,2,3,4,4,4,4,6]
+nums=[1,2,2,3,4,4,4]
 freq={}
 for i in nums:
     if i in freq:
