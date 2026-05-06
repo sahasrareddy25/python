@@ -904,9 +904,20 @@ class Solution:
             else:
                 nums[mid], nums[high] = nums[high], nums[mid]
                 high -= 1
-"""
+
 
 #valid anagram
 class Solution:
     def isAnagram(self, s, t):
-        return sorted(s) == sorted(t)
+        return sorted(s) == sorted(t)"""
+
+#removing a stars from strings
+class Solution:
+    def removeStars(self, s):
+        stack = []
+        for ch in s:
+            if ch == '*':
+                stack.pop()
+            else:
+                stack.append(ch)  
+        return ''.join(stack)
