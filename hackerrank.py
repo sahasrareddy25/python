@@ -1,4 +1,4 @@
-#leap year condition
+#leap year conditionn
 def is_leap(year):
     leap = False
     if year % 400 == 0:

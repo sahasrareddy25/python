@@ -888,7 +888,7 @@ class Solution(object):
 #Partitioning Into Minimum Number Of Deci-Binary num
 class Solution(object):
     def minPartitions(self, n):
-        return int(max(n)) """
+        return int(max(n))
 
 #sort colors
 class Solution:
@@ -904,3 +904,9 @@ class Solution:
             else:
                 nums[mid], nums[high] = nums[high], nums[mid]
                 high -= 1
+"""
+
+#valid anagram
+class Solution:
+    def isAnagram(self, s, t):
+        return sorted(s) == sorted(t)
