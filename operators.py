@@ -84,12 +84,23 @@ quantity=10
 discount=10
 totalprice=price*quantity-discount
 print("totalprice:",totalprice)
-"""
+
 def containsDuplicate(nums):
     seen = set()
     for num in nums:
         if num in seen:
             return True
         seen.add(num)
-    return False
+    return False"""
+
+#removing a stars from strings
+class Solution:
+    def removeStars(self, s):
+        stack = []
+        for ch in s:
+            if ch == '*':
+                stack.pop()
+            else:
+                stack.append(ch)  
+        return ''.join(stack)
 
