@@ -44,7 +44,7 @@ def is_valid(s):
             stack.append(char)
     return len(stack) == 0
 print(is_valid("()[]{}"))  
-print(is_valid("(]"))       """
+print(is_valid("(]"))      
 
 #max sum array
 def max_subarray(nums):
@@ -55,4 +55,9 @@ def max_subarray(nums):
         max_sum = max(max_sum, current)
     return max_sum
 nums = [-2,1,-3,4,-1,2,1,-5,4]
-print(max_subarray(nums))  
+print(max_subarray(nums))  """
+
+#array
+arr = [1, 2, 3, 4, 5]
+total = sum(arr)
+print("Sum =", total)
