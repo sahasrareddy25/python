@@ -29,7 +29,7 @@ for ch in s:
     if ch.isalnum():
         result += ch
 print("Original:", s)
-print("Cleaned:", result)"""
+print("Cleaned:", result)
 
 #valid parenthesis
 def is_valid(s):
@@ -44,4 +44,15 @@ def is_valid(s):
             stack.append(char)
     return len(stack) == 0
 print(is_valid("()[]{}"))  
-print(is_valid("(]"))       
+print(is_valid("(]"))       """
+
+#max sum array
+def max_subarray(nums):
+    max_sum = nums[0]
+    current = nums[0]
+    for i in range(1, len(nums)):
+        current = max(nums[i], current + nums[i])
+        max_sum = max(max_sum, current)
+    return max_sum
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+print(max_subarray(nums))  
