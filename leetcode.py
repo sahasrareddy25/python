@@ -909,7 +909,7 @@ class Solution:
 #valid anagram
 class Solution:
     def isAnagram(self, s, t):
-        return sorted(s) == sorted(t)"""
+        return sorted(s) == sorted(t)
 
 #removing a stars from strings
 class Solution:
@@ -920,4 +920,15 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)
+        return ''.join(stack)"""
+
+
+#sum of squares of special elements
+class Solution:
+    def sumOfSquares(self, nums):
+        n = len(nums)
+        total = 0
+        for i in range(n):
+            if n % (i + 1) == 0:
+                total += nums[i] * nums[i]    
+        return total

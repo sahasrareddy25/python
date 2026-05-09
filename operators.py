@@ -91,7 +91,7 @@ def containsDuplicate(nums):
         if num in seen:
             return True
         seen.add(num)
-    return False"""
+    return False
 
 #removing a stars from strings
 class Solution:
@@ -102,5 +102,21 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)
+        return ''.join(stack)"""
+
+
+        class Solution:
+    def numDifferentIntegers(self, word):
+        num = ""
+        s = set()
+        for ch in word:
+            if ch.isdigit():
+                num += ch
+            else:
+                if num:
+                    s.add(int(num))
+                    num = ""
+        if num:
+            s.add(int(num))
+        return len(s)
 
