@@ -920,7 +920,7 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)"""
+        return ''.join(stack)
 
 
 #sum of squares of special elements
@@ -931,4 +931,13 @@ class Solution:
         for i in range(n):
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
-        return total
+        return total"""
+
+#Find the Winning Player in Coin Game
+class Solution:
+    def winningPlayer(self, x, y):
+        moves = min(x, y // 4)
+        if moves % 2 == 1:
+            return "Alice"
+        else:
+            return "Bob"
