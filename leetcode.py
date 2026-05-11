@@ -931,7 +931,7 @@ class Solution:
         for i in range(n):
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
-        return total"""
+        return total
 
 #Find the Winning Player in Coin Game
 class Solution:
@@ -941,3 +941,15 @@ class Solution:
             return "Alice"
         else:
             return "Bob"
+            """
+
+#count subarrays of length three with a condition
+class Solution(object):
+    def countSubarrays(self, nums):
+        count=0
+        n=len(nums)
+        for i in range(n-2):
+            if 2*(nums[i]+nums[i+2])==nums[i+1]:
+                count += 1
+        return count
+        
