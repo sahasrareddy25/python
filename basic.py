@@ -73,7 +73,7 @@ for ch in str:
         freq[ch]=1
     else:
         freq[ch]+=1
-print(freq)"""
+print(freq)
 
 #10.Unique elements
 #Given a list of integers, remove duplicates while maintaining order.
@@ -82,7 +82,17 @@ result=[]
 for x in Array:
     if x not in result:
         result.append(x)
-print("after removing duplicates: ", result)
+print("after removing duplicates: ", result)"""
+
+#count subarrays of length three with a condition
+class Solution(object):
+    def countSubarrays(self, nums):
+        count=0
+        n=len(nums)
+        for i in range(n-2):
+            if 2*(nums[i]+nums[i+2])==nums[i+1]:
+                count += 1
+        return count
 
 
 
