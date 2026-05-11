@@ -102,10 +102,9 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(ch)  
-        return ''.join(stack)"""
+        return ''.join(stack)
 
-
-        class Solution:
+ class Solution:
     def numDifferentIntegers(self, word):
         num = ""
         s = set()
@@ -120,3 +119,13 @@ class Solution:
             s.add(int(num))
         return len(s)
 
+"""
+#count subarrays of length three with a condition
+class Solution(object):
+    def countSubarrays(self, nums):
+        count=0
+        n=len(nums)
+        for i in range(n-2):
+            if 2*(nums[i]+nums[i+2])==nums[i+1]:
+                count += 1
+        return count
