@@ -941,7 +941,7 @@ class Solution:
             return "Alice"
         else:
             return "Bob"
-            """
+            
 
 #count subarrays of length three with a condition
 class Solution(object):
@@ -952,4 +952,14 @@ class Solution(object):
             if 2*(nums[i]+nums[i+2])==nums[i+1]:
                 count += 1
         return count
+        """
+
+#sort people
+class Solution(object):
+    def sortPeople(self, names, heights):
+        x=sorted(heights)[::-1]
+        a=[]
+        for i in x:
+            a.append(names[heights.index(i)])
+        return a
         

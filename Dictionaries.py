@@ -92,9 +92,9 @@ dic={"name":"swarna",
      "model":"swarnapop",
 }
 dic.pop("model")
-print(dic) """
+print(dic) 
 
-#5.5. Count Frequency of Numbers
+#5.Count Frequency of Numbers
 #Count frequency of numbers in list.
 nums=[1,2,2,3,4,4,4]
 freq={}
@@ -105,3 +105,9 @@ for i in nums:
         freq[i]=1
 print(freq)
     
+"""
+#take the dictionary and print them
+sahasra = {
+    "gender": "female",
+}
+print("sahasra")
