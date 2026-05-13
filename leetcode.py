@@ -952,7 +952,7 @@ class Solution(object):
             if 2*(nums[i]+nums[i+2])==nums[i+1]:
                 count += 1
         return count
-        """
+    
 
 #sort people
 class Solution(object):
@@ -962,4 +962,10 @@ class Solution(object):
         for i in x:
             a.append(names[heights.index(i)])
         return a
+        """
+#number of segment in a string
+class Solution(object):
+    def countSegments(self,s):
+        word=s.split()
+        return len(word)
         
