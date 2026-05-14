@@ -151,7 +151,7 @@ print('f' in my_str)  # False
 #** prints
 int_1 = 4
 int_2 = 2
-print(int_1 ** int_2)
+print(int_1 ** int_2)"""
 
 #dictnries usage
 example_list = ['example', 'dashed', 'name']
@@ -160,7 +160,7 @@ print(joined_str)
 
 #
 message = 'Python is fun!'
-print(message[0:6])"""
+print(message[0:6])
 
 #usage of enumerate() func and printing the product details below in a order with the sno.
 products = {
