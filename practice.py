@@ -125,9 +125,6 @@ for char in str:
         freq[char]=1
 print(freq)
 
-"""
-
-
 #sort the people
 class Solution(object):
     def sortPeople(self, names, heights):
@@ -136,7 +133,52 @@ class Solution(object):
         for i in x:
             a.append(names[heights.index(i)])
         return a
+"""
+"""
+developer = 'Jessica'
+greeting = f'My name is {developer}.'
+print(greeting) 
+
+my_str = 'Hello world'
+
+print('Hello' in my_str)  # True
+print('hey' in my_str)    # False
+print('hi' in my_str)    # False
+print('e' in my_str)  # True
+print('f' in my_str)  # False
 
 
+def greet():
+    pass
+    
+print(greet()) 
+ 
+int_1 = 4
+int_2 = 2
+
+print(int_1 ** int_2)
 
 
+example_list = ['example', 'dashed', 'name']
+joined_str = ' '.join(example_list)
+print(joined_str) 
+
+
+message = 'Python is fun!'
+print(message[0:6])
+
+
+products = {
+    'Laptop': 990,
+    'Smartphone': 600,
+    'Tablet': 250,
+    'Headphones': 70,
+}
+for product in enumerate(products):
+    print(product)"""
+
+#assigning same value to multiple variables
+var_1 = var_2 = var_3 = 182  
+print("Variable 1:", var_1)  
+print("Variable 2:", var_2)  
+print("Variable 3:", var_3)  

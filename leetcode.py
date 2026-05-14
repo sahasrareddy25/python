@@ -962,10 +962,20 @@ class Solution(object):
         for i in x:
             a.append(names[heights.index(i)])
         return a
-        """
+        
 #number of segment in a string
 class Solution(object):
     def countSegments(self,s):
         word=s.split()
-        return len(word)
+        return len(word)"""
+
+#median two sorted arrays
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+        nums=nums1+nums2
+        nums.sort()
+        k=len(nums)
+        if k%2==1:
+            return nums[k//2]
+        return (nums[k//2] + nums[k//2 - 1])/2.0
         
