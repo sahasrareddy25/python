@@ -139,20 +139,20 @@ developer = 'Jessica'
 greeting = f'My name is {developer}.'
 print(greeting) 
 
-
+"""
 #
 my_str = 'Hello world'
 print('Hello' in my_str)  # True
 print('hey' in my_str)    # False
 print('hi' in my_str)    # False
 print('e' in my_str)  # True
-print('f' in my_str)  # False"""
-
+print('f' in my_str)  # False
+"""
 #** prints
 int_1 = 4
 int_2 = 2
 print(int_1 ** int_2)
-"""
+
 #dictnries usage
 example_list = ['example', 'dashed', 'name']
 joined_str = ' '.join(example_list)
@@ -176,4 +176,4 @@ for product in enumerate(products):
 var_1 = var_2 = var_3 = 182  
 print("Variable 1:", var_1)  
 print("Variable 2:", var_2)  
-print("Variable 3:", var_3)  """
+print("Variable 3:", var_3) """
