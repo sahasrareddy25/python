@@ -160,7 +160,7 @@ print(joined_str)
 
 #
 message = 'Python is fun!'
-print(message[0:6])
+print(message[0:6])"""
 
 #usage of enumerate() func and printing the product details below in a order with the sno.
 products = {
@@ -170,10 +170,10 @@ products = {
     'Headphones': 70,
 }
 for product in enumerate(products):
-    print(product)"""
-
+    print(product)
+"""
 #assigning same value to multiple variables
 var_1 = var_2 = var_3 = 182  
 print("Variable 1:", var_1)  
 print("Variable 2:", var_2)  
-print("Variable 3:", var_3)  
+print("Variable 3:", var_3)  """
