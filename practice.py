@@ -139,35 +139,30 @@ developer = 'Jessica'
 greeting = f'My name is {developer}.'
 print(greeting) 
 
-my_str = 'Hello world'
 
+#
+my_str = 'Hello world'
 print('Hello' in my_str)  # True
 print('hey' in my_str)    # False
 print('hi' in my_str)    # False
 print('e' in my_str)  # True
 print('f' in my_str)  # False
 
-
-def greet():
-    pass
-    
-print(greet()) 
- 
+#** prints
 int_1 = 4
 int_2 = 2
-
 print(int_1 ** int_2)
 
-
+#dictnries usage
 example_list = ['example', 'dashed', 'name']
 joined_str = ' '.join(example_list)
 print(joined_str) 
 
-
+#
 message = 'Python is fun!'
 print(message[0:6])
 
-
+#usage of enumerate() func and printing the product details below in a order with the sno.
 products = {
     'Laptop': 990,
     'Smartphone': 600,
