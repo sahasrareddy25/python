@@ -146,13 +146,13 @@ print('Hello' in my_str)  # True
 print('hey' in my_str)    # False
 print('hi' in my_str)    # False
 print('e' in my_str)  # True
-print('f' in my_str)  # False
+print('f' in my_str)  # False"""
 
 #** prints
 int_1 = 4
 int_2 = 2
-print(int_1 ** int_2)"""
-
+print(int_1 ** int_2)
+"""
 #dictnries usage
 example_list = ['example', 'dashed', 'name']
 joined_str = ' '.join(example_list)
@@ -171,7 +171,7 @@ products = {
 }
 for product in enumerate(products):
     print(product)
-"""
+
 #assigning same value to multiple variables
 var_1 = var_2 = var_3 = 182  
 print("Variable 1:", var_1)  
