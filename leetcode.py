@@ -988,7 +988,7 @@ class Solution(object):
         res1=list(set1-set2)
         res2=list(set2-set1)
         return res1,res2
-"""
+
 
 #monotonic array
 class Solution(object):
@@ -998,5 +998,14 @@ class Solution(object):
         if nums==a or nums==b:
             return True
         return False
-        
+        """
+
+#shortest palindrome
+class Solution(object):
+    def shortestPalindrome(self, s):
+       rev=s[::-1]
+       for i in range(len(s)+1):
+        if s.startswith(rev[i:]):
+                 return rev[:i] + s
+
       
