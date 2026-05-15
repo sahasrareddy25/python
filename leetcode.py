@@ -1008,8 +1008,6 @@ class Solution(object):
         if s.startswith(rev[i:]):
                  return rev[:i] + s
 
-      """
-
 #to lower case
 class Solution:
     def toLowerCase(self, s):
@@ -1019,4 +1017,13 @@ class Solution:
                 res += chr(ord(i) + 32)
             else:
                 res += i
-        return res
+        return res"""
+
+#reverse words ina string
+class Solution:
+    def reverseWords(self, s):
+        s=s.split()
+        s.reverse()
+        return " ".join(s)
+        
+        
