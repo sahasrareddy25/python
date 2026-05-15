@@ -967,7 +967,7 @@ class Solution(object):
 class Solution(object):
     def countSegments(self,s):
         word=s.split()
-        return len(word)"""
+        return len(word)
 
 #median two sorted arrays
 class Solution(object):
@@ -978,4 +978,15 @@ class Solution(object):
         if k%2==1:
             return nums[k//2]
         return (nums[k//2] + nums[k//2 - 1])/2.0
-        
+        """
+
+#find the difference b/w two arrays
+class Solution(object):
+    def findDifference(self, nums1, nums2):
+        set1=set(nums1)
+        set2=set(nums2)
+        res1=list(set1-set2)
+        res2=list(set2-set1)
+        return res1,res2
+
+      
