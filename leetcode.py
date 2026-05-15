@@ -998,7 +998,7 @@ class Solution(object):
         if nums==a or nums==b:
             return True
         return False
-        """
+        
 
 #shortest palindrome
 class Solution(object):
@@ -1008,4 +1008,15 @@ class Solution(object):
         if s.startswith(rev[i:]):
                  return rev[:i] + s
 
-      
+      """
+
+#to lower case
+class Solution:
+    def toLowerCase(self, s):
+        res = ""
+        for i in s:
+            if i.isupper():
+                res += chr(ord(i) + 32)
+            else:
+                res += i
+        return res
