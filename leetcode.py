@@ -978,7 +978,7 @@ class Solution(object):
         if k%2==1:
             return nums[k//2]
         return (nums[k//2] + nums[k//2 - 1])/2.0
-        """
+        
 
 #find the difference b/w two arrays
 class Solution(object):
@@ -988,5 +988,15 @@ class Solution(object):
         res1=list(set1-set2)
         res2=list(set2-set1)
         return res1,res2
+"""
 
+#monotonic array
+class Solution(object):
+    def isMonotonic(self, nums):
+        a=sorted(nums)
+        b=sorted(nums,reverse=True)
+        if nums==a or nums==b:
+            return True
+        return False
+        
       
