@@ -1017,7 +1017,7 @@ class Solution:
                 res += chr(ord(i) + 32)
             else:
                 res += i
-        return res"""
+        return res
 
 #reverse words ina string
 class Solution:
@@ -1025,5 +1025,15 @@ class Solution:
         s=s.split()
         s.reverse()
         return " ".join(s)
+        """
+#sum of squares of special elements
+class Solution:
+    def sumOfSquares(self, nums):
+        n = len(nums)
+        total = 0
+        for i in range(n):
+            if n % (i + 1) == 0:
+                total += nums[i] * nums[i]    
+        return total
         
         

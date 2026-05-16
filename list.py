@@ -201,6 +201,8 @@ nums=[1,2,3,4]
 nums.remove(2)
 print(nums)
 """
+
+"""
 #finding the largest elements among
 num=[1,2,3,4,44]
 largest_num=num[0]
@@ -208,4 +210,8 @@ for i in num:
     if i>largest_num:
         largest_num=i
 print(largest_num)
-
+"""
+#reverse array
+num=[1,2,3,4,44]
+num.reverse()
+print(num)
