@@ -186,5 +186,26 @@ sen="rxdrcfvgbhjkmbuvyctrtcvgybhnjvctcyvgh"
 words=sen.split()
 print(len(words))
 """
+"""
+#9.operations in list/array
+nums=[1,2,3,4]
+print(nums[0])
 
-#9.
+#.operations in list/array
+nums=[1,2,3,4]
+nums.append(1)
+print(nums)
+
+#using remove()
+nums=[1,2,3,4]
+nums.remove(2)
+print(nums)
+"""
+#finding the largest elements among
+num=[1,2,3,4,44]
+largest_num=num[0]
+for i in num:
+    if i>largest_num:
+        largest_num=i
+print(largest_num)
+
