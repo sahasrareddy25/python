@@ -1025,7 +1025,7 @@ class Solution:
         s=s.split()
         s.reverse()
         return " ".join(s)
-        """
+        
 #sum of squares of special elements
 class Solution:
     def sumOfSquares(self, nums):
@@ -1035,5 +1035,12 @@ class Solution:
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
         return total
-        
+        """
+class Solution:
+    def isPowerOfFour(self, n):
+        if n<=0:
+            return False
+        while n%4==0:
+            n//=4
+        return n==1
         
