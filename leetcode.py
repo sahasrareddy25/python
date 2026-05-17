@@ -1035,12 +1035,23 @@ class Solution:
             if n % (i + 1) == 0:
                 total += nums[i] * nums[i]    
         return total
-        """
+        
 class Solution:
     def isPowerOfFour(self, n):
         if n<=0:
             return False
         while n%4==0:
             n//=4
-        return n==1
+        return n==1"""
+
+#third maximum number
+class Solution:
+    def thirdMax(self, nums):
+        nums = list(set(nums))
+        nums.sort()
+        if len(nums) >= 3:
+            return nums[-3]
+        else:
+            return nums[-1]
+        
         
