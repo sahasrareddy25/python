@@ -133,13 +133,14 @@ class Solution(object):
         for i in x:
             a.append(names[heights.index(i)])
         return a
-"""
-"""
+
+
+
 developer = 'Jessica'
 greeting = f'My name is {developer}.'
 print(greeting) 
 
-"""
+
 #
 my_str = 'Hello world'
 print('Hello' in my_str)  # True
@@ -147,7 +148,7 @@ print('hey' in my_str)    # False
 print('hi' in my_str)    # False
 print('e' in my_str)  # True
 print('f' in my_str)  # False
-"""
+
 #** prints
 int_1 = 4
 int_2 = 2
@@ -177,3 +178,50 @@ var_1 = var_2 = var_3 = 182
 print("Variable 1:", var_1)  
 print("Variable 2:", var_2)  
 print("Variable 3:", var_3) """
+
+
+"""
+#Palindrome
+def palindrome(s):
+    s=s.lower()
+    if s==s[::-1]:
+        return True 
+    else:
+        return False
+print(palindrome("amanaplanacanalpanama:"))
+
+#contains duplicates
+def duplicate(n):
+    if len(n)!=len(set(n)):
+        return True
+    else:
+        return False
+print(duplicate([1,2,3,1]))
+
+
+#Group Anagrams
+def groupAnagrams(strs):
+    anagram=(list)
+    for i in strs:
+        key="".join(sorted(i))
+        anagram[key].append(i)
+    return list(anagram.values())
+strs = ["act","pots","tops","cat","stop","hat"]
+print(groupAnagrams(strs))
+
+#top k frequent elements
+def topkFrequent(nums,k):
+    count=0
+    for i in nums:
+        result=sorted(count)
+        return result"""
+
+def twoSum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i]+nums[j]==target:
+                return [i, j]
+nums=[2,7,11,15]
+target=9
+print(twoSum(nums, target))
+
