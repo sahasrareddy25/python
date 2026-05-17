@@ -199,6 +199,15 @@ def duplicate(n):
 print(duplicate([1,2,3,1]))
 
 
+def twoSum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i]+nums[j]==target:
+                return [i, j]
+nums=[2,7,11,15]
+target=9
+print(twoSum(nums, target))
+"""
 #Group Anagrams
 def groupAnagrams(strs):
     anagram=(list)
@@ -208,20 +217,4 @@ def groupAnagrams(strs):
     return list(anagram.values())
 strs = ["act","pots","tops","cat","stop","hat"]
 print(groupAnagrams(strs))
-
-#top k frequent elements
-def topkFrequent(nums,k):
-    count=0
-    for i in nums:
-        result=sorted(count)
-        return result"""
-
-def twoSum(nums, target):
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            if nums[i]+nums[j]==target:
-                return [i, j]
-nums=[2,7,11,15]
-target=9
-print(twoSum(nums, target))
 
