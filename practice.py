@@ -181,14 +181,6 @@ print("Variable 3:", var_3) """
 
 
 """
-#Palindrome
-def palindrome(s):
-    s=s.lower()
-    if s==s[::-1]:
-        return True 
-    else:
-        return False
-print(palindrome("amanaplanacanalpanama:"))
 
 #contains duplicates
 def duplicate(n):
@@ -208,13 +200,11 @@ nums=[2,7,11,15]
 target=9
 print(twoSum(nums, target))
 """
-#Group Anagrams
-def groupAnagrams(strs):
-    anagram=(list)
-    for i in strs:
-        key="".join(sorted(i))
-        anagram[key].append(i)
-    return list(anagram.values())
-strs = ["act","pots","tops","cat","stop","hat"]
-print(groupAnagrams(strs))
-
+#Palindrome
+def palindrome(s):
+    s=s.lower()
+    if s==s[::-1]:
+        return True 
+    else:
+        return False
+print(palindrome("amanaplanacanalpanama:"))
