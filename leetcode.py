@@ -1042,7 +1042,7 @@ class Solution:
             return False
         while n%4==0:
             n//=4
-        return n==1"""
+        return n==1
 
 #third maximum number
 class Solution:
@@ -1053,5 +1053,17 @@ class Solution:
             return nums[-3]
         else:
             return nums[-1]
+
+#topfrequent
+def topkFrequent(nums,k): 
+count={}
+for i in nums: 
+result=sorted(count) 
+return result """
+
+#Check if All A's Appears Before All B's
+class Solution:
+    def checkString(self, s):
+        return "ba" not in s
         
         
