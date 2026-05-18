@@ -19,18 +19,15 @@ print("nums:", a,b,c)
 x=y=z=100
 print("x,y,z:", x,y,z)"""
 
-#Check if All A's Appears Before All B's
-class Solution:
-    def checkString(self, s):
-        return "ba" not in s
-        """
+"""
 #Determine if String Halves Are Alike
 class Solution:
     def halvesAreAlike(self, s):
         vowels = "aeiouAEIOU"
         mid = len(s) // 2
-        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])
-
-        
+        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])        
         """
-
+#Check if All A's Appears Before All B's
+class Solution:
+    def checkString(self, s):
+        return "ba" not in s
