@@ -1059,11 +1059,17 @@ def topkFrequent(nums,k):
 count={}
 for i in nums: 
 result=sorted(count) 
-return result """
+return result 
 
 #Check if All A's Appears Before All B's
 class Solution:
     def checkString(self, s):
         return "ba" not in s
-        
+        """
+#Determine if String Halves Are Alike
+class Solution:
+    def halvesAreAlike(self, s):
+        vowels = "aeiouAEIOU"
+        mid = len(s) // 2
+        return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])
         
