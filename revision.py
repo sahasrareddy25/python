@@ -39,7 +39,7 @@ def duplicates(nums):
         if i not in result:
             result.append(i)
     return result
-print(duplicates([1,2,3,4,4,5,5,5]))"""
+print(duplicates([1,2,3,4,4,5,5,5]))
 
 #fibonacci series(n):
 def fib(n):
@@ -51,3 +51,16 @@ def fib(n):
         a=b
         b=temp
 fib(8)
+"""
+#counting uppercase and lowercase letters
+def count(text):
+    upper=0
+    lower=0
+    for ch in text:
+        if ch.isupper():
+            upper+=1
+        elif ch.islower():
+            lower+=1
+    print("uppercase=",upper)
+    print("lowercase=",lower)
+count("VSasdf")
