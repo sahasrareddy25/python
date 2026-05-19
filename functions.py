@@ -156,9 +156,18 @@ def vowels(text):
         if ch in "aeiou":
             count+=1
     return count
-print(vowels("session"))"""
+print(vowels("session"))
 
 #reversing string
 def reverse(text):
     return text[::-1]
 print(reverse("session"))
+"""
+
+#checking palindrome
+def palindrome(text):
+    if text==text[::-1]:
+        return "palindrome"
+    else:
+        return "not palindrome"
+    print(palindrome("madam"))
