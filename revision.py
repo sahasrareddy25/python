@@ -51,7 +51,7 @@ def fib(n):
         a=b
         b=temp
 fib(8)
-"""
+
 #counting uppercase and lowercase letters
 def count(text):
     upper=0
@@ -63,4 +63,14 @@ def count(text):
             lower+=1
     print("uppercase=",upper)
     print("lowercase=",lower)
-count("VSasdf")
+count("VSasdf")"""
+
+
+#maximum element in list
+def max(nums):
+    largest=nums[0]
+    for i in nums:
+        if i>largest:
+            largest=i
+    return largest
+print(max([10,20,49]))
