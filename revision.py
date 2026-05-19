@@ -30,8 +30,7 @@ class Solution:
 #Check if All A's Appears Before All B's
 class Solution:
     def checkString(self, s):
-        return "ba" not in s"""
-
+        return "ba" not in s
 
 #removing duplicates from the list
 def duplicates(nums):
@@ -40,4 +39,15 @@ def duplicates(nums):
         if i not in result:
             result.append(i)
     return result
-print(duplicates([1,2,3,4,4,5,5,5]))
+print(duplicates([1,2,3,4,4,5,5,5]))"""
+
+#fibonacci series(n):
+def fib(n):
+    a=0
+    b=1
+    for i in range(n):
+        print(a, end=" ")
+        temp=a+b
+        a=b
+        b=temp
+fib(8)
