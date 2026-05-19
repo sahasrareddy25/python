@@ -191,7 +191,7 @@ def count(text):
             lower+=1
     print("uppercase=",upper)
     print("lowercase=",lower)
-count("VSasdf")"""
+count("VSasdf")
 
 #fibonacci series(n):
 def fib(n):
@@ -202,4 +202,13 @@ def fib(n):
         temp=a+b
         a=b
         b=temp
-fib(8)
+fib(8)"""
+
+#removing duplicates from the list
+def duplicates(nums):
+    result=[]
+    for i in nums:
+        if i not in result:
+            result.append(i)
+    return result
+print(duplicates([1,2,3,4,4,5,5,5]))
