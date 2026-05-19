@@ -147,7 +147,7 @@ def rev_str(s):
     for ch in s:
         rev=ch+rev
     return rev
-print(rev_str("saasshra"))"""
+print(rev_str("saasshra"))
 
 #counting vowels in a string
 def vowels(text):
@@ -156,4 +156,9 @@ def vowels(text):
         if ch in "aeiou":
             count+=1
     return count
-print(vowels("session"))
+print(vowels("session"))"""
+
+#reversing string
+def reverse(text):
+    return text[::-1]
+print(reverse("session"))
