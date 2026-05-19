@@ -63,8 +63,7 @@ def count(text):
             lower+=1
     print("uppercase=",upper)
     print("lowercase=",lower)
-count("VSasdf")"""
-
+count("VSasdf")
 
 #maximum element in list
 def max(nums):
@@ -73,4 +72,12 @@ def max(nums):
         if i>largest:
             largest=i
     return largest
-print(max([10,20,49]))
+print(max([10,20,49]))"""
+
+#checking palindrome
+def palindrome(text):
+    if text==text[::-1]:
+        return "palindrome"
+    else:
+        return "not palindrome"
+    print(palindrome("madam"))
