@@ -139,7 +139,7 @@ print(factorial(5))
 #reverse a string
 def rev_str(S):     #using slicing
     return S[::-1]
-print(rev_str("saashra"))"""
+print(rev_str("saashra"))
 
 #using loop reverse a string
 def rev_str(s):
@@ -147,4 +147,13 @@ def rev_str(s):
     for ch in s:
         rev=ch+rev
     return rev
-print(rev_str("saasshra"))
+print(rev_str("saasshra"))"""
+
+#counting vowels in a string
+def vowels(text):
+    count=0
+    for ch in text.lower():
+        if ch in "aeiou":
+            count+=1
+    return count
+print(vowels("session"))
