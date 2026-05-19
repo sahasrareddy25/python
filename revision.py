@@ -26,8 +26,18 @@ class Solution:
         vowels = "aeiouAEIOU"
         mid = len(s) // 2
         return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])        
-        """
+        
 #Check if All A's Appears Before All B's
 class Solution:
     def checkString(self, s):
-        return "ba" not in s
+        return "ba" not in s"""
+
+
+#removing duplicates from the list
+def duplicates(nums):
+    result=[]
+    for i in nums:
+        if i not in result:
+            result.append(i)
+    return result
+print(duplicates([1,2,3,4,4,5,5,5]))
