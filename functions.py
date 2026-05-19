@@ -178,7 +178,7 @@ def max(nums):
         if i>largest:
             largest=i
     return largest
-print(max([10,20,49]))"""
+print(max([10,20,49]))
 
 #counting uppercase and lowercase letters
 def count(text):
@@ -191,4 +191,15 @@ def count(text):
             lower+=1
     print("uppercase=",upper)
     print("lowercase=",lower)
-count("VSasdf")
+count("VSasdf")"""
+
+#fibonacci series(n):
+def fib(n):
+    a=0
+    b=1
+    for i in range(n):
+        print(a, end=" ")
+        temp=a+b
+        a=b
+        b=temp
+fib(8)
