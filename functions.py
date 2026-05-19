@@ -162,7 +162,6 @@ print(vowels("session"))
 def reverse(text):
     return text[::-1]
 print(reverse("session"))
-"""
 
 #checking palindrome
 def palindrome(text):
@@ -170,4 +169,13 @@ def palindrome(text):
         return "palindrome"
     else:
         return "not palindrome"
-    print(palindrome("madam"))
+    print(palindrome("madam"))"""
+
+#maximum element in list
+def max(nums):
+    largest=nums[0]
+    for i in nums:
+        if i>largest:
+            largest=i
+    return largest
+print(max([10,20,49]))
