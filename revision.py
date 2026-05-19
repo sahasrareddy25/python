@@ -72,7 +72,7 @@ def max(nums):
         if i>largest:
             largest=i
     return largest
-print(max([10,20,49]))"""
+print(max([10,20,49]))
 
 #checking palindrome
 def palindrome(text):
@@ -80,4 +80,13 @@ def palindrome(text):
         return "palindrome"
     else:
         return "not palindrome"
-    print(palindrome("madam"))
+    print(palindrome("madam"))"""
+
+#counting vowels in a string
+def vowels(text):
+    count=0
+    for ch in text.lower():
+        if ch in "aeiou":
+            count+=1
+    return count
+print(vowels("session"))
