@@ -65,7 +65,7 @@ emp1=employee("sahasra", "IT", 50000)
 emp2=employee("ujwala", "HR", 400000)
 
 emp1.show_details()
-emp2.show_details()"""
+emp2.show_details()
 
 
 #creating a vehicle as a class name 
@@ -86,4 +86,15 @@ c = Car()
 b = Bike()
 
 c.start()
-b.start()
+b.start()"""
+
+
+# Best Time to Buy and Sell Stock
+class Solution(object):
+    def maxProfit(self, prices):
+        max_price=0
+        min_price=prices[0]
+        for price in prices:
+            max_price=max(price-min_price,max_price)
+            min_price=min(min_price,price)
+        return max_price
