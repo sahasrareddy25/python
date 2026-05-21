@@ -104,7 +104,7 @@ class Solution(object):
             n=n//5
         return n==1"""
 
-#sell and buy 
+# Best Time to Buy and Sell Stock
 class Solution(object):
     def maxProfit(self, prices):
         max_price=0
@@ -114,4 +114,5 @@ class Solution(object):
             min_price=min(min_price,price)
         return max_price
 
+        
         
