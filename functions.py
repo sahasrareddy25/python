@@ -171,15 +171,6 @@ def palindrome(text):
         return "not palindrome"
     print(palindrome("madam"))
 
-#maximum element in list
-def max(nums):
-    largest=nums[0]
-    for i in nums:
-        if i>largest:
-            largest=i
-    return largest
-print(max([10,20,49]))
-
 #counting uppercase and lowercase letters
 def count(text):
     upper=0
@@ -204,11 +195,11 @@ def fib(n):
         b=temp
 fib(8)"""
 
-#removing duplicates from the list
-def duplicates(nums):
-    result=[]
+#maximum element in list
+def max(nums):
+    largest=nums[0]
     for i in nums:
-        if i not in result:
-            result.append(i)
-    return result
-print(duplicates([1,2,3,4,4,5,5,5]))
+        if i>largest:
+            largest=i
+    return largest
+print(max([10,20,49]))
