@@ -178,10 +178,7 @@ var_1 = var_2 = var_3 = 182
 print("Variable 1:", var_1)  
 print("Variable 2:", var_2)  
 print("Variable 3:", var_3) """
-
-
 """
-
 #contains duplicates
 def duplicate(n):
     if len(n)!=len(set(n)):
@@ -200,11 +197,13 @@ nums=[2,7,11,15]
 target=9
 print(twoSum(nums, target))
 """
-#Palindrome
-def palindrome(s):
-    s=s.lower()
-    if s==s[::-1]:
-        return True 
-    else:
-        return False
-print(palindrome("amanaplanacanalpanama:"))
+
+# Best Time to Buy and Sell Stock
+class Solution(object):
+    def maxProfit(self, prices):
+        max_price=0
+        min_price=prices[0]
+        for price in prices:
+            max_price=max(price-min_price,max_price)
+            min_price=min(min_price,price)
+        return max_price
