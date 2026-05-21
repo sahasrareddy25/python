@@ -17,9 +17,6 @@ for i in range(3):
 for i in range(5, 0, -1):                  #here start at 5 and stop before 0
     print("Starting in", i)
 
-
-
-
 #Print your name 5 times using a loop.
 for i in range(5):
     print("sahasra ")
@@ -27,9 +24,6 @@ for i in range(5):
 #Print numbers in reverse order from 10 to 1.
 for i in range(10,0,-1):
     print(i)
-
-
-
 """
 
 """word = "companies"
@@ -224,14 +218,14 @@ for i in lst:
 for i in range(1,31):
     if i%3==0:
        continue
-    print(i)
+    print(i)"""
 
 #6.Find First Even Number
 lst=[1,2,3,4,5,5,6]
 for i in lst:
     if i%2==0:
        print(i)
-       break"""
+       break
 
     
 
