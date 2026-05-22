@@ -193,7 +193,7 @@ def fib(n):
         temp=a+b
         a=b
         b=temp
-fib(8)"""
+fib(8)
 
 #maximum element in list
 def max(nums):
@@ -203,3 +203,14 @@ def max(nums):
             largest=i
     return largest
 print(max([10,20,49]))
+"""
+#Count Subarrays of Length Three With a Condition
+class Solution(object):
+    def countSubarrays(self, nums):
+        count=0
+        n=len(nums)
+        for i in range(n-2):
+            if 2*(nums[i]+nums[i+2])==nums[i+1]:
+                count += 1
+        return count
+        
