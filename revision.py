@@ -90,7 +90,7 @@ def vowels(text):
             count+=1
     return count
 print(vowels("session"))
-
+"""
 #ugly number
 class Solution(object):
     def isUgly(self, n):
@@ -102,17 +102,7 @@ class Solution(object):
             n=n//3
         while n%5==0:
             n=n//5
-        return n==1"""
-
-# Best Time to Buy and Sell Stock
-class Solution(object):
-    def maxProfit(self, prices):
-        max_price=0
-        min_price=prices[0]
-        for price in prices:
-            max_price=max(price-min_price,max_price)
-            min_price=min(min_price,price)
-        return max_price
+        return n==1
 
         
         
