@@ -205,7 +205,7 @@ class Solution(object):
         for price in prices:
             max_price=max(price-min_price,max_price)
             min_price=min(min_price,price)
-        return max_price"""
+        return max_price
 
 #clear digits
 class Solution:
@@ -218,3 +218,11 @@ class Solution:
                 if not ch.isdigit():
                     stack.append(ch)
         return "".join(stack)
+"""
+#find the difference
+class Solution:
+    def findTheDifference(self, s, t):
+        res = 0
+        for c in s + t:
+            res ^= ord(c)
+        return chr(res)
