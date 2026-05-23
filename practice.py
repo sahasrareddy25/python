@@ -196,7 +196,6 @@ def twoSum(nums, target):
 nums=[2,7,11,15]
 target=9
 print(twoSum(nums, target))
-"""
 
 # Best Time to Buy and Sell Stock
 class Solution(object):
@@ -206,4 +205,16 @@ class Solution(object):
         for price in prices:
             max_price=max(price-min_price,max_price)
             min_price=min(min_price,price)
-        return max_price
+        return max_price"""
+
+#clear digits
+class Solution:
+    def clearDigits(self, s):
+        stack = []
+        for ch in s:
+            if ch.isdigit() and stack:
+                stack.pop()
+            else:
+                if not ch.isdigit():
+                    stack.append(ch)
+        return "".join(stack)
