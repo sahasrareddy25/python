@@ -90,7 +90,7 @@ def vowels(text):
             count+=1
     return count
 print(vowels("session"))
-"""
+
 #ugly number
 class Solution(object):
     def isUgly(self, n):
@@ -102,7 +102,19 @@ class Solution(object):
             n=n//3
         while n%5==0:
             n=n//5
-        return n==1
+        return n==1"""
+
+#Last Coin in a Game of Alternates
+class Solution:
+    def coin(self,arr):
+        l=0
+        r=len(arr)-1
+        while l<r:
+            if arr[l]>arr[r]:
+                l+=1
+            else:
+                r-=1
+        return arr[l]
 
         
         
