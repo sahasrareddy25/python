@@ -102,7 +102,7 @@ class Solution(object):
             n=n//3
         while n%5==0:
             n=n//5
-        return n==1"""
+        return n==1
 
 #Last Coin in a Game of Alternates
 class Solution:
@@ -114,7 +114,16 @@ class Solution:
                 l+=1
             else:
                 r-=1
-        return arr[l]
+        return arr[l]"""
+
+#find the winning player in coin
+class Solution:
+    def winningPlayer(self, x, y):
+        moves = min(x, y // 4)
+        if moves % 2 == 1:
+            return "Alice"
+        else:
+            return "Bob"
 
         
         
