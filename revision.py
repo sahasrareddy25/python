@@ -114,7 +114,7 @@ class Solution:
                 l+=1
             else:
                 r-=1
-        return arr[l]"""
+        return arr[l]
 
 #find the winning player in coin
 class Solution:
@@ -124,6 +124,16 @@ class Solution:
             return "Alice"
         else:
             return "Bob"
+"""
 
-        
+#third maximum number
+class Solution:
+    def thirdMax(self, nums):
+        nums = list(set(nums))
+        nums.sort()
+        if len(nums) >= 3:
+            return nums[-3]
+        else:
+            return nums[-1]
+
         
