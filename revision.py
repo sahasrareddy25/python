@@ -133,7 +133,7 @@ class Solution:
 #Check if All A's Appears Before All B's
 class Solution:
     def checkString(self, s):
-        return "ba" not in s"""
+        return "ba" not in s
 
 #Find First Palindromic String in the Array
 class Solution:
@@ -142,6 +142,16 @@ class Solution:
             if w1==w1[::-1]:   
                 return w1
         return ""
+        """
+#valid palindrome
+class Solution(object):
+    def isPalindrome(self, s):
+        new=""
+        for i in s:
+            if i.isalnum():
+                new+=i.lower()
+        return new==new[::-1]
+        
         
 
 
