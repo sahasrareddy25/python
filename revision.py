@@ -128,12 +128,21 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]"""
+            return nums[-1]
         
 #Check if All A's Appears Before All B's
 class Solution:
     def checkString(self, s):
-        return "ba" not in s
+        return "ba" not in s"""
+
+#Find First Palindromic String in the Array
+class Solution:
+    def firstPalindrome(self, w):
+        for w1 in w:
+            if w1==w1[::-1]:   
+                return w1
+        return ""
+        
 
 
         
