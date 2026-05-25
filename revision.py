@@ -142,7 +142,7 @@ class Solution:
             if w1==w1[::-1]:   
                 return w1
         return ""
-        """
+        
 #valid palindrome
 class Solution(object):
     def isPalindrome(self, s):
@@ -151,6 +151,14 @@ class Solution(object):
             if i.isalnum():
                 new+=i.lower()
         return new==new[::-1]
+        """
+#smallest even multiple
+class Solution(object):
+    def smallestEvenMultiple(self, num):
+        if num%2 == 0:
+            return num
+        else:
+            return num*2
         
         
 
