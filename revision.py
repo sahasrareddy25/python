@@ -26,11 +26,6 @@ class Solution:
         vowels = "aeiouAEIOU"
         mid = len(s) // 2
         return sum(c in vowels for c in s[:mid]) == sum(c in vowels for c in s[mid:])        
-        
-#Check if All A's Appears Before All B's
-class Solution:
-    def checkString(self, s):
-        return "ba" not in s
 
 #removing duplicates from the list
 def duplicates(nums):
@@ -124,7 +119,6 @@ class Solution:
             return "Alice"
         else:
             return "Bob"
-"""
 
 #third maximum number
 class Solution:
@@ -134,6 +128,12 @@ class Solution:
         if len(nums) >= 3:
             return nums[-3]
         else:
-            return nums[-1]
+            return nums[-1]"""
+        
+#Check if All A's Appears Before All B's
+class Solution:
+    def checkString(self, s):
+        return "ba" not in s
+
 
         
