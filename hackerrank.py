@@ -1,16 +1,9 @@
-#leap year conditionn
-def is_leap(year):
-    leap = False
-    if year % 400 == 0:
-        return True
-    elif year % 100 == 0:
-        return False
-    elif year % 4 == 0:
-        return True
-    else:
-        return False
-    
-    return leap
-
-year = int(input())
-print(is_leap(year))
+#longest common prefix
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        p = strs[0]
+        for s in strs[1:]:
+            while not s.startswith(p):
+                p = p[:-1]
+        return p
+        
