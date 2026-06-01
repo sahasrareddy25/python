@@ -225,7 +225,7 @@ lst=[1,2,3,4,5,5,6]
 for i in lst:
     if i%2==0:
        print(i)
-       break"""
+       break
 
 #smallest even multiple
 class Solution(object):
@@ -233,7 +233,17 @@ class Solution(object):
         if num%2 == 0:
             return num
         else:
-            return num*2
+            return num*2"""
+
+#longest common prefix
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        p = strs[0]
+        for s in strs[1:]:
+            while not s.startswith(p):
+                p = p[:-1]
+        return p
+        
         
 
     
