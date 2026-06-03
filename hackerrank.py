@@ -30,9 +30,27 @@ class Solution:
                     max(waterStartTime[j] + waterDuration[j], landStartTime[i]) + landDuration[i]
                 )
         return ans
-        """
+        
 #minimum cost of buying candies with discount
 class Solution:
     def minimumCost(self, cost):
         cost.sort(reverse=True)
-        return sum(c for i, c in enumerate(cost) if i % 3 != 2)
+        return sum(c for i, c in enumerate(cost) if i % 3 != 2)"""
+
+#earliest finish time for land and water Rides II
+class Solution:
+    def earliestFinishTime(self, a, b, c, d):
+        ans = float('inf')
+        n = len(a)
+        minEnd = float('inf')
+        for i in range(n):
+            minEnd = min(minEnd, a[i] + b[i])
+        m = len(c)
+        for i in range(m):
+            ans = min(ans, d[i] + max(minEnd, c[i]))
+        minEnd = float('inf')
+        for i in range(m):
+            minEnd = min(minEnd, c[i] + d[i])
+        for i in range(n):
+            ans = min(ans, b[i] + max(minEnd, a[i]))
+        return ans
