@@ -16,7 +16,7 @@ class Solution(object):
             if ch in s and ch.upper() in s:
                 count += 1
         return count
-        """
+        
 
 #erliest finish time to  land and water rides
 class Solution:
@@ -30,4 +30,9 @@ class Solution:
                     max(waterStartTime[j] + waterDuration[j], landStartTime[i]) + landDuration[i]
                 )
         return ans
-        
+        """
+#minimum cost of buying candies with discount
+class Solution:
+    def minimumCost(self, cost):
+        cost.sort(reverse=True)
+        return sum(c for i, c in enumerate(cost) if i % 3 != 2)
