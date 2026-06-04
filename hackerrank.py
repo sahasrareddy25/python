@@ -47,9 +47,19 @@ class Solution:
             minEnd = min(minEnd, c[i] + d[i])
         for i in range(n):
             ans = min(ans, b[i] + max(minEnd, a[i]))
-        return ans"""
+        return ans
 #minimum cost of buying candies with discount
 class Solution:
     def minimumCost(self, cost):
         cost.sort(reverse=True)
-        return sum(c for i, c in enumerate(cost) if i % 3 != 2)
+        return sum(c for i, c in enumerate(cost) if i % 3 != 2)"""
+
+#3751. Total Waviness of Numbers in Range I
+class Solution:
+    def totalWaviness(self, num1, num2):
+        c = 0
+        for n in range(num1, num2 + 1):
+            s = str(n)
+            for i in range(1, len(s) - 1):
+                c += (s[i-1] < s[i] > s[i+1]) or (s[i-1] > s[i] < s[i+1])
+        return c
