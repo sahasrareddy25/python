@@ -62,10 +62,34 @@ class Solution:
             s = str(n)
             for i in range(1, len(s) - 1):
                 c += (s[i-1] < s[i] > s[i+1]) or (s[i-1] > s[i] < s[i+1])
-        return c"""
+        return c
 
 #2144. Minimum Cost of Buying Candies With Discount
 class Solution:
     def minimumCost(self, cost):
         cost.sort(reverse=True)
-        return sum(c for i, c in enumerate(cost) if i % 3 != 2)
+        return sum(c for i, c in enumerate(cost) if i % 3 != 2)"""
+
+#3sum closet
+class Solution:
+    def threeSumClosest(self, nums, target):
+        nums.sort()
+        ans = nums[0] + nums[1] + nums[2]
+
+        for i in range(len(nums)-2):
+            l, r = i+1, len(nums)-1
+
+            while l < r:
+                s = nums[i] + nums[l] + nums[r]
+
+                if abs(s-target) < abs(ans-target):
+                    ans = s
+
+                if s < target:
+                    l += 1
+                elif s > target:
+                    r -= 1
+                else:
+                    return target
+
+        return ans
