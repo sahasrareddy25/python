@@ -99,10 +99,26 @@ class Solution:
             s-=x
             ans.append(abs(l-s))
             l+=x
-        return ans"""
+        return ans
 #reverse integer
 class Solution:
     def reverse(self, x):
         r=int(str(abs(x))[::-1])
         if x<0:r=-r
-        return r if -2**31<=r<=2**31-1 else 0
+        return r if -2**31<=r<=2**31-1 else 0"""
+
+#longest valid parenthesis
+class Solution:
+    def longestValidParentheses(self, s):
+        st=[-1]
+        ans=0
+        for i,c in enumerate(s):
+            if c=='(':
+                st.append(i)
+            else:
+                st.pop()
+                if st:
+                    ans=max(ans,i-st[-1])
+                else:
+                    st.append(i)
+        return ans
