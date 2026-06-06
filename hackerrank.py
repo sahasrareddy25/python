@@ -88,7 +88,6 @@ class Solution:
                 else:
                     return target
         return ans
-"""
 
 #left and right sum difference
 class Solution:
@@ -100,4 +99,10 @@ class Solution:
             s-=x
             ans.append(abs(l-s))
             l+=x
-        return ans
+        return ans"""
+#reverse integer
+class Solution:
+    def reverse(self, x):
+        r=int(str(abs(x))[::-1])
+        if x<0:r=-r
+        return r if -2**31<=r<=2**31-1 else 0
