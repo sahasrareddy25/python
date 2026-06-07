@@ -105,7 +105,7 @@ class Solution:
     def reverse(self, x):
         r=int(str(abs(x))[::-1])
         if x<0:r=-r
-        return r if -2**31<=r<=2**31-1 else 0"""
+        return r if -2**31<=r<=2**31-1 else 0
 
 #longest valid parenthesis
 class Solution:
@@ -121,4 +121,27 @@ class Solution:
                     ans=max(ans,i-st[-1])
                 else:
                     st.append(i)
-        return ans
+        return ans"""
+
+#create binary tree from descriptions
+class Solution:
+    def createBinaryTree(self, descriptions):
+        nodes = {}
+        childs = set()
+
+        for p, c, l in descriptions:
+            if p not in nodes:
+                nodes[p] = TreeNode(p)
+            if c not in nodes:
+                nodes[c] = TreeNode(c)
+
+            if l:
+                nodes[p].left = nodes[c]
+            else:
+                nodes[p].right = nodes[c]
+
+            childs.add(c)
+
+        for p, _, _ in descriptions:
+            if p not in childs:
+                return nodes[p]
