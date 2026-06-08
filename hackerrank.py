@@ -147,17 +147,19 @@ class Solution:
                 return nodes[p]"""
 
 #partition array according to the given pivot
-class Solution(object):
+class Solution:
     def pivotArray(self, nums, pivot):
-        l=[];
-        e=[];
-        g=[];
-        for i in nums:
-            if(i<pivot):
-                l.append(i);
-            elif(i==pivot):
-                e.append(i);
+        l = []
+        e = []
+        g = []
+
+        for x in nums:
+            if x < pivot:
+                l.append(x)
+            elif x == pivot:
+                e.append(x)
             else:
-                g.append(i);
-        return l+e+g
+                g.append(x)
+
+        return l + e + g
         
