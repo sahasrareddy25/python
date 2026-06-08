@@ -121,7 +121,7 @@ class Solution:
                     ans=max(ans,i-st[-1])
                 else:
                     st.append(i)
-        return ans"""
+        return ans
 
 #create binary tree from descriptions
 class Solution:
@@ -144,4 +144,20 @@ class Solution:
 
         for p, _, _ in descriptions:
             if p not in childs:
-                return nodes[p]
+                return nodes[p]"""
+
+#partition array according to the given pivot
+class Solution(object):
+    def pivotArray(self, nums, pivot):
+        l=[];
+        e=[];
+        g=[];
+        for i in nums:
+            if(i<pivot):
+                l.append(i);
+            elif(i==pivot):
+                e.append(i);
+            else:
+                g.append(i);
+        return l+e+g
+        
