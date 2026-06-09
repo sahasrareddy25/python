@@ -144,7 +144,7 @@ class Solution:
 
         for p, _, _ in descriptions:
             if p not in childs:
-                return nodes[p]"""
+                return nodes[p]
 
 #partition array according to the given pivot
 class Solution:
@@ -161,5 +161,10 @@ class Solution:
             else:
                 g.append(x)
 
-        return l + e + g
+        return l + e + g"""
+
+#maximum total subarray value II
+class Solution:
+    def maxTotalValue(self, nums, k):
+        return k * (max(nums) - min(nums))
         
