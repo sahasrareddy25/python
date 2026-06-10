@@ -146,6 +146,12 @@ class Solution:
             if p not in childs:
                 return nodes[p]
 
+#maximum total subarray value II
+class Solution:
+    def maxTotalValue(self, nums, k):
+        return k * (max(nums) - min(nums))
+        """
+
 #partition array according to the given pivot
 class Solution:
     def pivotArray(self, nums, pivot):
@@ -161,10 +167,4 @@ class Solution:
             else:
                 g.append(x)
 
-        return l + e + g"""
-
-#maximum total subarray value II
-class Solution:
-    def maxTotalValue(self, nums, k):
-        return k * (max(nums) - min(nums))
-        
+        return l + e + g
