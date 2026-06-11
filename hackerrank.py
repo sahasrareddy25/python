@@ -107,22 +107,6 @@ class Solution:
         if x<0:r=-r
         return r if -2**31<=r<=2**31-1 else 0
 
-#longest valid parenthesis
-class Solution:
-    def longestValidParentheses(self, s):
-        st=[-1]
-        ans=0
-        for i,c in enumerate(s):
-            if c=='(':
-                st.append(i)
-            else:
-                st.pop()
-                if st:
-                    ans=max(ans,i-st[-1])
-                else:
-                    st.append(i)
-        return ans
-
 #create binary tree from descriptions
 class Solution:
     def createBinaryTree(self, descriptions):
@@ -150,7 +134,7 @@ class Solution:
 class Solution:
     def maxTotalValue(self, nums, k):
         return k * (max(nums) - min(nums))
-        """
+        
 #partition array according to the given pivot
 class Solution:
     def pivotArray(self, nums, pivot):
@@ -164,4 +148,20 @@ class Solution:
                 e.append(x)
             else:
                 g.append(x)
-        return l + e + g
+        return l + e + g"""
+
+#longest valid parenthesis
+class Solution:
+    def longestValidParentheses(self, s):
+        st=[-1]
+        ans=0
+        for i,c in enumerate(s):
+            if c=='(':
+                st.append(i)
+            else:
+                st.pop()
+                if st:
+                    ans=max(ans,i-st[-1])
+                else:
+                    st.append(i)
+        return ans
