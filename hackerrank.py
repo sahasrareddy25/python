@@ -151,14 +151,12 @@ class Solution:
     def maxTotalValue(self, nums, k):
         return k * (max(nums) - min(nums))
         """
-
 #partition array according to the given pivot
 class Solution:
     def pivotArray(self, nums, pivot):
         l = []
         e = []
         g = []
-
         for x in nums:
             if x < pivot:
                 l.append(x)
@@ -166,5 +164,4 @@ class Solution:
                 e.append(x)
             else:
                 g.append(x)
-
         return l + e + g
