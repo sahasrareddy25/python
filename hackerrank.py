@@ -180,7 +180,7 @@ class Solution:
             fast = fast.next.next
 
         slow.next = slow.next.next
-        return dummy.next"""
+        return dummy.next
 
 #maximum twin sum of a linked list
 class Solution:
@@ -198,5 +198,19 @@ class Solution:
         while slow:
             ans = max(ans, half.pop() + slow.val)
             slow = slow.next
+
+        return ans"""
+
+#weighted word mapping
+class Solution:
+    def mapWordWeights(self, words, weights):
+        ans = ""
+
+        for word in words:
+            total = 0
+            for ch in word:
+                total += weights[ord(ch) - ord('a')]
+
+            ans += chr(ord('z') - (total % 26))
 
         return ans
