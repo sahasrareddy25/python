@@ -164,7 +164,7 @@ class Solution:
                     ans=max(ans,i-st[-1])
                 else:
                     st.append(i)
-        return ans"""
+        return ans
 
 #delete the middle node of the linked listt
 class Solution:
@@ -180,4 +180,23 @@ class Solution:
             fast = fast.next.next
 
         slow.next = slow.next.next
-        return dummy.next
+        return dummy.next"""
+
+#maximum twin sum of a linked list
+class Solution:
+    def pairSum(self, head):
+        half = []
+        slow = fast = head
+
+        while fast and fast.next:
+            half.append(slow.val)
+            slow = slow.next
+            fast = fast.next.next
+
+        ans = 0
+
+        while slow:
+            ans = max(ans, half.pop() + slow.val)
+            slow = slow.next
+
+        return ans
