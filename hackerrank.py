@@ -166,7 +166,7 @@ class Solution:
                     st.append(i)
         return ans"""
 
-#delete the middle node of the linked list
+#delete the middle node of the linked listt
 class Solution:
     def deleteMiddle(self, head):
         if not head or not head.next:
