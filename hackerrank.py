@@ -148,7 +148,7 @@ class Solution:
                 e.append(x)
             else:
                 g.append(x)
-        return l + e + g"""
+        return l + e + g
 
 #longest valid parenthesis
 class Solution:
@@ -164,4 +164,20 @@ class Solution:
                     ans=max(ans,i-st[-1])
                 else:
                     st.append(i)
-        return ans
+        return ans"""
+
+#delete the middle node of the linked list
+class Solution:
+    def deleteMiddle(self, head):
+        if not head or not head.next:
+            return None
+
+        dummy = ListNode(0, head)
+        slow, fast = dummy, head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        slow.next = slow.next.next
+        return dummy.next
