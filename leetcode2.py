@@ -56,7 +56,7 @@ def max_subarray(nums):
     return max_sum
 nums = [-2,1,-3,4,-1,2,1,-5,4]
 print(max_subarray(nums))
-"""
+
 #letter combination of a phone number
 class Solution(object):
     def letterCombinations(self, digits):
@@ -83,4 +83,19 @@ class Solution(object):
                 dfs(i + 1)
                 store.pop()
         dfs(0)
-        return ans
+        return ans"""
+#first missing positive
+class Solution(object):
+    def firstMissingPositive(self, nums):
+        nums = [x for x in nums if x > 0]  
+        nums.sort()
+        var1 = 1
+        for n in nums:
+            if n == var1:
+                var1 += 1   
+            elif n > var1:
+                break       
+        return var1
+arr = [7,8,9,11,12]
+a1 = Solution()
+print(a1.firstMissingPositive(arr))  
