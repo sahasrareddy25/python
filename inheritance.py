@@ -237,7 +237,7 @@ p2 = Product("phone", 40000)
 p1.display()
 p2.display()"""
 
-#employee system
+#employee system prblm
 class Emp:
     def work(self):
         print("Employee is working")
@@ -255,4 +255,6 @@ s2 = Manager()
 
 s1.work()
 s2.work()
+
+
 

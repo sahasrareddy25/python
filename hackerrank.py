@@ -199,7 +199,7 @@ class Solution:
             ans = max(ans, half.pop() + slow.val)
             slow = slow.next
 
-        return ans"""
+        return ans
 
 #weighted word mapping
 class Solution:
@@ -214,3 +214,30 @@ class Solution:
             ans += chr(ord('z') - (total % 26))
 
         return ans
+
+#find all duplicates in a array
+class Solution:
+    def findDuplicates(self, nums):
+        ans = []
+
+        for x in nums:
+            x = abs(x)
+
+            if nums[x - 1] < 0:
+                ans.append(x)
+            else:
+                nums[x - 1] *= -1
+
+        return ans"""
+#majority element
+class Solution:
+    def majorityElement(self, nums):
+        count = 0
+
+        for x in nums:
+            if count == 0:
+                candidate = x
+
+            count += 1 if x == candidate else -1
+
+        return candidate
