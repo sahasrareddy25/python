@@ -309,7 +309,6 @@ if num%2:
     print("the number is odd")
 else:
     print("the number is even")
-"""
 
 #build a grade calculator
 marks=int(input("enter the marks: "))
@@ -322,7 +321,40 @@ elif marks<75:
 elif marks<65:
     print("Grade E ")
 elif marks<50:
-    print("Grade F")
+    print("Grade F")"""
+#letter combination of a phone number
+class Solution(object):
+    def letterCombinations(self, digits):
+        """
+        :type digits: str
+        :type rtype: List[str]
+        """
+        if not digits:
+            return []
+        hashmap = {
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"]
+        }
+     
+        ans = []
+        store = []
+        def dfs(i):
+            if i == len(digits):
+                ans.append("".join(store))
+                return
+
+            for ch in hashmap[digits[i]]:
+                store.append(ch)
+                dfs(i + 1)
+                store.pop()
+        dfs(0)
+        return ans
 
 
 

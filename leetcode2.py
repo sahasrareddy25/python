@@ -55,9 +55,32 @@ def max_subarray(nums):
         max_sum = max(max_sum, current)
     return max_sum
 nums = [-2,1,-3,4,-1,2,1,-5,4]
-print(max_subarray(nums))  """
-
-#array
-arr = [1, 2, 3, 4, 5]
-total = sum(arr)
-print("Sum =", total)
+print(max_subarray(nums))
+"""
+#letter combination of a phone number
+class Solution(object):
+    def letterCombinations(self, digits):
+        if not digits:
+            return []
+        hashmap = {
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"]
+        }
+        ans = []
+        store = []
+        def dfs(i):
+            if i == len(digits):
+                ans.append("".join(store))
+                return
+            for ch in hashmap[digits[i]]:
+                store.append(ch)
+                dfs(i + 1)
+                store.pop()
+        dfs(0)
+        return ans
