@@ -7,7 +7,7 @@ class Solution:
             for j in range(i + 1, col):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
         for k in range(row):
-            matrix[k].reverse()"""
+            matrix[k].reverse()
 
 #two sum-leet code
 def two_sum(nums, target):
@@ -20,4 +20,13 @@ def two_sum(nums, target):
     return []
 nums = [2, 7, 11, 15]
 target = 9
-print(two_sum(nums, target))  
+print(two_sum(nums, target))  """
+
+#removing special characters
+s = "a#b%*c123"
+result = ""
+for ch in s:
+    if ch.isalnum():
+        result += ch
+print("Original:", s)
+print("Cleaned:", result)
