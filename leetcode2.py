@@ -98,7 +98,7 @@ class Solution(object):
         return var1
 arr = [7,8,9,11,12]
 a1 = Solution()
-print(a1.firstMissingPositive(arr))  """
+print(a1.firstMissingPositive(arr))  
 
 #process string with special operations II
 class Solution:
@@ -138,3 +138,16 @@ class Solution:
                     k = cur - 1 - k
 
         return '.'
+"""
+#remove duplicates from sorted list
+class Solution:
+    def deleteDuplicates(self, head):
+        current = head
+
+        while current and current.next:
+            if current.val == current.next.val:
+                current.next = current.next.next
+            else:
+                current = current.next
+
+        return head
