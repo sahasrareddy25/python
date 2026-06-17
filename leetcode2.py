@@ -138,7 +138,7 @@ class Solution:
                     k = cur - 1 - k
 
         return '.'
-"""
+
 #remove duplicates from sorted list
 class Solution:
     def deleteDuplicates(self, head):
@@ -150,4 +150,14 @@ class Solution:
             else:
                 current = current.next
 
-        return head
+        return head"""
+
+#combine two numbers
+SELECT
+    p.firstName,
+    p.lastName,
+    a.city,
+    a.state
+FROM Person p
+LEFT JOIN Address a
+ON p.personId = a.personId;
