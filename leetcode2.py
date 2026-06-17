@@ -167,7 +167,7 @@ DELETE p1
 FROM Person p1, Person 
 WHERE p1.email = p2.email
   AND p1.id > p2.id;
-  """
+  
 #isomorphic string
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
@@ -190,4 +190,19 @@ class Solution:
             else:
                 t_to_s[c2] = c1
 
-        return True
+        return True"""
+
+#sum of left leaves
+class Solution:
+    def sumOfLeftLeaves(self, root):
+        if not root:
+            return 0
+        ans = 0
+        if root.left:
+            if root.left.left is None and root.left.right is None:
+                ans += root.left.val
+            else:
+                ans += self.sumOfLeftLeaves(root.left)
+        ans += self.sumOfLeftLeaves(root.right)
+        return ans
+        
