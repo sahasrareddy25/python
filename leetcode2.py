@@ -83,7 +83,7 @@ class Solution(object):
                 dfs(i + 1)
                 store.pop()
         dfs(0)
-        return ans"""
+        return ans
 #first missing positive
 class Solution(object):
     def firstMissingPositive(self, nums):
@@ -98,4 +98,43 @@ class Solution(object):
         return var1
 arr = [7,8,9,11,12]
 a1 = Solution()
-print(a1.firstMissingPositive(arr))  
+print(a1.firstMissingPositive(arr))  """
+
+#process string with special operations II
+class Solution:
+    def processStr(self, s, k):
+        LIMIT = 10**15 + 1
+        n = len(s)
+
+        length = [0] * (n + 1)
+
+        for i, ch in enumerate(s):
+            cur = length[i]
+
+            if ch.islower():
+                length[i + 1] = min(LIMIT, cur + 1)
+            elif ch == '*':
+                length[i + 1] = max(0, cur - 1)
+            elif ch == '#':
+                length[i + 1] = min(LIMIT, cur * 2)
+            else:  # '%'
+                length[i + 1] = cur
+
+        if k >= length[n]:
+            return '.'
+
+        for i in range(n - 1, -1, -1):
+            ch = s[i]
+            cur = length[i]
+
+            if ch.islower():
+                if k == cur:
+                    return ch
+            elif ch == '#':
+                if cur > 0:
+                    k %= cur
+            elif ch == '%':
+                if cur > 0:
+                    k = cur - 1 - k
+
+        return '.'
