@@ -211,7 +211,7 @@ class Solution(object):
         x = hour + minutes / 60.0
         diff = (11 * x) % 12
         return min(diff, 12 - diff) * 30
-        """
+    
 #fibonacci number
 class Solution(object):
     def fib(self, n):
@@ -223,4 +223,15 @@ class Solution(object):
         for i in range(2, n + 1):
             a, b = b, a + b
 
-        return b
+        return b"""
+#convert a number to hexadecimal 
+class Solution(object):
+    def toHex(self, num):
+        if num == 0:
+            return "0"
+        chars = "0123456789abcdef"
+        ans = ""
+        num &= 0xffffffff
+        while num:
+            ans = chars[num & 15] + ans
+            num >>= 4
