@@ -190,7 +190,7 @@ class Solution:
             else:
                 t_to_s[c2] = c1
 
-        return True"""
+        return True
 
 #sum of left leaves
 class Solution:
@@ -204,5 +204,12 @@ class Solution:
             else:
                 ans += self.sumOfLeftLeaves(root.left)
         ans += self.sumOfLeftLeaves(root.right)
-        return ans
+        return ans"""
+#angle btwn hands of clock
+
+class Solution(object):
+    def angleClock(self, hour, minutes):
+        x = hour + minutes / 60.0
+        diff = (11 * x) % 12
+        return min(diff, 12 - diff) * 30
         
