@@ -223,7 +223,7 @@ class Solution(object):
         for i in range(2, n + 1):
             a, b = b, a + b
 
-        return b"""
+        return b
 #convert a number to hexadecimal 
 class Solution(object):
     def toHex(self, num):
@@ -234,4 +234,21 @@ class Solution(object):
         num &= 0xffffffff
         while num:
             ans = chars[num & 15] + ans
-            num >>= 4
+            num >>= 4"""
+#sum of left leaves
+class Solution(object):
+    def sumOfLeftLeaves(self, root):
+        if not root:
+            return 0
+
+        ans = 0
+
+        # Check if left child is a leaf
+        if root.left and not root.left.left and not root.left.right:
+            ans += root.left.val
+
+        # Recur on both subtrees
+        ans += self.sumOfLeftLeaves(root.left)
+        ans += self.sumOfLeftLeaves(root.right)
+
+        return ans
