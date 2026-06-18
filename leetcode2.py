@@ -204,12 +204,23 @@ class Solution:
             else:
                 ans += self.sumOfLeftLeaves(root.left)
         ans += self.sumOfLeftLeaves(root.right)
-        return ans"""
+        return ans
 #angle btwn hands of clock
-
 class Solution(object):
     def angleClock(self, hour, minutes):
         x = hour + minutes / 60.0
         diff = (11 * x) % 12
         return min(diff, 12 - diff) * 30
-        
+        """
+#fibonacci number
+class Solution(object):
+    def fib(self, n):
+        if n <= 1:
+            return n
+
+        a, b = 0, 1
+
+        for i in range(2, n + 1):
+            a, b = b, a + b
+
+        return b
