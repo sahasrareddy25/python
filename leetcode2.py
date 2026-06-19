@@ -275,7 +275,7 @@ class NumArray:
             self.prefix.append(self.prefix[-1] + num)
 
     def sumRange(self, left, right):
-        return self.prefix[right + 1] - self.prefix[left]"""
+        return self.prefix[right + 1] - self.prefix[left]
 #longest palindrome
 class Solution:
     def longestPalindrome(self, s):
@@ -291,5 +291,17 @@ class Solution:
         if ans < len(s):
             ans += 1
 
-        return ans
+        return ans"""
+#repeated sub string problem
+class Solution:
+    def repeatedSubstringPattern(self, s):
+        n = len(s)
+
+        for i in range(1, n // 2 + 1):
+            if n % i == 0:          # substring length must divide n
+                sub = s[:i]
+                if sub * (n // i) == s:
+                    return True
+
+        return False
         
