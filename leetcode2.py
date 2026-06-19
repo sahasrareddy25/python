@@ -234,7 +234,7 @@ class Solution(object):
         num &= 0xffffffff
         while num:
             ans = chars[num & 15] + ans
-            num >>= 4"""
+            num >>= 4
 #sum of left leaves
 class Solution(object):
     def sumOfLeftLeaves(self, root):
@@ -251,4 +251,17 @@ class Solution(object):
         ans += self.sumOfLeftLeaves(root.left)
         ans += self.sumOfLeftLeaves(root.right)
 
-        return ans
+        return ans"""
+
+#find the highest altitude
+class Solution:
+    def largestAltitude(self, gain):
+        altitude = 0
+        highest = 0
+
+        for g in gain:
+            altitude += g
+            if altitude > highest:
+                highest = altitude
+
+        return highest
