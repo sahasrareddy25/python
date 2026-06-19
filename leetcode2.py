@@ -264,7 +264,7 @@ class Solution:
             if altitude > highest:
                 highest = altitude
 
-        return highest"""
+        return highest
 #range sum query 
 class NumArray:
 
@@ -275,4 +275,21 @@ class NumArray:
             self.prefix.append(self.prefix[-1] + num)
 
     def sumRange(self, left, right):
-        return self.prefix[right + 1] - self.prefix[left]
+        return self.prefix[right + 1] - self.prefix[left]"""
+#longest palindrome
+class Solution:
+    def longestPalindrome(self, s):
+        count = {}
+        ans = 0
+
+        for ch in s:
+            count[ch] = count.get(ch, 0) + 1
+
+        for ch in count:
+            ans += (count[ch] // 2) * 2
+
+        if ans < len(s):
+            ans += 1
+
+        return ans
+        
