@@ -251,7 +251,7 @@ class Solution(object):
         ans += self.sumOfLeftLeaves(root.left)
         ans += self.sumOfLeftLeaves(root.right)
 
-        return ans"""
+        return ans
 
 #find the highest altitude
 class Solution:
@@ -264,4 +264,15 @@ class Solution:
             if altitude > highest:
                 highest = altitude
 
-        return highest
+        return highest"""
+#range sum query 
+class NumArray:
+
+    def __init__(self, nums):
+        self.prefix = [0]
+
+        for num in nums:
+            self.prefix.append(self.prefix[-1] + num)
+
+    def sumRange(self, left, right):
+        return self.prefix[right + 1] - self.prefix[left]
