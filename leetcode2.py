@@ -350,7 +350,7 @@ class Solution:
             else:
                 j += 1
 
-        return count"""
+        return count
 #counnting bits
 class Solution:
     def countBits(self, n):
@@ -359,4 +359,18 @@ class Solution:
         for i in range(1, n + 1):
             ans[i] = ans[i // 2] + (i % 2)
 
-        return ans
+        return ans"""
+#guess the number higher or lower
+class Solution:
+    def guessNumber(self, n):
+        left = 1
+        right = n
+        while left <= right:
+            mid = left + (right - left) // 2
+            res = guess(mid)
+            if res == 0:
+                return mid
+            elif res == -1:
+                right = mid - 1
+            else:
+                left = mid + 1
