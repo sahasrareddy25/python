@@ -359,7 +359,7 @@ class Solution:
         for i in range(1, n + 1):
             ans[i] = ans[i // 2] + (i % 2)
 
-        return ans"""
+        return ans
 #guess the number higher or lower
 class Solution:
     def guessNumber(self, n):
@@ -373,4 +373,16 @@ class Solution:
             elif res == -1:
                 right = mid - 1
             else:
-                left = mid + 1
+                left = mid + 1"""
+#license key formatting
+class Solution:
+    def licenseKeyFormatting(self, s, k):
+        s = s.replace("-", "").upper()
+
+        ans = []
+
+        for i in range(len(s), 0, -k):
+            start = max(0, i - k)
+            ans.append(s[start:i])
+
+        return "-".join(ans[::-1])
