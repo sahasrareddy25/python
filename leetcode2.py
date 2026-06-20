@@ -373,7 +373,7 @@ class Solution:
             elif res == -1:
                 right = mid - 1
             else:
-                left = mid + 1"""
+                left = mid + 1
 #license key formatting
 class Solution:
     def licenseKeyFormatting(self, s, k):
@@ -385,4 +385,17 @@ class Solution:
             start = max(0, i - k)
             ans.append(s[start:i])
 
-        return "-".join(ans[::-1])
+        return "-".join(ans[::-1])"""
+#traiangle judgement
+SELECT
+    x,
+    y,
+    z,
+    CASE
+        WHEN x + y > z
+         AND x + z > y
+         AND y + z > x
+        THEN 'Yes'
+        ELSE 'No'
+    END AS triangle
+FROM Triangle;
