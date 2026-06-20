@@ -304,9 +304,7 @@ class Solution:
                     return True
 
         return False
-        """
-
-
+        
 class Solution:
     def maxBuilding(self, n, restrictions):
         restrictions.append([1, 0])
@@ -333,4 +331,23 @@ class Solution:
             d = x2 - x1
             peak = (h1 + h2 + d) // 2
             ans = max(ans, peak)
-        return ans
+        return ans"""
+#assign cookies
+class Solution:
+    def findContentChildren(self, g, s):
+        g.sort()
+        s.sort()
+
+        i = 0  # child pointer
+        j = 0  # cookie pointer
+        count = 0
+
+        while i < len(g) and j < len(s):
+            if s[j] >= g[i]:
+                count += 1
+                i += 1
+                j += 1
+            else:
+                j += 1
+
+        return count
