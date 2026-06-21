@@ -385,7 +385,7 @@ class Solution:
             start = max(0, i - k)
             ans.append(s[start:i])
 
-        return "-".join(ans[::-1])"""
+        return "-".join(ans[::-1])
 #traiangle judgement
 SELECT
     x,
@@ -398,4 +398,22 @@ SELECT
         THEN 'Yes'
         ELSE 'No'
     END AS triangle
-FROM Triangle;
+FROM Triangle;"""
+
+#maximum ice cream bars
+class Solution:
+    def maxIceCream(self, costs, coins):
+        max_cost = max(costs)
+        count = [0] * (max_cost + 1)
+        for cost in costs:
+            count[cost] += 1
+        ans = 0
+        for price in range(1, max_cost + 1):
+            if count[price] == 0:
+                continue
+            can_buy = min(count[price], coins // price)
+            ans += can_buy
+            coins -= can_buy * price
+            if coins < price:
+                break
+        return ans
