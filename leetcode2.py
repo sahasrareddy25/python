@@ -431,7 +431,7 @@ class Solution:
         o = count[ord('o') - ord('a')] // 2
         n = count[ord('n') - ord('a')]
 
-        return min(b, a, l, o, n)"""
+        return min(b, a, l, o, n)
 #zigzag versions
 class Solution:
     def convert(self, s, numRows):
@@ -448,4 +448,23 @@ class Solution:
                 curRow += 1
             else:
                 curRow -= 1
-        return "".join(rows)
+        return "".join(rows)"""
+#regular expression matching 
+class Solution(object):
+    def isMatch(self, s, p):
+        m = len(s)
+        n = len(p)
+        dp = [[False] * (n + 1) for _ in range(m + 1)]
+        dp[0][0] = True
+        for j in range(2, n + 1):
+            if p[j - 1] == '*':
+                dp[0][j] = dp[0][j - 2]
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if p[j - 1] == s[i - 1] or p[j - 1] == '.':
+                    dp[i][j] = dp[i - 1][j - 1]
+                elif p[j - 1] == '*':
+                    dp[i][j] = dp[i][j - 2]
+                    if p[j - 2] == s[i - 1] or p[j - 2] == '.':
+                        dp[i][j] = dp[i][j] or dp[i - 1][j]
+        return dp[m][n]
