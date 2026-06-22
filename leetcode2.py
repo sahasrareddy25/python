@@ -513,7 +513,7 @@ class Solution:
                 diag1.remove(r - c)
                 diag2.remove(r + c)
         dfs(0)
-        return ans"""
+        return ans
 #N-queens II
 class Solution(object):
     def totalNQueens(self, n):
@@ -533,4 +533,14 @@ class Solution(object):
                 d1.remove(r - c)
                 d2.remove(r + c)
             return ans
-        return dfs(0)
+        return dfs(0)"""
+#unique paths
+class Solution:
+    def uniquePaths(self, m, n):
+        dp = [[1] * n for _ in range(m)]
+
+        for i in range(1, m):
+            for j in range(1, n):
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+        return dp[m - 1][n - 1]
