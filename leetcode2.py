@@ -490,8 +490,8 @@ class Solution(object):
                 curr = temp
             temp = groupPrev.next
             groupPrev.next = kth
-            groupPrev = temp"""
-#N-queens
+            groupPrev = temp
+#N-queens I
 class Solution:
     def solveNQueens(self, n):
         ans = []
@@ -513,4 +513,24 @@ class Solution:
                 diag1.remove(r - c)
                 diag2.remove(r + c)
         dfs(0)
-        return ans
+        return ans"""
+#N-queens II
+class Solution(object):
+    def totalNQueens(self, n):
+        cols, d1, d2 = set(), set(), set()
+        def dfs(r):
+            if r == n:
+                return 1
+            ans = 0
+            for c in range(n):
+                if c in cols or r - c in d1 or r + c in d2:
+                    continue
+                cols.add(c)
+                d1.add(r - c)
+                d2.add(r + c)
+                ans += dfs(r + 1)
+                cols.remove(c)
+                d1.remove(r - c)
+                d2.remove(r + c)
+            return ans
+        return dfs(0)
