@@ -416,7 +416,7 @@ class Solution:
             coins -= can_buy * price
             if coins < price:
                 break
-        return ans"""
+        return ans
 #maximum number of baloons
 class Solution:
     def maxNumberOfBalloons(self, text):
@@ -431,4 +431,21 @@ class Solution:
         o = count[ord('o') - ord('a')] // 2
         n = count[ord('n') - ord('a')]
 
-        return min(b, a, l, o, n)
+        return min(b, a, l, o, n)"""
+#zigzag versions
+class Solution:
+    def convert(self, s, numRows):
+        if numRows == 1 or numRows >= len(s):
+            return s
+        rows = [""] * numRows
+        curRow = 0
+        goingDown = False
+        for ch in s:
+            rows[curRow] += ch
+            if curRow == 0 or curRow == numRows - 1:
+                goingDown = not goingDown
+            if goingDown:
+                curRow += 1
+            else:
+                curRow -= 1
+        return "".join(rows)
