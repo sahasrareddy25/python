@@ -467,7 +467,7 @@ class Solution(object):
                     dp[i][j] = dp[i][j - 2]
                     if p[j - 2] == s[i - 1] or p[j - 2] == '.':
                         dp[i][j] = dp[i][j] or dp[i - 1][j]
-        return dp[m][n]"""
+        return dp[m][n]
 #reverse nodes k-group
 class Solution(object):
     def reverseKGroup(self, head, k):
@@ -490,4 +490,27 @@ class Solution(object):
                 curr = temp
             temp = groupPrev.next
             groupPrev.next = kth
-            groupPrev = temp
+            groupPrev = temp"""
+#N-queens
+class Solution:
+    def solveNQueens(self, n):
+        ans = []
+        cols, diag1, diag2 = set(), set(), set()
+        board = ['.' * n for _ in range(n)]
+        def dfs(r):
+            if r == n:
+                ans.append(board[:])
+                return
+            for c in range(n):
+                if c in cols or (r - c) in diag1 or (r + c) in diag2:
+                    continue
+                cols.add(c)
+                diag1.add(r - c)
+                diag2.add(r + c)
+                board[r] = '.' * c + 'Q' + '.' * (n - c - 1)
+                dfs(r + 1)
+                cols.remove(c)
+                diag1.remove(r - c)
+                diag2.remove(r + c)
+        dfs(0)
+        return ans
