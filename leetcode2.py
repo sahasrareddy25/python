@@ -398,7 +398,7 @@ SELECT
         THEN 'Yes'
         ELSE 'No'
     END AS triangle
-FROM Triangle;"""
+FROM Triangle;
 
 #maximum ice cream bars
 class Solution:
@@ -416,4 +416,19 @@ class Solution:
             coins -= can_buy * price
             if coins < price:
                 break
-        return ans
+        return ans"""
+#maximum number of baloons
+class Solution:
+    def maxNumberOfBalloons(self, text):
+        count = [0] * 26
+
+        for ch in text:
+            count[ord(ch) - ord('a')] += 1
+
+        b = count[ord('b') - ord('a')]
+        a = count[ord('a') - ord('a')]
+        l = count[ord('l') - ord('a')] // 2
+        o = count[ord('o') - ord('a')] // 2
+        n = count[ord('n') - ord('a')]
+
+        return min(b, a, l, o, n)
