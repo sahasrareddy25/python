@@ -143,7 +143,7 @@ class Solution(object):
                 ans += symbol[i]
                 num -= value[i]
 
-        return ans"""
+        return ans
 #jump game II
 class Solution:
     def jump(self, nums):
@@ -155,4 +155,16 @@ class Solution:
             if i == current_end:
                 jumps += 1
                 current_end = farthest
-        return jumps
+        return jumps"""
+#PERMMUTATIONS
+class Solution:
+    def permute(self, nums):
+        result = []
+        def backtrack(path, remaining):
+            if not remaining:
+                result.append(path)
+                return
+            for i in range(len(remaining)):
+                backtrack(path + [remaining[i]], remaining[:i] + remaining[i+1:])
+        backtrack([], nums)
+        return result
