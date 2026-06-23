@@ -95,7 +95,7 @@ class Solution(object):
         for price in prices:
             max_price=max(price-min_price,max_price)
             min_price=min(min_price,price)
-        return max_price"""
+        return max_price
 
 #number of zig-zag arrays
 class Solution:
@@ -124,4 +124,23 @@ class Solution:
         ans = 0
         for i in range(m):
             ans = (ans + up[i] + down[i]) % MOD
+        return ans"""
+#integer to roman
+class Solution(object):
+    def intToRoman(self, num):
+        value = [1000, 900, 500, 400,
+                 100, 90, 50, 40,
+                 10, 9, 5, 4, 1]
+
+        symbol = ["M", "CM", "D", "CD",
+                  "C", "XC", "L", "XL",
+                  "X", "IX", "V", "IV", "I"]
+
+        ans = ""
+
+        for i in range(len(value)):
+            while num >= value[i]:
+                ans += symbol[i]
+                num -= value[i]
+
         return ans
