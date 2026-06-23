@@ -124,7 +124,7 @@ class Solution:
         ans = 0
         for i in range(m):
             ans = (ans + up[i] + down[i]) % MOD
-        return ans"""
+        return ans
 #integer to roman
 class Solution(object):
     def intToRoman(self, num):
@@ -143,4 +143,16 @@ class Solution(object):
                 ans += symbol[i]
                 num -= value[i]
 
-        return ans
+        return ans"""
+#jump game II
+class Solution:
+    def jump(self, nums):
+        jumps = 0
+        current_end = 0
+        farthest = 0
+        for i in range(len(nums) - 1):
+            farthest = max(farthest, i + nums[i])
+            if i == current_end:
+                jumps += 1
+                current_end = farthest
+        return jumps
