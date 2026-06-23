@@ -86,9 +86,7 @@ c = Car()
 b = Bike()
 
 c.start()
-b.start()"""
-
-
+b.start()
 # Best Time to Buy and Sell Stock
 class Solution(object):
     def maxProfit(self, prices):
@@ -97,4 +95,33 @@ class Solution(object):
         for price in prices:
             max_price=max(price-min_price,max_price)
             min_price=min(min_price,price)
-        return max_price
+        return max_price"""
+
+#number of zig-zag arrays
+class Solution:
+    def zigZagArrays(self, n, l, r):
+        MOD = 10**9 + 7
+        m = r - l + 1
+        up = [0] * m
+        down = [0] * m
+        for i in range(m):
+            up[i] = i
+            down[i] = m - 1 - i
+        for _ in range(3, n + 1):
+            prefix = [0] * (m + 1)
+            for i in range(m):
+                prefix[i + 1] = (prefix[i] + down[i]) % MOD
+            suffix = [0] * (m + 1)
+            for i in range(m - 1, -1, -1):
+                suffix[i] = (suffix[i + 1] + up[i]) % MOD
+            new_up = [0] * m
+            new_down = [0] * m
+            for i in range(m):
+                new_up[i] = prefix[i]
+                new_down[i] = suffix[i + 1]
+            up = new_up
+            down = new_down
+        ans = 0
+        for i in range(m):
+            ans = (ans + up[i] + down[i]) % MOD
+        return ans
