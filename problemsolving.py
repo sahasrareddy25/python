@@ -16,7 +16,7 @@ class Solution:
                 dfs(i + 1, target - candidates[i], path)
                 path.pop()
         dfs(0, target, [])
-        return ans"""
+        return ans
 #unique paths II
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid):
@@ -34,4 +34,21 @@ class Solution:
                         dp[i][j] += dp[i - 1][j]
                     if j > 0:
                         dp[i][j] += dp[i][j - 1]
-        return dp[m - 1][n - 1]
+        return dp[m - 1][n - 1]"""
+
+# Convert Sorted List to Binary Search Tree
+class Solution:
+    def sortedListToBST(self, head):
+        nums = []
+        while head:
+            nums.append(head.val)
+            head = head.next
+        def build(left, right):
+            if left > right:
+                return None
+            mid = (left + right) // 2
+            root = TreeNode(nums[mid])
+            root.left = build(left, mid - 1)
+            root.right = build(mid + 1, right)
+            return root
+        return build(0, len(nums) - 1)
