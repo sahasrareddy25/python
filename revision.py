@@ -151,24 +151,16 @@ class Solution(object):
             if i.isalnum():
                 new+=i.lower()
         return new==new[::-1]
-        
-#smallest even multiple
+        """
+#smallest even multiple-2
 class Solution(object):
     def smallestEvenMultiple(self, num):
         if num%2 == 0:
             return num
         else:
-            return num*2"""
+            return num*2
 
-#longest common prefix
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        p = strs[0]
-        for s in strs[1:]:
-            while not s.startswith(p):
-                p = p[:-1]
-        return p
-        
+
         
 
 
