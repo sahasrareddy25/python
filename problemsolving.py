@@ -34,7 +34,7 @@ class Solution:
                         dp[i][j] += dp[i - 1][j]
                     if j > 0:
                         dp[i][j] += dp[i][j - 1]
-        return dp[m - 1][n - 1]"""
+        return dp[m - 1][n - 1]
 
 # Convert Sorted List to Binary Search Tree
 class Solution:
@@ -51,4 +51,23 @@ class Solution:
             root.left = build(left, mid - 1)
             root.right = build(mid + 1, right)
             return root
-        return build(0, len(nums) - 1)
+        return build(0, len(nums) - 1)"""
+
+#Populating Next Right Pointers in Each Node
+from collections import deque
+class Solution:
+    def connect(self, root):
+        if not root:
+            return root
+        q = deque([root])
+        while q:
+            size = len(q)
+            for i in range(size):
+                node = q.popleft()
+                if i < size - 1:
+                    node.next = q[0]
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return root
