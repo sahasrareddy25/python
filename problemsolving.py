@@ -51,7 +51,7 @@ class Solution:
             root.left = build(left, mid - 1)
             root.right = build(mid + 1, right)
             return root
-        return build(0, len(nums) - 1)"""
+        return build(0, len(nums) - 1)
 
 #Populating Next Right Pointers in Each Node
 from collections import deque
@@ -70,4 +70,23 @@ class Solution:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-        return root
+        return root"""
+
+
+#Convert Sorted Array to Binary Search Tree
+class Solution:
+    def sortedArrayToBST(self, nums):
+
+        def build(left, right):
+            if left > right:
+                return None
+
+            mid = (left + right) // 2
+            root = TreeNode(nums[mid])
+
+            root.left = build(left, mid - 1)
+            root.right = build(mid + 1, right)
+
+            return root
+
+        return build(0, len(nums) - 1)
