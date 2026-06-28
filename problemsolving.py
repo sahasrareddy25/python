@@ -70,9 +70,7 @@ class Solution:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-        return root"""
-
-
+        return root
 #Convert Sorted Array to Binary Search Tree
 class Solution:
     def sortedArrayToBST(self, nums):
@@ -89,4 +87,27 @@ class Solution:
 
             return root
 
-        return build(0, len(nums) - 1)
+        return build(0, len(nums) - 1)"""
+#partition list
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def partition(self, head, x):
+        small = ListNode(0)
+        large = ListNode(0)
+        s = small
+        l = large
+        while head:
+            if head.val < x:
+                s.next = head
+                s = s.next
+            else:
+                l.next = head
+                l = l.next
+            head = head.next
+        l.next = None
+        s.next = large.next
+        return small.next
