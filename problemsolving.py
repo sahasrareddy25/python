@@ -125,12 +125,11 @@ class Solution:
                 dp[i] += dp[i - 1]
             if 10 <= int(s[i - 2:i]) <= 26:
                 dp[i] += dp[i - 2]
-        return dp[n]"""
+        return dp[n]
 #search in rotated array II
 class Solution:
     def search(self, nums, target):
         left, right = 0, len(nums) - 1
-
         while left <= right:
             mid = (left + right) // 2
 
@@ -156,4 +155,29 @@ class Solution:
                 else:
                     right = mid - 1
 
-        return False
+        return False"""
+#populating Next Right Pointers in Each Node II
+from collections import deque
+
+class Solution:
+    def connect(self, root):
+        if not root:
+            return root
+
+        q = deque([root])
+
+        while q:
+            size = len(q)
+
+            for i in range(size):
+                node = q.popleft()
+
+                if i < size - 1:
+                    node.next = q[0]
+
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+
+        return root
