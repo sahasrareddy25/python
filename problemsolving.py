@@ -218,7 +218,7 @@ class Solution(object):
             x *= x
             n //= 2
 
-        return ans"""
+        return ans
 
 #1967. Number of Strings That Appear as Substrings in Word
 class Solution:
@@ -241,5 +241,19 @@ class Solution:
         for i in range(1, len(arr)):
             arr[i] = min(arr[i], arr[i - 1] + 1)
 
-        return arr[-1]
+        return arr[-1]"""
+#merge intervals
+class Solution:
+    def merge(self, intervals):
+        intervals.sort(key=lambda x: x[0])
+
+        merged = []
+
+        for interval in intervals:
+            if not merged or merged[-1][1] < interval[0]:
+                merged.append(interval)
+            else:
+                merged[-1][1] = max(merged[-1][1], interval[1])
+
+        return merged
         
