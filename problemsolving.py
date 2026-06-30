@@ -198,7 +198,7 @@ class Solution(object):
                 count[s[left]] -= 1
                 left += 1
 
-        return ans"""
+        return ans
 
 #pow(x,n)
 class Solution(object):
@@ -218,4 +218,15 @@ class Solution(object):
             x *= x
             n //= 2
 
-        return ans
+        return ans"""
+
+#1967. Number of Strings That Appear as Substrings in Word
+class Solution:
+    def numOfStrings(self, patterns, word):
+        count = 0
+
+        for pattern in patterns:
+            if pattern in word:
+                count += 1
+
+        return count
