@@ -180,7 +180,7 @@ class Solution:
                 if node.right:
                     q.append(node.right)
 
-        return root"""
+        return root
 
 #1358. Number of Substrings Containing All Three Characters
 class Solution(object):
@@ -197,5 +197,25 @@ class Solution(object):
                 ans += n - right
                 count[s[left]] -= 1
                 left += 1
+
+        return ans"""
+
+#pow(x,n)
+class Solution(object):
+    def myPow(self, x, n):
+        if n == 0:
+            return 1.0
+
+        if n < 0:
+            x = 1.0 / x
+            n = -n
+
+        ans = 1.0
+
+        while n > 0:
+            if n % 2 == 1:
+                ans *= x
+            x *= x
+            n //= 2
 
         return ans
