@@ -108,7 +108,7 @@ class Solution:
                 line += words[j - 1]
             res.append(line)
             i = j
-        return res"""
+        return res
 #candy
 class Solution:
     def candy(self, ratings):
@@ -123,4 +123,18 @@ class Solution:
             if ratings[i] > ratings[i + 1]:
                 candies[i] = max(candies[i], candies[i + 1] + 1)
 
-        return sum(candies)
+        return sum(candies)"""
+#remove linked lists
+class Solution:
+    def removeElements(self, head, val):
+        dummy = ListNode(0)
+        dummy.next = head
+        curr = dummy
+
+        while curr.next:
+            if curr.next.val == val:
+                curr.next = curr.next.next
+            else:
+                curr = curr.next
+
+        return dummy.next
