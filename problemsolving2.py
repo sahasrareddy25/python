@@ -54,7 +54,7 @@ class Solution:
         while i < n:
             result.append(intervals[i])
             i += 1
-        return result"""
+        return result
 #30. Substring with Concatenation of All Words
 from collections import Counter
 
@@ -78,4 +78,34 @@ class Solution:
             else:
                 ans.append(i)
 
-        return ans
+        return ans"""
+
+#text verification
+class Solution:
+    def fullJustify(self, words, maxWidth):
+        res = []
+        i = 0
+        while i < len(words):
+            j = i
+            length = 0
+            while j < len(words) and length + len(words[j]) + (j - i) <= maxWidth:
+                length += len(words[j])
+                j += 1
+            gaps = j - i - 1
+            line = ""
+            if j == len(words) or gaps == 0:
+                line = " ".join(words[i:j])
+                line += " " * (maxWidth - len(line))
+            else:
+                spaces = maxWidth - length
+                even = spaces // gaps
+                extra = spaces % gaps
+                for k in range(i, j - 1):
+                    line += words[k]
+                    line += " " * (even + (1 if extra > 0 else 0))
+                    if extra:
+                        extra -= 1
+                line += words[j - 1]
+            res.append(line)
+            i = j
+        return res
