@@ -78,7 +78,7 @@ class Solution:
             else:
                 ans.append(i)
 
-        return ans"""
+        return ans
 
 #text verification
 class Solution:
@@ -108,4 +108,19 @@ class Solution:
                 line += words[j - 1]
             res.append(line)
             i = j
-        return res
+        return res"""
+#candy
+class Solution:
+    def candy(self, ratings):
+        n = len(ratings)
+        candies = [1] * n
+
+        for i in range(1, n):
+            if ratings[i] > ratings[i - 1]:
+                candies[i] = candies[i - 1] + 1
+
+        for i in range(n - 2, -1, -1):
+            if ratings[i] > ratings[i + 1]:
+                candies[i] = max(candies[i], candies[i + 1] + 1)
+
+        return sum(candies)
