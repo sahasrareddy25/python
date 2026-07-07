@@ -123,7 +123,7 @@ class Solution:
             if ratings[i] > ratings[i + 1]:
                 candies[i] = max(candies[i], candies[i + 1] + 1)
 
-        return sum(candies)"""
+        return sum(candies)
 #remove linked lists
 class Solution:
     def removeElements(self, head, val):
@@ -137,4 +137,12 @@ class Solution:
             else:
                 curr = curr.next
 
-        return dummy.next
+        return dummy.next"""
+#Maximum Depth of N-ary Tree
+class Solution:
+    def maxDepth(self, root):
+        if not root:
+            return 0
+        if not root.children:
+            return 1
+        return 1 + max(self.maxDepth(child) for child in root.children)
