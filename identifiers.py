@@ -64,7 +64,7 @@ class Solution:
         while j < len(p) and p[j] == '*':
             j += 1
 
-        return j == len(p)"""
+        return j == len(p)
 
 #process string with special operations I
 class Solution:
@@ -82,4 +82,4 @@ class Solution:
             elif ch == '%':
                 res.reverse()
 
-        return ''.join(res)
+        return ''.join(res)"""

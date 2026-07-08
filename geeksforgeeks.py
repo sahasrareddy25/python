@@ -755,7 +755,7 @@ class Solution:
         if arr[0] == '0':
             return '0'
 
-        return ''.join(arr)"""
+        return ''.join(arr)
 
 #Find H-Index
 #You are given an array citations[], where each element citations[i] represents the number of citations received by the ith paper of a researcher. You have to calculate the researcher’s H-index.
@@ -775,3 +775,4 @@ class Solution:
             if total >= h:
                 return h
         return 0
+"""

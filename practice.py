@@ -218,11 +218,11 @@ class Solution:
                 if not ch.isdigit():
                     stack.append(ch)
         return "".join(stack)
-"""
+
 #find the difference
 class Solution:
     def findTheDifference(self, s, t):
         res = 0
         for c in s + t:
             res ^= ord(c)
-        return chr(res)
+        return chr(res)"""

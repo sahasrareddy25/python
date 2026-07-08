@@ -109,5 +109,6 @@ print(freq)
 #take the dictionary and print them
 sahasra = {
     "gender": "female",
+    "age": "20",
+    "university": "MRU"
 }
-print("sahasra")

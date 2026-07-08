@@ -138,7 +138,7 @@ If discount is less than 0 or greater than 100, the function should return the s
 If both inputs are valid, the function should calculate the discount as a percentage of the price.
 The function should return the final price after applying the discount.
 """
-def apply_discount(price, discount):
+"""def apply_discount(price, discount):
     if not isinstance(price, (int, float)):
         return "The price should be a number"
     if not isinstance(discount, (int, float)):
@@ -151,4 +151,6 @@ def apply_discount(price, discount):
     final_price = price - discount_amount
     return final_price
 print(apply_discount(50, 20))
+"""
+
 
