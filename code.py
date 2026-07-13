@@ -32,7 +32,7 @@ class Solution:
                 return i
             left += nums[i]
 
-        return -1"""
+        return -1
 #fizz buzz
 class Solution:
     def fizzBuzz(self, n):
@@ -48,4 +48,8 @@ class Solution:
             else:
                 ans.append(str(i))
 
-        return ans
+        return ans"""
+#student attendance record I
+class Solution:
+    def checkRecord(self, s):
+        return s.count('A') < 2 and "LLL" not in s
