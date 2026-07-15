@@ -52,7 +52,7 @@ class Solution:
 #student attendance record I
 class Solution:
     def checkRecord(self, s):
-        return s.count('A') < 2 and "LLL" not in s"""
+        return s.count('A') < 2 and "LLL" not in s
 #teoplitz matrix
 class Solution:
     def isToeplitzMatrix(self, matrix):
@@ -64,4 +64,20 @@ class Solution:
                 if matrix[i][j] != matrix[i - 1][j - 1]:
                     return False
 
-        return True
+        return True"""
+#number of lines of to write a song
+class Solution:
+    def numberOfLines(self, widths, s):
+        lines = 1
+        current_width = 0
+
+        for ch in s:
+            w = widths[ord(ch) - ord('a')]
+
+            if current_width + w <= 100:
+                current_width += w
+            else:
+                lines += 1
+                current_width = w
+
+        return [lines, current_width]
