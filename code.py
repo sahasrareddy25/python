@@ -64,7 +64,7 @@ class Solution:
                 if matrix[i][j] != matrix[i - 1][j - 1]:
                     return False
 
-        return True"""
+        return True
 #number of lines of to write a song
 class Solution:
     def numberOfLines(self, widths, s):
@@ -80,4 +80,22 @@ class Solution:
                 lines += 1
                 current_width = w
 
-        return [lines, current_width]
+        return [lines, current_width]"""
+#largest traingle area
+class Solution:
+    def largestTriangleArea(self, points):
+        n = len(points)
+        max_area = 0
+        for i in range(n):
+            for j in range(i + 1, n):
+                for k in range(j + 1, n):
+                    x1, y1 = points[i]
+                    x2, y2 = points[j]
+                    x3, y3 = points[k]
+                    area = abs(
+                        x1 * (y2 - y3) +
+                        x2 * (y3 - y1) +
+                        x3 * (y1 - y2)
+                    ) / 2.0
+                    max_area = max(max_area, area)
+        return max_area
