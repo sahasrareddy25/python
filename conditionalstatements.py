@@ -309,6 +309,7 @@ if num%2:
     print("the number is odd")
 else:
     print("the number is even")
+"""
 
 #build a grade calculator
 marks=int(input("enter the marks: "))
@@ -321,7 +322,7 @@ elif marks<75:
 elif marks<65:
     print("Grade E ")
 elif marks<50:
-    print("Grade F")"""
+    print("Grade F")
 
 
 
